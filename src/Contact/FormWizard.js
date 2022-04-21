@@ -19,9 +19,13 @@ const FormWizard = ({
   }, [goToPage]);
 
   const next = (values) => {
-    setPage(Math.min(page + 1, children.length - 1));
+    if (goToPage) {
+      setPage(children.length - 1);
+      setGoToPage(null)
+    } else {
+      setPage(Math.min(page + 1, children.length - 1));
+    }
     setValues(values);
-    setGoToPage(null);
   };
 
   const previous = (e) => {
