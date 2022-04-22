@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameEntry renders as expected 1`] = `
+<div
+  className="wmrards-fe-group wmrards-m-t-20"
+>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 2 of 2"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error={null}
+    fieldName="firstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="lastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</div>
+`;
+
+exports[`NameEntry renders with an error 1`] = `
+<div
+  className="wmrards-fe-group wmrards-m-t-20"
+>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 2 of 2"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="firstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    fieldName="lastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</div>
+`;

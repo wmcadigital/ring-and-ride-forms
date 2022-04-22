@@ -3,7 +3,7 @@ import { useFormState } from "react-final-form";
 import TextInput from "../common/TextInput";
 import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
-import { numbersOnly } from "./validation";
+import { numbersOnly } from "../common/validation";
 
 const RegistrationNoEntry = () => {
   const stateApi = useFormState();

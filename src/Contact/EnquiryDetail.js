@@ -1,7 +1,7 @@
 import { useFormState } from "react-final-form";
 
 import EnquiryTypes from "./EnquiryTypes";
-import { required } from "./validation";
+import { required } from "../common/validation";
 import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
 import TextArea from "../common/TextArea";

@@ -4,7 +4,7 @@ import EnquiryTypes from "./EnquiryTypes";
 import Question from "../common/Question";
 import RadioButton from "../common/RadioButton";
 import FieldError from "../common/FieldError";
-import { required } from "./validation";
+import { required } from "../common/validation";
 
 const EnquiryTypeQuery = () => {
   const stateApi = useFormState();
