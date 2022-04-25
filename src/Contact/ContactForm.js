@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FormWizard from "./FormWizard";
+import FormWizard from "../common/FormWizard";
 import EnquiryTypeQuery from "./EnquiryTypeQuery";
 import EnquiryDetail from "./EnquiryDetail";
 import CheckAnswers from "./CheckAnswers";

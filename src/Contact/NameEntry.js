@@ -1,6 +1,6 @@
 import { useFormState } from "react-final-form";
 
-import { required } from "./validation";
+import { required } from "../common/validation";
 import Question from "../common/Question";
 import ProgressIndicator from "../common/ProgressIndicator";
 import TextInput from "../common/TextInput";

@@ -21,7 +21,7 @@ const FormWizard = ({
   const next = (values) => {
     if (goToPage) {
       setPage(children.length - 1);
-      setGoToPage(null)
+      setGoToPage(null);
     } else {
       setPage(Math.min(page + 1, children.length - 1));
     }
@@ -126,6 +126,7 @@ FormWizard.defaultProps = {
   initialValues: {},
   children: [],
   goToPage: null,
+  setGoToPage: () => {},
 };
 
 export default FormWizard;

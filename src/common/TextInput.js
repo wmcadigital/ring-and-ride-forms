@@ -21,7 +21,7 @@ const TextInput = ({ fieldName, label, validation, error }) => (
 
 TextInput.propTypes = {
   fieldName: PropTypes.string.isRequired,
-  label: PropTypes.string | PropTypes.element,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   validation: PropTypes.func,
   error: PropTypes.string,
 };

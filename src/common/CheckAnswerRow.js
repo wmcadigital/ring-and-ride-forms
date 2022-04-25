@@ -12,6 +12,10 @@ const ChangeButton = ({ callBack }) => (
   </td>
 );
 
+ChangeButton.propTypes = {
+  callBack: PropTypes.func,
+};
+
 const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
   if (label) {
     return (
@@ -39,6 +43,10 @@ CheckAnswerRow.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
   changeValueCallback: PropTypes.func,
+};
+
+CheckAnswerRow.defaultProps = {
+  changeValueCallback: () => {},
 };
 
 export default CheckAnswerRow;
