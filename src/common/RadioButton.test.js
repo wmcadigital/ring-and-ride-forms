@@ -11,30 +11,29 @@ describe("RadioButton", () => {
           fieldName="radio-group"
           label="Radio Label"
           value="value-1"
-          formValues={{}}
         />
       </FormWrapper>
     );
 
     const radioButton = screen.getByRole("radio");
     expect(radioButton.getAttribute("name")).toEqual("radio-group");
-    expect(radioButton.getAttribute("checked")).toBeNull();
+    expect(radioButton.getAttributeNames()).not.toContain("checked");
     expect(screen.getByText("Radio Label")).toBeDefined();
   });
 
-  it("renders checked radio button", () => {
+  it("renders checked radio button", async () => {
     render(
-      <FormWrapper>
+      <FormWrapper initialValues={{ "radio-group": "value-1" }}>
         <RadioButton
           fieldName="radio-group"
           label="Radio Label"
           value="value-1"
-          formValues={{ "radio-group": "value-1" }}
         />
       </FormWrapper>
     );
 
     const radioButton = screen.getByRole("radio");
-    expect(radioButton.getAttribute("checked")).not.toBeNull();
+
+    expect(radioButton.getAttributeNames()).toContain("checked");
   });
 });

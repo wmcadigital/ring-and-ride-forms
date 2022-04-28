@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobilityAidsQuery individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Does Test use a mobility aid to help themselves get around?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="mobilityAids.manualWheelchair"
+      label="They use a manual wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.poweredWheelchair"
+      label="They use a powered wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.scooter"
+      label="They use a scooter"
+    />
+    <Checkbox
+      fieldName="mobilityAids.sticksOrCrutches"
+      label="They use a stick(s)/crutch(es)"
+    />
+    <Checkbox
+      fieldName="mobilityAids.walkingFrame"
+      label="They use a walking frame"
+    />
+    <Checkbox
+      fieldName="mobilityAids.guideDog"
+      label="They have a guide/helping dog"
+    />
+    <Checkbox
+      fieldName="mobilityAids.passengerLift"
+      label="They need a passenger lift"
+    />
+    <Checkbox
+      fieldName="mobilityAids.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`MobilityAidsQuery individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you use a mobility aid to help you get around?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="mobilityAids.manualWheelchair"
+      label="I use a manual wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.poweredWheelchair"
+      label="I use a powered wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.scooter"
+      label="I use a scooter"
+    />
+    <Checkbox
+      fieldName="mobilityAids.sticksOrCrutches"
+      label="I use a stick(s)/crutch(es)"
+    />
+    <Checkbox
+      fieldName="mobilityAids.walkingFrame"
+      label="I use a walking frame"
+    />
+    <Checkbox
+      fieldName="mobilityAids.guideDog"
+      label="I have a guide/helping dog"
+    />
+    <Checkbox
+      fieldName="mobilityAids.passengerLift"
+      label="I need a passenger lift"
+    />
+    <Checkbox
+      fieldName="mobilityAids.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`MobilityAidsQuery renders with an error - other selected, no requirement 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you use a mobility aid to help you get around?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer>
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="mobilityAids.manualWheelchair"
+      label="I use a manual wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.poweredWheelchair"
+      label="I use a powered wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.scooter"
+      label="I use a scooter"
+    />
+    <Checkbox
+      fieldName="mobilityAids.sticksOrCrutches"
+      label="I use a stick(s)/crutch(es)"
+    />
+    <Checkbox
+      fieldName="mobilityAids.walkingFrame"
+      label="I use a walking frame"
+    />
+    <Checkbox
+      fieldName="mobilityAids.guideDog"
+      label="I have a guide/helping dog"
+    />
+    <Checkbox
+      fieldName="mobilityAids.passengerLift"
+      label="I need a passenger lift"
+    />
+    <Checkbox
+      fieldName="mobilityAids.other"
+      label="Other"
+    />
+    <TextArea
+      error="Required"
+      fieldName="mobilityAids.otherRequirement"
+      label="Please describe your requirements"
+      validation={[Function]}
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`MobilityAidsQuery renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you use a mobility aid to help you get around?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error="Select at least 1 topic"
+  >
+    <FieldError
+      text="Select at least 1 topic"
+    />
+    <Checkbox
+      fieldName="mobilityAids.manualWheelchair"
+      label="I use a manual wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.poweredWheelchair"
+      label="I use a powered wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.scooter"
+      label="I use a scooter"
+    />
+    <Checkbox
+      fieldName="mobilityAids.sticksOrCrutches"
+      label="I use a stick(s)/crutch(es)"
+    />
+    <Checkbox
+      fieldName="mobilityAids.walkingFrame"
+      label="I use a walking frame"
+    />
+    <Checkbox
+      fieldName="mobilityAids.guideDog"
+      label="I have a guide/helping dog"
+    />
+    <Checkbox
+      fieldName="mobilityAids.passengerLift"
+      label="I need a passenger lift"
+    />
+    <Checkbox
+      fieldName="mobilityAids.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`MobilityAidsQuery renders with an other requirement text area if other reason selected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you use a mobility aid to help you get around?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="mobilityAids.manualWheelchair"
+      label="I use a manual wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.poweredWheelchair"
+      label="I use a powered wheelchair"
+    />
+    <Checkbox
+      fieldName="mobilityAids.scooter"
+      label="I use a scooter"
+    />
+    <Checkbox
+      fieldName="mobilityAids.sticksOrCrutches"
+      label="I use a stick(s)/crutch(es)"
+    />
+    <Checkbox
+      fieldName="mobilityAids.walkingFrame"
+      label="I use a walking frame"
+    />
+    <Checkbox
+      fieldName="mobilityAids.guideDog"
+      label="I have a guide/helping dog"
+    />
+    <Checkbox
+      fieldName="mobilityAids.passengerLift"
+      label="I need a passenger lift"
+    />
+    <Checkbox
+      fieldName="mobilityAids.other"
+      label="Other"
+    />
+    <TextArea
+      error={null}
+      fieldName="mobilityAids.otherRequirement"
+      label="Please describe your requirements"
+      validation={[Function]}
+    />
+  </CheckboxContainer>
+</FormSection>
+`;

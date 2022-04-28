@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailAddress individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is Test's email address?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmailAddress individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your email address?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmailAddress renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your email address?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="emailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;

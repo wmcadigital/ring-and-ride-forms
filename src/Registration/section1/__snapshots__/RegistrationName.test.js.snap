@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationName individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Who are you registering for?"
+  />
+  <TextInput
+    error={null}
+    fieldName="firstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="lastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`RegistrationName individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error={null}
+    fieldName="firstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="lastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`RegistrationName renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error="Invalid"
+    fieldName="firstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error="Required"
+    fieldName="lastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;

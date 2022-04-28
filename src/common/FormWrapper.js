@@ -1,12 +1,16 @@
 import { Form } from "react-final-form";
 import PropTypes from "prop-types";
 
-const FormWrapper = ({ children }) => (
-  <Form onSubmit={() => {}}>{() => <form>{children}</form>}</Form>
+const FormWrapper = ({ initialValues, mutators, children }) => (
+  <Form onSubmit={() => {}} initialValues={initialValues} mutators={mutators}>
+    {() => <form>{children}</form>}
+  </Form>
 );
 
 FormWrapper.propTypes = {
-  children: PropTypes.element,
+  initialValues: PropTypes.object,
+  mutators: PropTypes.object,
+  children: PropTypes.node,
 };
 
 export default FormWrapper;

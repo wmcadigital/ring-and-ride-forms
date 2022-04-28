@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StandardBusProblem individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="What problems does Test experience when trying to use standard bus services?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetToBus"
+      label="They cannot get to a bus stop"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetOnBus"
+      label="They cannot get on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotTravelOnBus"
+      label="They cannot travel on a bus"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusProblem individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="What problems do you experience when trying to use standard bus services?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetToBus"
+      label="I cannot get to a bus stop"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetOnBus"
+      label="I cannot get on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotTravelOnBus"
+      label="I cannot travel on a bus"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusProblem renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="What problems do you experience when trying to use standard bus services?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error="Select at least 1 topic"
+  >
+    <FieldError
+      text="Select at least 1 topic"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetToBus"
+      label="I cannot get to a bus stop"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotGetOnBus"
+      label="I cannot get on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusProb.cannotTravelOnBus"
+      label="I cannot travel on a bus"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;

@@ -1,127 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EnquiryTypeQuery renders as expected 1`] = `
-<div
-  className="wmrards-fe-group null"
->
-  <div
-    className="wmrards-fe-radios"
-    role="radiogroup"
+<FormSection>
+  <Question
+    text="What is your enquiry about?"
+  />
+  <RadioGroup
+    error={null}
   >
-    <Question
-      text="What is your enquiry about?"
-    />
     <FieldError
       text={null}
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={
-        Object {
-          "enquiryType": "lostProperty",
-        }
-      }
       label="General enquiry"
       validation={[Function]}
       value="generalEnquiry"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={
-        Object {
-          "enquiryType": "lostProperty",
-        }
-      }
       label="Service issues"
       validation={[Function]}
       value="serviceIssues"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={
-        Object {
-          "enquiryType": "lostProperty",
-        }
-      }
       label="Lost property"
       validation={[Function]}
       value="lostProperty"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={
-        Object {
-          "enquiryType": "lostProperty",
-        }
-      }
       label="Staff"
       validation={[Function]}
       value="staff"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={
-        Object {
-          "enquiryType": "lostProperty",
-        }
-      }
       label="Service updates"
       validation={[Function]}
       value="serviceUpdates"
     />
-  </div>
-</div>
+  </RadioGroup>
+</FormSection>
 `;
 
 exports[`EnquiryTypeQuery renders with an error 1`] = `
-<div
-  className="wmrards-fe-group wmrards-fe-group--error"
->
-  <div
-    className="wmrards-fe-radios"
-    role="radiogroup"
+<FormSection>
+  <Question
+    text="What is your enquiry about?"
+  />
+  <RadioGroup
+    error="Required"
   >
-    <Question
-      text="What is your enquiry about?"
-    />
     <FieldError
       text="Required"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={Object {}}
       label="General enquiry"
       validation={[Function]}
       value="generalEnquiry"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={Object {}}
       label="Service issues"
       validation={[Function]}
       value="serviceIssues"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={Object {}}
       label="Lost property"
       validation={[Function]}
       value="lostProperty"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={Object {}}
       label="Staff"
       validation={[Function]}
       value="staff"
     />
     <RadioButton
       fieldName="enquiryType"
-      formValues={Object {}}
       label="Service updates"
       validation={[Function]}
       value="serviceUpdates"
     />
-  </div>
-</div>
+  </RadioGroup>
+</FormSection>
 `;

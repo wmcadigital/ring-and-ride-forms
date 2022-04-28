@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateOfBirth individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is Test's date of birth?"
+  />
+  <DateInput
+    dayFieldName="bdayDay"
+    error={null}
+    label="For example, 3 7 1985"
+    monthFieldName="bdayMonth"
+    yearFieldName="bdayYear"
+  />
+</FormSection>
+`;
+
+exports[`DateOfBirth individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your date of birth?"
+  />
+  <DateInput
+    dayFieldName="bdayDay"
+    error={null}
+    label="For example, 3 7 1985"
+    monthFieldName="bdayMonth"
+    yearFieldName="bdayYear"
+  />
+</FormSection>
+`;
+
+exports[`DateOfBirth renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your date of birth?"
+  />
+  <DateInput
+    dayFieldName="bdayDay"
+    error="Invalid"
+    label="For example, 3 7 1985"
+    monthFieldName="bdayMonth"
+    yearFieldName="bdayYear"
+  />
+</FormSection>
+`;

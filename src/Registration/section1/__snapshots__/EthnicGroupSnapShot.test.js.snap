@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EthnicGroup - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is Test's ethnic group?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="White"
+      validation={[Function]}
+      value="white"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Mixed or Multiple ethnic groups"
+      validation={[Function]}
+      value="mixed"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Asian or Asian British"
+      validation={[Function]}
+      value="asian"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Black, African, Carribean or Black British"
+      validation={[Function]}
+      value="black"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Other"
+      validation={[Function]}
+      value="other"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="ethnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`EthnicGroup - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your ethnic group?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="White"
+      validation={[Function]}
+      value="white"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Mixed or Multiple ethnic groups"
+      validation={[Function]}
+      value="mixed"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Asian or Asian British"
+      validation={[Function]}
+      value="asian"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Black, African, Carribean or Black British"
+      validation={[Function]}
+      value="black"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Other"
+      validation={[Function]}
+      value="other"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="ethnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`EthnicGroup - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your ethnic group?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="White"
+      validation={[Function]}
+      value="white"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Mixed or Multiple ethnic groups"
+      validation={[Function]}
+      value="mixed"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Asian or Asian British"
+      validation={[Function]}
+      value="asian"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Black, African, Carribean or Black British"
+      validation={[Function]}
+      value="black"
+    />
+    <RadioButton
+      fieldName="ethnicity"
+      label="Other"
+      validation={[Function]}
+      value="other"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="ethnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;

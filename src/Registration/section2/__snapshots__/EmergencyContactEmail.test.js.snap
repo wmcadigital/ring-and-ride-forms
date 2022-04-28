@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContactEmail individual is filling out form for someone else and is NOT the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's email address?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyEmailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactEmail individual is filling out form for someone else and is the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your email address?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyEmailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactEmail individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's email address?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyEmailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactEmail renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's email address?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="emergencyEmailAddress"
+    label={
+      <React.Fragment>
+        Email address
+        <p>
+          For example, name@example.com
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;

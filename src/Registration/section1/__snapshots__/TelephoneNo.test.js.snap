@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TelephoneNo individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is Test's telephone number?"
+  />
+  <TextInput
+    error={null}
+    fieldName="phoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`TelephoneNo individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your telephone number?"
+  />
+  <TextInput
+    error={null}
+    fieldName="phoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`TelephoneNo renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your telephone number?"
+  />
+  <TextInput
+    error="Invalid"
+    fieldName="phoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;

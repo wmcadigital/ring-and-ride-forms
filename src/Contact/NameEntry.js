@@ -1,6 +1,7 @@
 import { useFormState } from "react-final-form";
 
-import { required } from "../common/validation";
+import { required, name, composeValidators } from "../common/validation";
+import FormSection from "../common/FormSection";
 import Question from "../common/Question";
 import ProgressIndicator from "../common/ProgressIndicator";
 import TextInput from "../common/TextInput";
@@ -17,7 +18,7 @@ const NameEntry = () => {
     : null;
 
   return (
-    <div className="wmrards-fe-group wmrards-m-t-20">
+    <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
         sectionName="About you"
@@ -26,16 +27,16 @@ const NameEntry = () => {
       <TextInput
         fieldName="firstName"
         label="First Name"
-        validation={required}
+        validation={composeValidators(required, name)}
         error={errorFirstName}
       />
       <TextInput
         fieldName="lastName"
         label="Last Name"
-        validation={required}
+        validation={composeValidators(required, name)}
         error={errorLastName}
       />
-    </div>
+    </FormSection>
   );
 };
 

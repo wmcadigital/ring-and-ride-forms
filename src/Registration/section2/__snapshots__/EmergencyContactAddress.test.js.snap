@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContactAddress individual is filling out form for someone else and is NOT the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's address?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={false}
+    prefix="emergency"
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactAddress individual is filling out form for someone else and is the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your address?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={false}
+    prefix="emergency"
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactAddress individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's address?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={false}
+    prefix="emergency"
+  />
+</FormSection>
+`;

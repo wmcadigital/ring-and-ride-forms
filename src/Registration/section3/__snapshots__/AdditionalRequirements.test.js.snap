@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalRequirements - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Does Test have any other requirements we need to know about?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalRequirements - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you have any other requirements we need to know about?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalRequirements - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you have any other requirements we need to know about?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalRequirements - snapshots shows error if text area not filled in on submission 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you have any other requirements we need to know about?"
+  />
+  <RadioGroup>
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <TextArea
+      error="Required"
+      fieldName="additionalRequirementsDetails"
+      label="Additional requirements"
+      rows={8}
+      validation={[Function]}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalRequirements - snapshots shows text area for additional requirements if yes is selected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Do you have any other requirements we need to know about?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <TextArea
+      error={null}
+      fieldName="additionalRequirementsDetails"
+      label="Additional requirements"
+      rows={8}
+      validation={[Function]}
+    />
+    <RadioButton
+      fieldName="additionalRequirements"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

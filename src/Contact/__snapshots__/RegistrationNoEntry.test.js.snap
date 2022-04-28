@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RegistrationNoEntry renders with a value 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -25,13 +23,11 @@ exports[`RegistrationNoEntry renders with a value 1`] = `
     }
     validation={[Function]}
   />
-</div>
+</FormSection>
 `;
 
 exports[`RegistrationNoEntry renders with an error 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -53,13 +49,11 @@ exports[`RegistrationNoEntry renders with an error 1`] = `
     }
     validation={[Function]}
   />
-</div>
+</FormSection>
 `;
 
 exports[`RegistrationNoEntry renders with no value 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -81,5 +75,5 @@ exports[`RegistrationNoEntry renders with no value 1`] = `
     }
     validation={[Function]}
   />
-</div>
+</FormSection>
 `;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders Contact Form as expected 1`] = `
+<React.Fragment>
+  <Header
+    heading="Contact us"
+  />
+  <FormContentWrapper>
+    <BreadCrumb
+      currentPageName="Contact us"
+    />
+    <FormWizard
+      goToPage={null}
+      initialValues={Object {}}
+      onSubmit={[Function]}
+      setGoToPage={[Function]}
+    >
+      <EnquiryTypeQuery />
+      <EnquiryDetail />
+      <NameEntry />
+      <RegistrationNoEntry />
+      <ContactPreferenceEntry
+        validate={[Function]}
+      />
+      <CheckAnswers
+        setGoToPage={[Function]}
+        validate={[Function]}
+      />
+    </FormWizard>
+  </FormContentWrapper>
+</React.Fragment>
+`;

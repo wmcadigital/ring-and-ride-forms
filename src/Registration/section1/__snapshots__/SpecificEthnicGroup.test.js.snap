@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpecificEthnicGroup - snapshots individual is filling out form for someone else - asian 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes Test's Asian or Asian British background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Indian"
+      validation={[Function]}
+      value="indian"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Pakistani"
+      validation={[Function]}
+      value="pakistani"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Bangladeshi"
+      validation={[Function]}
+      value="bangladeshi"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Chinese"
+      validation={[Function]}
+      value="chinese"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other Asian background"
+      validation={[Function]}
+      value="otherAsian"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots individual is filling out form for someone else - other 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes Test's background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Arab"
+      validation={[Function]}
+      value="arab"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other ethnic group"
+      validation={[Function]}
+      value="otherOther"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots individual is filling out form for someone else - white 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes Test's White background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="British"
+      validation={[Function]}
+      value="british"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Irish"
+      validation={[Function]}
+      value="irish"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other White background"
+      validation={[Function]}
+      value="otherWhite"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots individual is filling out form for themselves - mixed 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes your Mixed or Multiple ethnic groups background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="White and Black Carribean"
+      validation={[Function]}
+      value="whiteBlackCarribean"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="White and Black African"
+      validation={[Function]}
+      value="whiteBlackAfrican"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="White and Asian"
+      validation={[Function]}
+      value="whiteAsian"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other Mixed or Multiple ethnic background"
+      validation={[Function]}
+      value="otherMixed"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots individual is filling out form for themselves - white 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes your White background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="British"
+      validation={[Function]}
+      value="british"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Irish"
+      validation={[Function]}
+      value="irish"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other White background"
+      validation={[Function]}
+      value="otherWhite"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots renders with an error - black 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes your Black, African, Carribean or Black British background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="African"
+      validation={[Function]}
+      value="african"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Carribean"
+      validation={[Function]}
+      value="carribean"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other Black, African or Carribean"
+      validation={[Function]}
+      value="otherBlack"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`SpecificEthnicGroup - snapshots renders with an error - white 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="Which of the following best describes your White background?"
+  />
+  <p>
+    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+  </p>
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="British"
+      validation={[Function]}
+      value="british"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Irish"
+      validation={[Function]}
+      value="irish"
+    />
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Any other White background"
+      validation={[Function]}
+      value="otherWhite"
+    />
+    <p
+      className="wmrards-m-b-sm"
+    >
+      Or
+    </p>
+    <RadioButton
+      fieldName="specificEthnicity"
+      label="Prefer not to say"
+      validation={[Function]}
+      value="preferNotToSay"
+    />
+  </RadioGroup>
+</FormSection>
+`;

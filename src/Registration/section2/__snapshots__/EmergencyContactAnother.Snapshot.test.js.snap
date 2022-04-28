@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContactAnother - snapshots renders as expected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="Does John have an emergency contact?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="emergencyContactAnother"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="emergencyContactAnother"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`EmergencyContactAnother - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="Does John have an emergency contact?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="emergencyContactAnother"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="emergencyContactAnother"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

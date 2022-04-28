@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContactName individual is filling out form for someone else and is NOT the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is their name?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyFirstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyLastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactName individual is filling out form for someone else and is the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyFirstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyLastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactName individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is the name of your contact emergency?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyFirstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyLastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactName renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your name?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="emergencyFirstName"
+    label="First Name"
+    validation={[Function]}
+  />
+  <TextInput
+    fieldName="emergencyLastName"
+    label="Last Name"
+    validation={[Function]}
+  />
+</FormSection>
+`;

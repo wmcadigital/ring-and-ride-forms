@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactPreferences individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="How would Test like to be contacted about their registration?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="contactPreference.telephone"
+      label="Telephone"
+    />
+    <Checkbox
+      fieldName="contactPreference.email"
+      label="Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.letter"
+      label="Letter"
+    />
+    <Checkbox
+      fieldName="contactPreference.letterAndEmail"
+      label="Letter and Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.largePrintLetter"
+      label="Large print letter"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`ContactPreferences individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="How would you like to be contacted about your registration?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="contactPreference.telephone"
+      label="Telephone"
+    />
+    <Checkbox
+      fieldName="contactPreference.email"
+      label="Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.letter"
+      label="Letter"
+    />
+    <Checkbox
+      fieldName="contactPreference.letterAndEmail"
+      label="Letter and Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.largePrintLetter"
+      label="Large print letter"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`ContactPreferences renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="How would you like to be contacted about your registration?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error="Select at least 1 topic"
+  >
+    <FieldError
+      text="Select at least 1 topic"
+    />
+    <Checkbox
+      fieldName="contactPreference.telephone"
+      label="Telephone"
+    />
+    <Checkbox
+      fieldName="contactPreference.email"
+      label="Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.letter"
+      label="Letter"
+    />
+    <Checkbox
+      fieldName="contactPreference.letterAndEmail"
+      label="Letter and Email"
+    />
+    <Checkbox
+      fieldName="contactPreference.largePrintLetter"
+      label="Large print letter"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
