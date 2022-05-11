@@ -26,8 +26,8 @@ const CheckAnswers = ({ setGoToPage }) => {
           changeValueCallback={() => setGoToPage(1)}
         />
       </Table>
+      <h3>About you</h3>
       <Table>
-        <h3>About you</h3>
         <CheckAnswerRow
           label="Name"
           value={`${formValues["firstName"]} ${formValues["lastName"]}`}
