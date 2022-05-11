@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationAddress individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About the applicant"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is Test's address?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={true}
+    prefix="registered"
+  />
+</FormSection>
+`;
+
+exports[`RegistrationAddress individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 3"
+  />
+  <Question
+    text="What is your address?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={true}
+    prefix="registered"
+  />
+</FormSection>
+`;

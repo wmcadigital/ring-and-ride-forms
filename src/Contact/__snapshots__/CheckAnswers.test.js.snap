@@ -2,26 +2,20 @@
 
 exports[`CheckAnswers renders CheckAnswers correctly 1`] = `
 <React.Fragment>
-  <h2
-    className="wmrards-fe-question"
-  >
-    Check your answers
-  </h2>
+  <Question
+    text="Check your answers"
+  />
   <h3>
     About your 
      enquiry
   </h3>
-  <table
-    className="wmrards-table wmrards-m-b-xl wmrards-table--without-header"
-  >
+  <Table>
     <CheckAnswerRow
       changeValueCallback={[Function]}
       value="test enquiry details"
     />
-  </table>
-  <table
-    className="wmrards-table wmrards-m-b-xl wmrards-table--without-header"
-  >
+  </Table>
+  <Table>
     <h3>
       About you
     </h3>
@@ -41,81 +35,71 @@ exports[`CheckAnswers renders CheckAnswers correctly 1`] = `
       value="Email: test@testerson.com 
         Phone: 0900 555 8888"
     />
-  </table>
+  </Table>
   <h3>
     Now send your enquiry
   </h3>
   <p>
     By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
   </p>
-  <div
-    className="wmrards-fe-group null"
+  <CheckboxContainer
+    error={null}
   >
-    <div
-      className="wmrards-fe-checkboxes"
-    >
-      <FieldError
-        text={null}
-      />
-      <Checkbox
-        fieldName="agreeTermsAndConditions"
-        label={
-          <React.Fragment>
-            Agree to the
-             
-            <a
-              href="https://www.wmca.org.uk/policies"
-              rel="noreferrer"
-              target="_blank"
-            >
-              terms and conditions
-            </a>
-          </React.Fragment>
-        }
-      />
-      <Checkbox
-        fieldName="agreePrivacyPolicy"
-        label={
-          <React.Fragment>
-            Agree to the
-             
-            <a
-              href="https://www.wmca.org.uk/policies"
-              rel="noreferrer"
-              target="_blank"
-            >
-              privacy policy
-            </a>
-          </React.Fragment>
-        }
-      />
-    </div>
-  </div>
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="agreeTermsAndConditions"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            terms and conditions
+          </a>
+        </React.Fragment>
+      }
+    />
+    <Checkbox
+      fieldName="agreePrivacyPolicy"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            privacy policy
+          </a>
+        </React.Fragment>
+      }
+    />
+  </CheckboxContainer>
 </React.Fragment>
 `;
 
 exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
 <React.Fragment>
-  <h2
-    className="wmrards-fe-question"
-  >
-    Check your answers
-  </h2>
+  <Question
+    text="Check your answers"
+  />
   <h3>
     About your 
      enquiry
   </h3>
-  <table
-    className="wmrards-table wmrards-m-b-xl wmrards-table--without-header"
-  >
+  <Table>
     <CheckAnswerRow
       changeValueCallback={[Function]}
       value="test enquiry details"
     />
-  </table>
-  <table
-    className="wmrards-table wmrards-m-b-xl wmrards-table--without-header"
-  >
+  </Table>
+  <Table>
     <h3>
       About you
     </h3>
@@ -135,55 +119,51 @@ exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
       value="Email: test@testerson.com 
         Phone: 0900 555 8888"
     />
-  </table>
+  </Table>
   <h3>
     Now send your enquiry
   </h3>
   <p>
     By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
   </p>
-  <div
-    className="wmrards-fe-group wmrards-fe-group--error"
+  <CheckboxContainer
+    error="Required"
   >
-    <div
-      className="wmrards-fe-checkboxes"
-    >
-      <FieldError
-        text="Required"
-      />
-      <Checkbox
-        fieldName="agreeTermsAndConditions"
-        label={
-          <React.Fragment>
-            Agree to the
-             
-            <a
-              href="https://www.wmca.org.uk/policies"
-              rel="noreferrer"
-              target="_blank"
-            >
-              terms and conditions
-            </a>
-          </React.Fragment>
-        }
-      />
-      <Checkbox
-        fieldName="agreePrivacyPolicy"
-        label={
-          <React.Fragment>
-            Agree to the
-             
-            <a
-              href="https://www.wmca.org.uk/policies"
-              rel="noreferrer"
-              target="_blank"
-            >
-              privacy policy
-            </a>
-          </React.Fragment>
-        }
-      />
-    </div>
-  </div>
+    <FieldError
+      text="Required"
+    />
+    <Checkbox
+      fieldName="agreeTermsAndConditions"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            terms and conditions
+          </a>
+        </React.Fragment>
+      }
+    />
+    <Checkbox
+      fieldName="agreePrivacyPolicy"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            privacy policy
+          </a>
+        </React.Fragment>
+      }
+    />
+  </CheckboxContainer>
 </React.Fragment>
 `;

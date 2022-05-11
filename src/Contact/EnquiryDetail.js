@@ -2,10 +2,11 @@ import { useFormState } from "react-final-form";
 
 import EnquiryTypes from "./EnquiryTypes";
 import { required } from "../common/validation";
+import FormSection from "../common/FormSection";
+import TextAreaContainer from "../common/TextAreaContainer";
 import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
 import TextArea from "../common/TextArea";
-import FieldError from "../common/FieldError";
 
 const EnquiryDetail = () => {
   const stateApi = useFormState();
@@ -15,17 +16,20 @@ const EnquiryDetail = () => {
   const error = stateApi.submitFailed ? stateApi.errors?.enquiryDetail : null;
 
   return (
-    <div className="wmrards-fe-group wmrards-m-t-20">
+    <FormSection>
       <ProgressIndicator
         sectionPosition="Section 1 of 2"
         sectionName="About your enquiry"
       />
-      <div className={`wmrards-m-t-xl ${error && "wmrards-fe-group--error"}`}>
+      <TextAreaContainer>
         <Question text={`What is your ${enquiryLabel} enquiry about?`} />
-        <FieldError text={error} />
-        <TextArea fieldName="enquiryDetail" validation={required} />
-      </div>
-    </div>
+        <TextArea
+          fieldName="enquiryDetail"
+          validation={required}
+          error={error}
+        />
+      </TextAreaContainer>
+    </FormSection>
   );
 };
 

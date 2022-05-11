@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NameEntry renders as expected 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -23,13 +21,11 @@ exports[`NameEntry renders as expected 1`] = `
     label="Last Name"
     validation={[Function]}
   />
-</div>
+</FormSection>
 `;
 
 exports[`NameEntry renders with an error 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -48,5 +44,5 @@ exports[`NameEntry renders with an error 1`] = `
     label="Last Name"
     validation={[Function]}
   />
-</div>
+</FormSection>
 `;

@@ -1,5 +1,7 @@
-import FormWizard from "./FormWizard";
+import { useState } from "react";
 import { Field } from "react-final-form";
+
+import FormWizard from "./FormWizard";
 
 import { render, screen, fireEvent } from "@testing-library/react";
 
@@ -17,16 +19,25 @@ const Page1WithField = () => (
 
 const mockSubmit = jest.fn();
 
-const renderForm = (goToPage) => {
-  render(
-    <FormWizard onSubmit={mockSubmit} goToPage={goToPage}>
-      <Page1 />
-      <Page2 />
-      <Page3 />
-      <Page4 />
-      <Page5 />
-    </FormWizard>
-  );
+const renderForm = (goToPageParam = null) => {
+  const FormWizardWrapper = () => {
+    const [goToPage, setGoToPage] = useState(goToPageParam);
+
+    return (
+      <FormWizard
+        onSubmit={mockSubmit}
+        goToPage={goToPage}
+        setGoToPage={setGoToPage}
+      >
+        <Page1 />
+        <Page2 />
+        <Page3 />
+        <Page4 />
+        <Page5 />
+      </FormWizard>
+    );
+  };
+  render(<FormWizardWrapper />);
 };
 
 describe("FormWizard", () => {
@@ -169,6 +180,32 @@ describe("FormWizard", () => {
       expect(screen.queryByText("Page 3")).toBeNull();
       expect(screen.queryByText("Page 4")).toBeNull();
       expect(screen.queryByText("Page 5")).not.toBeNull();
+    }
+  );
+
+  it(
+    "if 'go to' page is set and I click previous, once on previous page " +
+      "if I click continue it will just go to next page",
+    () => {
+      renderForm(2);
+
+      const backButton = screen.getByText("< Back");
+      fireEvent.click(backButton);
+
+      expect(screen.queryByText("Page 1")).toBeNull();
+      expect(screen.queryByText("Page 2")).not.toBeNull();
+      expect(screen.queryByText("Page 3")).toBeNull();
+      expect(screen.queryByText("Page 4")).toBeNull();
+      expect(screen.queryByText("Page 5")).toBeNull();
+
+      const continueButton = screen.getByText("Continue");
+      fireEvent.click(continueButton);
+
+      expect(screen.queryByText("Page 1")).toBeNull();
+      expect(screen.queryByText("Page 2")).toBeNull();
+      expect(screen.queryByText("Page 3")).not.toBeNull();
+      expect(screen.queryByText("Page 4")).toBeNull();
+      expect(screen.queryByText("Page 5")).toBeNull();
     }
   );
 });

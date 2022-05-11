@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContact - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="Are you someone we can contact in the case of an emergency?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`EmergencyContact - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="Do you have someone we can contact in the case of an emergency?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`EmergencyContact - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="Do you have someone we can contact in the case of an emergency?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="emergencyContact"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

@@ -2,6 +2,8 @@ import { useState, useEffect, Children } from "react";
 import PropTypes from "prop-types";
 import { Form } from "react-final-form";
 
+import ButtonLink from "./ButtonLink";
+
 const FormWizard = ({
   initialValues,
   children,
@@ -9,6 +11,7 @@ const FormWizard = ({
   goToPage,
   setGoToPage,
 }) => {
+  const filteredChildren = children.filter((child) => child !== undefined);
   const [page, setPage] = useState(0);
   const [values, setValues] = useState(initialValues);
 
@@ -20,15 +23,18 @@ const FormWizard = ({
 
   const next = (values) => {
     if (goToPage) {
-      setPage(children.length - 1);
+      setPage(filteredChildren.length - 1);
       setGoToPage(null);
     } else {
-      setPage(Math.min(page + 1, children.length - 1));
+      setPage(Math.min(page + 1, filteredChildren.length - 1));
     }
     setValues(values);
   };
 
   const previous = (e) => {
+    if (goToPage) {
+      setGoToPage(null);
+    }
     e.target.blur();
     setPage(Math.max(page - 1, 0));
   };
@@ -41,7 +47,7 @@ const FormWizard = ({
   };
 
   const handleSubmit = (values) => {
-    const isLastPage = page === Children.count(children) - 1;
+    const isLastPage = page === Children.count(filteredChildren) - 1;
     if (isLastPage) {
       return onSubmit(values);
     } else {
@@ -49,22 +55,14 @@ const FormWizard = ({
     }
   };
 
-  const activePage = Children.toArray(children)[page];
-  const isLastPage = page === Children.count(children) - 1;
+  const activePage = Children.toArray(filteredChildren)[page];
+  const isLastPage = page === Children.count(filteredChildren) - 1;
 
   return (
     <>
       <div className="wmrards-col-1 wmrards-col-md-2-3">
         <div className="wmrards-col-1 wmrards-m-b-md">
-          {page > 0 && (
-            <button
-              type="button"
-              onClick={previous}
-              className="wmrards-btn wmrards-btn--link"
-            >
-              {`< Back`}
-            </button>
-          )}
+          {page > 0 && <ButtonLink callback={previous}>{`< Back`}</ButtonLink>}
         </div>
       </div>
       <div className="wmrards-p-lg wmrards-bg-white">
@@ -72,6 +70,15 @@ const FormWizard = ({
           initialValues={values}
           onSubmit={handleSubmit}
           validate={validate}
+          mutators={{
+            setFormAttribute: (
+              [fieldName, fieldVal],
+              state,
+              { changeValue }
+            ) => {
+              changeValue(state, fieldName, () => fieldVal);
+            },
+          }}
         >
           {({ handleSubmit, submitting, values }) => (
             <form onSubmit={handleSubmit}>

@@ -32,4 +32,19 @@ describe("TextInput", () => {
     expect(screen.getByText("Text Input Label")).toBeDefined();
     expect(screen.getByText("Error occurred")).toBeDefined();
   });
+
+  it("sets default value if present on first render", () => {
+    render(
+      <FormWrapper>
+        <TextInput
+          fieldName="text-input"
+          label="Text Input Label"
+          defaultValue="DEFAULT VALUE"
+        />
+      </FormWrapper>
+    );
+
+    const textInput = screen.getByRole("textbox");
+    expect(textInput.getAttribute("value")).toEqual("DEFAULT VALUE");
+  });
 });

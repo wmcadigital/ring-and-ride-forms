@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactPreferenceEntry renders ContactPreferenceEntry (all values) 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -11,69 +9,59 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry (all values) 1`] 
   <Question
     text="How would you like to be contacted?"
   />
-  <div
-    className="wmrards-fe-group"
+  <CheckboxContainer
+    description="We'll use this to get in touch about your enquiry."
+    error={null}
   >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="emailContact"
+      label="Email"
+    />
     <div
-      className="wmrards-fe-checkboxes null"
+      className="wmrards-m-l-xl wmrards-p-l-sm"
     >
-      <div
-        className="wmrards-fe-checkboxes__desc"
-      >
-        We'll use this to get in touch about your enquiry.
-      </div>
-      <FieldError
-        text={null}
+      <TextInput
+        error={null}
+        fieldName="emailAddress"
+        label={
+          <React.Fragment>
+            Email address
+            <p>
+              For example, name@example.com
+            </p>
+          </React.Fragment>
+        }
       />
-      <Checkbox
-        fieldName="emailContact"
-        label="Email"
-      />
-      <div
-        className="wmrards-m-l-xl wmrards-p-l-sm"
-      >
-        <TextInput
-          error={null}
-          fieldName="emailAddress"
-          label={
-            <React.Fragment>
-              Email address
-              <p>
-                For example, name@example.com
-              </p>
-            </React.Fragment>
-          }
-        />
-      </div>
-      <Checkbox
-        fieldName="phoneContact"
-        label="Phone"
-      />
-      <div
-        className="wmrards-m-l-xl wmrards-p-l-sm"
-      >
-        <TextInput
-          error={null}
-          fieldName="phoneNo"
-          label={
-            <React.Fragment>
-              Phone number
-              <p>
-                For example, 07700900457
-              </p>
-            </React.Fragment>
-          }
-        />
-      </div>
     </div>
-  </div>
-</div>
+    <Checkbox
+      fieldName="phoneContact"
+      label="Phone"
+    />
+    <div
+      className="wmrards-m-l-xl wmrards-p-l-sm"
+    >
+      <TextInput
+        error={null}
+        fieldName="phoneNo"
+        label={
+          <React.Fragment>
+            Phone number
+            <p>
+              For example, 07700900457
+            </p>
+          </React.Fragment>
+        }
+      />
+    </div>
+  </CheckboxContainer>
+</FormSection>
 `;
 
 exports[`ContactPreferenceEntry renders ContactPreferenceEntry (no values) 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -81,37 +69,27 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry (no values) 1`] =
   <Question
     text="How would you like to be contacted?"
   />
-  <div
-    className="wmrards-fe-group"
+  <CheckboxContainer
+    description="We'll use this to get in touch about your enquiry."
+    error={null}
   >
-    <div
-      className="wmrards-fe-checkboxes null"
-    >
-      <div
-        className="wmrards-fe-checkboxes__desc"
-      >
-        We'll use this to get in touch about your enquiry.
-      </div>
-      <FieldError
-        text={null}
-      />
-      <Checkbox
-        fieldName="emailContact"
-        label="Email"
-      />
-      <Checkbox
-        fieldName="phoneContact"
-        label="Phone"
-      />
-    </div>
-  </div>
-</div>
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="emailContact"
+      label="Email"
+    />
+    <Checkbox
+      fieldName="phoneContact"
+      label="Phone"
+    />
+  </CheckboxContainer>
+</FormSection>
 `;
 
 exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if present (all values) 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -119,68 +97,57 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if pre
   <Question
     text="How would you like to be contacted?"
   />
-  <div
-    className="wmrards-fe-group"
+  <CheckboxContainer
+    description="We'll use this to get in touch about your enquiry."
   >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="emailContact"
+      label="Email"
+    />
     <div
-      className="wmrards-fe-checkboxes undefined"
+      className="wmrards-m-l-xl wmrards-p-l-sm"
     >
-      <div
-        className="wmrards-fe-checkboxes__desc"
-      >
-        We'll use this to get in touch about your enquiry.
-      </div>
-      <FieldError
-        text={null}
+      <TextInput
+        fieldName="emailAddress"
+        label={
+          <React.Fragment>
+            Email address
+            <p>
+              For example, name@example.com
+            </p>
+          </React.Fragment>
+        }
       />
-      <Checkbox
-        fieldName="emailContact"
-        label="Email"
-      />
-      <div
-        className="wmrards-m-l-xl wmrards-p-l-sm"
-      >
-        <TextInput
-          fieldName="emailAddress"
-          label={
-            <React.Fragment>
-              Email address
-              <p>
-                For example, name@example.com
-              </p>
-            </React.Fragment>
-          }
-        />
-      </div>
-      <Checkbox
-        fieldName="phoneContact"
-        label="Phone"
-      />
-      <div
-        className="wmrards-m-l-xl wmrards-p-l-sm"
-      >
-        <TextInput
-          error="Invalid"
-          fieldName="phoneNo"
-          label={
-            <React.Fragment>
-              Phone number
-              <p>
-                For example, 07700900457
-              </p>
-            </React.Fragment>
-          }
-        />
-      </div>
     </div>
-  </div>
-</div>
+    <Checkbox
+      fieldName="phoneContact"
+      label="Phone"
+    />
+    <div
+      className="wmrards-m-l-xl wmrards-p-l-sm"
+    >
+      <TextInput
+        error="Invalid"
+        fieldName="phoneNo"
+        label={
+          <React.Fragment>
+            Phone number
+            <p>
+              For example, 07700900457
+            </p>
+          </React.Fragment>
+        }
+      />
+    </div>
+  </CheckboxContainer>
+</FormSection>
 `;
 
 exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if present (no values) 1`] = `
-<div
-  className="wmrards-fe-group wmrards-m-t-20"
->
+<FormSection>
   <ProgressIndicator
     sectionName="About you"
     sectionPosition="Section 2 of 2"
@@ -188,29 +155,21 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if pre
   <Question
     text="How would you like to be contacted?"
   />
-  <div
-    className="wmrards-fe-group"
+  <CheckboxContainer
+    description="We'll use this to get in touch about your enquiry."
+    error="Required"
   >
-    <div
-      className="wmrards-fe-checkboxes wmrards-fe-group--error"
-    >
-      <div
-        className="wmrards-fe-checkboxes__desc"
-      >
-        We'll use this to get in touch about your enquiry.
-      </div>
-      <FieldError
-        text="Required"
-      />
-      <Checkbox
-        fieldName="emailContact"
-        label="Email"
-      />
-      <Checkbox
-        fieldName="phoneContact"
-        label="Phone"
-      />
-    </div>
-  </div>
-</div>
+    <FieldError
+      text="Required"
+    />
+    <Checkbox
+      fieldName="emailContact"
+      label="Email"
+    />
+    <Checkbox
+      fieldName="phoneContact"
+      label="Phone"
+    />
+  </CheckboxContainer>
+</FormSection>
 `;

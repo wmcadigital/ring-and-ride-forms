@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationIndividual - snapshots renders as expected with no value selected 1`] = `
+<FormSection>
+  <Question
+    text="Are you registering for yourself?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`RegistrationIndividual - snapshots renders as expected with value selected 1`] = `
+<FormSection>
+  <Question
+    text="Are you registering for yourself?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`RegistrationIndividual - snapshots renders with an error 1`] = `
+<FormSection>
+  <Question
+    text="Are you registering for yourself?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="Yes"
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="registerForYourself"
+      label="No"
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

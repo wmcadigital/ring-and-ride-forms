@@ -3,8 +3,19 @@ import PropTypes from "prop-types";
 
 import FieldError from "./FieldError";
 
-const TextInput = ({ fieldName, label, validation, error }) => (
-  <div className={`wmrards-fe-group ${error && "wmrards-fe-group--error"}`}>
+const TextInput = ({
+  fieldName,
+  label,
+  validation,
+  error,
+  containerClass,
+  defaultValue,
+}) => (
+  <div
+    className={`wmrards-fe-group ${error && "wmrards-fe-group--error"} ${
+      containerClass && containerClass
+    }`}
+  >
     <label className="wmrards-fe-label" htmlFor={fieldName}>
       {label}
     </label>
@@ -15,6 +26,7 @@ const TextInput = ({ fieldName, label, validation, error }) => (
       component="input"
       type="text"
       className="wmrards-fe-input"
+      defaultValue={defaultValue}
     />
   </div>
 );
@@ -24,6 +36,8 @@ TextInput.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   validation: PropTypes.func,
   error: PropTypes.string,
+  containerClass: PropTypes.string,
+  defaultValue: PropTypes.string,
 };
 
 export default TextInput;

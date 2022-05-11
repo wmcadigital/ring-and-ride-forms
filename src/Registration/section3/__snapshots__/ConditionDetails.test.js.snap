@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConditionDetails - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <TextAreaContainer>
+    <Question
+      text="Please describe the conditions(s)"
+    />
+    <TextArea
+      error={null}
+      fieldName="conditionDetail"
+      label="Details of Test's condition(s)"
+      rows={8}
+      validation={[Function]}
+    />
+  </TextAreaContainer>
+</FormSection>
+`;
+
+exports[`ConditionDetails - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <TextAreaContainer>
+    <Question
+      text="Please describe the conditions(s)"
+    />
+    <TextArea
+      error={null}
+      fieldName="conditionDetail"
+      label="Details of your condition(s)"
+      rows={8}
+      validation={[Function]}
+    />
+  </TextAreaContainer>
+</FormSection>
+`;
+
+exports[`ConditionDetails - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <TextAreaContainer>
+    <Question
+      text="Please describe the conditions(s)"
+    />
+    <TextArea
+      error="Required"
+      fieldName="conditionDetail"
+      label="Details of your condition(s)"
+      rows={8}
+      validation={[Function]}
+    />
+  </TextAreaContainer>
+</FormSection>
+`;

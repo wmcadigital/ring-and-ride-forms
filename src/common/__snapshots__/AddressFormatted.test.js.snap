@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testAddress formats an address for display 1`] = `
+<React.Fragment>
+  <div>
+    20 Test St
+  </div>
+  <div>
+    Birmingham
+  </div>
+  <div>
+    West Midlands
+  </div>
+  <div>
+    B17 7UJ
+  </div>
+</React.Fragment>
+`;
+
+exports[`testAddress formats an address for display with address line 2 1`] = `
+<React.Fragment>
+  <div>
+    20 Test St
+  </div>
+  <div>
+    additional line
+  </div>
+  <div>
+    Birmingham
+  </div>
+  <div>
+    West Midlands
+  </div>
+  <div>
+    B17 7UJ
+  </div>
+</React.Fragment>
+`;

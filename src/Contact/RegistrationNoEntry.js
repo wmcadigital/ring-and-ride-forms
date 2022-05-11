@@ -1,5 +1,6 @@
 import { useFormState } from "react-final-form";
 
+import FormSection from "../common/FormSection";
 import TextInput from "../common/TextInput";
 import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
@@ -11,7 +12,7 @@ const RegistrationNoEntry = () => {
   const error = stateApi.submitFailed ? stateApi.errors?.registrationNo : null;
 
   return (
-    <div className="wmrards-fe-group wmrards-m-t-20">
+    <FormSection>
       <ProgressIndicator
         sectionPosition="Section 2 of 2"
         sectionName="About you"
@@ -29,7 +30,7 @@ const RegistrationNoEntry = () => {
         validation={numbersOnly}
         error={error}
       />
-    </div>
+    </FormSection>
   );
 };
 

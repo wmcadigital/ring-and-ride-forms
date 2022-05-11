@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StandardBusReasons individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Which of the following best describes the reason for this?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusReason.companionOrCarer"
+      label="They cannot travel without a companion or carer"
+    />
+    <Checkbox
+      fieldName="standardBusReason.limitedMobility"
+      label="They have limited mobility"
+    />
+    <Checkbox
+      fieldName="standardBusReason.longJourney"
+      label="The journey takes too long"
+    />
+    <Checkbox
+      fieldName="standardBusReason.notUnderstandService"
+      label="They don't understand how buses operate"
+    />
+    <Checkbox
+      fieldName="standardBusReason.fearAnxiety"
+      label="Fear and anxiety"
+    />
+    <Checkbox
+      fieldName="standardBusReason.cannotTravelBus"
+      label="They cannot travel on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusReason.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusReasons individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Which of the following best describes the reason for this?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusReason.companionOrCarer"
+      label="I cannot travel without a companion or carer"
+    />
+    <Checkbox
+      fieldName="standardBusReason.limitedMobility"
+      label="I have limited mobility"
+    />
+    <Checkbox
+      fieldName="standardBusReason.longJourney"
+      label="The journey takes too long"
+    />
+    <Checkbox
+      fieldName="standardBusReason.notUnderstandService"
+      label="I don't understand how buses operate"
+    />
+    <Checkbox
+      fieldName="standardBusReason.fearAnxiety"
+      label="Fear and anxiety"
+    />
+    <Checkbox
+      fieldName="standardBusReason.cannotTravelBus"
+      label="I cannot travel on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusReason.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusReasons renders with an error - other selected, no reason 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Which of the following best describes the reason for this?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer>
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusReason.companionOrCarer"
+      label="I cannot travel without a companion or carer"
+    />
+    <Checkbox
+      fieldName="standardBusReason.limitedMobility"
+      label="I have limited mobility"
+    />
+    <Checkbox
+      fieldName="standardBusReason.longJourney"
+      label="The journey takes too long"
+    />
+    <Checkbox
+      fieldName="standardBusReason.notUnderstandService"
+      label="I don't understand how buses operate"
+    />
+    <Checkbox
+      fieldName="standardBusReason.fearAnxiety"
+      label="Fear and anxiety"
+    />
+    <Checkbox
+      fieldName="standardBusReason.cannotTravelBus"
+      label="I cannot travel on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusReason.other"
+      label="Other"
+    />
+    <TextArea
+      error="Required"
+      fieldName="standardBusReason.otherReason"
+      label="Please describe the reason"
+      validation={[Function]}
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusReasons renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Which of the following best describes the reason for this?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error="Select at least 1 topic"
+  >
+    <FieldError
+      text="Select at least 1 topic"
+    />
+    <Checkbox
+      fieldName="standardBusReason.companionOrCarer"
+      label="I cannot travel without a companion or carer"
+    />
+    <Checkbox
+      fieldName="standardBusReason.limitedMobility"
+      label="I have limited mobility"
+    />
+    <Checkbox
+      fieldName="standardBusReason.longJourney"
+      label="The journey takes too long"
+    />
+    <Checkbox
+      fieldName="standardBusReason.notUnderstandService"
+      label="I don't understand how buses operate"
+    />
+    <Checkbox
+      fieldName="standardBusReason.fearAnxiety"
+      label="Fear and anxiety"
+    />
+    <Checkbox
+      fieldName="standardBusReason.cannotTravelBus"
+      label="I cannot travel on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusReason.other"
+      label="Other"
+    />
+  </CheckboxContainer>
+</FormSection>
+`;
+
+exports[`StandardBusReasons renders with an other reason text area if other reason selected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Your requirements"
+    sectionPosition="Section 3 of 3"
+  />
+  <Question
+    text="Which of the following best describes the reason for this?"
+  />
+  <p>
+    Select all that apply
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="standardBusReason.companionOrCarer"
+      label="I cannot travel without a companion or carer"
+    />
+    <Checkbox
+      fieldName="standardBusReason.limitedMobility"
+      label="I have limited mobility"
+    />
+    <Checkbox
+      fieldName="standardBusReason.longJourney"
+      label="The journey takes too long"
+    />
+    <Checkbox
+      fieldName="standardBusReason.notUnderstandService"
+      label="I don't understand how buses operate"
+    />
+    <Checkbox
+      fieldName="standardBusReason.fearAnxiety"
+      label="Fear and anxiety"
+    />
+    <Checkbox
+      fieldName="standardBusReason.cannotTravelBus"
+      label="I cannot travel on a bus"
+    />
+    <Checkbox
+      fieldName="standardBusReason.other"
+      label="Other"
+    />
+    <TextArea
+      error={null}
+      fieldName="standardBusReason.otherReason"
+      label="Please describe the reason"
+      validation={[Function]}
+    />
+  </CheckboxContainer>
+</FormSection>
+`;

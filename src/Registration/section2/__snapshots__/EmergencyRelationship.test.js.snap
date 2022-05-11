@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyRelationship individual is filling out form for someone else and is NOT the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's relationship to Zippy?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyRelationship"
+    label="For example, carer or partner."
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyRelationship individual is filling out form for someone else and is the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your relationship to Zippy?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyRelationship"
+    label="For example, carer or partner."
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyRelationship individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your relationship to Bungle?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyRelationship"
+    label="For example, carer or partner."
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyRelationship renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your relationship to Zippy?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="emergencyRelationship"
+    label="For example, carer or partner."
+    validation={[Function]}
+  />
+</FormSection>
+`;

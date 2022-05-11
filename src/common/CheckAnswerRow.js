@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ChangeButton = ({ callBack }) => (
-  <td className="wmrards-text-align-right">
+  <td className="wmrards-text-align-right" style={{ verticalAlign: "top" }}>
     <button
       type="button"
       className="wmrards-btn wmrards-btn--link"
@@ -20,7 +20,7 @@ const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
   if (label) {
     return (
       <tr>
-        <th scope="row" data-header="Header 1">
+        <th scope="row" data-header="Header 1" style={{ verticalAlign: "top" }}>
           {label}
         </th>
         <td data-header="Header 2">{value}</td>
@@ -41,7 +41,7 @@ const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
 
 CheckAnswerRow.propTypes = {
   label: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   changeValueCallback: PropTypes.func,
 };
 

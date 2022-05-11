@@ -1,4 +1,6 @@
 import { useState } from "react";
+import FormContentWrapper from "../common/FormContentWrapper";
+import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 import EnquiryTypeQuery from "./EnquiryTypeQuery";
 import EnquiryDetail from "./EnquiryDetail";
@@ -6,6 +8,7 @@ import CheckAnswers from "./CheckAnswers";
 import NameEntry from "./NameEntry";
 import RegistrationNoEntry from "./RegistrationNoEntry";
 import ContactPreferenceEntry from "./ContactPreferenceEntry";
+import Header from "../common/Header";
 import { validateContactPreferences, validateCheckAnswers } from "./validation";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -19,18 +22,27 @@ const ContactForm = () => {
   const [goToPage, setGoToPage] = useState(null);
 
   return (
-    <FormWizard
-      onSubmit={onSubmit}
-      goToPage={goToPage}
-      setGoToPage={setGoToPage}
-    >
-      <EnquiryTypeQuery />
-      <EnquiryDetail />
-      <NameEntry />
-      <RegistrationNoEntry />
-      <ContactPreferenceEntry validate={validateContactPreferences} />
-      <CheckAnswers setGoToPage={setGoToPage} validate={validateCheckAnswers} />
-    </FormWizard>
+    <>
+      <Header heading="Contact us" />
+      <FormContentWrapper>
+        <BreadCrumb currentPageName="Contact us" />
+        <FormWizard
+          onSubmit={onSubmit}
+          goToPage={goToPage}
+          setGoToPage={setGoToPage}
+        >
+          <EnquiryTypeQuery />
+          <EnquiryDetail />
+          <NameEntry />
+          <RegistrationNoEntry />
+          <ContactPreferenceEntry validate={validateContactPreferences} />
+          <CheckAnswers
+            setGoToPage={setGoToPage}
+            validate={validateCheckAnswers}
+          />
+        </FormWizard>
+      </FormContentWrapper>
+    </>
   );
 };
 

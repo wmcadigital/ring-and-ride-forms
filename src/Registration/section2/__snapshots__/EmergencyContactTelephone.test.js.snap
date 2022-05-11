@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmergencyContactTelephone individual is filling out form for someone else and is NOT the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's telephone number?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyPhoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactTelephone individual is filling out form for someone else and is the emergency contact 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Applicant's emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is your telephone number?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyPhoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactTelephone individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's telephone number?"
+  />
+  <TextInput
+    error={null}
+    fieldName="emergencyPhoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`EmergencyContactTelephone renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Emergency contact"
+    sectionPosition="Section 2 of 3"
+  />
+  <Question
+    text="What is Bungle's telephone number?"
+  />
+  <TextInput
+    error="Required"
+    fieldName="emergencyPhoneNo"
+    label={
+      <React.Fragment>
+        Phone number
+        <p>
+          For example, 07700900457
+        </p>
+      </React.Fragment>
+    }
+    validation={[Function]}
+  />
+</FormSection>
+`;
