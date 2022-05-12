@@ -1,0 +1,85 @@
+{
+  "passengers": [
+    {
+      "registrationNo": "9079070",
+      "firstName": "Ron",
+      "lastName": "Pickering"
+    },
+    {
+      "registrationNo": "9890808",
+      "firstName": "Test",
+      "lastName": "Testerson"
+    }
+  ],
+  "bookingParty": "behalfGroup",
+  "firstName": "Ron",
+  "lastName": "Pickering",
+  "emailContact": true,
+  "emailAddress": "test@testerson.com",
+  "includeInGroupBooking": "yes",
+  "registrationNo": "9079070",
+  "pendingPassengerLastName": "Testerson",
+  "pendingRegistrationNo": "9890808",
+  "bookingDateDay": "29",
+  "bookingDateMonth": "05",
+  "bookingDateYear": "2023",
+  "outwardPickup": {
+    "hour": "11",
+    "minute": "15"
+  },
+  "otherOutward": {
+    "searchPostCode": "B43 5JX",
+    "addressId": "62470478-22f7-4cf0-b5c1-b4a4fa69b469",
+    "addressLine1": "19 Green Lane",
+    "addressLine2": "Great Barr",
+    "townOrCity": "Birmingham",
+    "county": "West Midlands",
+    "postCode": "B43 5JX"
+  },
+  "outwardDestination": {
+    "searchPostCode": "B19 3SD",
+    "addressId": "7e667e5e-1d75-4b07-92e2-9e8296f5de29",
+    "addressLine1": "West Midlands Combined Authority",
+    "addressLine2": "16 Summer Lane",
+    "townOrCity": "Birmingham",
+    "county": "West Midlands",
+    "postCode": "B19 3SD"
+  },
+  "returnJourney": "yes",
+  "otherInformation": "yes",
+  "otherInformationDetails": "Extra time needed for boarding.",
+  "returnPickup": {
+    "hour": "18",
+    "minute": "15"
+  },
+  "returnCollectionAddress": "sameAsOutwardDestinationAddress",
+  "otherReturn": {
+    "searchPostCode": "B31 2FJ",
+    "addressId": "dbd4e6a2-01c7-442c-bd8c-aca6aabaf956",
+    "addressLine1": "11 Griffin Close",
+    "addressLine2": "Northfield",
+    "townOrCity": "Birmingham",
+    "county": "West Midlands",
+    "postCode": "B31 2FJ"
+  },
+  "returnDestinationAddress": "sameAsOutwardCollectionAddress",
+  "groupSameAsOutward": "no",
+  "returnPassengers": [
+    {
+      "registrationNo": "9079070",
+      "firstName": "Ron",
+      "lastName": "Pickering"
+    },
+    {
+      "registrationNo": "9890808",
+      "firstName": "Test",
+      "lastName": "Testerson"
+    },
+    {
+      "registrationNo": "",
+      "firstName": "Doctor",
+      "lastName": "Test"
+    }
+  ],
+  "pendingPassengerFirstName": "Test"
+}

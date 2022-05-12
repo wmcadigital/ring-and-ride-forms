@@ -5,10 +5,16 @@ import {
   email,
   name,
   composeValidators,
+  composeFormValidators,
   validateDate,
   validateDateOfBirth,
   postCode,
   validateSelectOneOption,
+  validateContactPreferences,
+  validateTimeInput,
+  numberGreaterThanZero,
+  addressIdPresent,
+  validateCheckAnswers,
 } from "./validation";
 
 describe("validation", () => {
@@ -126,6 +132,34 @@ describe("validation", () => {
     });
   });
 
+  describe("composeFormValidators", () => {
+    const validationFn = composeFormValidators(
+      validateContactPreferences,
+      validateTimeInput("test")
+    );
+
+    it("composed validator should return 'Required' for address Id if no form values", () => {
+      expect(validationFn({})).toEqual({ contactPreference: "Required" });
+    });
+
+    it("composed validator should return 'Required' for time Inputs", () => {
+      expect(validationFn({ phoneContact: true, phoneNo: "123454" })).toEqual({
+        phoneNo: undefined,
+        "test.timeInput": "Required",
+      });
+    });
+
+    it("composed validator should return no error values if form values are all valid", () => {
+      expect(
+        validationFn({
+          phoneContact: true,
+          phoneNo: "123454",
+          test: { hour: "10", minute: "15" },
+        })
+      ).toEqual({ phoneNo: undefined });
+    });
+  });
+
   describe("validateDate", () => {
     it("cannot have non numbers in the date", () => {
       expect(validateDate("a3", "11", "2022")).toEqual("Invalid");
@@ -238,6 +272,139 @@ describe("validation", () => {
       };
 
       expect(validateContactPreference(contactPrefs)).toEqual({});
+    });
+  });
+
+  describe("validateContactPreferences", () => {
+    it("if nothing provided should return 'Required' for 'contactPreference'", () => {
+      expect(validateContactPreferences({})).toEqual({
+        contactPreference: "Required",
+      });
+    });
+
+    it("if email preference is checked and no email should return 'Required' for 'emailAddress'", () => {
+      expect(validateContactPreferences({ emailContact: true })).toEqual({
+        emailAddress: "Required",
+      });
+    });
+
+    it("if email preference is checked and invalid email should return 'Invalid' for 'emailAddress'", () => {
+      expect(
+        validateContactPreferences({
+          emailContact: true,
+          emailAddress: "invalidEmail",
+        })
+      ).toEqual({
+        emailAddress: "Invalid",
+      });
+    });
+
+    it("if email preference is checked and valid email should return undefined for 'emailAddress'", () => {
+      expect(
+        validateContactPreferences({
+          emailContact: true,
+          emailAddress: "valid@test.com",
+        })
+      ).toEqual({ emailAddress: undefined });
+    });
+
+    it("if phone preference is checked and no phone no. should return 'Required' for 'phoneNo'", () => {
+      expect(validateContactPreferences({ phoneContact: true })).toEqual({
+        phoneNo: "Required",
+      });
+    });
+
+    it("if phone preference is checked and invalid phone no should return 'Invalid' for 'phoneNo'", () => {
+      expect(
+        validateContactPreferences({
+          phoneContact: true,
+          phoneNo: "657676DFT",
+        })
+      ).toEqual({
+        phoneNo: "Invalid",
+      });
+    });
+
+    it("if phone preference is checked and valid phone no should return undefined for 'phoneNo'", () => {
+      expect(
+        validateContactPreferences({
+          phoneContact: true,
+          phoneNo: "0121 200 2787",
+        })
+      ).toEqual({ phoneNo: undefined });
+    });
+  });
+
+  describe("validateTimeInput", () => {
+    it("if no time fields are filled in then return required validation error", () => {
+      expect(validateTimeInput("test")({})).toEqual({
+        "test.timeInput": "Required",
+      });
+    });
+
+    it("if only one time field is filled in then return required validation error", () => {
+      expect(validateTimeInput("test")({ test: { hour: "10" } })).toEqual({
+        "test.timeInput": "Required",
+      });
+    });
+
+    it("if both time fields are filled in then return an empty object", () => {
+      expect(
+        validateTimeInput("test")({ test: { hour: "10", minute: "15" } })
+      ).toEqual({});
+    });
+  });
+
+  describe("numberGreaterThanZero", () => {
+    it("number is zero return 'Invalid'", () => {
+      expect(numberGreaterThanZero(0)).toEqual("Invalid");
+    });
+
+    it("number is less than zero return 'Invalid'", () => {
+      expect(numberGreaterThanZero(-10)).toEqual("Invalid");
+    });
+
+    it("number is greater than zero return undefined", () => {
+      expect(numberGreaterThanZero(10)).toBe(undefined);
+    });
+  });
+
+  describe("addressIdPresent", () => {
+    it("indicates required in errors if not there", () => {
+      expect(addressIdPresent("test")()).toEqual({
+        test: {
+          addressId: "Required",
+        },
+      });
+    });
+
+    it("returns an empty error object for prefix if present", () => {
+      expect(
+        addressIdPresent("test")({ test: { addressId: "12345" } })
+      ).toEqual({
+        test: {},
+      });
+    });
+  });
+
+  describe("validateCheckAnswers", () => {
+    it("no checkboxes checked then return 'Required' for 'legal'", () => {
+      expect(validateCheckAnswers({})).toEqual({ legal: "Required" });
+    });
+
+    it("only one checkbox checked then return 'Required' for 'legal'", () => {
+      expect(validateCheckAnswers({ agreeTermsAndConditions: true })).toEqual({
+        legal: "Required",
+      });
+    });
+
+    it("both checkboxes checked then return undefined for 'legal'", () => {
+      expect(
+        validateCheckAnswers({
+          agreeTermsAndConditions: true,
+          agreePrivacyPolicy: true,
+        })
+      ).toEqual({ legal: undefined });
     });
   });
 });

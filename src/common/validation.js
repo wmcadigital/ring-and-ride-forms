@@ -36,6 +36,15 @@ export const composeValidators =
       undefined
     );
 
+export const composeFormValidators =
+  (...validators) =>
+  (value) =>
+    validators.reduce(
+      (error, validator) =>
+        Object.values(error).some((error) => error) ? error : validator(value),
+      {}
+    );
+
 export const validateDate = (day, month, year) => {
   if (numbersOnly(day) || numbersOnly(month) || numbersOnly(year)) {
     return "Invalid";
@@ -102,3 +111,52 @@ export const validateSelectOneOption =
     }
     return errors;
   };
+
+export const validateContactPreferences = (values) => {
+  const errors = {};
+  if (!values.emailContact && !values.phoneContact) {
+    errors.contactPreference = "Required";
+  }
+  if (values.emailContact && !values.emailAddress) {
+    errors.emailAddress = "Required";
+  }
+  if (values.phoneContact && !values.phoneNo) {
+    errors.phoneNo = "Required";
+  }
+  if (values.emailContact && values.emailAddress) {
+    errors.emailAddress = email(values.emailAddress);
+  }
+  if (values.phoneContact && values.phoneNo) {
+    errors.phoneNo = numbersAndSpacesOnly(values.phoneNo);
+  }
+  return errors;
+};
+
+export const validateTimeInput = (prefix) => (values) => {
+  const errors = {};
+  if (!values[prefix]?.hour || !values[prefix].minute) {
+    errors[`${prefix}.timeInput`] = "Required";
+  }
+  return errors;
+};
+
+export const numberGreaterThanZero = (value) =>
+  value <= 0 ? "Invalid" : undefined;
+
+export const addressIdPresent =
+  (prefix) =>
+  (values = {}) => {
+    const errors = { [prefix]: {} };
+    if (!values[prefix]?.addressId) {
+      errors[prefix].addressId = "Required";
+    }
+    return errors;
+  };
+
+export const validateCheckAnswers = (values) => {
+  const errors = {};
+  if (!values.agreeTermsAndConditions || !values.agreePrivacyPolicy) {
+    errors.legal = "Required";
+  }
+  return errors;
+};

@@ -34,8 +34,11 @@ import AdditionalRequirements from "./section3/AdditionalRequirements";
 import CheckAnswers from "./CheckAnswers";
 import { validateCheckAnswers } from "./validation";
 
-import { validateSelectOneOption } from "../common/validation";
-import { validateDateOfBirth, addressIdPresent } from "./validation";
+import {
+  validateSelectOneOption,
+  addressIdPresent,
+} from "../common/validation";
+import { validateDateOfBirth } from "./validation";
 
 const RegistrationForm = () => {
   const location = useLocation();
@@ -49,13 +52,14 @@ const RegistrationForm = () => {
   const [mobilityAids, setMobilityAids] = useState(null);
 
   const [goToPage, setGoToPage] = useState(null);
+  const [externalPage, setExternalPage] = useState(null);
 
   const showEmergencyContact =
     emergencyContact === "yes" ||
     (registerForYourself === "no" && emergencyContactAnother === "yes");
 
   useEffect(() => {
-    setGoToPage(location?.state?.orderNo);
+    setExternalPage(location?.state?.orderNo);
   }, [location?.state?.orderNo]);
 
   return (
@@ -68,6 +72,8 @@ const RegistrationForm = () => {
           initialValues={location?.state?.formValues}
           goToPage={goToPage}
           setGoToPage={setGoToPage}
+          externalPage={externalPage}
+          setExternalPage={setExternalPage}
         >
           <RegistrationIndividual
             setRegisterForYourself={setRegisterForYourself}

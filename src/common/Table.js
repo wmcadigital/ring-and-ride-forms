@@ -2,9 +2,7 @@ import PropTypes from "prop-types";
 
 const Table = ({ children }) => (
   <table className="wmrards-table wmrards-m-b-xl wmrards-table--without-header">
-    <tbody>
-      {children}
-    </tbody>
+    <tbody>{children}</tbody>
   </table>
 );
 

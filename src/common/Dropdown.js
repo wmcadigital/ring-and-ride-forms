@@ -3,10 +3,20 @@ import { Field } from "react-final-form";
 
 import FieldError from "./FieldError";
 
-const Dropdown = ({ fieldName, label, prompt, options, validation, error }) => {
+const Dropdown = ({
+  fieldName,
+  label,
+  prompt,
+  options,
+  validation,
+  error,
+  customClass,
+}) => {
   return (
     <div
-      className={`wmrards-fe-group ${error ? "wmrards-fe-group--error" : null}`}
+      className={`wmrards-fe-group ${
+        error ? "wmrards-fe-group--error" : null
+      } ${customClass ? customClass : null}`}
     >
       <div className="wmrards-fe-dropdown">
         <FieldError text={error} />
@@ -22,7 +32,7 @@ const Dropdown = ({ fieldName, label, prompt, options, validation, error }) => {
               className="wmrards-fe-dropdown__select "
               id="dropdown"
             >
-              <option value="">{prompt}</option>
+              {prompt ? <option value="">{prompt}</option> : null}
               {options.map(({ value, label }) => (
                 <option key={value} value={value}>
                   {label}
@@ -43,15 +53,16 @@ Dropdown.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string,
-      label: PropTypes.string,
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     })
   ),
   validation: PropTypes.func,
   error: PropTypes.string,
+  customClass: PropTypes.string,
 };
 
 Dropdown.defaultProps = {
-  prompt: "Choose from list",
+  prompt: "",
   options: [],
 };
 

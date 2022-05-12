@@ -18,12 +18,14 @@ exports[`WheelChairTransfer individual is filling out form for someone else - po
     <RadioButton
       fieldName="wheelChairTransfer"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="wheelChairTransfer"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -49,12 +51,14 @@ exports[`WheelChairTransfer individual is filling out form for themselves - manu
     <RadioButton
       fieldName="wheelChairTransfer"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="wheelChairTransfer"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -80,12 +84,14 @@ exports[`WheelChairTransfer renders with an error 1`] = `
     <RadioButton
       fieldName="wheelChairTransfer"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="wheelChairTransfer"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />

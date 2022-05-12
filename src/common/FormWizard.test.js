@@ -19,15 +19,18 @@ const Page1WithField = () => (
 
 const mockSubmit = jest.fn();
 
-const renderForm = (goToPageParam = null) => {
+const renderForm = (goToPageParam = null, externalPageParam = null) => {
   const FormWizardWrapper = () => {
     const [goToPage, setGoToPage] = useState(goToPageParam);
+    const [externalPage, setGoToExternalPage] = useState(externalPageParam);
 
     return (
       <FormWizard
         onSubmit={mockSubmit}
         goToPage={goToPage}
         setGoToPage={setGoToPage}
+        externalPage={externalPage}
+        setGoToExternalPage={setGoToExternalPage}
       >
         <Page1 />
         <Page2 />
@@ -208,4 +211,53 @@ describe("FormWizard", () => {
       expect(screen.queryByText("Page 5")).toBeNull();
     }
   );
+
+  it("hides continue button if prop passed in to indicate this", () => {
+    render(
+      <FormWizard onSubmit={() => {}}>
+        <Page1 hideSubmit />
+        <Page2 />
+      </FormWizard>
+    );
+
+    expect(screen.queryAllByText("Continue").length).toBe(0);
+  });
+
+  it("if 'external' page set then that page will be rendered", () => {
+    renderForm(null, 3);
+
+    expect(screen.queryByText("< Back")).not.toBeNull();
+
+    expect(screen.queryByText("Page 1")).toBeNull();
+    expect(screen.queryByText("Page 2")).toBeNull();
+    expect(screen.queryByText("Page 3")).toBeNull();
+    expect(screen.queryByText("Page 4")).not.toBeNull();
+    expect(screen.queryByText("Page 5")).toBeNull();
+  });
+
+  it("if 'external' page set then when click continue on current page it will go to next page ", () => {
+    renderForm(null, 2);
+
+    const continueButton = screen.getByText("Continue");
+    fireEvent.click(continueButton);
+
+    expect(screen.queryByText("Page 1")).toBeNull();
+    expect(screen.queryByText("Page 2")).toBeNull();
+    expect(screen.queryByText("Page 3")).toBeNull();
+    expect(screen.queryByText("Page 4")).not.toBeNull();
+    expect(screen.queryByText("Page 5")).toBeNull();
+  });
+
+  it("if 'external' page set then when click back on current page it will go to previous page ", () => {
+    renderForm(null, 2);
+
+    const backButton = screen.getByText("< Back");
+    fireEvent.click(backButton);
+
+    expect(screen.queryByText("Page 1")).toBeNull();
+    expect(screen.queryByText("Page 2")).not.toBeNull();
+    expect(screen.queryByText("Page 3")).toBeNull();
+    expect(screen.queryByText("Page 4")).toBeNull();
+    expect(screen.queryByText("Page 5")).toBeNull();
+  });
 });

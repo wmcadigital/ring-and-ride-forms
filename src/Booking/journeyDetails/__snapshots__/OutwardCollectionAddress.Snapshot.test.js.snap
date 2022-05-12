@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutwardCollectionAddress - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="Where is John being collected from?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="Their registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="registered"
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OutwardCollectionAddress - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="Where are you being collected from?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="My registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="registered"
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OutwardCollectionAddress - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="Where are you being collected from?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="My registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="registered"
+    />
+    <RadioButton
+      fieldName="outwardCollectionAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;

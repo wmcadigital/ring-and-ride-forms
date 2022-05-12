@@ -6,11 +6,9 @@ describe("Table", () => {
   it("wraps children that are passed in", () => {
     render(
       <Table>
-        <tbody>
-          <tr>
-            <td>Test Table Cell</td>
-          </tr>
-        </tbody>
+        <tr>
+          <td>Test Table Cell</td>
+        </tr>
       </Table>
     );
 

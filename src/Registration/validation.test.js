@@ -1,8 +1,4 @@
-import {
-  validateDateOfBirth,
-  addressIdPresent,
-  validateCheckAnswers,
-} from "./validation";
+import { validateDateOfBirth, validateCheckAnswers } from "./validation";
 
 describe("validation", () => {
   describe("validateDateOfBirth", () => {
@@ -28,23 +24,6 @@ describe("validation", () => {
       expect(
         validateDateOfBirth({ bdayDay: "1", bdayMonth: "2", bdayYear: "2022" })
       ).toEqual({});
-    });
-  });
-  describe("addressIdPresent", () => {
-    it("indicates required in errors if not there", () => {
-      expect(addressIdPresent("test")()).toEqual({
-        test: {
-          addressId: "Required",
-        },
-      });
-    });
-
-    it("returns an empty error object for prefix if present", () => {
-      expect(
-        addressIdPresent("test")({ test: { addressId: "12345" } })
-      ).toEqual({
-        test: {},
-      });
     });
   });
 

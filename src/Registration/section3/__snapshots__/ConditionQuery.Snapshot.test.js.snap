@@ -18,12 +18,14 @@ exports[`ConditionQuery - snapshots individual is filling out form for someone e
     <RadioButton
       fieldName="hasCondition"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="hasCondition"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -49,12 +51,14 @@ exports[`ConditionQuery - snapshots individual is filling out form for themselve
     <RadioButton
       fieldName="hasCondition"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="hasCondition"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -80,12 +84,14 @@ exports[`ConditionQuery - snapshots renders with an error 1`] = `
     <RadioButton
       fieldName="hasCondition"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="hasCondition"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />

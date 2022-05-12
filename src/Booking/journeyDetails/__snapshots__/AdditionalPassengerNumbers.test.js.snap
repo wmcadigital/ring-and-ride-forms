@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalPassengerNumbers - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="How many people are joining John on the journey?"
+  />
+  <NumberInput
+    decreaseNumberCallback={[Function]}
+    defaultValue={1}
+    error={null}
+    fieldName="additionalPassengerNumbers"
+    increaseNumberCallback={[Function]}
+    label="Number of people joining them on the journey"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`AdditionalPassengerNumbers - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="How many people are joining you on the journey?"
+  />
+  <NumberInput
+    decreaseNumberCallback={[Function]}
+    defaultValue={1}
+    error={null}
+    fieldName="additionalPassengerNumbers"
+    increaseNumberCallback={[Function]}
+    label="Number of people joining you on the journey"
+    validation={[Function]}
+  />
+</FormSection>
+`;
+
+exports[`AdditionalPassengerNumbers - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="How many people are joining you on the journey?"
+  />
+  <NumberInput
+    decreaseNumberCallback={[Function]}
+    defaultValue={1}
+    error="Invalid"
+    fieldName="additionalPassengerNumbers"
+    increaseNumberCallback={[Function]}
+    label="Number of people joining you on the journey"
+    validation={[Function]}
+  />
+</FormSection>
+`;

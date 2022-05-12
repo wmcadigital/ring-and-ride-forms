@@ -21,30 +21,35 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="Indian"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="indian"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Pakistani"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="pakistani"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Bangladeshi"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="bangladeshi"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Chinese"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="chinese"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other Asian background"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherAsian"
     />
@@ -56,6 +61,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -84,12 +90,14 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="Arab"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="arab"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other ethnic group"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherOther"
     />
@@ -101,6 +109,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -129,18 +138,21 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="British"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="british"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Irish"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="irish"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other White background"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherWhite"
     />
@@ -152,6 +164,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -180,24 +193,28 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     <RadioButton
       fieldName="specificEthnicity"
       label="White and Black Carribean"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="whiteBlackCarribean"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="White and Black African"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="whiteBlackAfrican"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="White and Asian"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="whiteAsian"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other Mixed or Multiple ethnic background"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherMixed"
     />
@@ -209,6 +226,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -237,18 +255,21 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     <RadioButton
       fieldName="specificEthnicity"
       label="British"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="british"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Irish"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="irish"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other White background"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherWhite"
     />
@@ -260,6 +281,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -288,18 +310,21 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - black 1`] = `
     <RadioButton
       fieldName="specificEthnicity"
       label="African"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="african"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Carribean"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="carribean"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other Black, African or Carribean"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherBlack"
     />
@@ -311,6 +336,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - black 1`] = `
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />
@@ -339,18 +365,21 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - white 1`] = `
     <RadioButton
       fieldName="specificEthnicity"
       label="British"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="british"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Irish"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="irish"
     />
     <RadioButton
       fieldName="specificEthnicity"
       label="Any other White background"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="otherWhite"
     />
@@ -362,6 +391,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - white 1`] = `
     <RadioButton
       fieldName="specificEthnicity"
       label="Prefer not to say"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="preferNotToSay"
     />

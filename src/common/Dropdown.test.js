@@ -28,6 +28,22 @@ describe("Dropdown", () => {
     expect(option.innerHTML).toEqual("Select an option");
   });
 
+  it("prompt is optional", () => {
+    render(
+      <FormWrapper>
+        <Dropdown
+          fieldName="test-field-name"
+          options={[{ value: "1", label: "One" }]}
+        />
+      </FormWrapper>
+    );
+
+    const option = screen.getByRole("option");
+
+    expect(option.getAttribute("value")).toEqual("1");
+    expect(option.innerHTML).toEqual("One");
+  });
+
   it("displays renders passed in options", () => {
     const options = [
       { value: "1", label: "One" },

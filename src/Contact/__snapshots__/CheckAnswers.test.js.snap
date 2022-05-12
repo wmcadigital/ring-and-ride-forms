@@ -15,10 +15,10 @@ exports[`CheckAnswers renders CheckAnswers correctly 1`] = `
       value="test enquiry details"
     />
   </Table>
+  <h3>
+    About you
+  </h3>
   <Table>
-    <h3>
-      About you
-    </h3>
     <CheckAnswerRow
       changeValueCallback={[Function]}
       label="Name"
@@ -99,10 +99,10 @@ exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
       value="test enquiry details"
     />
   </Table>
+  <h3>
+    About you
+  </h3>
   <Table>
-    <h3>
-      About you
-    </h3>
     <CheckAnswerRow
       changeValueCallback={[Function]}
       label="Name"

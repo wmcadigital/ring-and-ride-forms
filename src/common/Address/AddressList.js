@@ -27,7 +27,7 @@ const AddressList = ({
       : null;
 
   return (
-    <div className={"wmrards-fe-group"}>
+    <div className="wmrards-fe-group">
       <label className="wmrards-fe-label" htmlFor="searchPostCode">
         Postcode
       </label>

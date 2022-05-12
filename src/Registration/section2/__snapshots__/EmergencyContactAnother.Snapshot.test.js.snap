@@ -18,12 +18,14 @@ exports[`EmergencyContactAnother - snapshots renders as expected 1`] = `
     <RadioButton
       fieldName="emergencyContactAnother"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="emergencyContactAnother"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -49,12 +51,14 @@ exports[`EmergencyContactAnother - snapshots renders with an error 1`] = `
     <RadioButton
       fieldName="emergencyContactAnother"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="emergencyContactAnother"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />

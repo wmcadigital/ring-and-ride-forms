@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReturnJourneyQuery - snapshots individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 4 of 5"
+  />
+  <Question
+    text="Do you need to book a return journey on the same day?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnJourneyQuery - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Does John need to book a return journey on the same day?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnJourneyQuery - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Do you need to book a return journey on the same day?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnJourneyQuery - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Do you need to book a return journey on the same day?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="returnJourney"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

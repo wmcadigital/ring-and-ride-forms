@@ -34,14 +34,12 @@ describe("EthnicGroup", () => {
 
     const { container } = render(
       <FormWrapper
+        initialValues={{ ethnicity: "white", specificEthnicity: "british" }}
         mutators={{
           setFormAttribute: mockSetFormAttribute,
         }}
       >
-        <EthnicGroup
-          setEthnicGroup={() => {}}
-          initialValues={{ ethnicity: "white", specificEthnicity: "british" }}
-        />
+        <EthnicGroup setEthnicGroup={() => {}} />
       </FormWrapper>
     );
 

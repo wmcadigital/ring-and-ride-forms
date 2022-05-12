@@ -9,7 +9,10 @@ import NameEntry from "./NameEntry";
 import RegistrationNoEntry from "./RegistrationNoEntry";
 import ContactPreferenceEntry from "./ContactPreferenceEntry";
 import Header from "../common/Header";
-import { validateContactPreferences, validateCheckAnswers } from "./validation";
+import {
+  validateContactPreferences,
+  validateCheckAnswers,
+} from "../common/validation";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

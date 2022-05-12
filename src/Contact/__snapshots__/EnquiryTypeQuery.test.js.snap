@@ -14,30 +14,35 @@ exports[`EnquiryTypeQuery renders as expected 1`] = `
     <RadioButton
       fieldName="enquiryType"
       label="General enquiry"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="generalEnquiry"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Service issues"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="serviceIssues"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Lost property"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="lostProperty"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Staff"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="staff"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Service updates"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="serviceUpdates"
     />
@@ -59,30 +64,35 @@ exports[`EnquiryTypeQuery renders with an error 1`] = `
     <RadioButton
       fieldName="enquiryType"
       label="General enquiry"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="generalEnquiry"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Service issues"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="serviceIssues"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Lost property"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="lostProperty"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Staff"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="staff"
     />
     <RadioButton
       fieldName="enquiryType"
       label="Service updates"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="serviceUpdates"
     />

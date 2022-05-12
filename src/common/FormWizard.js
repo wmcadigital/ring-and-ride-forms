@@ -10,6 +10,8 @@ const FormWizard = ({
   onSubmit,
   goToPage,
   setGoToPage,
+  externalPage,
+  setExternalPage,
 }) => {
   const filteredChildren = children.filter((child) => child !== undefined);
   const [page, setPage] = useState(0);
@@ -21,6 +23,12 @@ const FormWizard = ({
     }
   }, [goToPage]);
 
+  useEffect(() => {
+    if (externalPage) {
+      setPage(externalPage);
+    }
+  }, [externalPage]);
+
   const next = (values) => {
     if (goToPage) {
       setPage(filteredChildren.length - 1);
@@ -28,6 +36,7 @@ const FormWizard = ({
     } else {
       setPage(Math.min(page + 1, filteredChildren.length - 1));
     }
+    setExternalPage(null);
     setValues(values);
   };
 
@@ -36,6 +45,7 @@ const FormWizard = ({
       setGoToPage(null);
     }
     e.target.blur();
+    setExternalPage(null);
     setPage(Math.max(page - 1, 0));
   };
 
@@ -84,7 +94,7 @@ const FormWizard = ({
             <form onSubmit={handleSubmit}>
               {activePage}
               <div>
-                {!isLastPage && (
+                {!isLastPage && !activePage.props.hideSubmit && (
                   <button
                     type="submit"
                     className="wmrards-btn"
@@ -93,7 +103,7 @@ const FormWizard = ({
                     Continue
                   </button>
                 )}
-                {isLastPage && (
+                {isLastPage && !activePage.props.hideSubmit && (
                   <button
                     className="wmrards-btn wmrards-btn--start"
                     type="submit"
@@ -127,6 +137,8 @@ FormWizard.propTypes = {
   children: PropTypes.array,
   goToPage: PropTypes.number,
   setGoToPage: PropTypes.func,
+  externalPage: PropTypes.number,
+  setExternalPage: PropTypes.func,
 };
 
 FormWizard.defaultProps = {
@@ -134,6 +146,7 @@ FormWizard.defaultProps = {
   children: [],
   goToPage: null,
   setGoToPage: () => {},
+  setExternalPage: () => {},
 };
 
 export default FormWizard;
