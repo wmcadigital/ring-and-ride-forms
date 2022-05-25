@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForgotRegistration renders the page as expected 1`] = `
+Array [
+  <a
+    className="wmrards-link wmrards-header__skip-link"
+    href="#wmrards-main-content"
+    target="_self"
+    title="Skip to main content"
+  >
+    Skip to main content
+  </a>,
+  <header>
+    <div
+      className="wmrards-bg-white wmrards-p-t-md wmrards-p-b-md wmrards-cookies-banner"
+    >
+      <div
+        className="wmrards-container"
+      >
+        <div
+          className="wmrards-col-1 wmrards-col-md-3-4 wmrards-col-lg-2-3"
+        >
+          <h3>
+            Your privacy settings
+          </h3>
+          <p>
+            We use cookies to help you with journey planning and relevant disruptions, remember your login and show you content you might be interested in. If you're happy with the use of cookies by West Midlands Combined Authority and our selected partners, click 'Accept all cookies'. Or click 'Manage cookies' to learn more.
+          </p>
+          <div
+            className="wmrards-grid wmrards-grid--justify-between wmrards-cookies-banner__group-buttons"
+          >
+            <button
+              className="wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24  wmrards-cookies-banner__accept-all-cookies wmrards-text-align-center"
+              type="button"
+            >
+              Accept all cookies
+            </button>
+            <a
+              className="wmrards-btn wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24 wmrards-text-align-center"
+              href="https://www.tfwm.org.uk/manage-cookies/"
+              target="_self"
+              title="link title"
+            >
+              Manage Cookies
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="wmrards-header"
+    >
+      <div
+        className="wmrards-container wmrards-grid wmrards-grid--align-center wmrards-grid--justify-between"
+      >
+        <div
+          className="wmrards-header__vertical-align wmrards-col-auto"
+        >
+          <a
+            className="wmrards-header__logo-link"
+            href="/"
+            title="Transport for West Midlands Design System"
+          >
+            <img
+              alt="Transport for West Midlands logo"
+              className="wmrards-header__logo"
+              src="https://cloudcdn.wmca.org.uk/staging/rarassets/1.0.0/img/logo.svg"
+            />
+          </a>
+        </div>
+        <h1
+          className="wmrards-header__title wmrards-col-1 wmrards-col-sm-auto"
+        >
+          Book a Ring and Ride journey
+        </h1>
+      </div>
+    </div>
+  </header>,
+  <main
+    className="wmrards-container wmrards-container--main wmrards-p-b-lg wmrards-grid"
+  >
+    <div
+      className="wmrards-col-1 wmrards-col-md-2-3"
+    >
+      <nav
+        aria-label="Main example breadcrumbs"
+        className="wmrards-breadcrumb"
+      >
+        <ol
+          className="wmrards-breadcrumb__list"
+        >
+          <li
+            className="wmrards-breadcrumb__list-item"
+          >
+            <a
+              className="wmrards-breadcrumb__link"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="wmrards-breadcrumb__list-item"
+          >
+            <a
+              aria-current="page"
+              className="wmrards-breadcrumb__link wmrards-breadcrumb__link--current"
+              href="#"
+            >
+              Booking
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <div
+        className="wmrards-col-1 wmrards-m-b-md"
+      >
+        <button
+          className="wmrards-btn wmrards-btn--link"
+          onClick={[Function]}
+          type="button"
+        >
+          &lt; Back
+        </button>
+      </div>
+      <h2
+        className="wmrards-fe-question"
+      >
+        Contact our customer services team
+      </h2>
+      <div
+        className="wmrards-inset-text"
+      >
+        <address
+          className="wmrards-contact-details"
+        >
+          <div
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Customer Services
+          </div>
+          <div
+            className="wmrards-m-t-md"
+          >
+            Phone: 0330 053 8141
+          </div>
+          <div
+            className="wmrards-m-t-md"
+          >
+            Monday to Saturday, 9.30am to 2.30pm
+          </div>
+          <div>
+            Sundays and Bank Holidays, Closed
+          </div>
+        </address>
+      </div>
+    </div>
+  </main>,
+]
+`;

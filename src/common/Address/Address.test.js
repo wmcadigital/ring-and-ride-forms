@@ -69,6 +69,28 @@ describe("Address", () => {
     });
   });
 
+  it("shows error if county is not West Midlands and there is no order number position prop", async () => {
+    fetchAddresses.mockImplementation(() => [{ county: "Not West Midlands" }]);
+
+    render(
+      <BrowserRouter>
+        <FormWrapper>
+          <Address prefix="test" checkInside />
+        </FormWrapper>
+      </BrowserRouter>
+    );
+
+    const postcodeInput = screen.getByRole("textbox");
+    await waitFor(() => userEvent.type(postcodeInput, "X16 7YH"));
+
+    const searchButton = screen.getByRole("button");
+    await waitFor(() => fireEvent.click(searchButton));
+
+    await waitFor(() =>
+      expect(screen.getByText("Outside West Midlands")).toBeDefined()
+    );
+  });
+
   it("sets callback to set addreses in state if api returns valid addresses", async () => {
     const mockSetAddresses = jest.fn();
 

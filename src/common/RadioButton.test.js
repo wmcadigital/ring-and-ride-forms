@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
 import FormWrapper from "./FormWrapper";
 import RadioButton from "./RadioButton";
@@ -35,5 +35,28 @@ describe("RadioButton", () => {
     const radioButton = screen.getByRole("radio");
 
     expect(radioButton.getAttributeNames()).toContain("checked");
+  });
+
+  it("clicking the radio button will invoke callback if provided", () => {
+    const mockOnClickCallback = jest.fn();
+
+    render(
+      <FormWrapper>
+        <RadioButton
+          fieldName="radio-group"
+          label="Radio Label"
+          value="value-1"
+          onClickCallback={mockOnClickCallback}
+        />
+      </FormWrapper>
+    );
+
+    const radioButton = screen.getByRole("radio");
+
+    expect(mockOnClickCallback).toBeCalledTimes(0);
+
+    fireEvent.click(radioButton);
+
+    expect(mockOnClickCallback).toBeCalledTimes(1);
   });
 });

@@ -23,16 +23,6 @@ export const validateDateOfBirth = (values = {}) => {
   return errors;
 };
 
-export const addressIdPresent =
-  (prefix) =>
-  (values = {}) => {
-    const errors = { [prefix]: {} };
-    if (!values[prefix]?.addressId) {
-      errors[prefix].addressId = "Required";
-    }
-    return errors;
-  };
-
 export const validateCheckAnswers = (values) => {
   const errors = {};
   if (

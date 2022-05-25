@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OtherInformation - snapshots individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 5 of 5"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OtherInformation - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 4 of 4"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OtherInformation - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 4 of 4"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OtherInformation - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 4 of 4"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OtherInformation - snapshots shows error if text area not filled in on submission 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 4 of 4"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup>
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <TextArea
+      error="Required"
+      fieldName="otherInformationDetails"
+      label="Additional requirements"
+      rows={8}
+      validation={[Function]}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`OtherInformation - snapshots shows text area for other information if yes is selected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Any other information"
+    sectionPosition="Section 4 of 4"
+  />
+  <Question
+    text="Is there any other information you think we should know about this booking?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <TextArea
+      error={null}
+      fieldName="otherInformationDetails"
+      label="Additional requirements"
+      rows={8}
+      validation={[Function]}
+    />
+    <RadioButton
+      fieldName="otherInformation"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

@@ -14,12 +14,14 @@ exports[`RegistrationIndividual - snapshots renders as expected with no value se
     <RadioButton
       fieldName="registerForYourself"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="registerForYourself"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -41,12 +43,14 @@ exports[`RegistrationIndividual - snapshots renders as expected with value selec
     <RadioButton
       fieldName="registerForYourself"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="registerForYourself"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />
@@ -68,12 +72,14 @@ exports[`RegistrationIndividual - snapshots renders with an error 1`] = `
     <RadioButton
       fieldName="registerForYourself"
       label="Yes"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="yes"
     />
     <RadioButton
       fieldName="registerForYourself"
       label="No"
+      onClickCallback={[Function]}
       validation={[Function]}
       value="no"
     />

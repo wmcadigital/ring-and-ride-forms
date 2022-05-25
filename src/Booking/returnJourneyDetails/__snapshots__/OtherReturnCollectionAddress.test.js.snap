@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OtherReturnCollectionAddress individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 4 of 5"
+  />
+  <Question
+    text="What address do you want the group to be collected from?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={true}
+    prefix="otherReturn"
+  />
+</FormSection>
+`;
+
+exports[`OtherReturnCollectionAddress individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="What address does John want to be collected from?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={true}
+    prefix="otherReturn"
+  />
+</FormSection>
+`;
+
+exports[`OtherReturnCollectionAddress individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="What address do you want to be collected from?"
+  />
+  <Address
+    addresses={Array []}
+    checkInside={true}
+    prefix="otherReturn"
+  />
+</FormSection>
+`;

@@ -1,0 +1,1229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckAnswers renders CheckAnswers behalf group, no return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Ron Pickering"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="Email: test@testerson.com 
+        "
+    />
+  </Table>
+  <AboutPassengers
+    showPassengerDetailsCallback={[Function]}
+    showPassengerListCallback={[Function]}
+    summaryPageMode={true}
+  />
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="29 May 2023"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="11:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "62470478-22f7-4cf0-b5c1-b4a4fa69b469",
+              "addressLine1": "19 Green Lane",
+              "addressLine2": "Great Barr",
+              "county": "West Midlands",
+              "postCode": "B43 5JX",
+              "searchPostCode": "B43 5JX",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "7e667e5e-1d75-4b07-92e2-9e8296f5de29",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Extra time needed for boarding."
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf group, return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Ron Pickering"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="Email: test@testerson.com 
+        "
+    />
+  </Table>
+  <AboutPassengers
+    showPassengerDetailsCallback={[Function]}
+    showPassengerListCallback={[Function]}
+    summaryPageMode={true}
+  />
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="29 May 2023"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="11:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "62470478-22f7-4cf0-b5c1-b4a4fa69b469",
+              "addressLine1": "19 Green Lane",
+              "addressLine2": "Great Barr",
+              "county": "West Midlands",
+              "postCode": "B43 5JX",
+              "searchPostCode": "B43 5JX",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "7e667e5e-1d75-4b07-92e2-9e8296f5de29",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Return Journey
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Time to be picked up"
+        value="06:15pm"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Collection address"
+        value={
+          <AddressFormatted
+            addressObj={
+              Object {
+                "addressId": "dbd4e6a2-01c7-442c-bd8c-aca6aabaf956",
+                "addressLine1": "11 Griffin Close",
+                "addressLine2": "Northfield",
+                "county": "West Midlands",
+                "postCode": "B31 2FJ",
+                "searchPostCode": "B31 2FJ",
+                "townOrCity": "Birmingham",
+              }
+            }
+          />
+        }
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Destination address"
+        value="The outward journey address they were collected from"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Extra time needed for boarding."
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf group, return, different outward/return passengers 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Ron Pickering"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="Email: test@testerson.com 
+        "
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="29 May 2023"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="11:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "62470478-22f7-4cf0-b5c1-b4a4fa69b469",
+              "addressLine1": "19 Green Lane",
+              "addressLine2": "Great Barr",
+              "county": "West Midlands",
+              "postCode": "B43 5JX",
+              "searchPostCode": "B43 5JX",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "7e667e5e-1d75-4b07-92e2-9e8296f5de29",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+  </Table>
+  <AboutPassengers
+    anotherFormPresent={true}
+    otherFormOpen={false}
+    showPassengerDetailsCallback={[Function]}
+    showPassengerListCallback={[Function]}
+    summaryPageMode={true}
+  />
+  <React.Fragment>
+    <h3>
+      Return Journey
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Time to be picked up"
+        value="06:15pm"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Collection address"
+        value="The address the group were brought to"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Destination address"
+        value="The outward journey address they were collected from"
+      />
+    </Table>
+  </React.Fragment>
+  <AboutPassengers
+    anotherFormPresent={true}
+    otherFormOpen={false}
+    returnPassengers={true}
+    showPassengerDetailsCallback={[Function]}
+    showPassengerListCallback={[Function]}
+    summaryPageMode={true}
+  />
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Extra time needed for boarding."
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf myself, no return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Test Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="12345678"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="Email: test@testerson.com 
+        "
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="26 May 2022"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="09:00am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value="My registered home address"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "113ceb20-ad94-4432-a921-9a670c2342d4",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="People joining you"
+      value="3 other people"
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Wheelchair access required"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf myself, return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Test Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="9876565"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="
+        Phone:  07700900457"
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="6 July 2022"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="09:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "d34413c5-ee36-48e2-b3f0-dd3fb40ff55d",
+              "addressLine1": "21 Green Lane",
+              "addressLine2": "Great Barr",
+              "county": "West Midlands",
+              "postCode": "B43 5JX",
+              "searchPostCode": "B43 5JX",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "1d5bb578-ca2e-4cf0-a76f-f69160313d7f",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="People joining you"
+      value="3 other people"
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Return Journey
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Time to be picked up"
+        value="07:45pm"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Collection address"
+        value="The address you were brought to"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Destination address"
+        value="My registered home address"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="People joining you"
+        value="3 other people"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Wheelchair access"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf someone, no return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About the applicant
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Test Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="9876565"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="
+        Phone:  07700900457"
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="6 July 2022"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="09:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value="Test's registered home address"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "1d5bb578-ca2e-4cf0-a76f-f69160313d7f",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="People joining them"
+      value="1 other people"
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Wheelchair access"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers behalf someone, return 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About the applicant
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Test Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="9876565"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="
+        Phone:  07700900457"
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="6 July 2022"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="09:15am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "d34413c5-ee36-48e2-b3f0-dd3fb40ff55d",
+              "addressLine1": "21 Green Lane",
+              "addressLine2": "Great Barr",
+              "county": "West Midlands",
+              "postCode": "B43 5JX",
+              "searchPostCode": "B43 5JX",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "1d5bb578-ca2e-4cf0-a76f-f69160313d7f",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Return Journey
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Time to be picked up"
+        value="07:45pm"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Collection address"
+        value="The address Test was brought to"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Destination address"
+        value="Test's registered home address"
+      />
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="People joining them"
+        value="3 other people"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Wheelchair access"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error={null}
+    >
+      <FieldError
+        text={null}
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Test Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="12345678"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Preferred method of contact"
+      value="Email: test@testerson.com 
+        "
+    />
+  </Table>
+  <h3>
+    Outward Journey
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Date of booking"
+      value="26 May 2022"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Time to be picked up"
+      value="09:00am"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Collection address"
+      value="My registered home address"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Destination address"
+      value={
+        <AddressFormatted
+          addressObj={
+            Object {
+              "addressId": "113ceb20-ad94-4432-a921-9a670c2342d4",
+              "addressLine1": "West Midlands Combined Authority",
+              "addressLine2": "16 Summer Lane",
+              "county": "West Midlands",
+              "postCode": "B19 3SD",
+              "searchPostCode": "B19 3SD",
+              "townOrCity": "Birmingham",
+            }
+          }
+        />
+      }
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="People joining you"
+      value="3 other people"
+    />
+  </Table>
+  <React.Fragment>
+    <h3>
+      Any other information
+    </h3>
+    <Table>
+      <CheckAnswerRow
+        changeValueCallback={[Function]}
+        label="Additional Requirements"
+        value="Wheelchair access required"
+      />
+    </Table>
+  </React.Fragment>
+  <React.Fragment>
+    <h3>
+      Now send your enquiry
+    </h3>
+    <p>
+      By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+    </p>
+    <CheckboxContainer
+      error="Required"
+    >
+      <FieldError
+        text="Required"
+      />
+      <Checkbox
+        fieldName="agreeTermsAndConditions"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              terms and conditions
+            </a>
+          </React.Fragment>
+        }
+      />
+      <Checkbox
+        fieldName="agreePrivacyPolicy"
+        label={
+          <React.Fragment>
+            Agree to the
+             
+            <a
+              href="https://www.wmca.org.uk/policies"
+              rel="noreferrer"
+              target="_blank"
+            >
+              privacy policy
+            </a>
+          </React.Fragment>
+        }
+      />
+    </CheckboxContainer>
+  </React.Fragment>
+</React.Fragment>
+`;

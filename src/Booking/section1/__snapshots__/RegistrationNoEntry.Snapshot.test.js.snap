@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationNoEntry - snap shots individual is filling out form for someone else 1`] = `
+<div
+  className="wmrards-fe-group undefined"
+>
+  <div
+    className="wmrards-progress-indicator"
+  >
+    Section 1 of 4
+    <h4>
+      About the applicant
+    </h4>
+  </div>
+  <h2
+    className="wmrards-fe-question"
+  >
+    What is John's registration number?
+  </h2>
+  <div
+    className="wmrards-fe-group null undefined"
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="registrationNo"
+    >
+       
+      Registration number
+      <p>
+        For example, 1234567890
+      </p>
+    </label>
+  </div>
+  <button
+    className="wmrards-btn wmrards-btn--link"
+    onClick={[Function]}
+    type="button"
+  >
+    I don't remember my registration number
+  </button>
+</div>
+`;
+
+exports[`RegistrationNoEntry - snap shots individual is filling out form for themselves 1`] = `
+<div
+  className="wmrards-fe-group undefined"
+>
+  <div
+    className="wmrards-progress-indicator"
+  >
+    Section 1 of 4
+    <h4>
+      About you
+    </h4>
+  </div>
+  <h2
+    className="wmrards-fe-question"
+  >
+    What is your registration number
+  </h2>
+  <div
+    className="wmrards-fe-group null undefined"
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="registrationNo"
+    >
+       
+      Registration number
+      <p>
+        For example, 1234567890
+      </p>
+    </label>
+  </div>
+  <button
+    className="wmrards-btn wmrards-btn--link"
+    onClick={[Function]}
+    type="button"
+  >
+    I don't remember my registration number
+  </button>
+</div>
+`;
+
+exports[`RegistrationNoEntry - snap shots renders with an error 1`] = `
+<div
+  className="wmrards-fe-group undefined"
+>
+  <div
+    className="wmrards-progress-indicator"
+  >
+    Section 1 of 4
+    <h4>
+      About you
+    </h4>
+  </div>
+  <h2
+    className="wmrards-fe-question"
+  >
+    What is your registration number
+  </h2>
+  <div
+    className="wmrards-fe-group wmrards-fe-group--error undefined"
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="registrationNo"
+    >
+       
+      Registration number
+      <p>
+        For example, 1234567890
+      </p>
+    </label>
+    <span
+      className="wmrards-fe-error-message"
+    >
+      Required
+    </span>
+  </div>
+  <button
+    className="wmrards-btn wmrards-btn--link"
+    onClick={[Function]}
+    type="button"
+  >
+    I don't remember my registration number
+  </button>
+</div>
+`;

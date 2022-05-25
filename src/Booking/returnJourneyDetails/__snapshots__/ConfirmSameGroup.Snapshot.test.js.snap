@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmSameGroup - snapshots individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 4 of 5"
+  />
+  <Question
+    text="Are the same number of passengers on the return journey?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="groupSameAsOutward"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="groupSameAsOutward"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ConfirmSameGroup - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 4 of 5"
+  />
+  <Question
+    text="Are the same number of passengers on the return journey?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="groupSameAsOutward"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="groupSameAsOutward"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

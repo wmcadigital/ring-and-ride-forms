@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IncludeInGroupBooking - snapshots renders as expected 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 5"
+  />
+  <Question
+    text="Do you want to be included in this group booking?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="includeInGroupBooking"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="includeInGroupBooking"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`IncludeInGroupBooking - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="About you"
+    sectionPosition="Section 1 of 5"
+  />
+  <Question
+    text="Do you want to be included in this group booking?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="includeInGroupBooking"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="includeInGroupBooking"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookingParty - snapshots renders as expected with no value selected 1`] = `
+<FormSection>
+  <Question
+    text="Who are you making the booking for?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="Myself"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="mySelf"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of someone else"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfSomeone"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of a group"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfGroup"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`BookingParty - snapshots renders as expected with value selected 1`] = `
+<FormSection>
+  <Question
+    text="Who are you making the booking for?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="Myself"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="mySelf"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of someone else"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfSomeone"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of a group"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfGroup"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`BookingParty - snapshots renders with an error 1`] = `
+<FormSection>
+  <Question
+    text="Who are you making the booking for?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="Myself"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="mySelf"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of someone else"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfSomeone"
+    />
+    <RadioButton
+      fieldName="bookingParty"
+      label="On behalf of a group"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="behalfGroup"
+    />
+  </RadioGroup>
+</FormSection>
+`;

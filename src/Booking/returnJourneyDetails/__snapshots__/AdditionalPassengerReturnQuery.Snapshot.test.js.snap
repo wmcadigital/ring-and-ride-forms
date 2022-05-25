@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalPassengerReturnQuery - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Does John want to bring anyone else with them on the return journey?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="additionalPassengerReturn"
+    >
+      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+    </label>
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalPassengerReturnQuery - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Do you want to bring anyone else with you on the return journey?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="additionalPassengerReturn"
+    >
+      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+    </label>
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`AdditionalPassengerReturnQuery - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Do you want to bring anyone else with you on the return journey?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <label
+      className="wmrards-fe-label"
+      htmlFor="additionalPassengerReturn"
+    >
+      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+    </label>
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="additionalPassengerReturn"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+  </RadioGroup>
+</FormSection>
+`;

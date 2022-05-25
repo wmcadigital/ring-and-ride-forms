@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmSameAdditionalPassenger - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Are the same number of people joining John on the return journey?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="They are returning alone"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="alone"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ConfirmSameAdditionalPassenger - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Are the same number of people joining you on the return journey?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="I'm returning alone"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="alone"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ConfirmSameAdditionalPassenger - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="Are the same number of people joining you on the return journey?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="Yes"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="yes"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="No"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="no"
+    />
+    <RadioButton
+      fieldName="confirmSameAdditionalPassenger"
+      label="I'm returning alone"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="alone"
+    />
+  </RadioGroup>
+</FormSection>
+`;

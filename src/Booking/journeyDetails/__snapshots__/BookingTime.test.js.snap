@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookingTime individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their journey"
+    sectionPosition="Section 3 of 5"
+  />
+  <Question
+    text="What time is the group to be picked up?"
+  />
+  <TimeInput
+    error={null}
+    label="Time of travel"
+    prefix="outwardPickup"
+  />
+</FormSection>
+`;
+
+exports[`BookingTime individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="What time does John want to be picked up?"
+  />
+  <TimeInput
+    error={null}
+    label="Time of travel"
+    prefix="outwardPickup"
+  />
+</FormSection>
+`;
+
+exports[`BookingTime individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="What time do you want to be picked up?"
+  />
+  <TimeInput
+    error={null}
+    label="Time of travel"
+    prefix="outwardPickup"
+  />
+</FormSection>
+`;
+
+exports[`BookingTime renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your journey"
+    sectionPosition="Section 2 of 4"
+  />
+  <Question
+    text="What time do you want to be picked up?"
+  />
+  <TimeInput
+    error="Required"
+    label="Time of travel"
+    prefix="outwardPickup"
+  />
+</FormSection>
+`;

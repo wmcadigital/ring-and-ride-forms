@@ -35,6 +35,11 @@ const Address = ({ prefix, checkInside, orderNo, addresses, setAddresses }) => {
     }
     if (addresses.length && checkInside) {
       if (!checkInsideWmca(addresses)) {
+        if (orderNo === undefined) {
+          setErrorPostCode("Outside West Midlands");
+          setLoading(false);
+          return;
+        }
         navigate("/registration/outsideWmca", {
           state: { formValues: formState.values, orderNo },
           replace: true,
@@ -50,7 +55,7 @@ const Address = ({ prefix, checkInside, orderNo, addresses, setAddresses }) => {
 
   return (
     <>
-      {!addresses.length && (
+      {!addresses.length && !addressSelectedOrManual && (
         <PostCodeSearch
           error={errorPostCode}
           getAddresses={getAddresses}

@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { createRenderer } from "react-test-renderer/shallow";
+import { create } from "react-test-renderer";
 import { screen, render, fireEvent } from "@testing-library/react";
 
 import OutsideWmca from "./OutsideWmca";
@@ -17,15 +17,13 @@ jest.mock("react-router-dom", () => ({
 
 describe("OutsideWmca", () => {
   it("renders the page as expected", () => {
-    const renderer = createRenderer();
-
-    renderer.render(
+    const renderer = create(
       <BrowserRouter>
         <OutsideWmca />
       </BrowserRouter>
     );
 
-    expect(renderer.getRenderOutput()).toMatchSnapshot();
+    expect(renderer.toJSON()).toMatchSnapshot();
   });
 
   it("clicking back will navigate to registration form with form state", () => {

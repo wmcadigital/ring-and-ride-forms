@@ -81,7 +81,7 @@ describe("CheckAnswers", () => {
   it("renders CheckAnswers - register on behalf of someone else", () => {
     const formApiReturnOnBehalf = {
       ...formApiReturn,
-      values: { ...formApiReturn.values, registerForYourself: "no" }
+      values: { ...formApiReturn.values, registerForYourself: "no" },
     };
     useFormState.mockImplementationOnce(() => formApiReturnOnBehalf);
     const renderer = createRenderer();
@@ -94,7 +94,7 @@ describe("CheckAnswers", () => {
   it("renders CheckAnswers - no emergency", () => {
     const formApiReturnNoEmergency = {
       ...formApiReturn,
-      values: { ...formApiReturn.values, emergencyContact: "no" }
+      values: { ...formApiReturn.values, emergencyContact: "no" },
     };
     useFormState.mockImplementationOnce(() => formApiReturnNoEmergency);
     const renderer = createRenderer();

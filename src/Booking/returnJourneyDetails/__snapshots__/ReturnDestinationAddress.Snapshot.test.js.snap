@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReturnDestinationAddress - snapshots individual is filling out form for a group 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 4 of 5"
+  />
+  <Question
+    text="What address is the group going to?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="The outward journey address they were collected from"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="sameAsOutwardCollectionAddress"
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnDestinationAddress - snapshots individual is filling out form for someone else 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan their return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="What address does John want to go to?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="Their registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="sameAsOutwardCollectionAddress"
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnDestinationAddress - snapshots individual is filling out form for themselves 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="What address do you want to go to?"
+  />
+  <RadioGroup
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="My registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="sameAsOutwardCollectionAddress"
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
+
+exports[`ReturnDestinationAddress - snapshots renders with an error 1`] = `
+<FormSection>
+  <ProgressIndicator
+    sectionName="Plan your return journey"
+    sectionPosition="Section 3 of 4"
+  />
+  <Question
+    text="What address do you want to go to?"
+  />
+  <RadioGroup
+    error="Required"
+  >
+    <FieldError
+      text="Required"
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="My registered home address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="sameAsOutwardCollectionAddress"
+    />
+    <RadioButton
+      fieldName="returnDestinationAddress"
+      label="Another address"
+      onClickCallback={[Function]}
+      validation={[Function]}
+      value="other"
+    />
+  </RadioGroup>
+</FormSection>
+`;
