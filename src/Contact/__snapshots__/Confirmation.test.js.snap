@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation - Contact renders Confirmation for Contact Us correctly 1`] = `
+<React.Fragment>
+  <Header
+    heading="Contact us"
+  />
+  <FormContentWrapper>
+    <BreadCrumb
+      currentPageName="Contact us"
+    />
+    <ConfirmationPanel
+      header="We've received your enquiry"
+    />
+    <Question
+      text="What happens next"
+    />
+    <p>
+      Thank you for contacting Ring and Ride.
+    </p>
+    <p>
+      We will acknowledge your query and keep you updated on progress until it is resolved.
+    </p>
+    <p>
+      Our Customer Services Centre aim to respond to enquiries within 10 working days. However, there may be occasions where this takes longer, as we may need to liase with a third party.
+    </p>
+    <p>
+      If you have not received a response within 10 working days, please contact our Customer Services team.
+    </p>
+    <Question
+      text="Give us a call"
+    />
+    <CustomerServiceDetails />
+  </FormContentWrapper>
+</React.Fragment>
+`;

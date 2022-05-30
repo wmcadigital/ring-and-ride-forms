@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation - Booking renders Confirmation for Booking correctly 1`] = `
+<React.Fragment>
+  <Header
+    heading="Book a Ring and Ride journey"
+  />
+  <FormContentWrapper>
+    <BreadCrumb
+      currentPageName="Booking"
+    />
+    <ConfirmationPanel
+      header="We've received your form"
+    />
+    <Question
+      text="What happens next"
+    />
+    <p>
+      You'll receive an email to confirm that we have received your booking request.
+    </p>
+    <p>
+      Journey requests need to be received by 2.30pm on the day prior to your preferred journey. We will then email you to confirm your booking by 4pm that day.
+    </p>
+    <Question
+      text="Give us a call"
+    />
+    <CustomerServiceDetails />
+  </FormContentWrapper>
+</React.Fragment>
+`;

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import FormContentWrapper from "../common/FormContentWrapper";
@@ -32,7 +32,10 @@ import MobilityAidsQuery from "./section3/MobilityAidsQuery";
 import WheelChairTransfer from "./section3/WheelChairTransfer";
 import AdditionalRequirements from "./section3/AdditionalRequirements";
 import CheckAnswers from "./CheckAnswers";
+import { FORM_SUBMIT_ERROR } from "../common/validation";
 import { validateCheckAnswers } from "./validation";
+
+import sendFormData from "../api/sendFormData";
 
 import {
   validateSelectOneOption,
@@ -42,6 +45,8 @@ import { validateDateOfBirth } from "./validation";
 
 const RegistrationForm = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
   const [registrationAddresses, setRegistrationAddresses] = useState([]);
   const [emergencyAddresses, setEmergencyAddresses] = useState([]);
   const [registerForYourself, setRegisterForYourself] = useState(null);
@@ -54,6 +59,9 @@ const RegistrationForm = () => {
   const [goToPage, setGoToPage] = useState(null);
   const [externalPage, setExternalPage] = useState(null);
 
+  const [formSubmitting, setFormSubmitting] = useState(null);
+  const [formSubmitError, setFormSubmitError] = useState(null);
+
   const showEmergencyContact =
     emergencyContact === "yes" ||
     (registerForYourself === "no" && emergencyContactAnother === "yes");
@@ -62,18 +70,36 @@ const RegistrationForm = () => {
     setExternalPage(location?.state?.orderNo);
   }, [location?.state?.orderNo]);
 
+  const onSubmit = async (values) => {
+    try {
+      setFormSubmitError(null);
+      const response = await sendFormData(values);
+      if (response.status === "success") {
+        navigate("/registration/confirmed");
+      } else {
+        setFormSubmitError(FORM_SUBMIT_ERROR);
+      }
+    } catch {
+      setFormSubmitError(FORM_SUBMIT_ERROR);
+    }
+  };
+
   return (
     <>
       <Header heading="Register for the Ring and Ride service" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Register" />
         <FormWizard
-          onSubmit={() => {}}
-          initialValues={location?.state?.formValues}
+          onSubmit={onSubmit}
+          initialValues={{
+            ...location?.state?.formValues,
+            formName: "Registration",
+          }}
           goToPage={goToPage}
           setGoToPage={setGoToPage}
           externalPage={externalPage}
           setExternalPage={setExternalPage}
+          disableBackButton={formSubmitting}
         >
           <RegistrationIndividual
             setRegisterForYourself={setRegisterForYourself}
@@ -146,6 +172,8 @@ const RegistrationForm = () => {
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}
+            setFormSubmitting={setFormSubmitting}
+            formSubmitError={formSubmitError}
           />
         </FormWizard>
       </FormContentWrapper>

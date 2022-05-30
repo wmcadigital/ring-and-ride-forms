@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useFormState } from "react-final-form";
 import PropTypes from "prop-types";
 
@@ -8,22 +9,31 @@ import FieldError from "../common/FieldError";
 import Table from "../common/Table";
 import CheckAnswerRow from "../common/CheckAnswerRow";
 import CheckboxContainer from "../common/CheckboxContainer";
+import ErrorPanel from "../common/ErrorPanel";
 
-const CheckAnswers = ({ setGoToPage }) => {
+const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
   const enquiryLabel = EnquiryTypes[formValues.enquiryType]?.detailLabel;
 
   const agreeLegalError = stateApi.submitFailed ? stateApi.errors?.legal : null;
 
+  const submitting = stateApi.submitting;
+
+  useEffect(() => {
+    setFormSubmitting(submitting);
+  }, [submitting]);
+
   return (
     <>
       <Question text="Check your answers" />
+      {formSubmitError ? <ErrorPanel message={formSubmitError} /> : null}
       <h3>About your {enquiryLabel} enquiry</h3>
       <Table>
         <CheckAnswerRow
           value={formValues["enquiryDetail"]}
           changeValueCallback={() => setGoToPage(1)}
+          disableButton={submitting}
         />
       </Table>
       <h3>About you</h3>
@@ -32,6 +42,7 @@ const CheckAnswers = ({ setGoToPage }) => {
           label="Name"
           value={`${formValues["firstName"]} ${formValues["lastName"]}`}
           changeValueCallback={() => setGoToPage(2)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Registration number"
@@ -39,6 +50,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             formValues["registrationNo"] ? formValues["registrationNo"] : ""
           }
           changeValueCallback={() => setGoToPage(3)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="How would you like to be contacted?"
@@ -49,6 +61,7 @@ const CheckAnswers = ({ setGoToPage }) => {
           }
         ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`}
           changeValueCallback={() => setGoToPage(4)}
+          disableButton={submitting}
         />
       </Table>
       <h3>Now send your enquiry</h3>
@@ -95,6 +108,8 @@ const CheckAnswers = ({ setGoToPage }) => {
 
 CheckAnswers.propTypes = {
   setGoToPage: PropTypes.func,
+  setFormSubmitting: PropTypes.func,
+  formSubmitError: PropTypes.string,
 };
 
 export default CheckAnswers;

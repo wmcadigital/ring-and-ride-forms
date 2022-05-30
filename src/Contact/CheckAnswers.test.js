@@ -41,4 +41,15 @@ describe("CheckAnswers", () => {
 
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
+
+  it("renders CheckAnswers with a form submit error if passed as a prop", () => {
+    useFormState.mockImplementationOnce(() => formApiReturn);
+    const renderer = createRenderer();
+
+    renderer.render(
+      <CheckAnswers formSubmitError="An error occurred when submitting the form data" />
+    );
+
+    expect(renderer.getRenderOutput()).toMatchSnapshot();
+  });
 });

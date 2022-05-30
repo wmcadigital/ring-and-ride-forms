@@ -65,4 +65,29 @@ describe("CheckAnswerRow", () => {
 
     expect(mockCallback).toBeCalledTimes(1);
   });
+
+  it("clicking on change button will NOT invoke provided callback if disabled prop passed", () => {
+    const mockCallback = jest.fn();
+
+    render(
+      <table>
+        <tbody>
+          <CheckAnswerRow
+            label="Label"
+            value="Value"
+            changeValueCallback={mockCallback}
+            disableButton
+          />
+        </tbody>
+      </table>
+    );
+
+    expect(mockCallback).toBeCalledTimes(0);
+
+    const button = screen.getByRole("button");
+
+    fireEvent.click(button);
+
+    expect(mockCallback).toBeCalledTimes(0);
+  });
 });

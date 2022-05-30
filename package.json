@@ -52,6 +52,7 @@
     "regenerator-runtime": "^0.13.9"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "setupFiles": ["<rootDir>/.jest/setUpTestEnv.js"]
   }
 }

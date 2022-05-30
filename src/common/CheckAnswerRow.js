@@ -1,22 +1,26 @@
 import PropTypes from "prop-types";
 
-const ChangeButton = ({ callBack }) => (
+import ButtonLink from "./ButtonLink";
+
+const ChangeButton = ({ callBack, disableButton }) => (
   <td className="wmrards-text-align-right" style={{ verticalAlign: "top" }}>
-    <button
-      type="button"
-      className="wmrards-btn wmrards-btn--link"
-      onClick={callBack}
-    >
+    <ButtonLink callback={callBack} disabled={disableButton}>
       Change
-    </button>
+    </ButtonLink>
   </td>
 );
 
 ChangeButton.propTypes = {
   callBack: PropTypes.func,
+  disableButton: PropTypes.bool,
 };
 
-const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
+const CheckAnswerRow = ({
+  label,
+  value,
+  changeValueCallback,
+  disableButton,
+}) => {
   if (label) {
     return (
       <tr>
@@ -24,7 +28,10 @@ const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
           {label}
         </th>
         <td data-header="Header 2">{value}</td>
-        <ChangeButton callBack={changeValueCallback} />
+        <ChangeButton
+          callBack={changeValueCallback}
+          disableButton={disableButton}
+        />
       </tr>
     );
   }
@@ -34,7 +41,10 @@ const CheckAnswerRow = ({ label, value, changeValueCallback }) => {
       <td data-header="Header 1" colSpan={7}>
         {value}
       </td>
-      <ChangeButton callBack={changeValueCallback} />
+      <ChangeButton
+        callBack={changeValueCallback}
+        disableButton={disableButton}
+      />
     </tr>
   );
 };
@@ -43,6 +53,7 @@ CheckAnswerRow.propTypes = {
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   changeValueCallback: PropTypes.func,
+  disableButton: PropTypes.bool,
 };
 
 CheckAnswerRow.defaultProps = {

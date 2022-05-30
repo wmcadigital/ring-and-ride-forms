@@ -1,18 +1,16 @@
-import { createRenderer } from "react-test-renderer/shallow";
+import { create } from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 
 import BookingForm from "./BookingForm";
 
 describe("BookingForm", () => {
   it("renders Booking Form as expected", () => {
-    const renderer = createRenderer();
-
-    renderer.render(
+    const renderer = create(
       <BrowserRouter>
         <BookingForm />
       </BrowserRouter>
     );
 
-    expect(renderer.getRenderOutput()).toMatchSnapshot();
+    expect(renderer.toJSON()).toMatchSnapshot();
   });
 });

@@ -1,13 +1,16 @@
-import { createRenderer } from "react-test-renderer/shallow";
+import { create } from "react-test-renderer";
+import { BrowserRouter } from "react-router-dom";
 
 import ContactForm from "./ContactForm";
 
 describe("ContactForm", () => {
   it("renders Contact Form as expected", () => {
-    const renderer = createRenderer();
+    const renderer = create(
+      <BrowserRouter>
+        <ContactForm />
+      </BrowserRouter>
+    );
 
-    renderer.render(<ContactForm />);
-
-    expect(renderer.getRenderOutput()).toMatchSnapshot();
+    expect(renderer.toJSON()).toMatchSnapshot();
   });
 });

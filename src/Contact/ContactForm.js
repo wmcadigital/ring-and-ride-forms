@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import FormContentWrapper from "../common/FormContentWrapper";
 import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
@@ -12,17 +14,30 @@ import Header from "../common/Header";
 import {
   validateContactPreferences,
   validateCheckAnswers,
+  FORM_SUBMIT_ERROR,
 } from "../common/validation";
-
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-const onSubmit = async (values) => {
-  await sleep(300);
-  window.alert(JSON.stringify(values, 0, 2));
-};
+import sendFormData from "../api/sendFormData";
 
 const ContactForm = () => {
   const [goToPage, setGoToPage] = useState(null);
+  const [formSubmitting, setFormSubmitting] = useState(null);
+  const [formSubmitError, setFormSubmitError] = useState(null);
+
+  const navigate = useNavigate();
+
+  const onSubmit = async (values) => {
+    try {
+      setFormSubmitError(null);
+      const response = await sendFormData(values);
+      if (response.status === "success") {
+        navigate("/contactUs/confirmed");
+      } else {
+        setFormSubmitError(FORM_SUBMIT_ERROR);
+      }
+    } catch {
+      setFormSubmitError(FORM_SUBMIT_ERROR);
+    }
+  };
 
   return (
     <>
@@ -33,6 +48,8 @@ const ContactForm = () => {
           onSubmit={onSubmit}
           goToPage={goToPage}
           setGoToPage={setGoToPage}
+          initialValues={{ formName: "Contact" }}
+          disableBackButton={formSubmitting}
         >
           <EnquiryTypeQuery />
           <EnquiryDetail />
@@ -42,6 +59,8 @@ const ContactForm = () => {
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}
+            setFormSubmitting={setFormSubmitting}
+            formSubmitError={formSubmitError}
           />
         </FormWizard>
       </FormContentWrapper>
