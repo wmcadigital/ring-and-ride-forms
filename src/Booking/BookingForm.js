@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import FormContentWrapper from "../common/FormContentWrapper";
 import Header from "../common/Header";
@@ -39,10 +39,16 @@ import {
   addressIdPresent,
   composeFormValidators,
   validateCheckAnswers,
+  FORM_SUBMIT_ERROR
 } from "../common/validation";
+
+import sendFormData from "../api/sendFormData";
 
 const BookingForm = () => {
   const location = useLocation();
+
+  const navigate = useNavigate();
+
   const [bookingParty, setBookingParty] = useState(
     location?.state?.formValues["bookingParty"]
   );
@@ -74,9 +80,26 @@ const BookingForm = () => {
   const [groupSameAsOutward, setGroupSameAsOutward] = useState(null);
   const [hideFinalSubmit, setHideFinalSubmit] = useState(false);
 
+  const [formSubmitting, setFormSubmitting] = useState(null);
+  const [formSubmitError, setFormSubmitError] = useState(null);
+
   useEffect(() => {
     setExternalPage(location?.state?.orderNo);
   }, [location?.state?.orderNo]);
+
+  const onSubmit = async (values) => {
+    try {
+      setFormSubmitError(null);
+      const response = await sendFormData(values);
+      if (response.status === "success") {
+        navigate("/booking/confirmed");
+      } else {
+        setFormSubmitError(FORM_SUBMIT_ERROR);
+      }
+    } catch {
+      setFormSubmitError(FORM_SUBMIT_ERROR);
+    }
+  };
 
   return (
     <>
@@ -84,12 +107,17 @@ const BookingForm = () => {
       <FormContentWrapper>
         <BreadCrumb currentPageName="Booking" />
         <FormWizard
-          onSubmit={() => {}}
-          initialValues={{ passengers: [], ...location?.state?.formValues }}
+          onSubmit={onSubmit}
+          initialValues={{
+            passengers: [],
+            ...location?.state?.formValues,
+            formName: "Booking",
+          }}
           goToPage={goToPage}
           setGoToPage={setGoToPage}
           externalPage={externalPage}
           setExternalPage={setExternalPage}
+          disableBackButton={formSubmitting}
         >
           <BookingParty setBookingParty={setBookingParty} />
           <BookingName />
@@ -219,6 +247,8 @@ const BookingForm = () => {
             setConfirmSameAdditionalPassenger={
               setConfirmSameAdditionalPassenger
             }
+            setFormSubmitting={setFormSubmitting}
+            formSubmitError={formSubmitError}
           />
         </FormWizard>
       </FormContentWrapper>

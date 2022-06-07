@@ -7,9 +7,9 @@ import mySelfNoReturnJourney from "./testData/mySelfNoReturnJourney.json";
 import mySelfReturnJourney from "./testData/mySelfReturnJourney.json";
 import behalfSomeoneReturnJourney from "./testData/behalfSomeoneReturnJourney.json";
 import behalfSomeoneNoReturnJourney from "./testData/behalfSomeoneNoReturnJourney.json";
-import behalfGroupNoReturnJourney from "./testData/behalfGroupNoReturnJourney.json"
+import behalfGroupNoReturnJourney from "./testData/behalfGroupNoReturnJourney.json";
 import behalfGroupReturnJourney from "./testData/behalfGroupReturnJourney.json";
-import behalfGroupReturnDifferentPassengersJourney from "./testData/behalfGroupReturnDifferentPassengersJourney.json"
+import behalfGroupReturnDifferentPassengersJourney from "./testData/behalfGroupReturnDifferentPassengersJourney.json";
 
 jest.mock("react-final-form");
 

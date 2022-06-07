@@ -84,6 +84,93 @@ exports[`CheckAnswers renders CheckAnswers correctly 1`] = `
 </React.Fragment>
 `;
 
+exports[`CheckAnswers renders CheckAnswers with a form submit error if passed as a prop 1`] = `
+<React.Fragment>
+  <Question
+    text="Check your answers"
+  />
+  <ErrorPanel
+    message="An error occurred when submitting the form data"
+  />
+  <h3>
+    About your 
+     enquiry
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      value="test enquiry details"
+    />
+  </Table>
+  <h3>
+    About you
+  </h3>
+  <Table>
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Name"
+      value="Tester Testerson"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="Registration number"
+      value="12345"
+    />
+    <CheckAnswerRow
+      changeValueCallback={[Function]}
+      label="How would you like to be contacted?"
+      value="Email: test@testerson.com 
+        Phone: 0900 555 8888"
+    />
+  </Table>
+  <h3>
+    Now send your enquiry
+  </h3>
+  <p>
+    By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct.
+  </p>
+  <CheckboxContainer
+    error={null}
+  >
+    <FieldError
+      text={null}
+    />
+    <Checkbox
+      fieldName="agreeTermsAndConditions"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            terms and conditions
+          </a>
+        </React.Fragment>
+      }
+    />
+    <Checkbox
+      fieldName="agreePrivacyPolicy"
+      label={
+        <React.Fragment>
+          Agree to the
+           
+          <a
+            href="https://www.wmca.org.uk/policies"
+            rel="noreferrer"
+            target="_blank"
+          >
+            privacy policy
+          </a>
+        </React.Fragment>
+      }
+    />
+  </CheckboxContainer>
+</React.Fragment>
+`;
+
 exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
 <React.Fragment>
   <Question

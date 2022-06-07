@@ -2,6 +2,9 @@ const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
 const nameRegex = /^[a-z ,.'-]+$/i;
 const postCodeRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
 
+export const FORM_SUBMIT_ERROR =
+  "An error occurred when submitting the form data";
+
 export const required = (value) => (value ? undefined : "Required");
 
 export const numbersOnly = (value) => {

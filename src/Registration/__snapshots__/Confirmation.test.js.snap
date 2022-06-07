@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirmation - Registration renders Confirmation for Registration correctly 1`] = `
+<React.Fragment>
+  <Header
+    heading="Register for the Ring and Ride service"
+  />
+  <FormContentWrapper>
+    <BreadCrumb
+      currentPageName="Register"
+    />
+    <ConfirmationPanel
+      header="We've received your form"
+    />
+    <Question
+      text="What happens next"
+    />
+    <p>
+      You'll receive an email to confirm that we have received your registration form.
+    </p>
+    <p>
+      It can take up to 2 days to process a registration form. It may take longer if we need more information from you.
+    </p>
+    <p>
+      If you have not received a response within 10 working days, please contact our Customer Services team.
+    </p>
+    <Question
+      text="Give us a call"
+    />
+    <CustomerServiceDetails />
+  </FormContentWrapper>
+</React.Fragment>
+`;

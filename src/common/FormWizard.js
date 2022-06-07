@@ -12,6 +12,7 @@ const FormWizard = ({
   setGoToPage,
   externalPage,
   setExternalPage,
+  disableBackButton,
 }) => {
   const filteredChildren = children.filter((child) => child !== undefined);
   const [page, setPage] = useState(0);
@@ -72,7 +73,12 @@ const FormWizard = ({
     <>
       <div className="wmrards-col-1 wmrards-col-md-2-3">
         <div className="wmrards-col-1 wmrards-m-b-md">
-          {page > 0 && <ButtonLink callback={previous}>{`< Back`}</ButtonLink>}
+          {page > 0 && (
+            <ButtonLink
+              callback={previous}
+              disabled={disableBackButton ? true : undefined}
+            >{`< Back`}</ButtonLink>
+          )}
         </div>
       </div>
       <div className="wmrards-p-lg wmrards-bg-white">
@@ -105,9 +111,11 @@ const FormWizard = ({
                 )}
                 {isLastPage && !activePage.props.hideSubmit && (
                   <button
-                    className="wmrards-btn wmrards-btn--start"
+                    className={`wmrards-btn wmrards-btn--start ${
+                      submitting ? "wmrards-btn--disabled" : null
+                    }`}
                     type="submit"
-                    disabled={submitting}
+                    disabled={submitting ? "disabled" : undefined}
                   >
                     Accept and send
                     <svg className="wmrards-btn__icon wmrards-btn__icon--right ">
@@ -116,6 +124,15 @@ const FormWizard = ({
                         href="#wmrards-general-chevron-right"
                       ></use>
                     </svg>
+                    {submitting ? (
+                      <div
+                        className="wmrards-loader wmrards-loader--btn wmrards-btn__icon wmrards-btn__icon--right"
+                        role="alert"
+                        aria-live="assertive"
+                      >
+                        <p className="wmrards-loader__content"></p>
+                      </div>
+                    ) : null}
                   </button>
                 )}
               </div>
@@ -139,6 +156,7 @@ FormWizard.propTypes = {
   setGoToPage: PropTypes.func,
   externalPage: PropTypes.number,
   setExternalPage: PropTypes.func,
+  disableBackButton: PropTypes.bool,
 };
 
 FormWizard.defaultProps = {

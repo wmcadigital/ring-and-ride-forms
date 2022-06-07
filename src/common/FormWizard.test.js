@@ -3,7 +3,7 @@ import { Field } from "react-final-form";
 
 import FormWizard from "./FormWizard";
 
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, act } from "@testing-library/react";
 
 const Page1 = () => <div>Page 1</div>;
 const Page2 = () => <div>Page 2</div>;
@@ -259,5 +259,62 @@ describe("FormWizard", () => {
     expect(screen.queryByText("Page 3")).toBeNull();
     expect(screen.queryByText("Page 4")).toBeNull();
     expect(screen.queryByText("Page 5")).toBeNull();
+  });
+
+  it(
+    "on final page and click 'Accept and send', " +
+      "then button should be disabled and loading indicator appears on it ",
+    async () => {
+      const { container } = render(
+        <FormWizard
+          onSubmit={() => new Promise((resolve) => setTimeout(resolve, 1000))}
+        >
+          <Page1 />
+          <Page2 />
+        </FormWizard>
+      );
+
+      const continueButton = screen.getByText("Continue");
+      fireEvent.click(continueButton);
+
+      const acceptAndSendButton = screen.getByText("Accept and send");
+
+      expect(acceptAndSendButton.getAttribute("disabled")).toBeNull();
+      expect(container.getElementsByClassName("wmrards-loader").length).toBe(0);
+
+      fireEvent.click(acceptAndSendButton);
+
+      expect(acceptAndSendButton.getAttribute("disabled")).not.toBeNull();
+      expect(container.getElementsByClassName("wmrards-loader").length).toBe(1);
+
+      await act(() => new Promise((resolve) => setTimeout(resolve, 1500)));
+
+      expect(acceptAndSendButton.getAttribute("disabled")).toBeNull();
+      expect(container.getElementsByClassName("wmrards-loader").length).toBe(0);
+    }
+  );
+
+  it("back button is disabled if corresponding prop passed down", () => {
+    render(
+      <FormWizard onSubmit={() => {}} disableBackButton>
+        <Page1 />
+        <Page2 />
+      </FormWizard>
+    );
+
+    expect(screen.queryByText("Page 1")).not.toBeNull();
+    expect(screen.queryByText("Page 2")).toBeNull();
+
+    const continueButton = screen.getByText("Continue");
+    fireEvent.click(continueButton);
+
+    expect(screen.queryByText("Page 1")).toBeNull();
+    expect(screen.queryByText("Page 2")).not.toBeNull();
+
+    const backButton = screen.getByText("< Back");
+    expect(backButton.getAttribute("disabled")).not.toBeNull();
+
+    expect(screen.queryByText("Page 1")).toBeNull();
+    expect(screen.queryByText("Page 2")).not.toBeNull();
   });
 });

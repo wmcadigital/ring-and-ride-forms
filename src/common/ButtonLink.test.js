@@ -22,4 +22,22 @@ describe("ButtonLink", () => {
 
     expect(mockCallback).toBeCalledTimes(1);
   });
+
+  it("if disabled then callback is NOT invoked on click", () => {
+    const mockCallback = jest.fn();
+
+    render(
+      <ButtonLink callback={mockCallback} disabled>
+        Button Link Text
+      </ButtonLink>
+    );
+
+    const buttonLink = screen.getByRole("button");
+
+    expect(mockCallback).toBeCalledTimes(0);
+
+    fireEvent.click(buttonLink);
+
+    expect(mockCallback).toBeCalledTimes(0);
+  });
 });

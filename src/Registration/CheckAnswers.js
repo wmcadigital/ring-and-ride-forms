@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useFormState } from "react-final-form";
 import PropTypes from "prop-types";
 
@@ -10,6 +11,7 @@ import CheckboxContainer from "../common/CheckboxContainer";
 import formatDate from "../common/formatDate";
 import formatOptions from "../common/formatOptions";
 import AddressFormatted from "../common/AddressFormatted";
+import ErrorPanel from "../common/ErrorPanel";
 
 import contactPreferenceLabels from "./section1/ContactPreferenceOptions";
 import Ethnicity, { PreferNotToSayLabel } from "./section1/Ethnicity";
@@ -19,9 +21,15 @@ import { MobilityAidsOptions } from "./section3/MobilityAidsQuery";
 import getAboutSectionName from "./section1/getAboutSectionName";
 import getRequirementsSectionName from "./section3/getRequirementsSectionName";
 
-const CheckAnswers = ({ setGoToPage }) => {
+const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
+
+  const submitting = stateApi.submitting;
+
+  useEffect(() => {
+    setFormSubmitting(submitting);
+  }, [submitting]);
 
   const agreeLegalError = stateApi.submitFailed ? stateApi.errors?.legal : null;
 
@@ -61,12 +69,14 @@ const CheckAnswers = ({ setGoToPage }) => {
   return (
     <>
       <Question text="Check your answers" />
+      {formSubmitError ? <ErrorPanel message={formSubmitError} /> : null}
       <h3>{getAboutSectionName(stateApi)}</h3>
       <Table>
         <CheckAnswerRow
           label="Name"
           value={`${formValues["firstName"]} ${formValues["lastName"]}`}
           changeValueCallback={() => setGoToPage(1)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Date of birth"
@@ -76,21 +86,25 @@ const CheckAnswers = ({ setGoToPage }) => {
             formValues["bdayYear"]
           )}
           changeValueCallback={() => setGoToPage(2)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Telephone number"
           value={formValues["phoneNo"]}
           changeValueCallback={() => setGoToPage(3)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Email address"
           value={formValues["emailAddress"]}
           changeValueCallback={() => setGoToPage(4)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Address"
           value={<AddressFormatted addressObj={formValues["registered"]} />}
           changeValueCallback={() => setGoToPage(5)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Preferred method of contact"
@@ -99,11 +113,13 @@ const CheckAnswers = ({ setGoToPage }) => {
             contactPreferenceLabels
           )}
           changeValueCallback={() => setGoToPage(6)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Ethnicity"
           value={`${ethnicityDisplay}${specificEthnicityDisplay}`}
           changeValueCallback={() => setGoToPage(7)}
+          disableButton={submitting}
         />
       </Table>
       {emergencyContactPresent ? (
@@ -114,6 +130,7 @@ const CheckAnswers = ({ setGoToPage }) => {
               label="Name"
               value={`${formValues["emergencyFirstName"]} ${formValues["emergencyLastName"]}`}
               changeValueCallback={() => setGoToPage(offSet1 + 2)}
+              disableButton={submitting}
             />
             <CheckAnswerRow
               label={
@@ -123,21 +140,25 @@ const CheckAnswers = ({ setGoToPage }) => {
               }
               value={formValues["emergencyRelationship"]}
               changeValueCallback={() => setGoToPage(offSet1 + 3)}
+              disableButton={submitting}
             />
             <CheckAnswerRow
               label="Telephone number"
               value={formValues["emergencyPhoneNo"]}
               changeValueCallback={() => setGoToPage(offSet1 + 4)}
+              disableButton={submitting}
             />
             <CheckAnswerRow
               label="Email address"
               value={formValues["emergencyEmailAddress"]}
               changeValueCallback={() => setGoToPage(offSet1 + 5)}
+              disableButton={submitting}
             />
             <CheckAnswerRow
               label="Address"
               value={<AddressFormatted addressObj={formValues["emergency"]} />}
               changeValueCallback={() => setGoToPage(offSet1 + 6)}
+              disableButton={submitting}
             />
           </Table>
         </>
@@ -151,6 +172,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             BusProblemOptions(registerForYourself)
           )}
           changeValueCallback={() => setGoToPage(offSet2 + 1)}
+          disableButton={submitting}
         />
         <CheckAnswerRow
           label="Reasons"
@@ -163,6 +185,7 @@ const CheckAnswers = ({ setGoToPage }) => {
               : ""
           }`}
           changeValueCallback={() => setGoToPage(offSet2 + 2)}
+          disableButton={submitting}
         />
         {formValues["hasCondition"] == "yes" ? (
           <CheckAnswerRow
@@ -173,6 +196,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             }
             value={formValues["conditionDetail"]}
             changeValueCallback={() => setGoToPage(offSet2 + 4)}
+            disableButton={submitting}
           />
         ) : null}
         <CheckAnswerRow
@@ -186,6 +210,7 @@ const CheckAnswers = ({ setGoToPage }) => {
               : ""
           }`}
           changeValueCallback={() => setGoToPage(offSet3 + 1)}
+          disableButton={submitting}
         />
         {formValues["mobilityAids"]?.manualWheelchair ||
         formValues["mobilityAids"]?.poweredWheelchair ? (
@@ -201,6 +226,7 @@ const CheckAnswers = ({ setGoToPage }) => {
                 : "cannot transfer"
             }`}
             changeValueCallback={() => setGoToPage(offSet3 + 2)}
+            disableButton={submitting}
           />
         ) : null}
         {formValues["additionalRequirements"] == "yes" ? (
@@ -208,6 +234,7 @@ const CheckAnswers = ({ setGoToPage }) => {
             label="Additional requirements"
             value={formValues["additionalRequirementsDetails"]}
             changeValueCallback={() => setGoToPage(offSet3 + 3)}
+            disableButton={submitting}
           />
         ) : null}
       </Table>
@@ -266,6 +293,8 @@ const CheckAnswers = ({ setGoToPage }) => {
 
 CheckAnswers.propTypes = {
   setGoToPage: PropTypes.func,
+  setFormSubmitting: PropTypes.func,
+  formSubmitError: PropTypes.string,
 };
 
 export default CheckAnswers;
