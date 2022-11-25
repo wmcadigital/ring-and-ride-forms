@@ -21,7 +21,7 @@ const CheckAnswers = ({
   setHideFinalSubmit,
   setConfirmSameAdditionalPassenger,
   setFormSubmitting,
-  formSubmitError
+  formSubmitError,
 }) => {
   const stateApi = useFormState();
   const formApi = useForm();

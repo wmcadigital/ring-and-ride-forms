@@ -39,7 +39,7 @@ import {
   addressIdPresent,
   composeFormValidators,
   validateCheckAnswers,
-  FORM_SUBMIT_ERROR
+  FORM_SUBMIT_ERROR,
 } from "../common/validation";
 
 import sendFormData from "../api/sendFormData";
