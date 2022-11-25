@@ -12,17 +12,19 @@ import OutsideWmca from "./Registration/section1/OutsideWmca";
 import ForgotRegistration from "./Booking/section1/ForgotRegistration";
 
 const Home = () => (
-  <ul>
-    <li>
-      <Link to="/contactUs">Contact Us</Link>
-    </li>
-    <li>
-      <Link to="/registration">Registration</Link>
-    </li>
-    <li>
-      <Link to="/booking">Booking</Link>
-    </li>
-  </ul>
+  <>
+    <ul>
+      <li>
+        <Link to="/contactUs">Contact Us</Link>
+      </li>
+      <li>
+        <Link to="/registration">Registration</Link>
+      </li>
+      <li>
+        <Link to="/booking">Booking</Link>
+      </li>
+    </ul>
+  </>
 );
 
 const App = () => {
