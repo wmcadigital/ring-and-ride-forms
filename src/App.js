@@ -34,7 +34,10 @@ const App = () => {
         <Route path="/contactUs/confirmed" element={<ContactConfirmation />} />
         <Route path="/registration" element={<RegistrationForm />} />
         <Route path="/registration/outsideWmca" element={<OutsideWmca />} />
-        <Route path="/registration/confirmed" element={<RegistrationConfirmation />} />
+        <Route
+          path="/registration/confirmed"
+          element={<RegistrationConfirmation />}
+        />
         <Route path="/booking" element={<BookingForm />} />
         <Route path="/booking/confirmed" element={<BookingConfirmation />} />
         <Route
