@@ -73,8 +73,8 @@ const RegistrationForm = () => {
   const onSubmit = async (values) => {
     try {
       setFormSubmitError(null);
-      const response = await sendFormData(values);
-      if (response.status === "success") {
+      const response = await sendFormData(values, "Ring & Ride Registration Form");
+      if (response.includes("Version")) {
         navigate("/registration/confirmed");
       } else {
         setFormSubmitError(FORM_SUBMIT_ERROR);
