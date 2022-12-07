@@ -6,6 +6,7 @@ import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 
+import RegistrationArea from "./section1/RegistrationArea";
 import RegistrationIndividual from "./section1/RegistrationIndividual";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
@@ -101,6 +102,7 @@ const RegistrationForm = () => {
           setExternalPage={setExternalPage}
           disableBackButton={formSubmitting}
         >
+          <RegistrationArea />
           <RegistrationIndividual
             setRegisterForYourself={setRegisterForYourself}
           />
