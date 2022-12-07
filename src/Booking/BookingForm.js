@@ -7,6 +7,7 @@ import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 import { validateContactPreferences } from "../common/validation";
 
+import RegistrationArea from "./section1/RegistrationArea";
 import BookingParty from "./section1/BookingParty";
 import BookingName from "./section1/BookingName";
 import RegistrationNoEntry from "./section1/RegistrationNoEntry";
@@ -119,6 +120,7 @@ const BookingForm = () => {
           setExternalPage={setExternalPage}
           disableBackButton={formSubmitting}
         >
+          <RegistrationArea />
           <BookingParty setBookingParty={setBookingParty} />
           <BookingName />
           {bookingParty !== "behalfGroup" ? (
