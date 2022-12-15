@@ -13,6 +13,18 @@ export const numbersOnly = (value) => {
   }
 };
 
+export const registrationNumber = (value) => {
+  if (value) {
+    return /^\d+$/.test(value) ? undefined : "Your registration number should be only numbers";
+  }
+};
+
+export const registrationNumberLength = (value) => {
+  if (value) {
+    return value.length == 5 || value.length == 6 ? undefined : "Your registration number should be 5 or 6 numbers";
+  }
+};
+
 export const numbersAndSpacesOnly = (value) => {
   if (value) {
     return /^[\d\s]+$/.test(value) ? undefined : "Invalid";
