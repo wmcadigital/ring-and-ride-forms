@@ -2,57 +2,64 @@ import { validateDate } from "../common/validation";
 
 export const validateBookingDate = (values = {}) => {
   const errors = {};
-  const { bookingDateDay, bookingDateMonth, bookingDateYear } = values;
-
-  if (!bookingDateDay && !bookingDateMonth && !bookingDateYear) {
-    errors.bookingDate = "Required";
-    return errors;
-  }
-
-  if (!bookingDateDay || !bookingDateMonth || !bookingDateYear) {
-    errors.bookingDate = "Invalid";
-    return errors;
-  }
-
-  const invalid = validateDate(
+  const {
+    bookingDateDayAuto,
     bookingDateDay,
     bookingDateMonth,
-    bookingDateYear
-  );
-
-  if (invalid) {
-    errors.bookingDate = invalid;
-    return errors;
-  }
-
-  const dateToValidate = new Date(
     bookingDateYear,
-    bookingDateMonth - 1,
-    bookingDateDay
-  );
+  } = values;
 
-  const now = new Date();
+  if (bookingDateDayAuto == "other") {
+    if (!bookingDateDay && !bookingDateMonth && !bookingDateYear) {
+      errors.bookingDate = "Required";
+      return errors;
+    }
 
-  let currentDay = now.getDate();
-  const currentMonth = now.getMonth();
-  const currentYear = now.getFullYear();
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
+    if (!bookingDateDay || !bookingDateMonth || !bookingDateYear) {
+      errors.bookingDate = "Invalid";
+      return errors;
+    }
 
-  if (hours > 14) {
-    currentDay = currentDay + 1;
-  }
+    const invalid = validateDate(
+      bookingDateDay,
+      bookingDateMonth,
+      bookingDateYear
+    );
 
-  if (hours === 14 && minutes > 30) {
-    currentDay = currentDay + 1;
-  }
+    if (invalid) {
+      errors.bookingDate = invalid;
+      return errors;
+    }
 
-  const cutOffDate = new Date(currentYear, currentMonth, currentDay);
+    const dateToValidate = new Date(
+      bookingDateYear,
+      bookingDateMonth - 1,
+      bookingDateDay
+    );
 
-  if (dateToValidate.getTime() <= cutOffDate.getTime()) {
-    errors.bookingDate = "Date is not available";
+    const now = new Date();
+
+    let currentDay = now.getDate();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    if (hours > 14) {
+      currentDay = currentDay + 1;
+    }
+
+    if (hours === 14 && minutes > 30) {
+      currentDay = currentDay + 1;
+    }
+
+    const cutOffDate = new Date(currentYear, currentMonth, currentDay);
+
+    if (dateToValidate.getTime() <= cutOffDate.getTime()) {
+      errors.bookingDate = "Date is not available";
+      return errors;
+    }
+
     return errors;
   }
-
-  return errors;
 };

@@ -5,23 +5,29 @@ const postCodeRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
 export const FORM_SUBMIT_ERROR =
   "An error occurred when submitting the form data";
 
-export const required = (value) => (value ? undefined : "Required");
+export const required = (value) => (value ? undefined : "Question is Required");
 
 export const numbersOnly = (value) => {
   if (value) {
-    return /^\d+$/.test(value) ? undefined : "Invalid";
+    return /^\d+$/.test(value)
+      ? undefined
+      : "Invalid. Please enter numbers only";
   }
 };
 
 export const registrationNumber = (value) => {
   if (value) {
-    return /^\d+$/.test(value) ? undefined : "Your registration number should be only numbers";
+    return /^\d+$/.test(value)
+      ? undefined
+      : "Your registration number should be only numbers";
   }
 };
 
 export const registrationNumberLength = (value) => {
   if (value) {
-    return value.length == 5 || value.length == 6 ? undefined : "Your registration number should be 5 or 6 numbers";
+    return value.length == 5 || value.length == 6
+      ? undefined
+      : "Your registration number should be 5 or 6 numbers";
   }
 };
 
@@ -33,7 +39,7 @@ export const numbersAndSpacesOnly = (value) => {
 
 export const email = (value) => {
   if (value) {
-    return emailRegex.test(value) ? undefined : "Invalid";
+    return emailRegex.test(value) ? undefined : "Invalid email";
   }
 };
 
@@ -112,7 +118,7 @@ export const validateDateOfBirth = (day, month, year) => {
 
 export const postCode = (value) => {
   if (value) {
-    return postCodeRegex.test(value) ? undefined : "Invalid";
+    return postCodeRegex.test(value) ? undefined : "Invalid postcode";
   }
 };
 

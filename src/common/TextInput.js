@@ -27,7 +27,7 @@ const TextInput = ({
       type="text"
       className="wmrards-fe-input"
       defaultValue={defaultValue}
-      />
+    />
   </div>
 );
 
@@ -38,7 +38,6 @@ TextInput.propTypes = {
   error: PropTypes.string,
   containerClass: PropTypes.string,
   defaultValue: PropTypes.string,
-
 };
 
 export default TextInput;

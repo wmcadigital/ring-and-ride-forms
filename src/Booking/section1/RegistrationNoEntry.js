@@ -45,7 +45,11 @@ const RegistrationNoEntry = ({ orderNo }) => {
             <p>For example, 123456</p>
           </>
         }
-        validation={composeValidators(required, registrationNumber, registrationNumberLength)}
+        validation={composeValidators(
+          required,
+          registrationNumber,
+          registrationNumberLength
+        )}
         error={error}
       />
       <ButtonLink
