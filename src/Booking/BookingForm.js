@@ -84,12 +84,18 @@ const BookingForm = () => {
   const [formSubmitting, setFormSubmitting] = useState(null);
   const [formSubmitError, setFormSubmitError] = useState(null);
 
-  // show area page if current date is 20th January 2023 or greater  
+  // show area page if current date is 20th January 2023 or greater
   const currentDate = new Date();
   const areaDate = new Date("Jan 20, 2023 00:00:00");
 
-  const cDate = currentDate.getFullYear() + ('0' + (currentDate.getMonth()+1)).slice(-2) + ('0' + currentDate.getDate()).slice(-2);
-  const aDate = areaDate.getFullYear() + ('0' + (areaDate.getMonth()+1)).slice(-2) + ('0' + areaDate .getDate()).slice(-2);
+  const cDate =
+    currentDate.getFullYear() +
+    ("0" + (currentDate.getMonth() + 1)).slice(-2) +
+    ("0" + currentDate.getDate()).slice(-2);
+  const aDate =
+    areaDate.getFullYear() +
+    ("0" + (areaDate.getMonth() + 1)).slice(-2) +
+    ("0" + areaDate.getDate()).slice(-2);
 
   useEffect(() => {
     setExternalPage(location?.state?.orderNo);
@@ -127,7 +133,7 @@ const BookingForm = () => {
           setExternalPage={setExternalPage}
           disableBackButton={formSubmitting}
         >
-          { cDate >= aDate ? <RegistrationArea /> : null }
+          {cDate >= aDate ? <RegistrationArea /> : null}
           <BookingParty setBookingParty={setBookingParty} />
           <BookingName />
           {bookingParty !== "behalfGroup" ? (

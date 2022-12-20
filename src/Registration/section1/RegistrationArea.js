@@ -20,7 +20,6 @@ const RegistrationArea = () => {
     const button = document.querySelector('button[type="submit"]');
     button.disabled = true;
     button.classList.add("wmrards-btn--disabled");
-
   } else {
     const button = document.querySelector('button[type="submit"]');
     button.disabled = false;
@@ -46,12 +45,26 @@ const RegistrationArea = () => {
           fieldName="Origin"
         />
         {formValues.Origin === "Coventry" ? (
-          <><div className="wmrards-warning-text wmrards-m-b-md">
-            <svg className="wmrards-warning-text__icon">
-              <use xlinkHref="#wmrards-general-warning-triangle" href="#wmrards-general-warning-triangle"></use>
-            </svg>
-            If you are starting your trip in Coventry you need to book using West Midlands On-Demand. <a href='https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/' title='Find out more about West Midlands On-Demand' target='_blank' rel="noreferrer">Find out more on the Transport For West Midlands Website</a>
-          </div></>
+          <>
+            <div className="wmrards-warning-text wmrards-m-b-md">
+              <svg className="wmrards-warning-text__icon">
+                <use
+                  xlinkHref="#wmrards-general-warning-triangle"
+                  href="#wmrards-general-warning-triangle"
+                ></use>
+              </svg>
+              If you are starting your trip in Coventry you need to book using
+              West Midlands On-Demand.{" "}
+              <a
+                href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/"
+                title="Find out more about West Midlands On-Demand"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Find out more on the Transport For West Midlands Website
+              </a>
+            </div>
+          </>
         ) : null}
         <RadioButton
           key={3}

@@ -10,7 +10,8 @@ import ButtonLink from "../../common/ButtonLink";
 import {
   composeValidators,
   required,
-  numbersOnly,
+  registrationNumber,
+  registrationNumberLength,
 } from "../../common/validation";
 import getSectionPositionInfo from "../getSectionPosition";
 import getAboutSectionName from "./getAboutSectionName";
@@ -41,10 +42,14 @@ const RegistrationNoEntry = ({ orderNo }) => {
           <>
             {" "}
             Registration number
-            <p>For example, 1234567890</p>
+            <p>For example, 123456</p>
           </>
         }
-        validation={composeValidators(required, numbersOnly)}
+        validation={composeValidators(
+          required,
+          registrationNumber,
+          registrationNumberLength
+        )}
         error={error}
       />
       <ButtonLink
