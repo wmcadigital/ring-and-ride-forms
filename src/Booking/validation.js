@@ -59,21 +59,30 @@ export const validateBookingDate = (values = {}) => {
     }
 
     // check if tomorrow is sunday and show error
-    if (dateTomorrow.includes("Sun") && dateToValidate.toDateString().includes("Sun")) {
-      errors.bookingDate = "You can't book a Sunday today. You need to book on a Friday before 14:30";
+    if (
+      dateTomorrow.includes("Sun") &&
+      dateToValidate.toDateString().includes("Sun")
+    ) {
+      errors.bookingDate =
+        "You can't book a Sunday today. You need to book on a Friday before 14:30";
       return errors;
     }
 
     // check if tomorrow is monday and show error
-    if (dateTomorrow.includes("Mon") && dateToValidate.toDateString().includes("Mon")) {
-      errors.bookingDate = "You can't book a Monday today. You need to book on a Saturday before 14:30";
+    if (
+      dateTomorrow.includes("Mon") &&
+      dateToValidate.toDateString().includes("Mon")
+    ) {
+      errors.bookingDate =
+        "You can't book a Monday today. You need to book on a Saturday before 14:30";
       return errors;
     }
 
     const cutOffDate = new Date(currentYear, currentMonth, currentDay);
 
     if (dateToValidate.getTime() <= cutOffDate.getTime()) {
-      errors.bookingDate = "You can't book this day as it's either today or after 14:30";
+      errors.bookingDate =
+        "You can't book this day as it's either today or after 14:30";
       return errors;
     }
 

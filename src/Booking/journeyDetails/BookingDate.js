@@ -15,37 +15,43 @@ import { required } from "../../common/validation";
 const BookingDate = () => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
-
-  console.log(stateApi);
-  console.log(formValues);
   const formApi = useForm();
-
   const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
   const error1 = stateApi.submitFailed
     ? stateApi.errors?.bookingDateDayAuto
     : null;
 
-    useEffect(() => {
-      if (formValues.bookingDateDayAuto == "other") {
-        if (
-          formValues.bookingDateDay !== null &&
-          formValues.bookingDateMonth !== null &&
-          formValues.bookingDateYear !== null
-        ) {
-          formApi.mutators.setFormAttribute(
-            "formData.bookingDateDayManual",
-            formValues.bookingDateDay +
-              "/" +
-              formValues.bookingDateMonth +
-              "/" +
-              formValues.bookingDateYear
-          );
-        } else {
-          formApi.mutators.setFormAttribute("formData.bookingDateDayManual", "N/A");
-        }
+  useEffect(() => {
+    if (formValues.bookingDateDayAuto == "other") {
+      if (
+        formValues.bookingDateDay !== null &&
+        formValues.bookingDateMonth !== null &&
+        formValues.bookingDateYear !== null
+      ) {
+        formApi.mutators.setFormAttribute(
+          "formData.bookingDateDayManual",
+          formValues.bookingDateDay +
+            "/" +
+            formValues.bookingDateMonth +
+            "/" +
+            formValues.bookingDateYear
+        );
+      } else {
+        formApi.mutators.setFormAttribute(
+          "formData.bookingDateDayManual",
+          "N/A"
+        );
       }
-    }, [formApi.mutators, formValues.bookingDateDay, formValues.bookingDateMonth, formValues.bookingDateYear, formValues.bookingDateDayAuto]);
+    }
+  }, [
+    formApi.mutators,
+    formValues.bookingDateDay,
+    formValues.bookingDateMonth,
+    formValues.bookingDateYear,
+    formValues.bookingDateDayAuto,
+  ]);
 
+  // trip date validation
   const today = new Date();
   const current = new Date();
   const current2 = new Date();
@@ -54,6 +60,11 @@ const BookingDate = () => {
   const current5 = new Date();
   const current6 = new Date();
   const current7 = new Date();
+
+  // 👇️ get current date
+  const currentTime = today.getHours() + ":" + today.getMinutes();
+  // set cut off time
+  const cutoffTime = "14:30";
 
   today.setDate(today.getDate());
   current.setDate(current.getDate() + 1);
@@ -64,28 +75,9 @@ const BookingDate = () => {
   current6.setDate(current6.getDate() + 6);
   current7.setDate(current7.getDate() + 7);
 
-  // const dayTomorrow = current.toLocaleDateString("en-GB", { weekday: "long" });
-  // const dayInTwoDays = current2.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-  // const dayInThreeDays = current3.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-  // const dayInFourDays = current4.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-  // const dayInFiveDays = current5.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-  // const dayInSixDays = current6.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-  // const dayInSevenDays = current7.toLocaleDateString("en-GB", {
-  //   weekday: "long",
-  // });
-
   const dateToday = today.toDateString();
-  const dateTomorrow = current.toDateString();
+  const dayTomorrow = current.toLocaleDateString("en-GB", { weekday: "short" });
+  let dateTomorrow = current.toDateString();
   const dateInTwoDays = current2.toDateString();
   const dateInThreeDays = current3.toDateString();
   const dateInFourDays = current4.toDateString();
@@ -93,29 +85,46 @@ const BookingDate = () => {
   const dateInSixDays = current6.toDateString();
   const dateInSevenDays = current7.toDateString();
 
-  console.log(today);
-
   // disable sunday button if today is saturday
   if (dateToday.includes("Sat")) {
-    const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+    const radios = document.querySelectorAll(
+      'input[name="bookingDateDayAuto"]'
+    );
     for (const f of radios) {
-      if (f.value.includes('Sun')) {
+      if (f.value.includes("Sun")) {
         f.disabled = true;
       }
     }
-  } else if (dateToday.includes("Sun")) { // disable monday if today is sunday
-    const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+  } else if (dateToday.includes("Sun")) {
+    // disable monday if today is sunday
+    const radios = document.querySelectorAll(
+      'input[name="bookingDateDayAuto"]'
+    );
     for (const f of radios) {
-      if (f.value.includes('Mon')) {
+      if (f.value.includes("Mon")) {
         f.disabled = true;
       }
     }
   }
 
-  // set other date label
+  // disable next day if after 14:30
+  if (currentTime > cutoffTime) {
+    console.log("yes");
+    const radios = document.querySelectorAll(
+      'input[name="bookingDateDayAuto"]'
+    );
+    for (const f of radios) {
+      if (f.value.includes(dayTomorrow)) {
+        f.disabled = true; // disable tomorrows radio button
+        dateTomorrow = `${current.toDateString()} (You can't book this day as it's after 14:30)`; // update tomorrows radio label
+      }
+    }
+  }
+
+  // set other date label + 7 days
   const dateObj = new Date();
   dateObj.setDate(dateObj.getDate() + 8);
-  const month = dateObj.getUTCMonth() + 1; //months from 1-12
+  const month = dateObj.getUTCMonth() + 1;
   const day = dateObj.getUTCDate();
   const year = dateObj.getUTCFullYear();
 
@@ -131,8 +140,10 @@ const BookingDate = () => {
 
       <RadioGroup error={error1}>
         <label className="wmrards-fe-label" htmlFor="bookingDateDayAuto">
-          Trips need to be booked the day before you wish to travel unless
-          it&apos;s a Sunday or Monday where it needs to be 2 days before.
+          Journey requests need to be received by 2.30pm on the day prior to
+          your requested journey unless it&apos;s a Sunday or Monday where it
+          needs to be 2 days before. We will then e-mail you to confirm your
+          booking as soon as possible.
         </label>
         <FieldError text={error1} />
         <RadioButton
