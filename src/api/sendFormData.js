@@ -22,12 +22,13 @@ const sendFormData = async (formData, formSubject) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      to: 13,
+      to: 7,
       body: JSON.stringify(flattenJSON(formData)),
       from: formData.emailAddress,
       subject: formSubject,
     }),
   });
+
   const response = await rawResponse.json();
 
   return response;

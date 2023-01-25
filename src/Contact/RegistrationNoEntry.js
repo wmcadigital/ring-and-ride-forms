@@ -4,7 +4,12 @@ import FormSection from "../common/FormSection";
 import TextInput from "../common/TextInput";
 import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
-import { numbersOnly } from "../common/validation";
+import {
+  composeValidators,
+  required,
+  registrationNumber,
+  registrationNumberLength,
+} from "../common/validation";
 
 const RegistrationNoEntry = () => {
   const stateApi = useFormState();
@@ -27,7 +32,11 @@ const RegistrationNoEntry = () => {
             <p>For example, 1234567890</p>
           </>
         }
-        validation={numbersOnly}
+        validation={composeValidators(
+          required,
+          registrationNumber,
+          registrationNumberLength
+        )}
         error={error}
       />
     </FormSection>
