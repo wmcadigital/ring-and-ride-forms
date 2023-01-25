@@ -31,6 +31,8 @@ const sendFormData = async (formData, formSubject) => {
 
   const response = await rawResponse.json();
 
+  console.log(response);
+
   return response;
 };
 
