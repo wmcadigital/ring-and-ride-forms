@@ -19,32 +19,57 @@ const sendFormData = async (formData, formSubject) => {
 
   console.log('rawResponse Start');
 
-  const rawResponse = await fetch(formEndPoint, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      to: 7,
-      body: JSON.stringify(flattenJSON(formData)),
-      from: formData.emailAddress,
-      subject: formSubject,
-    }),
-  }).catch(function (error) {
-    // TypeError: Failed to fetch
-    console.log('There was an error', error);
-  });
 
-  console.log('rawResponse Finish');
+  try {
+    const rawResponse = await fetch(formEndPoint, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        to: 7,
+        body: JSON.stringify(flattenJSON(formData)),
+        from: formData.emailAddress,
+        subject: formSubject,
+      }),
+    })
+    const response = await rawResponse.json();
+    return response;
+  } catch (error) {
+    console.log("error", error);
+  }
 
-  console.log(rawResponse);
 
-  const response = await rawResponse.json();
 
-  console.log(response);
 
-  return response;
+
+  // const rawResponse = await fetch(formEndPoint, {
+  //   method: "POST",
+  //   headers: {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify({
+  //     to: 7,
+  //     body: JSON.stringify(flattenJSON(formData)),
+  //     from: formData.emailAddress,
+  //     subject: formSubject,
+  //   }),
+  // }).catch(function (error) {
+  //   // TypeError: Failed to fetch
+  //   console.log('There was an error', error);
+  // });
+
+  // console.log('rawResponse Finish');
+
+  // console.log(rawResponse);
+
+  // const response = await rawResponse.json();
+
+  // console.log(response);
+
+  // return response;
 };
 
 export default sendFormData;
