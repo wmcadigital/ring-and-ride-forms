@@ -29,6 +29,9 @@ const sendFormData = async (formData, formSubject) => {
       from: formData.emailAddress,
       subject: formSubject,
     }),
+  }).catch(function (error) {
+    // TypeError: Failed to fetch
+    console.log('There was an error', error);
   });
 
   console.log(rawResponse);
