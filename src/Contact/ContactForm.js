@@ -27,18 +27,14 @@ const ContactForm = () => {
 
   const onSubmit = async (values) => {
     try {
-      console.log('try');
       setFormSubmitError(null);
       const response = await sendFormData(values, "Ring & Ride Contact Form");
-      console.log(response);
       if (response.includes("Version")) {
         navigate("/contactUs/confirmed");
       } else {
-        console.log('fail 1');
         setFormSubmitError(FORM_SUBMIT_ERROR);
       }
     } catch {
-      console.log('fail 2');
       setFormSubmitError(FORM_SUBMIT_ERROR);
     }
   };

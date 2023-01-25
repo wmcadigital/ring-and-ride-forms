@@ -3,8 +3,6 @@ const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
 // const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
 
 const sendFormData = async (formData, formSubject) => {
-  console.log('sendFormData');
-  console.log(formData);
   // flatten the formdata to send to the api
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
     for (let key in obj) {
@@ -16,9 +14,6 @@ const sendFormData = async (formData, formSubject) => {
     }
     return res;
   };
-
-  console.log('rawResponse Start');
-
 
   try {
     const rawResponse = await fetch(formEndPoint, {
@@ -39,37 +34,6 @@ const sendFormData = async (formData, formSubject) => {
   } catch (error) {
     console.log("error", error);
   }
-
-
-
-
-
-  // const rawResponse = await fetch(formEndPoint, {
-  //   method: "POST",
-  //   headers: {
-  //     Accept: "application/json",
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify({
-  //     to: 7,
-  //     body: JSON.stringify(flattenJSON(formData)),
-  //     from: formData.emailAddress,
-  //     subject: formSubject,
-  //   }),
-  // }).catch(function (error) {
-  //   // TypeError: Failed to fetch
-  //   console.log('There was an error', error);
-  // });
-
-  // console.log('rawResponse Finish');
-
-  // console.log(rawResponse);
-
-  // const response = await rawResponse.json();
-
-  // console.log(response);
-
-  // return response;
 };
 
 export default sendFormData;
