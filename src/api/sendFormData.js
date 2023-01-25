@@ -7,7 +7,7 @@ const sendFormData = async (formData, formSubject) => {
   console.log(formData);
   // flatten the formdata to send to the api
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
-    for (key in obj) {
+    for (let key in obj) {
       if (typeof obj[key] !== "object") {
         res[extraKey + key] = obj[key];
       } else {
