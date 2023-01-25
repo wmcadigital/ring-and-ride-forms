@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("react-refresh/runtime");
-var ErrorOverlay = require("react-error-overlay");
+var Refresh = require("8789bf211f5448b3");
+var ErrorOverlay = require("c2c5e2dacc183bf9");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,11 +163,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"react-refresh/runtime":"786KC","react-error-overlay":"1dldy"}],"786KC":[function(require,module,exports) {
+},{"8789bf211f5448b3":"786KC","c2c5e2dacc183bf9":"1dldy"}],"786KC":[function(require,module,exports) {
 "use strict";
-module.exports = require("./cjs/react-refresh-runtime.development.js");
+module.exports = require("43fa969788e9e113");
 
-},{"./cjs/react-refresh-runtime.development.js":"hdge7"}],"hdge7":[function(require,module,exports) {
+},{"43fa969788e9e113":"hdge7"}],"hdge7":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -628,7 +628,7 @@ module.exports = require("./cjs/react-refresh-runtime.development.js");
 })();
 
 },{}],"1dldy":[function(require,module,exports) {
-var process = require("process");
+var process = require("e5942d17505a7304");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -2358,7 +2358,7 @@ var process = require("process");
     ]);
 });
 
-},{"process":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"e5942d17505a7304":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -3086,9 +3086,9 @@ $RefreshReg$(_c1, "App");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Contact/ContactForm":"5pFmY","./Contact/Confirmation":"eZsXp","./Registration/RegistrationForm":"6Nnh8","./Registration/Confirmation":"6iVA6","./Booking/BookingForm":"aU5Bc","./Booking/Confirmation":"bqvPz","./Registration/section1/OutsideWmca":"dm4we","./Booking/section1/ForgotRegistration":"biTD5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
-module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
+module.exports = require("5f43ca9da750d89c");
 
-},{"./cjs/react-jsx-dev-runtime.development.js":"48uCM"}],"48uCM":[function(require,module,exports) {
+},{"5f43ca9da750d89c":"48uCM"}],"48uCM":[function(require,module,exports) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -3100,7 +3100,7 @@ module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
  */ "use strict";
 (function() {
     "use strict";
-    var React = require("react");
+    var React = require("4aaa105d24649ac");
     // ATTENTION
     // When adding new symbols to this file,
     // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
@@ -3919,11 +3919,11 @@ module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"react":"21dqq"}],"21dqq":[function(require,module,exports) {
+},{"4aaa105d24649ac":"21dqq"}],"21dqq":[function(require,module,exports) {
 "use strict";
-module.exports = require("./cjs/react.development.js");
+module.exports = require("c65001f3d7ef9722");
 
-},{"./cjs/react.development.js":"6YvXz"}],"6YvXz":[function(require,module,exports) {
+},{"c65001f3d7ef9722":"6YvXz"}],"6YvXz":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -5791,7 +5791,7 @@ module.exports = require("./cjs/react.development.js");
 
 },{}],"lOjBx":[function(require,module,exports) {
 "use strict";
-var m = require("react-dom");
+var m = require("ccce339353adef65");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 exports.createRoot = function(c, o) {
     i.usingClientEntryPoint = true;
@@ -5810,7 +5810,7 @@ exports.hydrateRoot = function(c, h, o) {
     }
 };
 
-},{"react-dom":"j6uA9"}],"j6uA9":[function(require,module,exports) {
+},{"ccce339353adef65":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -5824,9 +5824,9 @@ function checkDCE() {
     // a false positive.
     throw new Error("^_^");
 }
-module.exports = require("./cjs/react-dom.development.js");
+module.exports = require("4de240b6f9b6d0ba");
 
-},{"./cjs/react-dom.development.js":"3iA9v"}],"3iA9v":[function(require,module,exports) {
+},{"4de240b6f9b6d0ba":"3iA9v"}],"3iA9v":[function(require,module,exports) {
 /**
  * @license React
  * react-dom.development.js
@@ -5839,8 +5839,8 @@ module.exports = require("./cjs/react-dom.development.js");
 (function() {
     "use strict";
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-    var React = require("react");
-    var Scheduler = require("scheduler");
+    var React = require("cece3691b7f8476b");
+    var Scheduler = require("22c7258ebfd2ea6a");
     var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     var suppressWarning = false;
     function setSuppressWarning(newSuppressWarning) {
@@ -26811,11 +26811,11 @@ module.exports = require("./cjs/react-dom.development.js");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"react":"21dqq","scheduler":"juvHo"}],"juvHo":[function(require,module,exports) {
+},{"cece3691b7f8476b":"21dqq","22c7258ebfd2ea6a":"juvHo"}],"juvHo":[function(require,module,exports) {
 "use strict";
-module.exports = require("./cjs/scheduler.development.js");
+module.exports = require("e71d46f558771449");
 
-},{"./cjs/scheduler.development.js":"RqdIf"}],"RqdIf":[function(require,module,exports) {
+},{"e71d46f558771449":"RqdIf"}],"RqdIf":[function(require,module,exports) {
 /**
  * @license React
  * scheduler.development.js
@@ -27271,7 +27271,7 @@ module.exports = require("./cjs/scheduler.development.js");
 
 },{}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.4.3
+ * React Router DOM v6.5.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -27510,26 +27510,42 @@ const _excluded = [
 //#region Routers
 ////////////////////////////////////////////////////////////////////////////////
 function createBrowserRouter(routes, opts) {
-    var _window;
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
         history: (0, _router.createBrowserHistory)({
             window: opts == null ? void 0 : opts.window
         }),
-        hydrationData: (opts == null ? void 0 : opts.hydrationData) || ((_window = window) == null ? void 0 : _window.__staticRouterHydrationData),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
         routes: (0, _reactRouter.UNSAFE_enhanceManualRouteObjects)(routes)
     }).initialize();
 }
 function createHashRouter(routes, opts) {
-    var _window2;
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
         history: (0, _router.createHashHistory)({
             window: opts == null ? void 0 : opts.window
         }),
-        hydrationData: (opts == null ? void 0 : opts.hydrationData) || ((_window2 = window) == null ? void 0 : _window2.__staticRouterHydrationData),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
         routes: (0, _reactRouter.UNSAFE_enhanceManualRouteObjects)(routes)
     }).initialize();
+}
+function parseHydrationData() {
+    var _window;
+    let state = (_window = window) == null ? void 0 : _window.__staticRouterHydrationData;
+    if (state && state.errors) state = _extends({}, state, {
+        errors: deserializeErrors(state.errors)
+    });
+    return state;
+}
+function deserializeErrors(errors) {
+    if (!errors) return null;
+    let entries = Object.entries(errors);
+    let serialized = {};
+    for (let [key, val] of entries)// Hey you!  If you change this, please change the corresponding logic in
+    // serializeErrors in react-router-dom/server.tsx :)
+    if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.ErrorResponse)(val.status, val.statusText, val.data, val.internal === true);
+    else serialized[key] = val;
+    return serialized;
 }
 /**
  * A `<Router>` for use in web browsers. Provides the cleanest URLs.
@@ -27641,7 +27657,8 @@ Link.displayName = "Link";
     });
     let location = (0, _reactRouter.useLocation)();
     let routerState = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
-    let toPathname = path.pathname;
+    let { navigator  } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
     let locationPathname = location.pathname;
     let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
     if (!caseSensitive) {
@@ -27719,7 +27736,7 @@ const FormImpl = /*#__PURE__*/ _react.forwardRef((_ref6, forwardedRef)=>{
         onSubmit: reloadDocument ? onSubmit : submitHandler
     }, props));
 });
-Form.displayName = "Form";
+FormImpl.displayName = "FormImpl";
 /**
  * This component will emulate the browser's scroll restoration on location
  * changes.
@@ -27747,7 +27764,7 @@ var DataRouterStateHook;
     DataRouterStateHook["UseScrollRestoration"] = "useScrollRestoration";
 })(DataRouterStateHook || (DataRouterStateHook = {}));
 function getDataRouterConsoleError(hookName) {
-    return hookName + " must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.";
+    return hookName + " must be used within a data router.  See https://reactrouter.com/routers/picking-a-router.";
 }
 function useDataRouterContext(hookName) {
     let ctx = _react.useContext((0, _reactRouter.UNSAFE_DataRouterContext));
@@ -28059,7 +28076,7 @@ function warning(cond, message) {
 
 },{"react":"21dqq","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.4.3
+ * React Router v6.5.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -28298,7 +28315,7 @@ RouteErrorContext.displayName = "RouteError";
  * Returns the full href for the given "to" value. This is useful for building
  * custom links that are also accessible and preserve right-click behavior.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-href
+ * @see https://reactrouter.com/hooks/use-href
  */ function useHref(to, _temp) {
     let { relative  } = _temp === void 0 ? {} : _temp;
     !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
@@ -28324,7 +28341,7 @@ RouteErrorContext.displayName = "RouteError";
 /**
  * Returns true if this component is a descendant of a <Router>.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-in-router-context
+ * @see https://reactrouter.com/hooks/use-in-router-context
  */ function useInRouterContext() {
     return _react.useContext(LocationContext) != null;
 }
@@ -28336,7 +28353,7 @@ RouteErrorContext.displayName = "RouteError";
  * "routing" in your app, and we'd like to know what your use case is. We may
  * be able to provide something higher-level to better suit your needs.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-location
+ * @see https://reactrouter.com/hooks/use-location
  */ function useLocation() {
     !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useLocation() may be used only in the context of a <Router> component.");
@@ -28346,16 +28363,16 @@ RouteErrorContext.displayName = "RouteError";
  * Returns the current navigation action which describes how the router came to
  * the current location, either by a pop, push, or replace on the history stack.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-navigation-type
+ * @see https://reactrouter.com/hooks/use-navigation-type
  */ function useNavigationType() {
     return _react.useContext(LocationContext).navigationType;
 }
 /**
- * Returns true if the URL for the given "to" value matches the current URL.
+ * Returns a PathMatch object if the given pattern matches the current URL.
  * This is useful for components that need to know "active" state, e.g.
  * <NavLink>.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-match
+ * @see https://reactrouter.com/hooks/use-match
  */ function useMatch(pattern) {
     !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useMatch() may be used only in the context of a <Router> component.");
@@ -28371,7 +28388,7 @@ RouteErrorContext.displayName = "RouteError";
  * Returns an imperative method for changing the location. Used by <Link>s, but
  * may also be used by other elements to change the location.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-navigate
+ * @see https://reactrouter.com/hooks/use-navigate
  */ function useNavigate() {
     !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useNavigate() may be used only in the context of a <Router> component.");
@@ -28412,7 +28429,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
 /**
  * Returns the context (if provided) for the child route at this level of the route
  * hierarchy.
- * @see https://reactrouter.com/docs/en/v6/hooks/use-outlet-context
+ * @see https://reactrouter.com/hooks/use-outlet-context
  */ function useOutletContext() {
     return _react.useContext(OutletContext);
 }
@@ -28420,7 +28437,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
  * Returns the element for the child route at this level of the route
  * hierarchy. Used internally by <Outlet> to render child routes.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-outlet
+ * @see https://reactrouter.com/hooks/use-outlet
  */ function useOutlet(context) {
     let outlet = _react.useContext(RouteContext).outlet;
     if (outlet) return /*#__PURE__*/ _react.createElement(OutletContext.Provider, {
@@ -28432,7 +28449,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
  * Returns an object of key/value pairs of the dynamic params from the current
  * URL that were matched by the route path.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-params
+ * @see https://reactrouter.com/hooks/use-params
  */ function useParams() {
     let { matches  } = _react.useContext(RouteContext);
     let routeMatch = matches[matches.length - 1];
@@ -28441,7 +28458,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
 /**
  * Resolves the pathname of the given `to` value against the current location.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-resolved-path
+ * @see https://reactrouter.com/hooks/use-resolved-path
  */ function useResolvedPath(to, _temp2) {
     let { relative  } = _temp2 === void 0 ? {} : _temp2;
     let { matches  } = _react.useContext(RouteContext);
@@ -28460,10 +28477,11 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
  * elements in the tree must render an <Outlet> to render their child route's
  * element.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-routes
+ * @see https://reactrouter.com/hooks/use-routes
  */ function useRoutes(routes, locationArg) {
     !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useRoutes() may be used only in the context of a <Router> component.");
+    let { navigator  } = _react.useContext(NavigationContext);
     let dataRouterStateContext = _react.useContext(DataRouterStateContext);
     let { matches: parentMatches  } = _react.useContext(RouteContext);
     let routeMatch = parentMatches[parentMatches.length - 1];
@@ -28514,11 +28532,11 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
             params: Object.assign({}, parentParams, match.params),
             pathname: (0, _router.joinPaths)([
                 parentPathnameBase,
-                match.pathname
+                navigator.encodeLocation ? navigator.encodeLocation(match.pathname).pathname : match.pathname
             ]),
             pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : (0, _router.joinPaths)([
                 parentPathnameBase,
-                match.pathnameBase
+                navigator.encodeLocation ? navigator.encodeLocation(match.pathnameBase).pathname : match.pathnameBase
             ])
         })), parentMatches, dataRouterStateContext || undefined); // When a user passes in a `locationArg`, the associated routes need to
     // be wrapped in a new `LocationContext.Provider` in order for `useLocation`
@@ -28666,7 +28684,7 @@ var DataRouterStateHook;
     DataRouterStateHook["UseRevalidator"] = "useRevalidator";
 })(DataRouterStateHook || (DataRouterStateHook = {}));
 function getDataRouterConsoleError(hookName) {
-    return hookName + " must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.";
+    return hookName + " must be used within a data router.  See https://reactrouter.com/routers/picking-a-router.";
 }
 function useDataRouterContext(hookName) {
     let ctx = _react.useContext(DataRouterContext);
@@ -28787,6 +28805,7 @@ function warningOnce(key, cond, message) {
     let navigator = _react.useMemo(()=>{
         return {
             createHref: router.createHref,
+            encodeLocation: router.encodeLocation,
             go: (n)=>router.navigate(n),
             push: (to, state, opts)=>router.navigate(to, {
                     state,
@@ -28822,7 +28841,7 @@ function warningOnce(key, cond, message) {
 /**
  * A <Router> that stores all entries in memory.
  *
- * @see https://reactrouter.com/docs/en/v6/routers/memory-router
+ * @see https://reactrouter.com/router-components/memory-router
  */ function MemoryRouter(_ref2) {
     let { basename , children , initialEntries , initialIndex  } = _ref2;
     let historyRef = _react.useRef();
@@ -28854,7 +28873,7 @@ function warningOnce(key, cond, message) {
  * able to use hooks. In functional components, we recommend you use the
  * `useNavigate` hook instead.
  *
- * @see https://reactrouter.com/docs/en/v6/components/navigate
+ * @see https://reactrouter.com/components/navigate
  */ function Navigate(_ref3) {
     let { to , replace , state , relative  } = _ref3;
     !useInRouterContext() && (0, _router.invariant)(false, // the router loaded. We can help them understand how to avoid that.
@@ -28878,14 +28897,14 @@ function warningOnce(key, cond, message) {
 /**
  * Renders the child route's element, if there is one.
  *
- * @see https://reactrouter.com/docs/en/v6/components/outlet
+ * @see https://reactrouter.com/components/outlet
  */ function Outlet(props) {
     return useOutlet(props.context);
 }
 /**
  * Declares an element that should be rendered at a certain URL path.
  *
- * @see https://reactrouter.com/docs/en/v6/components/route
+ * @see https://reactrouter.com/components/route
  */ function Route(_props) {
     (0, _router.invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
 }
@@ -28896,7 +28915,7 @@ function warningOnce(key, cond, message) {
  * router that is more specific to your environment such as a <BrowserRouter>
  * in web browsers or a <StaticRouter> for server rendering.
  *
- * @see https://reactrouter.com/docs/en/v6/routers/router
+ * @see https://reactrouter.com/router-components/router
  */ function Router(_ref4) {
     let { basename: basenameProp = "/" , children =null , location: locationProp , navigationType =(0, _router.Action).Pop , navigator , static: staticProp = false  } = _ref4;
     !!useInRouterContext() && (0, _router.invariant)(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app."); // Preserve trailing slashes on basename, so we can let the user control
@@ -28947,7 +28966,7 @@ function warningOnce(key, cond, message) {
  * A container for a nested tree of <Route> elements that renders the branch
  * that best matches the current location.
  *
- * @see https://reactrouter.com/docs/en/v6/components/routes
+ * @see https://reactrouter.com/components/routes
  */ function Routes(_ref5) {
     let { children , location  } = _ref5;
     let dataRouterContext = _react.useContext(DataRouterContext); // When in a DataRouterContext _without_ children, we use the router routes
@@ -29063,7 +29082,7 @@ class AwaitErrorBoundary extends _react.Component {
  * either a `<Route>` element or an array of them. Used internally by
  * `<Routes>` to create a route config from its children.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/create-routes-from-children
+ * @see https://reactrouter.com/utils/create-routes-from-children
  */ function createRoutesFromChildren(children, parentPath) {
     if (parentPath === void 0) parentPath = [];
     let routes = [];
@@ -29131,7 +29150,7 @@ function createMemoryRouter(routes, opts) {
 
 },{"@remix-run/router":"5ncDG","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.0.3
+ * @remix-run/router v1.1.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -29244,8 +29263,13 @@ const PopStateEventType = "popstate";
         createHref (to) {
             return typeof to === "string" ? to : createPath(to);
         },
-        encodeLocation (location) {
-            return location;
+        encodeLocation (to) {
+            let path = typeof to === "string" ? parsePath(to) : to;
+            return {
+                pathname: path.pathname || "",
+                search: path.search || "",
+                hash: path.hash || ""
+            };
         },
         push (to, state) {
             action = Action.Push;
@@ -29335,10 +29359,10 @@ const PopStateEventType = "popstate";
         warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
     }
     return getUrlBasedHistory(createHashLocation, createHashHref, validateHashLocation, options);
-} //#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region UTILS
-////////////////////////////////////////////////////////////////////////////////
+}
+function invariant(value, message) {
+    if (value === false || value === null || typeof value === "undefined") throw new Error(message);
+}
 function warning$1(cond, message) {
     if (!cond) {
         // eslint-disable-next-line no-console
@@ -29409,12 +29433,13 @@ function createKey() {
     }
     return parsedPath;
 }
-function createURL(location) {
+function createClientSideURL(location) {
     // window.location.origin is "null" (the literal string value) in Firefox
     // under certain conditions, notably when serving from a local HTML file
     // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
-    let base = typeof window !== "undefined" && typeof window.location !== "undefined" && window.location.origin !== "null" ? window.location.origin : "unknown://unknown";
+    let base = typeof window !== "undefined" && typeof window.location !== "undefined" && window.location.origin !== "null" ? window.location.origin : window.location.href;
     let href = typeof location === "string" ? location : createPath(location);
+    invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
     return new URL(href, base);
 }
 function getUrlBasedHistory(getLocation, createHref, validateLocation, options) {
@@ -29479,14 +29504,14 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
         createHref (to) {
             return createHref(window1, to);
         },
-        encodeLocation (location) {
+        encodeLocation (to) {
             // Encode a Location the same way window.location would
-            let url = createURL(createPath(location));
-            return _extends({}, location, {
+            let url = createClientSideURL(typeof to === "string" ? to : createPath(to));
+            return {
                 pathname: url.pathname,
                 search: url.search,
                 hash: url.hash
-            });
+            };
         },
         push,
         replace,
@@ -29536,7 +29561,7 @@ function convertRoutesToDataRoutes(routes, parentPath, allIds) {
 /**
  * Matches the given routes to a location and returns the match data.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/match-routes
+ * @see https://reactrouter.com/utils/match-routes
  */ function matchRoutes(routes, locationArg, basename) {
     if (basename === void 0) basename = "/";
     let location = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
@@ -29557,9 +29582,9 @@ function flattenRoutes(routes, branches, parentsMeta, parentPath) {
     if (branches === void 0) branches = [];
     if (parentsMeta === void 0) parentsMeta = [];
     if (parentPath === void 0) parentPath = "";
-    routes.forEach((route, index)=>{
+    let flattenRoute = (route, index, relativePath)=>{
         let meta = {
-            relativePath: route.path || "",
+            relativePath: relativePath === undefined ? route.path || "" : relativePath,
             caseSensitive: route.caseSensitive === true,
             childrenIndex: index,
             route
@@ -29587,8 +29612,57 @@ function flattenRoutes(routes, branches, parentsMeta, parentPath) {
             score: computeScore(path, route.index),
             routesMeta
         });
+    };
+    routes.forEach((route, index)=>{
+        var _route$path;
+        // coarse-grain check for optional params
+        if (route.path === "" || !((_route$path = route.path) != null && _route$path.includes("?"))) flattenRoute(route, index);
+        else for (let exploded of explodeOptionalSegments(route.path))flattenRoute(route, index, exploded);
     });
     return branches;
+}
+/**
+ * Computes all combinations of optional path segments for a given path,
+ * excluding combinations that are ambiguous and of lower priority.
+ *
+ * For example, `/one/:two?/three/:four?/:five?` explodes to:
+ * - `/one/three`
+ * - `/one/:two/three`
+ * - `/one/three/:four`
+ * - `/one/three/:five`
+ * - `/one/:two/three/:four`
+ * - `/one/:two/three/:five`
+ * - `/one/three/:four/:five`
+ * - `/one/:two/three/:four/:five`
+ */ function explodeOptionalSegments(path) {
+    let segments = path.split("/");
+    if (segments.length === 0) return [];
+    let [first, ...rest] = segments; // Optional path segments are denoted by a trailing `?`
+    let isOptional = first.endsWith("?"); // Compute the corresponding required segment: `foo?` -> `foo`
+    let required = first.replace(/\?$/, "");
+    if (rest.length === 0) // Intepret empty string as omitting an optional segment
+    // `["one", "", "three"]` corresponds to omitting `:two` from `/one/:two?/three` -> `/one/three`
+    return isOptional ? [
+        required,
+        ""
+    ] : [
+        required
+    ];
+    let restExploded = explodeOptionalSegments(rest.join("/"));
+    let result = []; // All child paths with the prefix.  Do this for all children before the
+    // optional version for all children so we get consistent ordering where the
+    // parent optional aspect is preferred as required.  Otherwise, we can get
+    // child sections interspersed where deeper optional segments are higher than
+    // parent optional segments, where for example, /:two would explodes _earlier_
+    // then /:one.  By always including the parent as required _for all children_
+    // first, we avoid this issue
+    result.push(...restExploded.map((subpath)=>subpath === "" ? required : [
+            required,
+            subpath
+        ].join("/"))); // Then if this is an optional value, add all child versions without
+    if (isOptional) result.push(...restExploded);
+     // for absolute paths, ensure `/` instead of empty segment
+    return result.map((exploded)=>path.startsWith("/") && exploded === "" ? "/" : exploded);
 }
 function rankRouteBranches(branches) {
     branches.sort((a, b)=>a.score !== b.score ? b.score - a.score // Higher score first
@@ -29656,12 +29730,20 @@ function matchRouteBranch(branch, pathname) {
 /**
  * Returns a path with params interpolated.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/generate-path
- */ function generatePath(path, params) {
+ * @see https://reactrouter.com/utils/generate-path
+ */ function generatePath(originalPath, params) {
     if (params === void 0) params = {};
-    return path.replace(/:(\w+)/g, (_, key)=>{
+    let path = originalPath;
+    if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
+        warning(false, 'Route path "' + path + '" will be treated as if it were ' + ('"' + path.replace(/\*$/, "/*") + '" because the `*` character must ') + "always follow a `/` in the pattern. To get rid of this warning, " + ('please change the route path to "' + path.replace(/\*$/, "/*") + '".'));
+        path = path.replace(/\*$/, "/*");
+    }
+    return path.replace(/^:(\w+)/g, (_, key)=>{
         invariant(params[key] != null, 'Missing ":' + key + '" param');
         return params[key];
+    }).replace(/\/:(\w+)/g, (_, key)=>{
+        invariant(params[key] != null, 'Missing ":' + key + '" param');
+        return "/" + params[key];
     }).replace(/(\/?)\*/, (_, prefix, __, str)=>{
         const star = "*";
         if (params[star] == null) // If no splat was provided, trim the trailing slash _unless_ it's
@@ -29675,7 +29757,7 @@ function matchRouteBranch(branch, pathname) {
  * Performs pattern matching on a URL pathname and returns information about
  * the match.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/match-path
+ * @see https://reactrouter.com/utils/match-path
  */ function matchPath(pattern, pathname) {
     if (typeof pattern === "string") pattern = {
         path: pattern,
@@ -29713,9 +29795,9 @@ function compilePath(path, caseSensitive, end) {
     let regexpSource = "^" + path.replace(/\/*\*?$/, "") // Ignore trailing / and /*, we'll handle it below
     .replace(/^\/*/, "/") // Make sure it has a leading /
     .replace(/[\\.*+^$?{}|()[\]]/g, "\\$&") // Escape special regex chars
-    .replace(/:(\w+)/g, (_, paramName)=>{
+    .replace(/\/:(\w+)/g, (_, paramName)=>{
         paramNames.push(paramName);
-        return "([^\\/]+)";
+        return "/([^\\/]+)";
     });
     if (path.endsWith("*")) {
         paramNames.push("*");
@@ -29766,9 +29848,6 @@ function safelyDecodeURIComponent(value, paramName) {
     return null;
     return pathname.slice(startIndex) || "/";
 }
-function invariant(value, message) {
-    if (value === false || value === null || typeof value === "undefined") throw new Error(message);
-}
 /**
  * @private
  */ function warning(cond, message) {
@@ -29788,7 +29867,7 @@ function invariant(value, message) {
 /**
  * Returns a resolved path object relative to the given pathname.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/resolve-path
+ * @see https://reactrouter.com/utils/resolve-path
  */ function resolvePath(to, fromPathname) {
     if (fromPathname === void 0) fromPathname = "/";
     let { pathname: toPathname , search ="" , hash =""  } = typeof to === "string" ? parsePath(to) : to;
@@ -30043,10 +30122,15 @@ function defer(data) {
  * @private
  * Utility class we use to hold auto-unwrapped 4xx/5xx Response bodies
  */ class ErrorResponse {
-    constructor(status, statusText, data){
+    constructor(status, statusText, data, internal){
+        if (internal === void 0) internal = false;
         this.status = status;
         this.statusText = statusText || "";
-        this.data = data;
+        this.internal = internal;
+        if (data instanceof Error) {
+            this.data = data.toString();
+            this.error = data;
+        } else this.data = data;
     }
 }
 /**
@@ -30055,6 +30139,29 @@ function defer(data) {
  */ function isRouteErrorResponse(e) {
     return e instanceof ErrorResponse;
 }
+const validMutationMethodsArr = [
+    "post",
+    "put",
+    "patch",
+    "delete"
+];
+const validMutationMethods = new Set(validMutationMethodsArr);
+const validRequestMethodsArr = [
+    "get",
+    ...validMutationMethodsArr
+];
+const validRequestMethods = new Set(validRequestMethodsArr);
+const redirectStatusCodes = new Set([
+    301,
+    302,
+    303,
+    307,
+    308
+]);
+const redirectPreserveMethodStatusCodes = new Set([
+    307,
+    308
+]);
 const IDLE_NAVIGATION = {
     state: "idle",
     location: undefined,
@@ -30095,7 +30202,10 @@ const isServer = !isBrowser; //#endregion
     if (initialMatches == null) {
         // If we do not match a user-provided-route, fall back to the root
         // to allow the error boundary to take over
-        let { matches , route , error  } = getNotFoundMatches(dataRoutes);
+        let error = getInternalRouterError(404, {
+            pathname: init.history.location.pathname
+        });
+        let { matches , route  } = getShortCircuitMatches(dataRoutes);
         initialMatches = matches;
         initialErrors = {
             [route.id]: error
@@ -30224,8 +30334,8 @@ const isServer = !isBrowser; //#endregion
         // remains the same as POP and non-data-router usages.  new URL() does all
         // the same encoding we'd get from a history.pushState/window.location read
         // without having to touch history
-        location = init.history.encodeLocation(location);
-        let historyAction = (opts && opts.replace) === true || submission != null ? Action.Replace : Action.Push;
+        location = _extends({}, location, init.history.encodeLocation(location));
+        let historyAction = (opts && opts.replace) === true || submission != null && isMutationMethod(submission.formMethod) ? Action.Replace : Action.Push;
         let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : undefined;
         return await startNavigation(historyAction, location, {
             submission,
@@ -30276,7 +30386,10 @@ const isServer = !isBrowser; //#endregion
         let loadingNavigation = opts && opts.overrideNavigation;
         let matches = matchRoutes(dataRoutes, location, init.basename); // Short circuit with a 404 on the root error boundary if we match nothing
         if (!matches) {
-            let { matches: notFoundMatches , route , error  } = getNotFoundMatches(dataRoutes); // Cancel all pending deferred on 404s since we don't keep any routes
+            let error = getInternalRouterError(404, {
+                pathname: location.pathname
+            });
+            let { matches: notFoundMatches , route  } = getShortCircuitMatches(dataRoutes); // Cancel all pending deferred on 404s since we don't keep any routes
             cancelActiveDeferreds();
             completeNavigation(location, {
                 matches: notFoundMatches,
@@ -30294,7 +30407,7 @@ const isServer = !isBrowser; //#endregion
             return;
         } // Create a controller/Request for this navigation
         pendingNavigationController = new AbortController();
-        let request = createRequest(location, pendingNavigationController.signal, opts && opts.submission);
+        let request = createClientSideRequest(location, pendingNavigationController.signal, opts && opts.submission);
         let pendingActionData;
         let pendingError;
         if (opts && opts.pendingError) // If we have a pendingError, it means the user attempted a GET submission
@@ -30304,7 +30417,7 @@ const isServer = !isBrowser; //#endregion
         pendingError = {
             [findNearestBoundary(matches).route.id]: opts.pendingError
         };
-        else if (opts && opts.submission) {
+        else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
             // Call action if we received an action submission
             let actionOutput = await handleAction(request, location, opts.submission, matches, {
                 replace: opts.replace
@@ -30316,7 +30429,10 @@ const isServer = !isBrowser; //#endregion
                 state: "loading",
                 location
             }, opts.submission);
-            loadingNavigation = navigation;
+            loadingNavigation = navigation; // Create a GET request for the loaders
+            request = new Request(request.url, {
+                signal: request.signal
+            });
         } // Call loaders
         let { shortCircuited , loaderData , errors  } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.replace, pendingActionData, pendingError);
         if (shortCircuited) return;
@@ -30342,7 +30458,14 @@ const isServer = !isBrowser; //#endregion
         }); // Call our action and get the result
         let result;
         let actionMatch = getTargetMatch(matches, location);
-        if (!actionMatch.route.action) result = getMethodNotAllowedResult(location);
+        if (!actionMatch.route.action) result = {
+            type: ResultType.error,
+            error: getInternalRouterError(405, {
+                method: request.method,
+                pathname: location.pathname,
+                routeId: actionMatch.route.id
+            })
+        };
         else {
             result = await callLoaderOrAction("action", request, actionMatch, matches, router.basename);
             if (request.signal.aborted) return {
@@ -30350,11 +30473,7 @@ const isServer = !isBrowser; //#endregion
             };
         }
         if (isRedirectResult(result)) {
-            let redirectNavigation = _extends({
-                state: "loading",
-                location: createLocation(state.location, result.location)
-            }, submission);
-            await startRedirectNavigation(result, redirectNavigation, opts && opts.replace);
+            await startRedirectNavigation(state, result, opts && opts.replace === true);
             return {
                 shortCircuited: true
             };
@@ -30385,14 +30504,14 @@ const isServer = !isBrowser; //#endregion
         // Figure out the right navigation we want to use for data loading
         let loadingNavigation = overrideNavigation;
         if (!loadingNavigation) {
-            let navigation = {
+            let navigation = _extends({
                 state: "loading",
                 location,
                 formMethod: undefined,
                 formAction: undefined,
                 formEncType: undefined,
                 formData: undefined
-            };
+            }, submission);
             loadingNavigation = navigation;
         }
         let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, pendingActionData, pendingError, fetchLoadMatches); // Cancel pending deferreds for no-longer-matched routes or routes we're
@@ -30453,8 +30572,7 @@ const isServer = !isBrowser; //#endregion
         }); // If any loaders returned a redirect Response, start a new REPLACE navigation
         let redirect = findRedirect(results);
         if (redirect) {
-            let redirectNavigation = getLoaderRedirect(state, redirect);
-            await startRedirectNavigation(redirect, redirectNavigation, replace);
+            await startRedirectNavigation(state, redirect, replace);
             return {
                 shortCircuited: true
             };
@@ -30485,12 +30603,14 @@ const isServer = !isBrowser; //#endregion
         if (fetchControllers.has(key)) abortFetcher(key);
         let matches = matchRoutes(dataRoutes, href, init.basename);
         if (!matches) {
-            setFetcherError(key, routeId, new ErrorResponse(404, "Not Found", null));
+            setFetcherError(key, routeId, getInternalRouterError(404, {
+                pathname: href
+            }));
             return;
         }
         let { path , submission  } = normalizeNavigateOptions(href, opts, true);
         let match = getTargetMatch(matches, path);
-        if (submission) {
+        if (submission && isMutationMethod(submission.formMethod)) {
             handleFetcherAction(key, routeId, path, match, matches, submission);
             return;
         } // Store off the match so we can call it's shouldRevalidate on subsequent
@@ -30500,14 +30620,18 @@ const isServer = !isBrowser; //#endregion
             match,
             matches
         ]);
-        handleFetcherLoader(key, routeId, path, match, matches);
+        handleFetcherLoader(key, routeId, path, match, matches, submission);
     } // Call the action for the matched fetcher.submit(), and then handle redirects,
     // errors, and revalidation
     async function handleFetcherAction(key, routeId, path, match, requestMatches, submission) {
         interruptActiveLoads();
         fetchLoadMatches.delete(key);
         if (!match.route.action) {
-            let { error  } = getMethodNotAllowedResult(path);
+            let error = getInternalRouterError(405, {
+                method: submission.formMethod,
+                pathname: path,
+                routeId: routeId
+            });
             setFetcherError(key, routeId, error);
             return;
         } // Put this fetcher into it's submitting state
@@ -30522,7 +30646,7 @@ const isServer = !isBrowser; //#endregion
             fetchers: new Map(state.fetchers)
         }); // Call the action for the fetcher
         let abortController = new AbortController();
-        let fetchRequest = createRequest(path, abortController.signal, submission);
+        let fetchRequest = createClientSideRequest(path, abortController.signal, submission);
         fetchControllers.set(key, abortController);
         let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, router.basename);
         if (fetchRequest.signal.aborted) {
@@ -30543,12 +30667,7 @@ const isServer = !isBrowser; //#endregion
             updateState({
                 fetchers: new Map(state.fetchers)
             });
-            let redirectNavigation = _extends({
-                state: "loading",
-                location: createLocation(state.location, actionResult.location)
-            }, submission);
-            await startRedirectNavigation(actionResult, redirectNavigation);
-            return;
+            return startRedirectNavigation(state, actionResult);
         } // Process any non-redirect errors thrown
         if (isErrorResult(actionResult)) {
             setFetcherError(key, routeId, actionResult.error);
@@ -30558,7 +30677,7 @@ const isServer = !isBrowser; //#endregion
          // Start the data load for current matches, or the next location if we're
         // in the middle of a navigation
         let nextLocation = state.navigation.location || state.location;
-        let revalidationRequest = createRequest(nextLocation, abortController.signal);
+        let revalidationRequest = createClientSideRequest(nextLocation, abortController.signal);
         let matches = state.navigation.state !== "idle" ? matchRoutes(dataRoutes, state.navigation.location, init.basename) : state.matches;
         invariant(matches, "Didn't find any matches after fetcher action");
         let loadId = ++incrementingLoadId;
@@ -30602,11 +30721,8 @@ const isServer = !isBrowser; //#endregion
             return fetchControllers.delete(staleKey);
         });
         let redirect = findRedirect(results);
-        if (redirect) {
-            let redirectNavigation1 = getLoaderRedirect(state, redirect);
-            await startRedirectNavigation(redirect, redirectNavigation1);
-            return;
-        } // Process and commit output from loaders
+        if (redirect) return startRedirectNavigation(state, redirect);
+         // Process and commit output from loaders
         let { loaderData , errors  } = processLoaderData(state, state.matches, matchesToLoad, loaderResults, undefined, revalidatingFetchers, fetcherResults, activeDeferreds);
         let doneFetcher = {
             state: "idle",
@@ -30642,22 +30758,23 @@ const isServer = !isBrowser; //#endregion
             isRevalidationRequired = false;
         }
     } // Call the matched loader for fetcher.load(), handling redirects, errors, etc.
-    async function handleFetcherLoader(key, routeId, path, match, matches) {
+    async function handleFetcherLoader(key, routeId, path, match, matches, submission) {
         let existingFetcher = state.fetchers.get(key); // Put this fetcher into it's loading state
-        let loadingFetcher = {
+        let loadingFetcher = _extends({
             state: "loading",
             formMethod: undefined,
             formAction: undefined,
             formEncType: undefined,
-            formData: undefined,
+            formData: undefined
+        }, submission, {
             data: existingFetcher && existingFetcher.data
-        };
+        });
         state.fetchers.set(key, loadingFetcher);
         updateState({
             fetchers: new Map(state.fetchers)
         }); // Call the loader for this fetcher route match
         let abortController = new AbortController();
-        let fetchRequest = createRequest(path, abortController.signal);
+        let fetchRequest = createClientSideRequest(path, abortController.signal);
         fetchControllers.set(key, abortController);
         let result = await callLoaderOrAction("loader", fetchRequest, match, matches, router.basename); // Deferred isn't supported or fetcher loads, await everything and treat it
         // as a normal load.  resolveDeferredData will return undefined if this
@@ -30670,8 +30787,7 @@ const isServer = !isBrowser; //#endregion
         if (fetchRequest.signal.aborted) return;
          // If the loader threw a redirect Response, start a new REPLACE navigation
         if (isRedirectResult(result)) {
-            let redirectNavigation = getLoaderRedirect(state, result);
-            await startRedirectNavigation(result, redirectNavigation);
+            await startRedirectNavigation(state, result);
             return;
         } // Process any non-redirect errors thrown
         if (isErrorResult(result)) {
@@ -30719,14 +30835,44 @@ const isServer = !isBrowser; //#endregion
    * navigation (including processed redirects).  This means that we never
    * actually touch history until we've processed redirects, so we just use
    * the history action from the original navigation (PUSH or REPLACE).
-   */ async function startRedirectNavigation(redirect, navigation, replace) {
+   */ async function startRedirectNavigation(state, redirect, replace) {
+        var _window;
         if (redirect.revalidate) isRevalidationRequired = true;
-        invariant(navigation.location, "Expected a location on the redirect navigation"); // There's no need to abort on redirects, since we don't detect the
+        let redirectLocation = createLocation(state.location, redirect.location);
+        invariant(redirectLocation, "Expected a location on the redirect navigation"); // Check if this an external redirect that goes to a new origin
+        if (typeof ((_window = window) == null ? void 0 : _window.location) !== "undefined") {
+            let newOrigin = createClientSideURL(redirect.location).origin;
+            if (window.location.origin !== newOrigin) {
+                if (replace) window.location.replace(redirect.location);
+                else window.location.assign(redirect.location);
+                return;
+            }
+        } // There's no need to abort on redirects, since we don't detect the
         // redirect until the action/loaders have settled
         pendingNavigationController = null;
         let redirectHistoryAction = replace === true ? Action.Replace : Action.Push;
-        await startNavigation(redirectHistoryAction, navigation.location, {
-            overrideNavigation: navigation
+        let { formMethod , formAction , formEncType , formData  } = state.navigation; // If this was a 307/308 submission we want to preserve the HTTP method and
+        // re-submit the GET/POST/PUT/PATCH/DELETE as a submission navigation to the
+        // redirected location
+        if (redirectPreserveMethodStatusCodes.has(redirect.status) && formMethod && isMutationMethod(formMethod) && formEncType && formData) await startNavigation(redirectHistoryAction, redirectLocation, {
+            submission: {
+                formMethod,
+                formAction: redirect.location,
+                formEncType,
+                formData
+            }
+        });
+        else // Otherwise, we kick off a new loading navigation, preserving the
+        // submission info for the duration of this navigation
+        await startNavigation(redirectHistoryAction, redirectLocation, {
+            overrideNavigation: {
+                state: "loading",
+                location: redirectLocation,
+                formMethod: formMethod || undefined,
+                formAction: formAction || undefined,
+                formEncType: formEncType || undefined,
+                formData: formData || undefined
+            }
         });
     }
     async function callLoadersAndMaybeResolveData(currentMatches, matches, matchesToLoad, fetchersToLoad, request) {
@@ -30737,7 +30883,7 @@ const isServer = !isBrowser; //#endregion
             ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, router.basename)),
             ...fetchersToLoad.map((_ref8)=>{
                 let [, href, match, fetchMatches] = _ref8;
-                return callLoaderOrAction("loader", createRequest(href, request.signal), match, fetchMatches, router.basename);
+                return callLoaderOrAction("loader", createClientSideRequest(href, request.signal), match, fetchMatches, router.basename);
             })
         ]);
         let loaderResults = results.slice(0, matchesToLoad.length);
@@ -30899,6 +31045,7 @@ const isServer = !isBrowser; //#endregion
         // Passthrough to history-aware createHref used by useHref so we get proper
         // hash-aware URLs in DOM paths
         createHref: (to)=>init.history.createHref(to),
+        encodeLocation: (to)=>init.history.encodeLocation(to),
         getFetcher,
         deleteFetcher,
         dispose,
@@ -30910,20 +31057,10 @@ const isServer = !isBrowser; //#endregion
 ////////////////////////////////////////////////////////////////////////////////
 //#region createStaticHandler
 ////////////////////////////////////////////////////////////////////////////////
-const validActionMethods = new Set([
-    "POST",
-    "PUT",
-    "PATCH",
-    "DELETE"
-]);
-const validRequestMethods = new Set([
-    "GET",
-    "HEAD",
-    ...validActionMethods
-]);
-function unstable_createStaticHandler(routes) {
+function unstable_createStaticHandler(routes, opts) {
     invariant(routes.length > 0, "You must provide a non-empty routes array to unstable_createStaticHandler");
     let dataRoutes = convertRoutesToDataRoutes(routes);
+    let basename = (opts ? opts.basename : null) || "/";
     /**
    * The query() method is intended for document requests, in which we want to
    * call an optional action and potentially multiple loaders for all nested
@@ -30942,13 +31079,19 @@ function unstable_createStaticHandler(routes) {
    * redirect response is returned or thrown from any action/loader.  We
    * propagate that out and return the raw Response so the HTTP server can
    * return it directly.
-   */ async function query(request) {
+   */ async function query(request, _temp) {
+        let { requestContext  } = _temp === void 0 ? {} : _temp;
         let url = new URL(request.url);
+        let method = request.method.toLowerCase();
         let location = createLocation("", createPath(url), null, "default");
-        let matches = matchRoutes(dataRoutes, location);
-        if (!validRequestMethods.has(request.method)) {
-            let { matches: methodNotAllowedMatches , route , error  } = getMethodNotAllowedMatches(dataRoutes);
+        let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
+        if (!isValidMethod(method) && method !== "head") {
+            let error = getInternalRouterError(405, {
+                method
+            });
+            let { matches: methodNotAllowedMatches , route  } = getShortCircuitMatches(dataRoutes);
             return {
+                basename,
                 location,
                 matches: methodNotAllowedMatches,
                 loaderData: {},
@@ -30961,8 +31104,12 @@ function unstable_createStaticHandler(routes) {
                 actionHeaders: {}
             };
         } else if (!matches) {
-            let { matches: notFoundMatches , route: route1 , error: error1  } = getNotFoundMatches(dataRoutes);
+            let error1 = getInternalRouterError(404, {
+                pathname: location.pathname
+            });
+            let { matches: notFoundMatches , route: route1  } = getShortCircuitMatches(dataRoutes);
             return {
+                basename,
                 location,
                 matches: notFoundMatches,
                 loaderData: {},
@@ -30975,13 +31122,14 @@ function unstable_createStaticHandler(routes) {
                 actionHeaders: {}
             };
         }
-        let result = await queryImpl(request, location, matches);
-        if (result instanceof Response) return result;
+        let result = await queryImpl(request, location, matches, requestContext);
+        if (isResponse(result)) return result;
          // When returning StaticHandlerContext, we patch back in the location here
         // since we need it for React Context.  But this helps keep our submit and
         // loadRouteData operating on a Request instead of a Location
         return _extends({
-            location
+            location,
+            basename
         }, result);
     }
     /**
@@ -30997,28 +31145,35 @@ function unstable_createStaticHandler(routes) {
    * can do proper boundary identification in Remix where a thrown Response
    * must go to the Catch Boundary but a returned Response is happy-path.
    *
-   * One thing to note is that any Router-initiated thrown Response (such as a
-   * 404 or 405) will have a custom X-Remix-Router-Error: "yes" header on it
-   * in order to differentiate from responses thrown from user actions/loaders.
-   */ async function queryRoute(request, routeId) {
+   * One thing to note is that any Router-initiated Errors that make sense
+   * to associate with a status code will be thrown as an ErrorResponse
+   * instance which include the raw Error, such that the calling context can
+   * serialize the error as they see fit while including the proper response
+   * code.  Examples here are 404 and 405 errors that occur prior to reaching
+   * any user-defined loaders.
+   */ async function queryRoute(request, _temp2) {
+        let { routeId , requestContext  } = _temp2 === void 0 ? {} : _temp2;
         let url = new URL(request.url);
+        let method = request.method.toLowerCase();
         let location = createLocation("", createPath(url), null, "default");
-        let matches = matchRoutes(dataRoutes, location);
-        if (!validRequestMethods.has(request.method)) throw createRouterErrorResponse(null, {
-            status: 405,
-            statusText: "Method Not Allowed"
+        let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
+        if (!isValidMethod(method) && method !== "head") throw getInternalRouterError(405, {
+            method
         });
-        else if (!matches) throw createRouterErrorResponse(null, {
-            status: 404,
-            statusText: "Not Found"
+        else if (!matches) throw getInternalRouterError(404, {
+            pathname: location.pathname
         });
         let match = routeId ? matches.find((m)=>m.route.id === routeId) : getTargetMatch(matches, location);
-        if (!match) throw createRouterErrorResponse(null, {
-            status: 404,
-            statusText: "Not Found"
+        if (routeId && !match) throw getInternalRouterError(403, {
+            pathname: location.pathname,
+            routeId
         });
-        let result = await queryImpl(request, location, matches, match);
-        if (result instanceof Response) return result;
+        else if (!match) // This should never hit I don't think?
+        throw getInternalRouterError(404, {
+            pathname: location.pathname
+        });
+        let result = await queryImpl(request, location, matches, requestContext, match);
+        if (isResponse(result)) return result;
         let error = result.errors ? Object.values(result.errors)[0] : undefined;
         if (error !== undefined) // If we got back result.errors, that means the loader/action threw
         // _something_ that wasn't a Response, but it's not guaranteed/required
@@ -31032,15 +31187,15 @@ function unstable_createStaticHandler(routes) {
         ].find((v)=>v);
         return Object.values(routeData || {})[0];
     }
-    async function queryImpl(request, location, matches, routeMatch) {
+    async function queryImpl(request, location, matches, requestContext, routeMatch) {
         invariant(request.signal, "query()/queryRoute() requests must contain an AbortController signal");
         try {
-            if (validActionMethods.has(request.method)) {
-                let result = await submit(request, matches, routeMatch || getTargetMatch(matches, location), routeMatch != null);
+            if (isMutationMethod(request.method.toLowerCase())) {
+                let result = await submit(request, matches, routeMatch || getTargetMatch(matches, location), requestContext, routeMatch != null);
                 return result;
             }
-            let result1 = await loadRouteData(request, matches, routeMatch);
-            return result1 instanceof Response ? result1 : _extends({}, result1, {
+            let result1 = await loadRouteData(request, matches, requestContext, routeMatch);
+            return isResponse(result1) ? result1 : _extends({}, result1, {
                 actionData: null,
                 actionHeaders: {}
             });
@@ -31057,16 +31212,21 @@ function unstable_createStaticHandler(routes) {
             throw e;
         }
     }
-    async function submit(request, matches, actionMatch, isRouteRequest) {
+    async function submit(request, matches, actionMatch, requestContext, isRouteRequest) {
         let result;
         if (!actionMatch.route.action) {
-            if (isRouteRequest) throw createRouterErrorResponse(null, {
-                status: 405,
-                statusText: "Method Not Allowed"
+            let error = getInternalRouterError(405, {
+                method: request.method,
+                pathname: new URL(request.url).pathname,
+                routeId: actionMatch.route.id
             });
-            result = getMethodNotAllowedResult(request.url);
+            if (isRouteRequest) throw error;
+            result = {
+                type: ResultType.error,
+                error
+            };
         } else {
-            result = await callLoaderOrAction("action", request, actionMatch, matches, undefined, true, isRouteRequest);
+            result = await callLoaderOrAction("action", request, actionMatch, matches, basename, true, isRouteRequest, requestContext);
             if (request.signal.aborted) {
                 let method = isRouteRequest ? "queryRoute" : "query";
                 throw new Error(method + "() call aborted");
@@ -31086,24 +31246,7 @@ function unstable_createStaticHandler(routes) {
         if (isRouteRequest) {
             // Note: This should only be non-Response values if we get here, since
             // isRouteRequest should throw any Response received in callLoaderOrAction
-            if (isErrorResult(result)) {
-                let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
-                return {
-                    matches: [
-                        actionMatch
-                    ],
-                    loaderData: {},
-                    actionData: null,
-                    errors: {
-                        [boundaryMatch.route.id]: result.error
-                    },
-                    // Note: statusCode + headers are unused here since queryRoute will
-                    // return the raw Response or value
-                    statusCode: 500,
-                    loaderHeaders: {},
-                    actionHeaders: {}
-                };
-            }
+            if (isErrorResult(result)) throw result.error;
             return {
                 matches: [
                     actionMatch
@@ -31123,9 +31266,9 @@ function unstable_createStaticHandler(routes) {
         if (isErrorResult(result)) {
             // Store off the pending error - we use it to determine which loaders
             // to call and will commit it when we complete the navigation
-            let boundaryMatch1 = findNearestBoundary(matches, actionMatch.route.id);
-            let context = await loadRouteData(request, matches, undefined, {
-                [boundaryMatch1.route.id]: result.error
+            let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
+            let context = await loadRouteData(request, matches, requestContext, undefined, {
+                [boundaryMatch.route.id]: result.error
             }); // action status codes take precedence over loader status codes
             return _extends({}, context, {
                 statusCode: isRouteErrorResponse(result.error) ? result.error.status : 500,
@@ -31134,8 +31277,13 @@ function unstable_createStaticHandler(routes) {
                     [actionMatch.route.id]: result.headers
                 } : {})
             });
-        }
-        let context1 = await loadRouteData(request, matches);
+        } // Create a GET request for the loaders
+        let loaderRequest = new Request(request.url, {
+            headers: request.headers,
+            redirect: request.redirect,
+            signal: request.signal
+        });
+        let context1 = await loadRouteData(loaderRequest, matches, requestContext);
         return _extends({}, context1, result.statusCode ? {
             statusCode: result.statusCode
         } : {}, {
@@ -31147,12 +31295,17 @@ function unstable_createStaticHandler(routes) {
             } : {})
         });
     }
-    async function loadRouteData(request, matches, routeMatch, pendingActionError) {
-        let isRouteRequest = routeMatch != null;
+    async function loadRouteData(request, matches, requestContext, routeMatch, pendingActionError) {
+        let isRouteRequest = routeMatch != null; // Short circuit if we have no loaders to run (queryRoute())
+        if (isRouteRequest && !(routeMatch != null && routeMatch.route.loader)) throw getInternalRouterError(400, {
+            method: request.method,
+            pathname: new URL(request.url).pathname,
+            routeId: routeMatch == null ? void 0 : routeMatch.route.id
+        });
         let requestMatches = routeMatch ? [
             routeMatch
         ] : getLoaderMatchesUntilBoundary(matches, Object.keys(pendingActionError || {})[0]);
-        let matchesToLoad = requestMatches.filter((m)=>m.route.loader); // Short circuit if we have no loaders to run
+        let matchesToLoad = requestMatches.filter((m)=>m.route.loader); // Short circuit if we have no loaders to run (query())
         if (matchesToLoad.length === 0) return {
             matches,
             loaderData: {},
@@ -31161,7 +31314,7 @@ function unstable_createStaticHandler(routes) {
             loaderHeaders: {}
         };
         let results = await Promise.all([
-            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, undefined, true, isRouteRequest))
+            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, basename, true, isRouteRequest, requestContext))
         ]);
         if (request.signal.aborted) {
             let method = isRouteRequest ? "queryRoute" : "query";
@@ -31175,13 +31328,6 @@ function unstable_createStaticHandler(routes) {
         return _extends({}, context, {
             matches
         });
-    }
-    function createRouterErrorResponse(body, init) {
-        return new Response(body, _extends({}, init, {
-            headers: _extends({}, init.headers, {
-                "X-Remix-Router-Error": "yes"
-            })
-        }));
     }
     return {
         dataRoutes,
@@ -31203,29 +31349,37 @@ function unstable_createStaticHandler(routes) {
         }
     });
     return newContext;
+}
+function isSubmissionNavigation(opts) {
+    return opts != null && "formData" in opts;
 } // Normalize navigation options by converting formMethod=GET formData objects to
 // URLSearchParams so they behave identically to links with query params
 function normalizeNavigateOptions(to, opts, isFetcher) {
     if (isFetcher === void 0) isFetcher = false;
     let path = typeof to === "string" ? to : createPath(to); // Return location verbatim on non-submission navigations
-    if (!opts || !("formMethod" in opts) && !("formData" in opts)) return {
+    if (!opts || !isSubmissionNavigation(opts)) return {
         path
     };
-     // Create a Submission on non-GET navigations
-    if (opts.formMethod != null && opts.formMethod !== "get") return {
+    if (opts.formMethod && !isValidMethod(opts.formMethod)) return {
         path,
-        submission: {
-            formMethod: opts.formMethod,
+        error: getInternalRouterError(405, {
+            method: opts.formMethod
+        })
+    };
+     // Create a Submission on non-GET navigations
+    let submission;
+    if (opts.formData) {
+        submission = {
+            formMethod: opts.formMethod || "get",
             formAction: stripHashFromPath(path),
             formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
             formData: opts.formData
-        }
-    };
-     // No formData to flatten for GET submission
-    if (!opts.formData) return {
-        path
-    };
-     // Flatten submission onto URLSearchParams for GET submissions
+        };
+        if (isMutationMethod(submission.formMethod)) return {
+            path,
+            submission
+        };
+    } // Flatten submission onto URLSearchParams for GET submissions
     let parsedPath = parsePath(path);
     try {
         let searchParams = convertFormDataToSearchParams(opts.formData); // Since fetcher GET submissions only run a single loader (as opposed to
@@ -31236,24 +31390,13 @@ function normalizeNavigateOptions(to, opts, isFetcher) {
     } catch (e) {
         return {
             path,
-            error: new ErrorResponse(400, "Bad Request", "Cannot submit binary form data using GET")
+            error: getInternalRouterError(400)
         };
     }
     return {
-        path: createPath(parsedPath)
+        path: createPath(parsedPath),
+        submission
     };
-}
-function getLoaderRedirect(state, redirect) {
-    let { formMethod , formAction , formEncType , formData  } = state.navigation;
-    let navigation = {
-        state: "loading",
-        location: createLocation(state.location, redirect.location),
-        formMethod: formMethod || undefined,
-        formAction: formAction || undefined,
-        formEncType: formEncType || undefined,
-        formData: formData || undefined
-    };
-    return navigation;
 } // Filter out all routes below any caught error as they aren't going to
 // render so we don't need to load them
 function getLoaderMatchesUntilBoundary(matches, boundaryId) {
@@ -31309,9 +31452,9 @@ function isNewRouteInstance(currentMatch, match) {
     currentPath && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"];
 }
 function shouldRevalidateLoader(currentLocation, currentMatch, submission, location, match, isRevalidationRequired, actionResult) {
-    let currentUrl = createURL(currentLocation);
+    let currentUrl = createClientSideURL(currentLocation);
     let currentParams = currentMatch.params;
-    let nextUrl = createURL(location);
+    let nextUrl = createClientSideURL(location);
     let nextParams = match.params; // This is the default implementation as to when we revalidate.  If the route
     // provides it's own implementation, then we give them full control but
     // provide this value so they can leverage it if needed after they check
@@ -31336,7 +31479,8 @@ function shouldRevalidateLoader(currentLocation, currentMatch, submission, locat
     }
     return defaultShouldRevalidate;
 }
-async function callLoaderOrAction(type, request, match, matches, basename, isStaticRequest, isRouteRequest) {
+async function callLoaderOrAction(type, request, match, matches, basename, isStaticRequest, isRouteRequest, requestContext) {
+    if (basename === void 0) basename = "/";
     if (isStaticRequest === void 0) isStaticRequest = false;
     if (isRouteRequest === void 0) isRouteRequest = false;
     let resultType;
@@ -31351,34 +31495,38 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
         result = await Promise.race([
             handler({
                 request,
-                params: match.params
+                params: match.params,
+                context: requestContext
             }),
             abortPromise
         ]);
+        invariant(result !== undefined, "You defined " + (type === "action" ? "an action" : "a loader") + " for route " + ('"' + match.route.id + "\" but didn't return anything from your `" + type + "` ") + "function. Please return a value or `null`.");
     } catch (e) {
         resultType = ResultType.error;
         result = e;
     } finally{
         request.signal.removeEventListener("abort", onReject);
     }
-    if (result instanceof Response) {
+    if (isResponse(result)) {
         let status = result.status; // Process redirects
-        if (status >= 300 && status <= 399) {
+        if (redirectStatusCodes.has(status)) {
             let location = result.headers.get("Location");
-            invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header"); // Support relative routing in redirects
-            let activeMatches = matches.slice(0, matches.indexOf(match) + 1);
-            let routePathnames = getPathContributingMatches(activeMatches).map((match)=>match.pathnameBase);
-            let requestPath = createURL(request.url).pathname;
-            let resolvedLocation = resolveTo(location, routePathnames, requestPath);
-            invariant(createPath(resolvedLocation), "Unable to resolve redirect location: " + result.headers.get("Location")); // Prepend the basename to the redirect location if we have one
-            if (basename) {
-                let path = resolvedLocation.pathname;
-                resolvedLocation.pathname = path === "/" ? basename : joinPaths([
-                    basename,
-                    path
-                ]);
-            }
-            location = createPath(resolvedLocation); // Don't process redirects in the router during static requests requests.
+            invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header");
+            let isAbsolute = /^[a-z+]+:\/\//i.test(location) || location.startsWith("//"); // Support relative routing in internal redirects
+            if (!isAbsolute) {
+                let activeMatches = matches.slice(0, matches.indexOf(match) + 1);
+                let routePathnames = getPathContributingMatches(activeMatches).map((match)=>match.pathnameBase);
+                let resolvedLocation = resolveTo(location, routePathnames, new URL(request.url).pathname);
+                invariant(createPath(resolvedLocation), "Unable to resolve redirect location: " + location); // Prepend the basename to the redirect location if we have one
+                if (basename) {
+                    let path = resolvedLocation.pathname;
+                    resolvedLocation.pathname = path === "/" ? basename : joinPaths([
+                        basename,
+                        path
+                    ]);
+                }
+                location = createPath(resolvedLocation);
+            } // Don't process redirects in the router during static requests requests.
             // Instead, throw the Response and let the server handle it with an HTTP
             // redirect.  We also update the Location header in place in this flow so
             // basename and relative routing is taken into account
@@ -31428,13 +31576,15 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
         type: ResultType.data,
         data: result
     };
-}
-function createRequest(location, signal, submission) {
-    let url = createURL(stripHashFromPath(location)).toString();
+} // Utility method for creating the Request instances for loaders/actions during
+// client-side navigations and fetches.  During SSR we will always have a
+// Request instance from the static handler (query/queryRoute)
+function createClientSideRequest(location, signal, submission) {
+    let url = createClientSideURL(stripHashFromPath(location)).toString();
     let init = {
         signal
     };
-    if (submission) {
+    if (submission && isMutationMethod(submission.formMethod)) {
         let { formMethod , formEncType , formData  } = submission;
         init.method = formMethod.toUpperCase();
         init.body = formEncType === "application/x-www-form-urlencoded" ? convertFormDataToSearchParams(formData) : formData;
@@ -31470,9 +31620,9 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
                 error = Object.values(pendingError)[0];
                 pendingError = undefined;
             }
-            errors = Object.assign(errors || {}, {
-                [boundaryMatch.route.id]: error
-            }); // Once we find our first (highest) error, we set the status code and
+            errors = errors || {}; // Prefer higher error values if lower errors bubble to the same boundary
+            if (errors[boundaryMatch.route.id] == null) errors[boundaryMatch.route.id] = error;
+             // Once we find our first (highest) error, we set the status code and
             // prevent deeper status codes from overriding
             if (!foundError) {
                 foundError = true;
@@ -31549,10 +31699,10 @@ function findNearestBoundary(matches, routeId) {
     ];
     return eligibleMatches.reverse().find((m)=>m.route.hasErrorBoundary === true) || matches[0];
 }
-function getShortCircuitMatches(routes, status, statusText) {
+function getShortCircuitMatches(routes) {
     // Prefer a root layout route if present, otherwise shim in a route object
     let route = routes.find((r)=>r.index || !r.path || r.path === "/") || {
-        id: "__shim-" + status + "-route__"
+        id: "__shim-error-route__"
     };
     return {
         matches: [
@@ -31563,23 +31713,29 @@ function getShortCircuitMatches(routes, status, statusText) {
                 route
             }
         ],
-        route,
-        error: new ErrorResponse(status, statusText, null)
+        route
     };
 }
-function getNotFoundMatches(routes) {
-    return getShortCircuitMatches(routes, 404, "Not Found");
-}
-function getMethodNotAllowedMatches(routes) {
-    return getShortCircuitMatches(routes, 405, "Method Not Allowed");
-}
-function getMethodNotAllowedResult(path) {
-    let href = typeof path === "string" ? path : createPath(path);
-    console.warn("You're trying to submit to a route that does not have an action.  To fix this, please add an `action` function to the route for " + ("[" + href + "]"));
-    return {
-        type: ResultType.error,
-        error: new ErrorResponse(405, "Method Not Allowed", "")
-    };
+function getInternalRouterError(status, _temp3) {
+    let { pathname , routeId , method  } = _temp3 === void 0 ? {} : _temp3;
+    let statusText = "Unknown Server Error";
+    let errorMessage = "Unknown @remix-run/router error";
+    if (status === 400) {
+        statusText = "Bad Request";
+        if (method && pathname && routeId) errorMessage = "You made a " + method + ' request to "' + pathname + '" but ' + ('did not provide a `loader` for route "' + routeId + '", ') + "so there is no way to handle the request.";
+        else errorMessage = "Cannot submit binary form data using GET";
+    } else if (status === 403) {
+        statusText = "Forbidden";
+        errorMessage = 'Route "' + routeId + '" does not match URL "' + pathname + '"';
+    } else if (status === 404) {
+        statusText = "Not Found";
+        errorMessage = 'No route matches URL "' + pathname + '"';
+    } else if (status === 405) {
+        statusText = "Method Not Allowed";
+        if (method && pathname && routeId) errorMessage = "You made a " + method.toUpperCase() + ' request to "' + pathname + '" but ' + ('did not provide an `action` for route "' + routeId + '", ') + "so there is no way to handle the request.";
+        else if (method) errorMessage = 'Invalid request method "' + method.toUpperCase() + '"';
+    }
+    return new ErrorResponse(status || 500, statusText, new Error(errorMessage), true);
 } // Find any returned redirect errors, starting from the lowest match
 function findRedirect(results) {
     for(let i = results.length - 1; i >= 0; i--){
@@ -31605,14 +31761,23 @@ function isErrorResult(result) {
 function isRedirectResult(result) {
     return (result && result.type) === ResultType.redirect;
 }
+function isResponse(value) {
+    return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
+}
 function isRedirectResponse(result) {
-    if (!(result instanceof Response)) return false;
+    if (!isResponse(result)) return false;
     let status = result.status;
     let location = result.headers.get("Location");
     return status >= 300 && status <= 399 && location != null;
 }
 function isQueryRouteResponse(obj) {
-    return obj && obj.response instanceof Response && (obj.type === ResultType.data || ResultType.error);
+    return obj && isResponse(obj.response) && (obj.type === ResultType.data || ResultType.error);
+}
+function isValidMethod(method) {
+    return validRequestMethods.has(method);
+}
+function isMutationMethod(method) {
+    return validMutationMethods.has(method);
 }
 async function resolveDeferredResults(currentMatches, matchesToLoad, results, signal, isFetcher, currentLoaderData) {
     for(let index = 0; index < results.length; index++){
@@ -31748,8 +31913,8 @@ const ContactForm = ()=>{
     const onSubmit = async (values)=>{
         try {
             setFormSubmitError(null);
-            const response = await (0, _sendFormDataDefault.default)(values);
-            if (response.status === "success") navigate("/contactUs/confirmed");
+            const response = await (0, _sendFormDataDefault.default)(values, "Ring & Ride Contact Form");
+            if (response.includes("Version")) navigate("/contactUs/confirmed");
             else setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
         } catch  {
             setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
@@ -31895,17 +32060,17 @@ $RefreshReg$(_c, "FormContentWrapper");
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */ var ReactIs = require("react-is");
+ */ var ReactIs = require("eca4864347dae27b");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
 var throwOnDirectAccess = true;
-module.exports = require("./factoryWithTypeCheckers")(ReactIs.isElement, throwOnDirectAccess);
+module.exports = require("ed9bb2ceb73d4495")(ReactIs.isElement, throwOnDirectAccess);
 
-},{"react-is":"7EuwB","./factoryWithTypeCheckers":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+},{"eca4864347dae27b":"7EuwB","ed9bb2ceb73d4495":"bBUgD"}],"7EuwB":[function(require,module,exports) {
 "use strict";
-module.exports = require("./cjs/react-is.development.js");
+module.exports = require("4e200bae35d05347");
 
-},{"./cjs/react-is.development.js":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+},{"4e200bae35d05347":"5DsXl"}],"5DsXl":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -32069,11 +32234,11 @@ module.exports = require("./cjs/react-is.development.js");
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */ "use strict";
-var ReactIs = require("react-is");
-var assign = require("object-assign");
-var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
-var has = require("./lib/has");
-var checkPropTypes = require("./checkPropTypes");
+var ReactIs = require("a2d52af81fd43b09");
+var assign = require("bf78231753118c4f");
+var ReactPropTypesSecret = require("aef9542c05769a9c");
+var has = require("e3987a15dd9909e");
+var checkPropTypes = require("d4dcc0a3fd62ccd9");
 var printWarning = function() {};
 printWarning = function(text) {
     var message = "Warning: " + text;
@@ -32500,7 +32665,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return ReactPropTypes;
 };
 
-},{"react-is":"7EuwB","object-assign":"7OXxh","./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf","./checkPropTypes":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+},{"a2d52af81fd43b09":"7EuwB","bf78231753118c4f":"7OXxh","aef9542c05769a9c":"jZTZJ","e3987a15dd9909e":"fqKuf","d4dcc0a3fd62ccd9":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -32576,9 +32741,9 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
  * LICENSE file in the root directory of this source tree.
  */ "use strict";
 var printWarning = function() {};
-var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
+var ReactPropTypesSecret = require("793c1de35063f354");
 var loggedTypeFailures = {};
-var has = require("./lib/has");
+var has = require("cdf75ea48458a800");
 printWarning = function(text) {
     var message = "Warning: " + text;
     if (typeof console !== "undefined") console.error(message);
@@ -32636,9 +32801,9 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"km3Ru":[function(require,module,exports) {
+},{"793c1de35063f354":"jZTZJ","cdf75ea48458a800":"fqKuf"}],"km3Ru":[function(require,module,exports) {
 "use strict";
-var Refresh = require("react-refresh/runtime");
+var Refresh = require("1df5e0177bf64138");
 function debounce(func, delay) {
     var args;
     {
@@ -32770,7 +32935,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"4KMVD":[function(require,module,exports) {
+},{"1df5e0177bf64138":"786KC"}],"4KMVD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3f2b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35162,6 +35327,8 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FORM_SUBMIT_ERROR", ()=>FORM_SUBMIT_ERROR);
 parcelHelpers.export(exports, "required", ()=>required);
 parcelHelpers.export(exports, "numbersOnly", ()=>numbersOnly);
+parcelHelpers.export(exports, "registrationNumber", ()=>registrationNumber);
+parcelHelpers.export(exports, "registrationNumberLength", ()=>registrationNumberLength);
 parcelHelpers.export(exports, "numbersAndSpacesOnly", ()=>numbersAndSpacesOnly);
 parcelHelpers.export(exports, "email", ()=>email);
 parcelHelpers.export(exports, "name", ()=>name);
@@ -35180,15 +35347,21 @@ const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
 const nameRegex = /^[a-z ,.'-]+$/i;
 const postCodeRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
 const FORM_SUBMIT_ERROR = "An error occurred when submitting the form data";
-const required = (value)=>value ? undefined : "Required";
+const required = (value)=>value ? undefined : "Question is Required";
 const numbersOnly = (value)=>{
-    if (value) return /^\d+$/.test(value) ? undefined : "Invalid";
+    if (value) return /^\d+$/.test(value) ? undefined : "Invalid. Please enter numbers only";
+};
+const registrationNumber = (value)=>{
+    if (value) return /^\d+$/.test(value) ? undefined : "Your registration number should be only numbers";
+};
+const registrationNumberLength = (value)=>{
+    if (value) return value.length == 5 || value.length == 6 ? undefined : "Your registration number should be 5 or 6 numbers";
 };
 const numbersAndSpacesOnly = (value)=>{
     if (value) return /^[\d\s]+$/.test(value) ? undefined : "Invalid";
 };
 const email = (value)=>{
-    if (value) return emailRegex.test(value) ? undefined : "Invalid";
+    if (value) return emailRegex.test(value) ? undefined : "Invalid email";
 };
 const name = (value)=>{
     if (value) return nameRegex.test(value) ? undefined : "Invalid";
@@ -35219,7 +35392,7 @@ const validateDateOfBirth = (day, month, year)=>{
     if (dateToValidate.getTime() > currentDate.getTime()) return "Invalid";
 };
 const postCode = (value)=>{
-    if (value) return postCodeRegex.test(value) ? undefined : "Invalid";
+    if (value) return postCodeRegex.test(value) ? undefined : "Invalid postcode";
 };
 const validateSelectOneOption = (fieldName, errorName)=>(values = {})=>{
         const errors = {};
@@ -36290,7 +36463,7 @@ const RegistrationNoEntry = ()=>{
                         }, void 0, false, void 0, void 0)
                     ]
                 }, void 0, true),
-                validation: (0, _validation.numbersOnly),
+                validation: (0, _validation.composeValidators)((0, _validation.required), (0, _validation.registrationNumber), (0, _validation.registrationNumberLength)),
                 error: error
             }, void 0, false, {
                 fileName: "src/Contact/RegistrationNoEntry.js",
@@ -36636,17 +36809,29 @@ $RefreshReg$(_c, "Header");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdtMD":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+/* eslint-disable no-undef */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const formEndPoint = `${undefined}/send_ring_and_ride_form_data`;
-const sendFormData = async (formData)=>{
+const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
+// const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
+const sendFormData = async (formData, formSubject)=>{
+    // flatten the formdata to send to the api
+    const flattenJSON = (obj = {}, res = {}, extraKey = "")=>{
+        for(key in obj)if (typeof obj[key] !== "object") res[extraKey + key] = obj[key];
+        else flattenJSON(obj[key], res, `${extraKey}${key}.`);
+        return res;
+    };
     const rawResponse = await fetch(formEndPoint, {
         method: "POST",
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+            to: 7,
+            body: JSON.stringify(flattenJSON(formData)),
+            from: formData.emailAddress,
+            subject: formSubject
+        })
     });
     const response = await rawResponse.json();
     return response;
@@ -36946,6 +37131,8 @@ var _breadCrumb = require("../common/BreadCrumb");
 var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
 var _formWizard = require("../common/FormWizard");
 var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
+var _registrationArea = require("./section1/RegistrationArea");
+var _registrationAreaDefault = parcelHelpers.interopDefault(_registrationArea);
 var _registrationIndividual = require("./section1/RegistrationIndividual");
 var _registrationIndividualDefault = parcelHelpers.interopDefault(_registrationIndividual);
 var _registrationName = require("./section1/RegistrationName");
@@ -37016,6 +37203,11 @@ const RegistrationForm = ()=>{
     const [formSubmitting, setFormSubmitting] = (0, _react.useState)(null);
     const [formSubmitError, setFormSubmitError] = (0, _react.useState)(null);
     const showEmergencyContact = emergencyContact === "yes" || registerForYourself === "no" && emergencyContactAnother === "yes";
+    // show area page if current date is 20th January 2023 or greater
+    const currentDate = new Date();
+    const areaDate = new Date("Jan 20, 2023 00:00:00");
+    const cDate = currentDate.getFullYear() + ("0" + (currentDate.getMonth() + 1)).slice(-2) + ("0" + currentDate.getDate()).slice(-2);
+    const aDate = areaDate.getFullYear() + ("0" + (areaDate.getMonth() + 1)).slice(-2) + ("0" + areaDate.getDate()).slice(-2);
     (0, _react.useEffect)(()=>{
         setExternalPage(location?.state?.orderNo);
     }, [
@@ -37024,8 +37216,8 @@ const RegistrationForm = ()=>{
     const onSubmit = async (values)=>{
         try {
             setFormSubmitError(null);
-            const response = await (0, _sendFormDataDefault.default)(values);
-            if (response.status === "success") navigate("/registration/confirmed");
+            const response = await (0, _sendFormDataDefault.default)(values, "Ring & Ride Registration Form");
+            if (response.includes("Version")) navigate("/registration/confirmed");
             else setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
         } catch  {
             setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
@@ -37037,7 +37229,7 @@ const RegistrationForm = ()=>{
                 heading: "Register for the Ring and Ride service"
             }, void 0, false, {
                 fileName: "src/Registration/RegistrationForm.js",
-                lineNumber: 69,
+                lineNumber: 76,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formContentWrapperDefault.default), {
@@ -37046,7 +37238,7 @@ const RegistrationForm = ()=>{
                         currentPageName: "Register"
                     }, void 0, false, {
                         fileName: "src/Registration/RegistrationForm.js",
-                        lineNumber: 71,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formWizardDefault.default), {
@@ -37061,33 +37253,38 @@ const RegistrationForm = ()=>{
                         setExternalPage: setExternalPage,
                         disableBackButton: formSubmitting,
                         children: [
+                            cDate >= aDate ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAreaDefault.default), {}, void 0, false, {
+                                fileName: "src/Registration/RegistrationForm.js",
+                                lineNumber: 83,
+                                columnNumber: 29
+                            }, undefined) : null,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationIndividualDefault.default), {
                                 setRegisterForYourself: setRegisterForYourself
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 76,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 77,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dateOfBirthDefault.default), {
                                 validate: (0, _validation1.validateDateOfBirth)
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 78,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _telephoneNoDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 79,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emailAddressDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 80,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAddressDefault.default), {
@@ -37097,14 +37294,14 @@ const RegistrationForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("registered")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 81,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPreferencesDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("contactPreference", "selectContactPref")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 82,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ethnicGroupDefault.default), {
@@ -37112,46 +37309,46 @@ const RegistrationForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 83,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, undefined),
                             ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specificEthnicGroupDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 84,
+                                lineNumber: 93,
                                 columnNumber: 47
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactDefault.default), {
                                 setEmergencyContact: setEmergencyContact
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 85,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, undefined),
                             registerForYourself === "no" && emergencyContact === "no" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactAnotherDefault.default), {
                                 setEmergencyContactAnother: setEmergencyContactAnother
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 86,
+                                lineNumber: 95,
                                 columnNumber: 72
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 87,
+                                lineNumber: 96,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyRelationshipDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 88,
+                                lineNumber: 97,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactTelephoneDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 89,
+                                lineNumber: 98,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactEmailDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 90,
+                                lineNumber: 99,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactAddressDefault.default), {
@@ -37160,33 +37357,33 @@ const RegistrationForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("emergency")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 91,
+                                lineNumber: 100,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _standardBusProblemsDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("standardBusProb", "selectStandardBusProb")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 92,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _standardBusReasonsDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("standardBusReason", "selectStandardBusReason")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 93,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _conditionQueryDefault.default), {
                                 setHasCondition: setHasCondition
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 94,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, undefined),
                             hasCondition === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _conditionDetailsDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 95,
+                                lineNumber: 104,
                                 columnNumber: 37
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mobilityAidsQueryDefault.default), {
@@ -37194,17 +37391,17 @@ const RegistrationForm = ()=>{
                                 setMobilityAids: setMobilityAids
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 96,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, undefined),
                             mobilityAids?.manualWheelchair || mobilityAids?.poweredWheelchair ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _wheelChairTransferDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 97,
+                                lineNumber: 106,
                                 columnNumber: 80
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalRequirementsDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 98,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswersDefault.default), {
@@ -37214,19 +37411,19 @@ const RegistrationForm = ()=>{
                                 formSubmitError: formSubmitError
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 99,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Registration/RegistrationForm.js",
-                        lineNumber: 72,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Registration/RegistrationForm.js",
-                lineNumber: 70,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined)
         ]
@@ -37248,7 +37445,200 @@ $RefreshReg$(_c, "RegistrationForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","./section1/RegistrationIndividual":"lv3c5","./section1/RegistrationName":"aeeCb","./section1/DateOfBirth":"1C1TJ","./section1/TelephoneNo":"guyd3","./section1/EmailAddress":"gVWz1","./section1/RegistrationAddress":"1iNp9","./section1/ContactPreferences":"6p5GY","./section1/EthnicGroup":"2CKZ7","./section1/SpecificEthnicGroup":"3wZMV","./section2/EmergencyContact":"l1Ygc","./section2/EmergencyContactAnother":"3oatz","./section2/EmergencyContactName":"ct5N3","./section2/EmergencyRelationship":"i9TIN","./section2/EmergencyContactTelephone":"81NM9","./section2/EmergencyContactEmail":"ZtXfa","./section2/EmergencyContactAddress":"gusaC","./section3/StandardBusProblems":"9RkC1","./section3/StandardBusReasons":"djjwl","./section3/ConditionQuery":"dr4wX","./section3/ConditionDetails":"1cSrv","./section3/MobilityAidsQuery":"diSUw","./section3/WheelChairTransfer":"2P2fr","./section3/AdditionalRequirements":"57NS5","./CheckAnswers":"4AjKS","../common/validation":"hOBBd","./validation":"jxGox","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lv3c5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","./section1/RegistrationArea":"aqgYM","./section1/RegistrationIndividual":"lv3c5","./section1/RegistrationName":"aeeCb","./section1/DateOfBirth":"1C1TJ","./section1/TelephoneNo":"guyd3","./section1/EmailAddress":"gVWz1","./section1/RegistrationAddress":"1iNp9","./section1/ContactPreferences":"6p5GY","./section1/EthnicGroup":"2CKZ7","./section1/SpecificEthnicGroup":"3wZMV","./section2/EmergencyContact":"l1Ygc","./section2/EmergencyContactAnother":"3oatz","./section2/EmergencyContactName":"ct5N3","./section2/EmergencyRelationship":"i9TIN","./section2/EmergencyContactTelephone":"81NM9","./section2/EmergencyContactEmail":"ZtXfa","./section2/EmergencyContactAddress":"gusaC","./section3/StandardBusProblems":"9RkC1","./section3/StandardBusReasons":"djjwl","./section3/ConditionQuery":"dr4wX","./section3/ConditionDetails":"1cSrv","./section3/MobilityAidsQuery":"diSUw","./section3/WheelChairTransfer":"2P2fr","./section3/AdditionalRequirements":"57NS5","./CheckAnswers":"4AjKS","../common/validation":"hOBBd","./validation":"jxGox","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aqgYM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2bff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2bff.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const RegistrationArea = ()=>{
+    _s();
+    const stateApi = (0, _reactFinalForm.useFormState)();
+    const formValues = stateApi.values;
+    const error = stateApi.submitFailed ? stateApi.errors?.registerForYourself : null;
+    // disable continue button if coventry is selected
+    if (formValues.Origin === "Coventry") {
+        const button = document.querySelector('button[type="submit"]');
+        button.disabled = true;
+        button.classList.add("wmrards-btn--disabled");
+    } else {
+        const button1 = document.querySelector('button[type="submit"]');
+        button1.disabled = false;
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
+                text: "Where do you live?"
+            }, void 0, false, {
+                fileName: "src/Registration/section1/RegistrationArea.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
+                error: error,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
+                        text: error
+                    }, void 0, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Birmingham",
+                        validation: (0, _validation.required),
+                        value: "Birmingham",
+                        fieldName: "Origin"
+                    }, 1, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Coventry",
+                        validation: (0, _validation.required),
+                        value: "Coventry",
+                        fieldName: "Origin"
+                    }, 2, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined),
+                    formValues.Origin === "Coventry" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wmrards-warning-text wmrards-m-b-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "wmrards-warning-text__icon",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("use", {
+                                        xlinkHref: "#wmrards-general-warning-triangle",
+                                        href: "#wmrards-general-warning-triangle"
+                                    }, void 0, false, {
+                                        fileName: "src/Registration/section1/RegistrationArea.js",
+                                        lineNumber: 31,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Registration/section1/RegistrationArea.js",
+                                    lineNumber: 30,
+                                    columnNumber: 15
+                                }, undefined),
+                                "If you are starting your trip in Coventry you need to book using West Midlands On-Demand.",
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/",
+                                    title: "Find out more about West Midlands On-Demand",
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    children: "Find out more on the Transport For West Midlands Website"
+                                }, void 0, false, {
+                                    fileName: "src/Registration/section1/RegistrationArea.js",
+                                    lineNumber: 35,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Registration/section1/RegistrationArea.js",
+                            lineNumber: 29,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false) : null,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Dudley",
+                        validation: (0, _validation.required),
+                        value: "Dudley",
+                        fieldName: "Origin"
+                    }, 3, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Sandwell",
+                        validation: (0, _validation.required),
+                        value: "Sandwell",
+                        fieldName: "Origin"
+                    }, 4, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Solihull",
+                        validation: (0, _validation.required),
+                        value: "Solihull",
+                        fieldName: "Origin"
+                    }, 5, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Walsall",
+                        validation: (0, _validation.required),
+                        value: "Walsall",
+                        fieldName: "Origin"
+                    }, 6, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Wolverhampton",
+                        validation: (0, _validation.required),
+                        value: "Wolverhampton",
+                        fieldName: "Origin"
+                    }, 7, false, {
+                        fileName: "src/Registration/section1/RegistrationArea.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Registration/section1/RegistrationArea.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Registration/section1/RegistrationArea.js",
+        lineNumber: 22,
+        columnNumber: 10
+    }, undefined);
+};
+_s(RegistrationArea, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+    return [
+        (0, _reactFinalForm.useFormState)
+    ];
+});
+_c = RegistrationArea;
+exports.default = RegistrationArea;
+var _c;
+$RefreshReg$(_c, "RegistrationArea");
+
+  $parcel$ReactRefreshHelpers$2bff.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lv3c5":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b5a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41317,6 +41707,8 @@ var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
 var _formWizard = require("../common/FormWizard");
 var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
 var _validation = require("../common/validation");
+var _registrationArea = require("./section1/RegistrationArea");
+var _registrationAreaDefault = parcelHelpers.interopDefault(_registrationArea);
 var _bookingParty = require("./section1/BookingParty");
 var _bookingPartyDefault = parcelHelpers.interopDefault(_bookingParty);
 var _bookingName = require("./section1/BookingName");
@@ -41395,6 +41787,11 @@ const BookingForm = ()=>{
     const [hideFinalSubmit, setHideFinalSubmit] = (0, _react.useState)(false);
     const [formSubmitting, setFormSubmitting] = (0, _react.useState)(null);
     const [formSubmitError, setFormSubmitError] = (0, _react.useState)(null);
+    // show area page if current date is 20th January 2023 or greater
+    const currentDate = new Date();
+    const areaDate = new Date("Jan 20, 2023 00:00:00");
+    const cDate = currentDate.getFullYear() + ("0" + (currentDate.getMonth() + 1)).slice(-2) + ("0" + currentDate.getDate()).slice(-2);
+    const aDate = areaDate.getFullYear() + ("0" + (areaDate.getMonth() + 1)).slice(-2) + ("0" + areaDate.getDate()).slice(-2);
     (0, _react.useEffect)(()=>{
         setExternalPage(location?.state?.orderNo);
     }, [
@@ -41403,8 +41800,8 @@ const BookingForm = ()=>{
     const onSubmit = async (values)=>{
         try {
             setFormSubmitError(null);
-            const response = await (0, _sendFormDataDefault.default)(values);
-            if (response.status === "success") navigate("/booking/confirmed");
+            const response = await (0, _sendFormDataDefault.default)(values, "Ring & Ride Booking Form");
+            if (response.includes("Version")) navigate("/booking/confirmed");
             else setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
         } catch  {
             setFormSubmitError((0, _validation.FORM_SUBMIT_ERROR));
@@ -41416,7 +41813,7 @@ const BookingForm = ()=>{
                 heading: "Book a Ring and Ride journey"
             }, void 0, false, {
                 fileName: "src/Booking/BookingForm.js",
-                lineNumber: 76,
+                lineNumber: 83,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formContentWrapperDefault.default), {
@@ -41425,7 +41822,7 @@ const BookingForm = ()=>{
                         currentPageName: "Booking"
                     }, void 0, false, {
                         fileName: "src/Booking/BookingForm.js",
-                        lineNumber: 78,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formWizardDefault.default), {
@@ -41441,65 +41838,70 @@ const BookingForm = ()=>{
                         setExternalPage: setExternalPage,
                         disableBackButton: formSubmitting,
                         children: [
+                            cDate >= aDate ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAreaDefault.default), {}, void 0, false, {
+                                fileName: "src/Booking/BookingForm.js",
+                                lineNumber: 91,
+                                columnNumber: 29
+                            }, undefined) : null,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingPartyDefault.default), {
                                 setBookingParty: setBookingParty
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 84,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 85,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNoEntryDefault.default), {
                                 orderNo: 2
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 86,
+                                lineNumber: 94,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPreferenceEntryDefault.default), {
                                 validate: (0, _validation.validateContactPreferences)
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 87,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _includeInGroupBookingDefault.default), {
                                 setIncludeInGroupBooking: setIncludeInGroupBooking
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 88,
+                                lineNumber: 96,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             bookingParty === "behalfGroup" && includeInGroupBooking === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNoEntryDefault.default), {
                                 orderNo: 4
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 89,
+                                lineNumber: 97,
                                 columnNumber: 80
                             }, undefined) : undefined,
                             bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPassengersDefault.default), {
                                 hideSubmit: true
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 90,
+                                lineNumber: 98,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingDateDefault.default), {
                                 validate: (0, _validation1.validateBookingDate)
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 91,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingTimeDefault.default), {
                                 validate: (0, _validation.validateTimeInput)("outwardPickup")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 92,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outwardCollectionAddressDefault.default), {
@@ -41507,7 +41909,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 93,
+                                lineNumber: 101,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             outwardCollectionAddress === "other" || bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherOutwardCollectionAddressDefault.default), {
@@ -41516,7 +41918,7 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("otherOutward")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 94,
+                                lineNumber: 102,
                                 columnNumber: 85
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outwardDestinationAddressDefault.default), {
@@ -41525,33 +41927,33 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("outwardDestination")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 95,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerQueryDefault.default), {
                                 setAdditionalPassenger: setAdditionalPassenger
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 96,
+                                lineNumber: 104,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             additionalPassenger === "yes" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerNumbersDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 97,
+                                lineNumber: 105,
                                 columnNumber: 78
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnJourneyQueryDefault.default), {
                                 setReturnJourney: setReturnJourney
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 98,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, undefined),
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnBookingTimeDefault.default), {
                                 validate: (0, _validation.composeFormValidators)((0, _validation.validateTimeInput)("returnPickup"), (0, _validation2.validateReturnPickupTime))
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 99,
+                                lineNumber: 107,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnCollectionAddressDefault.default), {
@@ -41559,7 +41961,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 100,
+                                lineNumber: 108,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" && returnCollectionAddress === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherReturnCollectionAddressDefault.default), {
@@ -41569,7 +41971,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 101,
+                                lineNumber: 109,
                                 columnNumber: 77
                             }, undefined) : undefined,
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnDestinationAddressDefault.default), {
@@ -41577,7 +41979,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 102,
+                                lineNumber: 110,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" && returnDestinationAddress === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherReturnDestinationAddressDefault.default), {
@@ -41586,33 +41988,33 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("otherReturnDestination")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 103,
+                                lineNumber: 111,
                                 columnNumber: 78
                             }, undefined) : undefined,
                             returnJourney === "yes" && additionalPassenger === "no" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerReturnQueryDefault.default), {
                                 setAdditionalPassengerReturn: setAdditionalPassengerReturn
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 104,
+                                lineNumber: 112,
                                 columnNumber: 104
                             }, undefined) : undefined,
                             returnJourney === "yes" && additionalPassenger === "yes" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmSameAdditionalPassengerDefault.default), {
                                 setConfirmSameAdditionalPassenger: setConfirmSameAdditionalPassenger
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 105,
+                                lineNumber: 113,
                                 columnNumber: 105
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmSameGroupDefault.default), {
                                 setGroupSameAsOutward: setGroupSameAsOutward
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 106,
+                                lineNumber: 114,
                                 columnNumber: 72
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty !== "behalfGroup" && (additionalPassengerReturn === "yes" || additionalPassenger === "yes" && confirmSameAdditionalPassenger === "no") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnAdditionalPassengerNumbersDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 107,
+                                lineNumber: 115,
                                 columnNumber: 189
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty === "behalfGroup" && groupSameAsOutward === "no" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPassengersDefault.default), {
@@ -41620,12 +42022,12 @@ const BookingForm = ()=>{
                                 hideSubmit: true
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 108,
+                                lineNumber: 116,
                                 columnNumber: 103
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherInformationDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 109,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswersDefault.default), {
@@ -41638,19 +42040,19 @@ const BookingForm = ()=>{
                                 formSubmitError: formSubmitError
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 110,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Booking/BookingForm.js",
-                        lineNumber: 79,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Booking/BookingForm.js",
-                lineNumber: 77,
+                lineNumber: 84,
                 columnNumber: 7
             }, undefined)
         ]
@@ -41672,7 +42074,200 @@ $RefreshReg$(_c, "BookingForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","../common/validation":"hOBBd","./section1/BookingParty":"bzThk","./section1/BookingName":"ecyDG","./section1/RegistrationNoEntry":"558kA","./section1/ContactPreferenceEntry":"8UL7J","./section1/IncludeInGroupBooking":"eN1oC","./aboutPassengers/AboutPassengers":"iaqBE","./journeyDetails/BookingDate":"d4jDM","./journeyDetails/BookingTime":"1h2hA","./journeyDetails/OutwardCollectionAddress":"dj6QS","./journeyDetails/OtherOutwardCollectionAddress":"6BDUO","./journeyDetails/OutwardDestinationAddress":"JjZ1T","./journeyDetails/AdditionalPassengerQuery":"385Y2","./journeyDetails/AdditionalPassengerNumbers":"7b3p2","./returnJourneyDetails/ReturnJourneyQuery":"ca3Ld","./returnJourneyDetails/ReturnBookingTime":"18XNr","./returnJourneyDetails/ReturnCollectionAddress":"BCVXv","./returnJourneyDetails/OtherReturnCollectionAddress":"2bKjO","./returnJourneyDetails/ReturnDestinationAddress":"4VJfX","./returnJourneyDetails/OtherReturnDestinationAddress":"9WB1Y","./returnJourneyDetails/AdditionalPassengerReturnQuery":"bomrs","./returnJourneyDetails/ConfirmSameAdditionalPassenger":"gFQv2","./returnJourneyDetails/ConfirmSameGroup":"6dF4J","./returnJourneyDetails/ReturnAdditionalPassengerNumbers":"hlNGR","./otherInformation/OtherInformation":"buwjG","./CheckAnswers":"jIION","./validation":"1bozf","./returnJourneyDetails/validation":"329Yj","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bzThk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","../common/validation":"hOBBd","./section1/RegistrationArea":"hICeD","./section1/BookingParty":"bzThk","./section1/BookingName":"ecyDG","./section1/RegistrationNoEntry":"558kA","./section1/ContactPreferenceEntry":"8UL7J","./section1/IncludeInGroupBooking":"eN1oC","./aboutPassengers/AboutPassengers":"iaqBE","./journeyDetails/BookingDate":"d4jDM","./journeyDetails/BookingTime":"1h2hA","./journeyDetails/OutwardCollectionAddress":"dj6QS","./journeyDetails/OtherOutwardCollectionAddress":"6BDUO","./journeyDetails/OutwardDestinationAddress":"JjZ1T","./journeyDetails/AdditionalPassengerQuery":"385Y2","./journeyDetails/AdditionalPassengerNumbers":"7b3p2","./returnJourneyDetails/ReturnJourneyQuery":"ca3Ld","./returnJourneyDetails/ReturnBookingTime":"18XNr","./returnJourneyDetails/ReturnCollectionAddress":"BCVXv","./returnJourneyDetails/OtherReturnCollectionAddress":"2bKjO","./returnJourneyDetails/ReturnDestinationAddress":"4VJfX","./returnJourneyDetails/OtherReturnDestinationAddress":"9WB1Y","./returnJourneyDetails/AdditionalPassengerReturnQuery":"bomrs","./returnJourneyDetails/ConfirmSameAdditionalPassenger":"gFQv2","./returnJourneyDetails/ConfirmSameGroup":"6dF4J","./returnJourneyDetails/ReturnAdditionalPassengerNumbers":"hlNGR","./otherInformation/OtherInformation":"buwjG","./CheckAnswers":"jIION","./validation":"1bozf","./returnJourneyDetails/validation":"329Yj","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hICeD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ef0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ef0d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _question = require("../../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
+var _s = $RefreshSig$();
+const RegistrationArea = ()=>{
+    _s();
+    const stateApi = (0, _reactFinalForm.useFormState)();
+    const formValues = stateApi.values;
+    const error = stateApi.submitFailed ? stateApi.errors?.registerForYourself : null;
+    // disable continue button if coventry is selected
+    if (formValues.Origin === "Coventry") {
+        const button = document.querySelector('button[type="submit"]');
+        button.disabled = true;
+        button.classList.add("wmrards-btn--disabled");
+    } else {
+        const button1 = document.querySelector('button[type="submit"]');
+        button1.disabled = false;
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
+                text: "Where do you live?"
+            }, void 0, false, {
+                fileName: "src/Booking/section1/RegistrationArea.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
+                error: error,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
+                        text: error
+                    }, void 0, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Birmingham",
+                        validation: (0, _validation.required),
+                        value: "Birmingham",
+                        fieldName: "Origin"
+                    }, 1, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Coventry",
+                        validation: (0, _validation.required),
+                        value: "Coventry",
+                        fieldName: "Origin"
+                    }, 2, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined),
+                    formValues.Origin === "Coventry" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wmrards-warning-text wmrards-m-b-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "wmrards-warning-text__icon",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("use", {
+                                        xlinkHref: "#wmrards-general-warning-triangle",
+                                        href: "#wmrards-general-warning-triangle"
+                                    }, void 0, false, {
+                                        fileName: "src/Booking/section1/RegistrationArea.js",
+                                        lineNumber: 31,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Booking/section1/RegistrationArea.js",
+                                    lineNumber: 30,
+                                    columnNumber: 15
+                                }, undefined),
+                                "If you are starting your trip in Coventry you need to book using West Midlands On-Demand.",
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/",
+                                    title: "Find out more about West Midlands On-Demand",
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    children: "Find out more on the Transport For West Midlands Website"
+                                }, void 0, false, {
+                                    fileName: "src/Booking/section1/RegistrationArea.js",
+                                    lineNumber: 35,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Booking/section1/RegistrationArea.js",
+                            lineNumber: 29,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false) : null,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Dudley",
+                        validation: (0, _validation.required),
+                        value: "Dudley",
+                        fieldName: "Origin"
+                    }, 3, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Sandwell",
+                        validation: (0, _validation.required),
+                        value: "Sandwell",
+                        fieldName: "Origin"
+                    }, 4, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Solihull",
+                        validation: (0, _validation.required),
+                        value: "Solihull",
+                        fieldName: "Origin"
+                    }, 5, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Walsall",
+                        validation: (0, _validation.required),
+                        value: "Walsall",
+                        fieldName: "Origin"
+                    }, 6, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "Wolverhampton",
+                        validation: (0, _validation.required),
+                        value: "Wolverhampton",
+                        fieldName: "Origin"
+                    }, 7, false, {
+                        fileName: "src/Booking/section1/RegistrationArea.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Booking/section1/RegistrationArea.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Booking/section1/RegistrationArea.js",
+        lineNumber: 22,
+        columnNumber: 10
+    }, undefined);
+};
+_s(RegistrationArea, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+    return [
+        (0, _reactFinalForm.useFormState)
+    ];
+});
+_c = RegistrationArea;
+exports.default = RegistrationArea;
+var _c;
+$RefreshReg$(_c, "RegistrationArea");
+
+  $parcel$ReactRefreshHelpers$ef0d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/RadioGroup":"ejgLk","../../common/Question":"7HVc9","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bzThk":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$26aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41968,11 +42563,11 @@ const RegistrationNoEntry = ({ orderNo  })=>{
                         " ",
                         "Registration number",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "For example, 1234567890"
+                            children: "For example, 123456"
                         }, void 0, false, void 0, void 0)
                     ]
                 }, void 0, true),
-                validation: (0, _validation.composeValidators)((0, _validation.required), (0, _validation.numbersOnly)),
+                validation: (0, _validation.composeValidators)((0, _validation.required), (0, _validation.registrationNumber), (0, _validation.registrationNumberLength)),
                 error: error
             }, void 0, false, {
                 fileName: "src/Booking/section1/RegistrationNoEntry.js",
@@ -42957,6 +43552,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _reactFinalForm = require("react-final-form");
 var _formSection = require("../../common/FormSection");
 var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
@@ -42970,11 +43566,90 @@ var _getSectionPosition = require("../getSectionPosition");
 var _getSectionPositionDefault = parcelHelpers.interopDefault(_getSectionPosition);
 var _getAboutJourneySectionName = require("./getAboutJourneySectionName");
 var _getAboutJourneySectionNameDefault = parcelHelpers.interopDefault(_getAboutJourneySectionName);
+var _radioGroup = require("../../common/RadioGroup");
+var _radioGroupDefault = parcelHelpers.interopDefault(_radioGroup);
+var _radioButton = require("../../common/RadioButton");
+var _radioButtonDefault = parcelHelpers.interopDefault(_radioButton);
+var _fieldError = require("../../common/FieldError");
+var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
+var _validation = require("../../common/validation");
 var _s = $RefreshSig$();
 const BookingDate = ()=>{
     _s();
     const stateApi = (0, _reactFinalForm.useFormState)();
+    const formValues = stateApi.values;
+    const formApi = (0, _reactFinalForm.useForm)();
     const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
+    const error1 = stateApi.submitFailed ? stateApi.errors?.bookingDateDayAuto : null;
+    (0, _react.useEffect)(()=>{
+        if (formValues.bookingDateDayAuto == "other") {
+            if (formValues.bookingDateDay !== null && formValues.bookingDateMonth !== null && formValues.bookingDateYear !== null) formApi.mutators.setFormAttribute("formData.bookingDateDayManual", formValues.bookingDateDay + "/" + formValues.bookingDateMonth + "/" + formValues.bookingDateYear);
+            else formApi.mutators.setFormAttribute("formData.bookingDateDayManual", "N/A");
+        }
+    }, [
+        formApi.mutators,
+        formValues.bookingDateDay,
+        formValues.bookingDateMonth,
+        formValues.bookingDateYear,
+        formValues.bookingDateDayAuto
+    ]);
+    // trip date validation
+    const today = new Date();
+    const current = new Date();
+    const current2 = new Date();
+    const current3 = new Date();
+    const current4 = new Date();
+    const current5 = new Date();
+    const current6 = new Date();
+    const current7 = new Date();
+    // 👇️ get current date
+    const currentTime = today.getHours() + ":" + today.getMinutes();
+    // set cut off time
+    const cutoffTime = "14:30";
+    today.setDate(today.getDate());
+    current.setDate(current.getDate() + 1);
+    current2.setDate(current2.getDate() + 2);
+    current3.setDate(current3.getDate() + 3);
+    current4.setDate(current4.getDate() + 4);
+    current5.setDate(current5.getDate() + 5);
+    current6.setDate(current6.getDate() + 6);
+    current7.setDate(current7.getDate() + 7);
+    const dateToday = today.toDateString();
+    const dayTomorrow = current.toLocaleDateString("en-GB", {
+        weekday: "short"
+    });
+    let dateTomorrow = current.toDateString();
+    const dateInTwoDays = current2.toDateString();
+    const dateInThreeDays = current3.toDateString();
+    const dateInFourDays = current4.toDateString();
+    const dateInFiveDays = current5.toDateString();
+    const dateInSixDays = current6.toDateString();
+    const dateInSevenDays = current7.toDateString();
+    // disable sunday button if today is saturday
+    if (dateToday.includes("Sat")) {
+        const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+        for (const f of radios)if (f.value.includes("Sun")) f.disabled = true;
+    } else if (dateToday.includes("Sun")) {
+        // disable monday if today is sunday
+        const radios1 = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+        for (const f1 of radios1)if (f1.value.includes("Mon")) f1.disabled = true;
+    }
+    // disable next day if after 14:30
+    if (currentTime > cutoffTime) {
+        console.log("yes");
+        const radios2 = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+        for (const f2 of radios2)if (f2.value.includes(dayTomorrow)) {
+            f2.disabled = true; // disable tomorrows radio button
+            dateTomorrow = `${current.toDateString()} (You can't book this day as it's after 14:30)`; // update tomorrows radio label
+        }
+    }
+    // set other date label + 7 days
+    const dateObj = new Date();
+    dateObj.setDate(dateObj.getDate() + 8);
+    const month = dateObj.getUTCMonth() + 1;
+    const day = dateObj.getUTCDate();
+    const year = dateObj.getUTCFullYear();
+    const newdate = "For example, " + day + " " + month + " " + year;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressIndicatorDefault.default), {
@@ -42982,37 +43657,143 @@ const BookingDate = ()=>{
                 sectionName: (0, _getAboutJourneySectionNameDefault.default)(stateApi)
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 12,
+                lineNumber: 101,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: "What date is the booking for?"
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 13,
+                lineNumber: 102,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dateInputDefault.default), {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
+                error: error1,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        className: "wmrards-fe-label",
+                        htmlFor: "bookingDateDayAuto",
+                        children: "Journey requests need to be received by 2.30pm on the day prior to your requested journey unless it's a Sunday or Monday where it needs to be 2 days before. We will then e-mail you to confirm your booking as soon as possible."
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 105,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
+                        text: error1
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 111,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateTomorrow,
+                        validation: (0, _validation.required),
+                        value: dateTomorrow,
+                        fieldName: "bookingDateDayAuto"
+                    }, 1, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 112,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInTwoDays,
+                        validation: (0, _validation.required),
+                        value: dateInTwoDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 2, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 113,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInThreeDays,
+                        validation: (0, _validation.required),
+                        value: dateInThreeDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 3, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 114,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInFourDays,
+                        validation: (0, _validation.required),
+                        value: dateInFourDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 4, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 115,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInFiveDays,
+                        validation: (0, _validation.required),
+                        value: dateInFiveDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 5, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 116,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInSixDays,
+                        validation: (0, _validation.required),
+                        value: dateInSixDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 6, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 117,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: dateInSevenDays,
+                        validation: (0, _validation.required),
+                        value: dateInSevenDays,
+                        fieldName: "bookingDateDayAuto"
+                    }, 7, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
+                        label: "other",
+                        validation: (0, _validation.required),
+                        value: "other",
+                        fieldName: "bookingDateDayAuto"
+                    }, 8, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 119,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Booking/journeyDetails/BookingDate.js",
+                lineNumber: 104,
+                columnNumber: 7
+            }, undefined),
+            formValues.bookingDateDayAuto === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dateInputDefault.default), {
                 dayFieldName: "bookingDateDay",
                 monthFieldName: "bookingDateMonth",
                 yearFieldName: "bookingDateYear",
-                label: "For example, 3 7 1985",
+                label: newdate,
                 error: error
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined)
+                lineNumber: 121,
+                columnNumber: 52
+            }, undefined) : null
         ]
     }, void 0, true, {
         fileName: "src/Booking/journeyDetails/BookingDate.js",
-        lineNumber: 11,
+        lineNumber: 100,
         columnNumber: 10
     }, undefined);
 };
-_s(BookingDate, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+_s(BookingDate, "sdE+Z4nklBNhskHU5PHmdhalm40=", false, function() {
     return [
-        (0, _reactFinalForm.useFormState)
+        (0, _reactFinalForm.useFormState),
+        (0, _reactFinalForm.useForm)
     ];
 });
 _c = BookingDate;
@@ -43025,7 +43806,7 @@ $RefreshReg$(_c, "BookingDate");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/Question":"7HVc9","../../common/ProgressIndicator":"iiGPR","../../common/DateInput":"9CW2w","../getSectionPosition":"hGB5C","./getAboutJourneySectionName":"kb3XY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kb3XY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/Question":"7HVc9","../../common/ProgressIndicator":"iiGPR","../../common/DateInput":"9CW2w","../getSectionPosition":"hGB5C","./getAboutJourneySectionName":"kb3XY","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kb3XY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const getAboutJourneySectionName = (stateApi)=>{
@@ -45757,35 +46538,52 @@ parcelHelpers.export(exports, "validateBookingDate", ()=>validateBookingDate);
 var _validation = require("../common/validation");
 const validateBookingDate = (values = {})=>{
     const errors = {};
-    const { bookingDateDay , bookingDateMonth , bookingDateYear  } = values;
-    if (!bookingDateDay && !bookingDateMonth && !bookingDateYear) {
-        errors.bookingDate = "Required";
+    const { bookingDateDayAuto , bookingDateDay , bookingDateMonth , bookingDateYear  } = values;
+    if (bookingDateDayAuto == "other") {
+        if (!bookingDateDay && !bookingDateMonth && !bookingDateYear) {
+            errors.bookingDate = "Required";
+            return errors;
+        }
+        if (!bookingDateDay || !bookingDateMonth || !bookingDateYear) {
+            errors.bookingDate = "Invalid";
+            return errors;
+        }
+        const invalid = (0, _validation.validateDate)(bookingDateDay, bookingDateMonth, bookingDateYear);
+        if (invalid) {
+            errors.bookingDate = invalid;
+            return errors;
+        }
+        // validation next day if after 14:30
+        const dateToValidate = new Date(bookingDateYear, bookingDateMonth - 1, bookingDateDay);
+        const now = new Date();
+        const current = new Date();
+        let currentDay = now.getDate();
+        const currentMonth = now.getMonth();
+        const currentYear = now.getFullYear();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        //const dateToday = currentDay;
+        current.setDate(current.getDate() + 1);
+        const dateTomorrow = current.toDateString();
+        if (hours > 14) currentDay = currentDay + 1;
+        if (hours === 14 && minutes > 30) currentDay = currentDay + 1;
+        // check if tomorrow is sunday and show error
+        if (dateTomorrow.includes("Sun") && dateToValidate.toDateString().includes("Sun")) {
+            errors.bookingDate = "You can't book a Sunday today. You need to book on a Friday before 14:30";
+            return errors;
+        }
+        // check if tomorrow is monday and show error
+        if (dateTomorrow.includes("Mon") && dateToValidate.toDateString().includes("Mon")) {
+            errors.bookingDate = "You can't book a Monday today. You need to book on a Saturday before 14:30";
+            return errors;
+        }
+        const cutOffDate = new Date(currentYear, currentMonth, currentDay);
+        if (dateToValidate.getTime() <= cutOffDate.getTime()) {
+            errors.bookingDate = "You can't book this day as it's either today or after 14:30";
+            return errors;
+        }
         return errors;
     }
-    if (!bookingDateDay || !bookingDateMonth || !bookingDateYear) {
-        errors.bookingDate = "Invalid";
-        return errors;
-    }
-    const invalid = (0, _validation.validateDate)(bookingDateDay, bookingDateMonth, bookingDateYear);
-    if (invalid) {
-        errors.bookingDate = invalid;
-        return errors;
-    }
-    const dateToValidate = new Date(bookingDateYear, bookingDateMonth - 1, bookingDateDay);
-    const now = new Date();
-    let currentDay = now.getDate();
-    const currentMonth = now.getMonth();
-    const currentYear = now.getFullYear();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    if (hours > 14) currentDay = currentDay + 1;
-    if (hours === 14 && minutes > 30) currentDay = currentDay + 1;
-    const cutOffDate = new Date(currentYear, currentMonth, currentDay);
-    if (dateToValidate.getTime() <= cutOffDate.getTime()) {
-        errors.bookingDate = "Date is not available";
-        return errors;
-    }
-    return errors;
 };
 
 },{"../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"329Yj":[function(require,module,exports) {
