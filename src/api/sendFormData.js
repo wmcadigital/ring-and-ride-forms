@@ -3,6 +3,8 @@ const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
 // const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
 
 const sendFormData = async (formData, formSubject) => {
+  console.log('sendFormData');
+  console.log(formData);
   // flatten the formdata to send to the api
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
     for (key in obj) {
