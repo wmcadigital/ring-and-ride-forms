@@ -17,6 +17,8 @@ const sendFormData = async (formData, formSubject) => {
     return res;
   };
 
+  console.log('rawResponse Start');
+
   const rawResponse = await fetch(formEndPoint, {
     method: "POST",
     headers: {
@@ -33,6 +35,8 @@ const sendFormData = async (formData, formSubject) => {
     // TypeError: Failed to fetch
     console.log('There was an error', error);
   });
+
+  console.log('rawResponse Finish');
 
   console.log(rawResponse);
 
