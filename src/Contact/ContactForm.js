@@ -27,6 +27,7 @@ const ContactForm = () => {
 
   const onSubmit = async (values) => {
     try {
+      console.log('try');
       setFormSubmitError(null);
       const response = await sendFormData(values, "Ring & Ride Contact Form");
       console.log(response);
