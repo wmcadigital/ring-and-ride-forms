@@ -29,6 +29,7 @@ const ContactForm = () => {
     try {
       setFormSubmitError(null);
       const response = await sendFormData(values, "Ring & Ride Contact Form");
+      console.log(response);
       if (response.includes("Version")) {
         navigate("/contactUs/confirmed");
       } else {
