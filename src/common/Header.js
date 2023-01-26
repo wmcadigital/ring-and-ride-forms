@@ -48,8 +48,8 @@ const Header = ({ heading }) => {
             <div className="wmrards-header__vertical-align wmrards-col-auto">
               <a
                 className="wmrards-header__logo-link"
-                href="/"
-                title="Transport for West Midlands Design System"
+                href="https://dev-wmca.euwest01.umbraco.io/ring-and-ride/"
+                title="Ring and Ride"
               >
                 <img
                   className="wmrards-header__logo"
