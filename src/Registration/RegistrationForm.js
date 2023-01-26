@@ -5,6 +5,7 @@ import FormContentWrapper from "../common/FormContentWrapper";
 import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
+import {Helmet} from "react-helmet";
 
 import RegistrationArea from "./section1/RegistrationArea";
 import RegistrationIndividual from "./section1/RegistrationIndividual";
@@ -103,6 +104,10 @@ const RegistrationForm = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Register for the Ring and Ride servic</title>
+        <link rel="canonical" href="http://ringandride.org.uk/register" />
+      </Helmet>
       <Header heading="Register for the Ring and Ride service" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Register" />

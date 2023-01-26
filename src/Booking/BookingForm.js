@@ -6,6 +6,7 @@ import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 import { validateContactPreferences } from "../common/validation";
+import {Helmet} from "react-helmet";
 
 import RegistrationArea from "./section1/RegistrationArea";
 import BookingParty from "./section1/BookingParty";
@@ -117,6 +118,10 @@ const BookingForm = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Book a Ring and Ride journey</title>
+        <link rel="canonical" href="http://ringandride.org.uk/contact" />
+      </Helmet>
       <Header heading="Book a Ring and Ride journey" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Booking" />

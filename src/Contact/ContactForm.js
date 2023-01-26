@@ -11,6 +11,8 @@ import NameEntry from "./NameEntry";
 import RegistrationNoEntry from "./RegistrationNoEntry";
 import ContactPreferenceEntry from "./ContactPreferenceEntry";
 import Header from "../common/Header";
+import {Helmet} from "react-helmet";
+
 import {
   validateContactPreferences,
   validateCheckAnswers,
@@ -41,6 +43,10 @@ const ContactForm = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact us</title>
+        <link rel="canonical" href="http://ringandride.org.uk/contact" />
+      </Helmet>
       <Header heading="Contact us" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Contact us" />
