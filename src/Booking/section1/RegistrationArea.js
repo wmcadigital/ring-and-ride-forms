@@ -5,25 +5,15 @@ import RadioGroup from "../../common/RadioGroup";
 import Question from "../../common/Question";
 import RadioButton from "../../common/RadioButton";
 import FieldError from "../../common/FieldError";
-import { required } from "../../common/validation";
+import { required, coventry } from "../../common/validation";
 
 const RegistrationArea = () => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
 
   const error = stateApi.submitFailed
-    ? stateApi.errors?.registerForYourself
+    ? stateApi.errors?.Origin
     : null;
-
-  // disable continue button if coventry is selected
-  if (formValues.Origin === "Coventry") {
-    const button = document.querySelector('button[type="submit"]');
-    button.disabled = true;
-    button.classList.add("wmrards-btn--disabled");
-  } else {
-    const button = document.querySelector('button[type="submit"]');
-    button.disabled = false;
-  }
 
   return (
     <FormSection>
@@ -40,7 +30,7 @@ const RegistrationArea = () => {
         <RadioButton
           key={2}
           label="Coventry"
-          validation={required}
+          validation={coventry}
           value="Coventry"
           fieldName="Origin"
         />
