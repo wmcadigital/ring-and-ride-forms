@@ -6,7 +6,6 @@ import ProgressIndicator from "../common/ProgressIndicator";
 import Question from "../common/Question";
 import {
   composeValidators,
-  required,
   registrationNumber,
   registrationNumberLength,
 } from "../common/validation";
@@ -33,7 +32,6 @@ const RegistrationNoEntry = () => {
           </>
         }
         validation={composeValidators(
-          required,
           registrationNumber,
           registrationNumberLength
         )}
