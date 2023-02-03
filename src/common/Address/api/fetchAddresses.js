@@ -1,5 +1,5 @@
 const addressEndPointBase =
-  "https://apis.networkwestmidlands.com/Addresses/AddressByPostcode/";
+  "https://api.wmnetwork.co.uk/Addresses/AddressByPostcode/";
 
 const fetchAddresses = async (postCode) => {
   const postCodeTrimmed = postCode.trim();
