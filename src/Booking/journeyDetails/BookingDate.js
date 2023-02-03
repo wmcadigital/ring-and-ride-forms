@@ -109,7 +109,6 @@ const BookingDate = () => {
 
   // disable next day if after 14:30
   if (currentTime > cutoffTime) {
-    console.log("yes");
     const radios = document.querySelectorAll(
       'input[name="bookingDateDayAuto"]'
     );
