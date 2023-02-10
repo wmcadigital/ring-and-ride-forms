@@ -61,8 +61,8 @@ const BookingDate = () => {
   const current6 = new Date();
   const current7 = new Date();
 
-  // 👇️ get current date
-  const currentTime = today.getHours() + ":" + today.getMinutes();
+  // 👇️ get current date and include the 0 in minutes
+  const currentTime = today.getHours() + ":" + (today.getMinutes()<10?'0':'') + today.getMinutes();
   // set cut off time
   const cutoffTime = "14:30";
 
@@ -79,11 +79,11 @@ const BookingDate = () => {
   const dayTomorrow = current.toLocaleDateString("en-GB", { weekday: "short" });
   let dateTomorrow = current.toDateString();
   const dateInTwoDays = current2.toDateString();
-  const dateInThreeDays = current3.toDateString();
-  const dateInFourDays = current4.toDateString();
-  const dateInFiveDays = current5.toDateString();
-  const dateInSixDays = current6.toDateString();
-  const dateInSevenDays = current7.toDateString();
+  // const dateInThreeDays = current3.toDateString();
+  // const dateInFourDays = current4.toDateString();
+  // const dateInFiveDays = current5.toDateString();
+  // const dateInSixDays = current6.toDateString();
+  // const dateInSevenDays = current7.toDateString();
 
   // disable sunday button if today is saturday
   if (dateToday.includes("Sat")) {
@@ -109,6 +109,7 @@ const BookingDate = () => {
 
   // disable next day if after 14:30
   if (currentTime > cutoffTime) {
+    console.log('yep');
     const radios = document.querySelectorAll(
       'input[name="bookingDateDayAuto"]'
     );
@@ -159,7 +160,7 @@ const BookingDate = () => {
           value={dateInTwoDays}
           fieldName="bookingDateDayAuto"
         />
-        <RadioButton
+        {/* <RadioButton
           key={3}
           label={dateInThreeDays}
           validation={required}
@@ -200,9 +201,9 @@ const BookingDate = () => {
           validation={required}
           value="other"
           fieldName="bookingDateDayAuto"
-        />
+        /> */}
       </RadioGroup>
-      {formValues.bookingDateDayAuto === "other" ? (
+      {/* {formValues.bookingDateDayAuto === "other" ? (
         <DateInput
           dayFieldName="bookingDateDay"
           monthFieldName="bookingDateMonth"
@@ -210,7 +211,7 @@ const BookingDate = () => {
           label={newdate}
           error={error}
         />
-      ) : null}
+      ) : null} */}
     </FormSection>
   );
 };
