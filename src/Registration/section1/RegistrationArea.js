@@ -51,7 +51,7 @@ const RegistrationArea = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Find out more on the Transport For West Midlands Websitejhjhjhjh
+                Find out more on the Transport For West Midlands Website
               </a>
             </div>
           </>

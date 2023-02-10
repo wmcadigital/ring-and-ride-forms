@@ -8,7 +8,7 @@ import FieldError from "../common/FieldError";
 import Table from "../common/Table";
 import CheckAnswerRow from "../common/CheckAnswerRow";
 import CheckboxContainer from "../common/CheckboxContainer";
-import formatDate from "../common/formatDate";
+// import formatDate from "../common/formatDate";
 import formatTime from "../common/formatTime";
 import getAboutSectionName from "./section1/getAboutSectionName";
 import AddressFormatted from "../common/AddressFormatted";
@@ -196,11 +196,7 @@ const CheckAnswers = ({
       <Table>
         <CheckAnswerRow
           label="Date of booking"
-          value={formatDate(
-            formValues["bookingDateDay"],
-            formValues["bookingDateMonth"],
-            formValues["bookingDateYear"]
-          )}
+          value={formValues["bookingDateDayAuto"]}
           changeValueCallback={() => setGoToPage(3 + offSet1)}
           disableButton={submitting}
         />
