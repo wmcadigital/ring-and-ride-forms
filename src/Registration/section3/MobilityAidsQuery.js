@@ -22,6 +22,7 @@ export const MobilityAidsOptions = (registerForYourself) => {
       walkingFrame: "I use a walking frame",
       guideDog: "I have a guide/helping dog",
       passengerLift: "I need a passenger lift",
+      noMobiltyNeeds: "I don't use mobility aids",
     };
   }
   return {
@@ -32,6 +33,7 @@ export const MobilityAidsOptions = (registerForYourself) => {
     walkingFrame: "They use a walking frame",
     guideDog: "They have a guide/helping dog",
     passengerLift: "They need a passenger lift",
+    noMobiltyNeeds: "They don't use mobility aids",
   };
 };
 
