@@ -19,7 +19,7 @@ const AdditionalPassengerNumbers = () => {
 
   const formValues = stateApi.values;
   const bookingParty = formValues["bookingParty"];
-  const passengerNumbers = formValues["additionalPassengerNumbers"];
+  const passengerNumbers = formValues["additionalPassengerNumbers"] ? formValues["additionalPassengerNumbers"] : 0;
 
   let question = "";
   if (bookingParty === "mySelf") {
@@ -55,7 +55,7 @@ const AdditionalPassengerNumbers = () => {
       <NumberInput
         fieldName="additionalPassengerNumbers"
         label={`Number of people joining ${pronoun} on the journey`}
-        defaultValue={1}
+        defaultValue="0"
         validation={composeValidators(
           required,
           numbersOnly,
