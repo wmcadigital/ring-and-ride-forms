@@ -22,7 +22,7 @@ const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
 
   useEffect(() => {
     setFormSubmitting(submitting);
-  }, [submitting]);
+  }, [setFormSubmitting, submitting]);
 
   return (
     <>
@@ -47,7 +47,7 @@ const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
         <CheckAnswerRow
           label="Registration number"
           value={
-            formValues["registrationNo"] ? formValues["registrationNo"] : ""
+            formValues["registrationNo"] ? formValues["registrationNo"] : "Not provided"
           }
           changeValueCallback={() => setGoToPage(3)}
           disableButton={submitting}
