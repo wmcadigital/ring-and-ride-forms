@@ -47,20 +47,24 @@ const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
         <CheckAnswerRow
           label="Registration number"
           value={
-            formValues["registrationNo"] ? formValues["registrationNo"] : "Not provided"
+            formValues["registrationNo"]
+              ? formValues["registrationNo"]
+              : "Not provided"
           }
           changeValueCallback={() => setGoToPage(3)}
           disableButton={submitting}
         />
         <CheckAnswerRow
-          label="How would you like to be contacted?"
-          value={`${
-            formValues["emailContact"]
-              ? `Email: ${formValues["emailAddress"]} `
-              : ""
-          }
-        ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`}
+          label="Email"
+          value={`${formValues["emailAddress"]}`}
           changeValueCallback={() => setGoToPage(4)}
+          disableButton={submitting}
+        />
+        <CheckAnswerRow
+          label="How would you like to be contacted?"
+          value={`Email: ${formValues["emailAddress"]}
+        ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`}
+          changeValueCallback={() => setGoToPage(5)}
           disableButton={submitting}
         />
       </Table>

@@ -8,8 +8,9 @@ import EnquiryTypeQuery from "./EnquiryTypeQuery";
 import EnquiryDetail from "./EnquiryDetail";
 import CheckAnswers from "./CheckAnswers";
 import NameEntry from "./NameEntry";
+import ContactEmail from "../Shared/ContactEmail";
 import RegistrationNoEntry from "./RegistrationNoEntry";
-import ContactPreferenceEntry from "./ContactPreferenceEntry";
+import ContactPreferenceEntry from "../Shared/ContactPreferenceEntry";
 import Header from "../common/Header";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -63,7 +64,8 @@ const ContactForm = () => {
           <EnquiryDetail />
           <NameEntry />
           <RegistrationNoEntry />
-          <ContactPreferenceEntry validate={validateContactPreferences} />
+          <ContactEmail />
+          <ContactPreferenceEntry description="We'll use this to get in touch about your enquiry" validate={validateContactPreferences} />
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}

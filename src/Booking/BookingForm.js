@@ -12,6 +12,7 @@ import RegistrationArea from "./section1/RegistrationArea";
 import BookingParty from "./section1/BookingParty";
 import BookingName from "./section1/BookingName";
 import RegistrationNoEntry from "./section1/RegistrationNoEntry";
+import ContactEmail from "../Shared/ContactEmail";
 import ContactPreferenceEntry from "./section1/ContactPreferenceEntry";
 import IncludeInGroupBooking from "./section1/IncludeInGroupBooking";
 import AboutPassengers from "./aboutPassengers/AboutPassengers";
@@ -146,7 +147,10 @@ const BookingForm = () => {
           {bookingParty !== "behalfGroup" ? (
             <RegistrationNoEntry orderNo={2} />
           ) : undefined}
-          <ContactPreferenceEntry validate={validateContactPreferences} />
+          <ContactEmail />
+          <ContactPreferenceEntry
+            validate={validateContactPreferences}
+          />
           {bookingParty === "behalfGroup" ? (
             <IncludeInGroupBooking
               setIncludeInGroupBooking={setIncludeInGroupBooking}
