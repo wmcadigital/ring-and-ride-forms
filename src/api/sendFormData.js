@@ -28,7 +28,7 @@ const sendFormData = async (formData, formSubject) => {
     .replace(/\\f/g, "\\f");
 
   const raw = JSON.stringify({
-    to: 7,
+    to: 13,
     body: myEscapedJSONString,
     from: "noreply@wmca.org.uk",
     subject: formSubject,
