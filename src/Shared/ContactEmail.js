@@ -8,7 +8,6 @@ import { required } from "../common/validation";
 
 const ContactEmail = () => {
   const stateApi = useFormState();
-  const formValues = stateApi.values;
 
   const errorEmailAddress = stateApi.submitFailed
     ? stateApi.errors?.emailAddress
