@@ -4,7 +4,7 @@ import { useFormState, useForm } from "react-final-form";
 import FormSection from "../../common/FormSection";
 import Question from "../../common/Question";
 import ProgressIndicator from "../../common/ProgressIndicator";
-import DateInput from "../../common/DateInput";
+// import DateInput from "../../common/DateInput";
 import getSectionPositionInfo from "../getSectionPosition";
 import getAboutJourneySectionName from "./getAboutJourneySectionName";
 import RadioGroup from "../../common/RadioGroup";
@@ -16,7 +16,7 @@ const BookingDate = () => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
   const formApi = useForm();
-  const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
+  // const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
   const error1 = stateApi.submitFailed
     ? stateApi.errors?.bookingDateDayAuto
     : null;
@@ -62,7 +62,10 @@ const BookingDate = () => {
   const current7 = new Date();
 
   // 👇️ get current date and include the 0 in minutes
-  const currentTime = today.getHours() + ":" + (today.getMinutes()<10?'0':'') + today.getMinutes();
+  const currentTime =
+    `${today.getHours()}`.padStart(2, "0") +
+    ":" +
+    `${today.getMinutes()}`.padStart(2, "0");
   // set cut off time
   const cutoffTime = "14:30";
 
@@ -109,7 +112,6 @@ const BookingDate = () => {
 
   // disable next day if after 14:30
   if (currentTime > cutoffTime) {
-    console.log('yep');
     const radios = document.querySelectorAll(
       'input[name="bookingDateDayAuto"]'
     );
@@ -124,11 +126,11 @@ const BookingDate = () => {
   // set other date label + 7 days
   const dateObj = new Date();
   dateObj.setDate(dateObj.getDate() + 8);
-  const month = dateObj.getUTCMonth() + 1;
-  const day = dateObj.getUTCDate();
-  const year = dateObj.getUTCFullYear();
+  // const month = dateObj.getUTCMonth() + 1;
+  // const day = dateObj.getUTCDate();
+  // const year = dateObj.getUTCFullYear();
 
-  const newdate = "For example, " + day + " " + month + " " + year;
+  // const newdate = "For example, " + day + " " + month + " " + year;
 
   return (
     <FormSection>

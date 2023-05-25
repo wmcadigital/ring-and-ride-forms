@@ -13,17 +13,33 @@ import ForgotRegistration from "./Booking/section1/ForgotRegistration";
 
 const Home = () => (
   <>
-    <ul>
-      <li>
-        <Link to="/contactUs">Contact Us</Link>
-      </li>
-      <li>
-        <Link to="/registration">Registration</Link>
-      </li>
-      <li>
-        <Link to="/booking">Booking</Link>
-      </li>
-    </ul>
+    <main
+      id="wmrards-main-content"
+      className="wmrards-container wmrards-m-t-lg homepage"
+    >
+      <div className="wmrards-grid wmrards-grid--justify-between wmrards-grid--spacing-2-lg wmrards-grid--spacing-md-2-lg">
+        <div className="wmrards-col-1 wmrards-col-md-2-3">
+          <div className="one-column-row">
+            <div className="wmrards-col-1 wmrards-col-md-1-1">
+              <div className="wmrards-m-b-lg">
+                <h1>Ring &amp; Ride Forms</h1>
+                <ul>
+                  <li>
+                    <Link to="/contactUs">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/registration">Registration</Link>
+                  </li>
+                  <li>
+                    <Link to="/booking">Booking</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </>
 );
 

@@ -92,7 +92,7 @@ const PassengerDetails = ({
           <>
             {" "}
             Registration number
-            <p>For example, 1234567890</p>
+            <p>For example, 123456</p>
           </>
         }
         validation={composeValidators(numbersOnly, checkForDuplicates)}
