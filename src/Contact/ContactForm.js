@@ -8,10 +8,11 @@ import EnquiryTypeQuery from "./EnquiryTypeQuery";
 import EnquiryDetail from "./EnquiryDetail";
 import CheckAnswers from "./CheckAnswers";
 import NameEntry from "./NameEntry";
+import ContactEmail from "../Shared/ContactEmail";
 import RegistrationNoEntry from "./RegistrationNoEntry";
-import ContactPreferenceEntry from "./ContactPreferenceEntry";
+import ContactPreferenceEntry from "../Shared/ContactPreferenceEntry";
 import Header from "../common/Header";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import {
   validateContactPreferences,
@@ -43,10 +44,12 @@ const ContactForm = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact us</title>
-        <link rel="canonical" href="http://ringandride.org.uk/contact" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Contact us</title>
+          <link rel="canonical" href="http://ringandride.org.uk/contact" />
+        </Helmet>
+      </HelmetProvider>
       <Header heading="Contact us" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Contact us" />
@@ -61,7 +64,11 @@ const ContactForm = () => {
           <EnquiryDetail />
           <NameEntry />
           <RegistrationNoEntry />
-          <ContactPreferenceEntry validate={validateContactPreferences} />
+          <ContactEmail />
+          <ContactPreferenceEntry
+            description="We'll use this to get in touch about your enquiry"
+            validate={validateContactPreferences}
+          />
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}

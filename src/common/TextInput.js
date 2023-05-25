@@ -10,6 +10,7 @@ const TextInput = ({
   error,
   containerClass,
   defaultValue,
+  type,
 }) => (
   <div
     className={`wmrards-fe-group ${error && "wmrards-fe-group--error"} ${
@@ -24,7 +25,7 @@ const TextInput = ({
       name={fieldName}
       validate={validation}
       component="input"
-      type="text"
+      type={type}
       className="wmrards-fe-input"
       defaultValue={defaultValue}
     />
@@ -37,7 +38,12 @@ TextInput.propTypes = {
   validation: PropTypes.func,
   error: PropTypes.string,
   containerClass: PropTypes.string,
-  defaultValue: PropTypes.string,
+  defaultValue: PropTypes.any,
+  type: PropTypes.string,
+};
+
+TextInput.defaultProps = {
+  type: "text",
 };
 
 export default TextInput;

@@ -3,7 +3,6 @@ const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
 // const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
 
 const sendFormData = async (formData, formSubject) => {
-  // flatten the formdata to send to the api
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
     for (let key in obj) {
       if (typeof obj[key] !== "object") {
@@ -15,6 +14,26 @@ const sendFormData = async (formData, formSubject) => {
     return res;
   };
 
+  // escape formdata
+  const data = flattenJSON(formData);
+  const myJSONString = JSON.stringify(data);
+  const myEscapedJSONString = myJSONString
+    .replace(/\\n/g, "\\n")
+    .replace(/\\'/g, "\\'")
+    .replace(/\\"/g, '\\"')
+    .replace(/\\&/g, "\\&")
+    .replace(/\\r/g, "\\r")
+    .replace(/\\t/g, "\\t")
+    .replace(/\\b/g, "\\b")
+    .replace(/\\f/g, "\\f");
+
+  const raw = JSON.stringify({
+    to: 7,
+    body: myEscapedJSONString,
+    from: "noreply@wmca.org.uk",
+    subject: formSubject,
+  });
+
   try {
     const rawResponse = await fetch(formEndPoint, {
       method: "POST",
@@ -22,13 +41,8 @@ const sendFormData = async (formData, formSubject) => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        to: 13,
-        body: JSON.stringify(flattenJSON(formData)),
-        from: formData.emailAddress,
-        subject: formSubject,
-      }),
-    })
+      body: raw,
+    });
     const response = await rawResponse.json();
     return response;
   } catch (error) {

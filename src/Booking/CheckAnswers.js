@@ -31,7 +31,7 @@ const CheckAnswers = ({
 
   useEffect(() => {
     setFormSubmitting(submitting);
-  }, [submitting]);
+  }, [setFormSubmitting, submitting]);
 
   const [passengerFormOpen, setPassengerFormOpen] = useState(false);
   const [returnPassengerFormOpen, setReturnPassengerFormOpen] = useState(false);
@@ -156,14 +156,14 @@ const CheckAnswers = ({
         <CheckAnswerRow
           label="Name"
           value={`${formValues["firstName"]} ${formValues["lastName"]}`}
-          changeValueCallback={() => setGoToPage(1)}
+          changeValueCallback={() => setGoToPage(2)}
           disableButton={submitting}
         />
         {bookingParty !== "behalfGroup" ? (
           <CheckAnswerRow
             label="Registration number"
             value={formValues["registrationNo"]}
-            changeValueCallback={() => setGoToPage(2)}
+            changeValueCallback={() => setGoToPage(3)}
             disableButton={submitting}
           />
         ) : null}
@@ -176,7 +176,7 @@ const CheckAnswers = ({
           }
         ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`}
           changeValueCallback={() => {
-            bookingParty === "behalfGroup" ? setGoToPage(2) : setGoToPage(3);
+            bookingParty === "behalfGroup" ? setGoToPage(3) : setGoToPage(4);
           }}
           disableButton={submitting}
         />
@@ -197,7 +197,7 @@ const CheckAnswers = ({
         <CheckAnswerRow
           label="Date of booking"
           value={formValues["bookingDateDayAuto"]}
-          changeValueCallback={() => setGoToPage(3 + offSet1)}
+          changeValueCallback={() => setGoToPage(4 + offSet1)}
           disableButton={submitting}
         />
         <CheckAnswerRow
@@ -206,13 +206,13 @@ const CheckAnswers = ({
             formValues.outwardPickup.hour,
             formValues.outwardPickup.minute
           )}
-          changeValueCallback={() => setGoToPage(4 + offSet1)}
+          changeValueCallback={() => setGoToPage(5 + offSet1)}
           disableButton={submitting}
         />
         <CheckAnswerRow
           label="Collection address"
           value={outWardCollectionAddress}
-          changeValueCallback={() => setGoToPage(5 + offSet2)}
+          changeValueCallback={() => setGoToPage(6 + offSet2)}
           disableButton={submitting}
         />
         <CheckAnswerRow
@@ -220,7 +220,7 @@ const CheckAnswers = ({
           value={
             <AddressFormatted addressObj={formValues["outwardDestination"]} />
           }
-          changeValueCallback={() => setGoToPage(6 + offSet2)}
+          changeValueCallback={() => setGoToPage(7 + offSet2)}
           disableButton={submitting}
         />
         {bookingParty !== "behalfGroup" &&
@@ -230,7 +230,7 @@ const CheckAnswers = ({
               bookingParty === "mySelf" ? "you" : "them"
             }`}
             value={`${formValues["additionalPassengerNumbers"]} other people`}
-            changeValueCallback={() => setGoToPage(8 + offSet2)}
+            changeValueCallback={() => setGoToPage(9 + offSet2)}
             disableButton={submitting}
           />
         ) : null}
@@ -260,19 +260,19 @@ const CheckAnswers = ({
                 formValues.returnPickup.hour,
                 formValues.returnPickup.minute
               )}
-              changeValueCallback={() => setGoToPage(8 + offSet3)}
+              changeValueCallback={() => setGoToPage(9 + offSet3)}
               disableButton={submitting}
             />
             <CheckAnswerRow
               label="Collection address"
               value={returnCollectionAddress}
-              changeValueCallback={() => setGoToPage(9 + offSet4)}
+              changeValueCallback={() => setGoToPage(10 + offSet4)}
               disableButton={submitting}
             />
             <CheckAnswerRow
               label="Destination address"
               value={returnDestinationAddress}
-              changeValueCallback={() => setGoToPage(10 + offSet5)}
+              changeValueCallback={() => setGoToPage(11 + offSet5)}
               disableButton={submitting}
             />
             {showReturnPassengerNumbers ? (
@@ -289,7 +289,7 @@ const CheckAnswers = ({
                     );
                     setConfirmSameAdditionalPassenger("no");
                   }
-                  setGoToPage(12 + offSet5);
+                  setGoToPage(13 + offSet5);
                 }}
                 disableButton={submitting}
               />
@@ -323,7 +323,7 @@ const CheckAnswers = ({
               changeValueCallback={() =>
                 setGoToPage(
                   formValues["returnJourney"] === "yes"
-                    ? 12 + offSet6
+                    ? 13 + offSet6
                     : 8 + offSet3
                 )
               }

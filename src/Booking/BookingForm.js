@@ -6,12 +6,13 @@ import Header from "../common/Header";
 import BreadCrumb from "../common/BreadCrumb";
 import FormWizard from "../common/FormWizard";
 import { validateContactPreferences } from "../common/validation";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import RegistrationArea from "./section1/RegistrationArea";
 import BookingParty from "./section1/BookingParty";
 import BookingName from "./section1/BookingName";
 import RegistrationNoEntry from "./section1/RegistrationNoEntry";
+import ContactEmail from "../Shared/ContactEmail";
 import ContactPreferenceEntry from "./section1/ContactPreferenceEntry";
 import IncludeInGroupBooking from "./section1/IncludeInGroupBooking";
 import AboutPassengers from "./aboutPassengers/AboutPassengers";
@@ -118,10 +119,12 @@ const BookingForm = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Book a Ring and Ride journey</title>
-        <link rel="canonical" href="http://ringandride.org.uk/contact" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Book a Ring and Ride journey</title>
+          <link rel="canonical" href="http://ringandride.org.uk/contact" />
+        </Helmet>
+      </HelmetProvider>
       <Header heading="Book a Ring and Ride journey" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Booking" />
@@ -144,6 +147,7 @@ const BookingForm = () => {
           {bookingParty !== "behalfGroup" ? (
             <RegistrationNoEntry orderNo={2} />
           ) : undefined}
+          <ContactEmail />
           <ContactPreferenceEntry validate={validateContactPreferences} />
           {bookingParty === "behalfGroup" ? (
             <IncludeInGroupBooking
