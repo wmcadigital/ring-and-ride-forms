@@ -11,9 +11,7 @@ const RegistrationArea = () => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
 
-  const error = stateApi.submitFailed
-    ? stateApi.errors?.Origin
-    : null;
+  const error = stateApi.submitFailed ? stateApi.errors?.Origin : null;
 
   return (
     <FormSection>

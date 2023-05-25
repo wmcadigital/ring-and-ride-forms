@@ -9,7 +9,7 @@ import Checkbox from "../common/Checkbox";
 import TextInput from "../common/TextInput";
 import FieldError from "../common/FieldError";
 
-const ContactPreferenceEntry = ({description}) => {
+const ContactPreferenceEntry = ({ description }) => {
   const stateApi = useFormState();
   const formValues = stateApi.values;
 
@@ -30,10 +30,7 @@ const ContactPreferenceEntry = ({description}) => {
         sectionName="About you"
       />
       <Question text="How would you like to be contacted?" />
-      <CheckboxContainer
-        error={errorContactPrefReqd}
-        description={description}
-      >
+      <CheckboxContainer error={errorContactPrefReqd} description={description}>
         <FieldError text={errorContactPrefReqd} />
         <Checkbox fieldName="emailContact" label="Email" />
         {formValues.emailContact ? (

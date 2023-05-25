@@ -65,7 +65,10 @@ const ContactForm = () => {
           <NameEntry />
           <RegistrationNoEntry />
           <ContactEmail />
-          <ContactPreferenceEntry description="We'll use this to get in touch about your enquiry" validate={validateContactPreferences} />
+          <ContactPreferenceEntry
+            description="We'll use this to get in touch about your enquiry"
+            validate={validateContactPreferences}
+          />
           <CheckAnswers
             setGoToPage={setGoToPage}
             validate={validateCheckAnswers}

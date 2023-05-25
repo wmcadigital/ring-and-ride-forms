@@ -62,7 +62,10 @@ const BookingDate = () => {
   const current7 = new Date();
 
   // 👇️ get current date and include the 0 in minutes
-  const currentTime = `${today.getHours()}`.padStart(2, '0') + ":" + `${today.getMinutes()}`.padStart(2, '0');
+  const currentTime =
+    `${today.getHours()}`.padStart(2, "0") +
+    ":" +
+    `${today.getMinutes()}`.padStart(2, "0");
   // set cut off time
   const cutoffTime = "14:30";
 

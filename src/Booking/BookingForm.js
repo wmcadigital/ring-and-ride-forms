@@ -148,9 +148,7 @@ const BookingForm = () => {
             <RegistrationNoEntry orderNo={2} />
           ) : undefined}
           <ContactEmail />
-          <ContactPreferenceEntry
-            validate={validateContactPreferences}
-          />
+          <ContactPreferenceEntry validate={validateContactPreferences} />
           {bookingParty === "behalfGroup" ? (
             <IncludeInGroupBooking
               setIncludeInGroupBooking={setIncludeInGroupBooking}

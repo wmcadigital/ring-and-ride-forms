@@ -19,7 +19,9 @@ const AdditionalPassengerNumbers = () => {
 
   const formValues = stateApi.values;
   const bookingParty = formValues["bookingParty"];
-  const passengerNumbers = formValues["additionalPassengerNumbers"] ? formValues["additionalPassengerNumbers"] : 0;
+  const passengerNumbers = formValues["additionalPassengerNumbers"]
+    ? formValues["additionalPassengerNumbers"]
+    : 0;
 
   let question = "";
   if (bookingParty === "mySelf") {
