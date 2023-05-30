@@ -89,16 +89,7 @@ const BookingDate = () => {
   // const dateInSevenDays = current7.toDateString();
 
   // disable sunday button if today is saturday
-  if (dateToday.includes("Sat")) {
-    const radios = document.querySelectorAll(
-      'input[name="bookingDateDayAuto"]'
-    );
-    for (const f of radios) {
-      if (f.value.includes("Sun")) {
-        f.disabled = true;
-      }
-    }
-  } else if (dateToday.includes("Sun")) {
+  if (dateToday.includes("Sun")) {
     // disable monday if today is sunday
     const radios = document.querySelectorAll(
       'input[name="bookingDateDayAuto"]'
