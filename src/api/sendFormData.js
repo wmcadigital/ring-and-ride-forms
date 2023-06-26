@@ -30,7 +30,7 @@ const sendFormData = async (formData, formSubject) => {
   const raw = JSON.stringify({
     to: 13,
     body: myEscapedJSONString,
-    from: "noreply@wmca.org.uk",
+    from: formData.emailAddress,
     subject: formSubject,
   });
 
