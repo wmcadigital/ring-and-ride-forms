@@ -32,6 +32,7 @@ const sendFormData = async (formData, formSubject) => {
     body: myEscapedJSONString,
     from: formData.emailAddress,
     subject: formSubject,
+    displayName: formData.firstName + formData.lastName,
   });
 
   try {
