@@ -82,11 +82,11 @@ const BookingDate = () => {
   const dayTomorrow = current.toLocaleDateString("en-GB", { weekday: "short" });
   let dateTomorrow = current.toDateString();
   const dateInTwoDays = current2.toDateString();
-  // const dateInThreeDays = current3.toDateString();
-  // const dateInFourDays = current4.toDateString();
-  // const dateInFiveDays = current5.toDateString();
-  // const dateInSixDays = current6.toDateString();
-  // const dateInSevenDays = current7.toDateString();
+  const dateInThreeDays = current3.toDateString();
+  const dateInFourDays = current4.toDateString();
+  const dateInFiveDays = current5.toDateString();
+  const dateInSixDays = current6.toDateString();
+  const dateInSevenDays = current7.toDateString();
 
   // disable sunday button if today is saturday
   if (dateToday.includes("Sun")) {
@@ -153,7 +153,7 @@ const BookingDate = () => {
           value={dateInTwoDays}
           fieldName="bookingDateDayAuto"
         />
-        {/* <RadioButton
+        <RadioButton
           key={3}
           label={dateInThreeDays}
           validation={required}
@@ -188,13 +188,13 @@ const BookingDate = () => {
           value={dateInSevenDays}
           fieldName="bookingDateDayAuto"
         />
-        <RadioButton
+        {/*  <RadioButton
           key={8}
           label="other"
           validation={required}
           value="other"
           fieldName="bookingDateDayAuto"
-        /> */}
+        />*/}
       </RadioGroup>
       {/* {formValues.bookingDateDayAuto === "other" ? (
         <DateInput
