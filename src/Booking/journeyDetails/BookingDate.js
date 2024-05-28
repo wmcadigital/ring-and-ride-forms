@@ -167,7 +167,7 @@ const BookingDate = () => {
           value={dateInFourDays}
           fieldName="bookingDateDayAuto"
         />
-        <RadioButton
+        {/* <RadioButton
           key={5}
           label={dateInFiveDays}
           validation={required}
@@ -187,7 +187,7 @@ const BookingDate = () => {
           validation={required}
           value={dateInSevenDays}
           fieldName="bookingDateDayAuto"
-        />
+        /> */}
         {/*  <RadioButton
           key={8}
           label="other"
@@ -205,6 +205,14 @@ const BookingDate = () => {
           error={error}
         />
       ) : null} */}
+      <hr />
+      <p>If you wish to book on any of the days below please call 0330 053 8141.</p>
+      <p>Alternatively download the <a href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/" target="_blank" rel="noreferrer">West Midlands Bus app</a> where you can book trips up to 7 days in advance.</p>
+      <ul>
+        <li>{dateInFiveDays}</li>
+        <li>{dateInSixDays}</li>
+        <li>{dateInSevenDays}</li>
+      </ul>
     </FormSection>
   );
 };
