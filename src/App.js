@@ -10,6 +10,7 @@ import BookingForm from "./Booking/BookingForm";
 import BookingConfirmation from "./Booking/Confirmation";
 import OutsideWmca from "./Registration/section1/OutsideWmca";
 import ForgotRegistration from "./Booking/section1/ForgotRegistration";
+import Maintenance from "./Maintenance";
 
 const Home = () => (
   <>
@@ -44,6 +45,13 @@ const Home = () => (
 );
 
 const App = () => {
+  // Set to true to enable maintenance mode
+  const maintenanceMode = true;
+
+  if (maintenanceMode) {
+    return <Maintenance />;
+  }
+
   return (
     <BrowserRouter>
       <Routes>
