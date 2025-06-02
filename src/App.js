@@ -46,7 +46,7 @@ const Home = () => (
 
 const App = () => {
   // Set to true to enable maintenance mode
-  const maintenanceMode = true;
+  const maintenanceMode = false;
 
   if (maintenanceMode) {
     return <Maintenance />;
