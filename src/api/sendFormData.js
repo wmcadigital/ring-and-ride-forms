@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
-const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
-// const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
+const formEndPoint =  process.env.REACT_APP_API_ENDPOINT;
 
 const sendFormData = async (formData, formSubject) => {
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
