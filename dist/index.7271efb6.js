@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("8789bf211f5448b3");
-var ErrorOverlay = require("c2c5e2dacc183bf9");
+var Refresh = require("be453eb354ec2179");
+var ErrorOverlay = require("444f479435d0bd4a");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,11 +163,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"8789bf211f5448b3":"786KC","c2c5e2dacc183bf9":"1dldy"}],"786KC":[function(require,module,exports) {
+},{"be453eb354ec2179":"786KC","444f479435d0bd4a":"1dldy"}],"786KC":[function(require,module,exports) {
 "use strict";
-module.exports = require("43fa969788e9e113");
+module.exports = require("c49f249e0438134f");
 
-},{"43fa969788e9e113":"hdge7"}],"hdge7":[function(require,module,exports) {
+},{"c49f249e0438134f":"hdge7"}],"hdge7":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -628,7 +628,7 @@ module.exports = require("43fa969788e9e113");
 })();
 
 },{}],"1dldy":[function(require,module,exports) {
-var process = require("e5942d17505a7304");
+var process = require("3089014e60479406");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -1043,7 +1043,7 @@ var process = require("e5942d17505a7304");
                 }
                 try {
                     u({}, "");
-                } catch (e1) {
+                } catch (e) {
                     u = function(e, t, r) {
                         return e[t] = r;
                     };
@@ -1092,10 +1092,10 @@ var process = require("e5942d17505a7304");
                             type: "normal",
                             arg: e.call(t, r)
                         };
-                    } catch (e1) {
+                    } catch (e) {
                         return {
                             type: "throw",
-                            arg: e1
+                            arg: e
                         };
                     }
                 }
@@ -1314,7 +1314,7 @@ var process = require("e5942d17505a7304");
             }(e.exports);
             try {
                 regeneratorRuntime = n;
-            } catch (e1) {
+            } catch (e) {
                 Function("r", "regeneratorRuntime = r")(n);
             }
         },
@@ -1835,9 +1835,9 @@ var process = require("e5942d17505a7304");
                         try {
                             var e = arguments[0];
                             "string" == typeof e && d.length > 0 && t(e, d[d.length - 1]);
-                        } catch (e1) {
+                        } catch (e) {
                             setTimeout(function() {
-                                throw e1;
+                                throw e;
                             });
                         }
                         return r.apply(this, arguments);
@@ -1968,8 +1968,8 @@ var process = require("e5942d17505a7304");
             function N(e, t, r, n, o, a, i) {
                 try {
                     var l = e[a](i), u = l.value;
-                } catch (e1) {
-                    return void r(e1);
+                } catch (e) {
+                    return void r(e);
                 }
                 l.done ? t(u) : Promise.resolve(u).then(n, o);
             }
@@ -2233,7 +2233,7 @@ var process = require("e5942d17505a7304");
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f;
                     if (!c) try {
                         s = Error.stackTraceLimit, Error.stackTraceLimit = e, c = !0;
-                    } catch (e1) {}
+                    } catch (e) {}
                 }(), p(), g("error", function(e, n) {
                     var o = function(e, t) {
                         for(var r, n, o = function(e) {
@@ -2358,7 +2358,7 @@ var process = require("e5942d17505a7304");
     ]);
 });
 
-},{"e5942d17505a7304":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"3089014e60479406":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2383,7 +2383,7 @@ function defaultClearTimeout() {
     try {
         if (typeof clearTimeout === "function") cachedClearTimeout = clearTimeout;
         else cachedClearTimeout = defaultClearTimeout;
-    } catch (e1) {
+    } catch (e) {
         cachedClearTimeout = defaultClearTimeout;
     }
 })();
@@ -2398,7 +2398,7 @@ function runTimeout(fun) {
     try {
         // when when somebody has screwed with setTimeout but no I.E. maddness
         return cachedSetTimeout(fun, 0);
-    } catch (e1) {
+    } catch (e) {
         try {
             // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
             return cachedSetTimeout.call(null, fun, 0);
@@ -2419,7 +2419,7 @@ function runClearTimeout(marker) {
     try {
         // when when somebody has screwed with setTimeout but no I.E. maddness
         return cachedClearTimeout(marker);
-    } catch (e1) {
+    } catch (e) {
         try {
             // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
             return cachedClearTimeout.call(null, marker);
@@ -2503,7 +2503,7 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"7Zeie":[function(require,module,exports) {
+},{}],"cJcMZ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -2519,7 +2519,7 @@ import type {
 interface ParcelRequire {
   (string): mixed;
   cache: {|[string]: ParcelModule|};
-  hotData: mixed;
+  hotData: {|[string]: mixed|};
   Module: any;
   parent: ?ParcelRequire;
   isParcelRequire: true;
@@ -2561,7 +2561,7 @@ var OldModule = module.bundle.Module;
 function Module(moduleName) {
     OldModule.call(this, moduleName);
     this.hot = {
-        data: module.bundle.hotData,
+        data: module.bundle.hotData[moduleName],
         _acceptCallbacks: [],
         _disposeCallbacks: [],
         accept: function(fn) {
@@ -2571,10 +2571,11 @@ function Module(moduleName) {
             this._disposeCallbacks.push(fn);
         }
     };
-    module.bundle.hotData = undefined;
+    module.bundle.hotData[moduleName] = undefined;
 }
 module.bundle.Module = Module;
-var checkedAssets, acceptedAssets, assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
+module.bundle.hotData = {};
+var checkedAssets, assetsToDispose, assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
 function getHostname() {
     return HMR_HOST || (location.protocol.indexOf("http") === 0 ? location.hostname : "localhost");
 }
@@ -2597,8 +2598,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     } // $FlowFixMe
     ws.onmessage = async function(event) {
         checkedAssets = {} /*: {|[string]: boolean|} */ ;
-        acceptedAssets = {} /*: {|[string]: boolean|} */ ;
         assetsToAccept = [];
+        assetsToDispose = [];
         var data = JSON.parse(event.data);
         if (data.type === "update") {
             // Remove error overlay if there is one
@@ -2610,10 +2611,22 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
             if (handled) {
                 console.clear(); // Dispatch custom event so other runtimes (e.g React Refresh) are aware.
                 if (typeof window !== "undefined" && typeof CustomEvent !== "undefined") window.dispatchEvent(new CustomEvent("parcelhmraccept"));
-                await hmrApplyUpdates(assets);
-                for(var i = 0; i < assetsToAccept.length; i++){
-                    var id = assetsToAccept[i][1];
-                    if (!acceptedAssets[id]) hmrAcceptRun(assetsToAccept[i][0], id);
+                await hmrApplyUpdates(assets); // Dispose all old assets.
+                let processedAssets = {} /*: {|[string]: boolean|} */ ;
+                for(let i = 0; i < assetsToDispose.length; i++){
+                    let id = assetsToDispose[i][1];
+                    if (!processedAssets[id]) {
+                        hmrDispose(assetsToDispose[i][0], id);
+                        processedAssets[id] = true;
+                    }
+                } // Run accept callbacks. This will also re-execute other disposed assets in topological order.
+                processedAssets = {};
+                for(let i = 0; i < assetsToAccept.length; i++){
+                    let id = assetsToAccept[i][1];
+                    if (!processedAssets[id]) {
+                        hmrAccept(assetsToAccept[i][0], id);
+                        processedAssets[id] = true;
+                    }
                 }
             } else fullReload();
         }
@@ -2866,30 +2879,42 @@ function hmrAcceptCheckOne(bundle, id, depsByBundle) {
     if (checkedAssets[id]) return true;
     checkedAssets[id] = true;
     var cached = bundle.cache[id];
-    assetsToAccept.push([
+    assetsToDispose.push([
         bundle,
         id
     ]);
-    if (!cached || cached.hot && cached.hot._acceptCallbacks.length) return true;
+    if (!cached || cached.hot && cached.hot._acceptCallbacks.length) {
+        assetsToAccept.push([
+            bundle,
+            id
+        ]);
+        return true;
+    }
 }
-function hmrAcceptRun(bundle, id) {
+function hmrDispose(bundle, id) {
     var cached = bundle.cache[id];
-    bundle.hotData = {};
-    if (cached && cached.hot) cached.hot.data = bundle.hotData;
+    bundle.hotData[id] = {};
+    if (cached && cached.hot) cached.hot.data = bundle.hotData[id];
     if (cached && cached.hot && cached.hot._disposeCallbacks.length) cached.hot._disposeCallbacks.forEach(function(cb) {
-        cb(bundle.hotData);
+        cb(bundle.hotData[id]);
     });
     delete bundle.cache[id];
-    bundle(id);
-    cached = bundle.cache[id];
+}
+function hmrAccept(bundle, id) {
+    // Execute the module.
+    bundle(id); // Run the accept callbacks in the new version of the module.
+    var cached = bundle.cache[id];
     if (cached && cached.hot && cached.hot._acceptCallbacks.length) cached.hot._acceptCallbacks.forEach(function(cb) {
         var assetsToAlsoAccept = cb(function() {
             return getParents(module.bundle.root, id);
         });
-        if (assetsToAlsoAccept && assetsToAccept.length) // $FlowFixMe[method-unbinding]
-        assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
+        if (assetsToAlsoAccept && assetsToAccept.length) {
+            assetsToAlsoAccept.forEach(function(a) {
+                hmrDispose(a[0], a[1]);
+            }); // $FlowFixMe[method-unbinding]
+            assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
+        }
     });
-    acceptedAssets[id] = true;
 }
 
 },{}],"2kQhy":[function(require,module,exports) {
@@ -2920,60 +2945,121 @@ var _outsideWmca = require("./Registration/section1/OutsideWmca");
 var _outsideWmcaDefault = parcelHelpers.interopDefault(_outsideWmca);
 var _forgotRegistration = require("./Booking/section1/ForgotRegistration");
 var _forgotRegistrationDefault = parcelHelpers.interopDefault(_forgotRegistration);
+var _maintenance = require("./Maintenance");
+var _maintenanceDefault = parcelHelpers.interopDefault(_maintenance);
 const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/contactUs",
-                        children: "Contact Us"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+            id: "wmrards-main-content",
+            className: "wmrards-container wmrards-m-t-lg homepage",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "wmrards-grid wmrards-grid--justify-between wmrards-grid--spacing-2-lg wmrards-grid--spacing-md-2-lg",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "wmrards-col-1 wmrards-col-md-2-3",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "one-column-row",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wmrards-col-1 wmrards-col-md-1-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "wmrards-m-b-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: "Ring & Ride Forms"
+                                    }, void 0, false, {
+                                        fileName: "src/App.js",
+                                        lineNumber: 20,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/contactUs",
+                                                    children: "Contact Us"
+                                                }, void 0, false, {
+                                                    fileName: "src/App.js",
+                                                    lineNumber: 23,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/App.js",
+                                                lineNumber: 22,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/registration",
+                                                    children: "Registration"
+                                                }, void 0, false, {
+                                                    fileName: "src/App.js",
+                                                    lineNumber: 26,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/App.js",
+                                                lineNumber: 25,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/booking",
+                                                    children: "Booking"
+                                                }, void 0, false, {
+                                                    fileName: "src/App.js",
+                                                    lineNumber: 29,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/App.js",
+                                                lineNumber: 28,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.js",
+                                        lineNumber: 21,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.js",
+                                lineNumber: 19,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 18,
+                            columnNumber: 13
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 15,
-                        columnNumber: 9
+                        lineNumber: 17,
+                        columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 14,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/registration",
-                        children: "Registration"
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 17,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/booking",
-                        children: "Booking"
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 20,
-                    columnNumber: 7
+                    lineNumber: 16,
+                    columnNumber: 9
                 }, undefined)
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 5
         }, undefined)
     }, void 0, false);
 _c = Home;
 const App = ()=>{
+    // Set to true to enable maintenance mode
+    const maintenanceMode = false;
+    if (maintenanceMode) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _maintenanceDefault.default), {}, void 0, false, {
+        fileName: "src/App.js",
+        lineNumber: 43,
+        columnNumber: 12
+    }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
             children: [
@@ -2982,7 +3068,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 28,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -2990,7 +3076,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactFormDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 29,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -2998,7 +3084,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmationDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 30,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3006,7 +3092,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationFormDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 31,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3014,7 +3100,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outsideWmcaDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 32,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3022,7 +3108,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmationDefault1.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 33,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3030,7 +3116,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingFormDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 34,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3038,7 +3124,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmationDefault2.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 35,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -3046,18 +3132,18 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _forgotRegistrationDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 27,
+            lineNumber: 46,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 26,
+        lineNumber: 45,
         columnNumber: 10
     }, undefined);
 };
@@ -3067,12 +3153,12 @@ const root = (0, _client.createRoot)(container);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 43,
+        lineNumber: 62,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 42,
+    lineNumber: 61,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3084,11 +3170,11 @@ $RefreshReg$(_c1, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Contact/ContactForm":"5pFmY","./Contact/Confirmation":"eZsXp","./Registration/RegistrationForm":"6Nnh8","./Registration/Confirmation":"6iVA6","./Booking/BookingForm":"aU5Bc","./Booking/Confirmation":"bqvPz","./Registration/section1/OutsideWmca":"dm4we","./Booking/section1/ForgotRegistration":"biTD5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Contact/ContactForm":"5pFmY","./Contact/Confirmation":"eZsXp","./Registration/RegistrationForm":"6Nnh8","./Registration/Confirmation":"6iVA6","./Booking/BookingForm":"aU5Bc","./Booking/Confirmation":"bqvPz","./Registration/section1/OutsideWmca":"dm4we","./Booking/section1/ForgotRegistration":"biTD5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Maintenance":"4chFC"}],"iTorj":[function(require,module,exports) {
 "use strict";
-module.exports = require("5f43ca9da750d89c");
+module.exports = require("93d4c8e60e0b6c8d");
 
-},{"5f43ca9da750d89c":"48uCM"}],"48uCM":[function(require,module,exports) {
+},{"93d4c8e60e0b6c8d":"48uCM"}],"48uCM":[function(require,module,exports) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -3100,7 +3186,7 @@ module.exports = require("5f43ca9da750d89c");
  */ "use strict";
 (function() {
     "use strict";
-    var React = require("4aaa105d24649ac");
+    var React = require("3f8fdea340de2d80");
     // ATTENTION
     // When adding new symbols to this file,
     // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
@@ -3358,16 +3444,16 @@ module.exports = require("5f43ca9da750d89c");
                 } else {
                     try {
                         Fake.call();
-                    } catch (x1) {
-                        control = x1;
+                    } catch (x) {
+                        control = x;
                     }
                     fn.call(Fake.prototype);
                 }
             } else {
                 try {
                     throw Error();
-                } catch (x2) {
-                    control = x2;
+                } catch (x) {
+                    control = x;
                 }
                 fn();
             }
@@ -3919,11 +4005,11 @@ module.exports = require("5f43ca9da750d89c");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"4aaa105d24649ac":"21dqq"}],"21dqq":[function(require,module,exports) {
+},{"3f8fdea340de2d80":"21dqq"}],"21dqq":[function(require,module,exports) {
 "use strict";
-module.exports = require("c65001f3d7ef9722");
+module.exports = require("a1f1d2286befcb4d");
 
-},{"c65001f3d7ef9722":"6YvXz"}],"6YvXz":[function(require,module,exports) {
+},{"a1f1d2286befcb4d":"6YvXz"}],"6YvXz":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -5216,16 +5302,16 @@ module.exports = require("c65001f3d7ef9722");
                 } else {
                     try {
                         Fake.call();
-                    } catch (x1) {
-                        control = x1;
+                    } catch (x) {
+                        control = x;
                     }
                     fn.call(Fake.prototype);
                 }
             } else {
                 try {
                     throw Error();
-                } catch (x2) {
-                    control = x2;
+                } catch (x) {
+                    control = x;
                 }
                 fn();
             }
@@ -5627,9 +5713,9 @@ module.exports = require("c65001f3d7ef9722");
                     flushActQueue(queue);
                 }
             }
-        } catch (error1) {
+        } catch (error) {
             popActScope(prevActScopeDepth);
-            throw error1;
+            throw error;
         } finally{
             ReactCurrentActQueue.isBatchingLegacy = prevIsBatchingLegacy;
         }
@@ -5791,7 +5877,7 @@ module.exports = require("c65001f3d7ef9722");
 
 },{}],"lOjBx":[function(require,module,exports) {
 "use strict";
-var m = require("ccce339353adef65");
+var m = require("c2d742340e5b7c27");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 exports.createRoot = function(c, o) {
     i.usingClientEntryPoint = true;
@@ -5810,7 +5896,7 @@ exports.hydrateRoot = function(c, h, o) {
     }
 };
 
-},{"ccce339353adef65":"j6uA9"}],"j6uA9":[function(require,module,exports) {
+},{"c2d742340e5b7c27":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -5824,9 +5910,9 @@ function checkDCE() {
     // a false positive.
     throw new Error("^_^");
 }
-module.exports = require("4de240b6f9b6d0ba");
+module.exports = require("783690efa771a429");
 
-},{"4de240b6f9b6d0ba":"3iA9v"}],"3iA9v":[function(require,module,exports) {
+},{"783690efa771a429":"3iA9v"}],"3iA9v":[function(require,module,exports) {
 /**
  * @license React
  * react-dom.development.js
@@ -5839,8 +5925,8 @@ module.exports = require("4de240b6f9b6d0ba");
 (function() {
     "use strict";
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-    var React = require("cece3691b7f8476b");
-    var Scheduler = require("22c7258ebfd2ea6a");
+    var React = require("32473bed6c537341");
+    var Scheduler = require("e35078c5e4f378c9");
     var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     var suppressWarning = false;
     function setSuppressWarning(newSuppressWarning) {
@@ -6656,16 +6742,16 @@ module.exports = require("4de240b6f9b6d0ba");
                 } else {
                     try {
                         Fake.call();
-                    } catch (x1) {
-                        control = x1;
+                    } catch (x) {
+                        control = x;
                     }
                     fn.call(Fake.prototype);
                 }
             } else {
                 try {
                     throw Error();
-                } catch (x2) {
-                    control = x2;
+                } catch (x) {
+                    control = x;
                 }
                 fn();
             }
@@ -18436,7 +18522,7 @@ module.exports = require("4de240b6f9b6d0ba");
                             enqueueConcurrentHookUpdateAndEagerlyBailout(fiber, queue, update, lane);
                             return;
                         }
-                    } catch (error1) {} finally{
+                    } catch (error) {} finally{
                         ReactCurrentDispatcher$1.current = prevDispatcher;
                     }
                 }
@@ -22330,8 +22416,8 @@ module.exports = require("4de240b6f9b6d0ba");
                         recordLayoutEffectDuration(current);
                     }
                     else retVal = ref(null);
-                } catch (error1) {
-                    captureCommitPhaseError(current, nearestMountedAncestor, error1);
+                } catch (error) {
+                    captureCommitPhaseError(current, nearestMountedAncestor, error);
                 }
                 if (typeof retVal === "function") error("Unexpected return value from a callback ref in %s. A callback ref should not return a function.", getComponentNameFromFiber(current));
             } else ref.current = null;
@@ -22704,8 +22790,8 @@ module.exports = require("4de240b6f9b6d0ba");
                     var _instance3 = node.stateNode;
                     if (isHidden) hideTextInstance(_instance3);
                     else unhideTextInstance(_instance3, node.memoizedProps);
-                } catch (error1) {
-                    captureCommitPhaseError(finishedWork, finishedWork.return, error1);
+                } catch (error) {
+                    captureCommitPhaseError(finishedWork, finishedWork.return, error);
                 }
             } else if ((node.tag === OffscreenComponent || node.tag === LegacyHiddenComponent) && node.memoizedState !== null && node !== finishedWork) ;
             else if (node.child !== null) {
@@ -23177,14 +23263,14 @@ module.exports = require("4de240b6f9b6d0ba");
                         try {
                             startLayoutEffectTimer();
                             commitHookEffectListUnmount(Layout | HasEffect, finishedWork, finishedWork.return);
-                        } catch (error1) {
-                            captureCommitPhaseError(finishedWork, finishedWork.return, error1);
+                        } catch (error) {
+                            captureCommitPhaseError(finishedWork, finishedWork.return, error);
                         }
                         recordLayoutEffectDuration(finishedWork);
                     } else try {
                         commitHookEffectListUnmount(Layout | HasEffect, finishedWork, finishedWork.return);
-                    } catch (error2) {
-                        captureCommitPhaseError(finishedWork, finishedWork.return, error2);
+                    } catch (error) {
+                        captureCommitPhaseError(finishedWork, finishedWork.return, error);
                     }
                 }
                 return;
@@ -23211,8 +23297,8 @@ module.exports = require("4de240b6f9b6d0ba");
                     var instance = finishedWork.stateNode;
                     try {
                         resetTextContent(instance);
-                    } catch (error3) {
-                        captureCommitPhaseError(finishedWork, finishedWork.return, error3);
+                    } catch (error) {
+                        captureCommitPhaseError(finishedWork, finishedWork.return, error);
                     }
                 }
                 if (flags & Update) {
@@ -23228,8 +23314,8 @@ module.exports = require("4de240b6f9b6d0ba");
                         finishedWork.updateQueue = null;
                         if (updatePayload !== null) try {
                             commitUpdate(_instance4, updatePayload, type, oldProps, newProps, finishedWork);
-                        } catch (error4) {
-                            captureCommitPhaseError(finishedWork, finishedWork.return, error4);
+                        } catch (error) {
+                            captureCommitPhaseError(finishedWork, finishedWork.return, error);
                         }
                     }
                 }
@@ -23246,8 +23332,8 @@ module.exports = require("4de240b6f9b6d0ba");
                     var oldText = current !== null ? current.memoizedProps : newText;
                     try {
                         commitTextUpdate(textInstance, oldText, newText);
-                    } catch (error5) {
-                        captureCommitPhaseError(finishedWork, finishedWork.return, error5);
+                    } catch (error) {
+                        captureCommitPhaseError(finishedWork, finishedWork.return, error);
                     }
                 }
                 return;
@@ -23259,8 +23345,8 @@ module.exports = require("4de240b6f9b6d0ba");
                         var prevRootState = current.memoizedState;
                         if (prevRootState.isDehydrated) try {
                             commitHydratedContainer(root.containerInfo);
-                        } catch (error6) {
-                            captureCommitPhaseError(finishedWork, finishedWork.return, error6);
+                        } catch (error) {
+                            captureCommitPhaseError(finishedWork, finishedWork.return, error);
                         }
                     }
                 }
@@ -23288,8 +23374,8 @@ module.exports = require("4de240b6f9b6d0ba");
                 if (flags & Update) {
                     try {
                         commitSuspenseCallback(finishedWork);
-                    } catch (error7) {
-                        captureCommitPhaseError(finishedWork, finishedWork.return, error7);
+                    } catch (error) {
+                        captureCommitPhaseError(finishedWork, finishedWork.return, error);
                     }
                     attachSuspenseRetryListeners(finishedWork);
                 }
@@ -23747,8 +23833,8 @@ module.exports = require("4de240b6f9b6d0ba");
                 var instance = fiber.stateNode;
                 try {
                     instance.componentDidMount();
-                } catch (error1) {
-                    captureCommitPhaseError(fiber, fiber.return, error1);
+                } catch (error) {
+                    captureCommitPhaseError(fiber, fiber.return, error);
                 }
                 break;
         }
@@ -25642,7 +25728,7 @@ module.exports = require("4de240b6f9b6d0ba");
         new Set([
             nonExtensibleObject
         ]);
-    /* eslint-enable no-new */ } catch (e1) {
+    /* eslint-enable no-new */ } catch (e) {
         // TODO: Consider warning about bad polyfills
         hasBadMapPolyfill = true;
     }
@@ -26811,11 +26897,11 @@ module.exports = require("4de240b6f9b6d0ba");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"cece3691b7f8476b":"21dqq","22c7258ebfd2ea6a":"juvHo"}],"juvHo":[function(require,module,exports) {
+},{"32473bed6c537341":"21dqq","e35078c5e4f378c9":"juvHo"}],"juvHo":[function(require,module,exports) {
 "use strict";
-module.exports = require("e71d46f558771449");
+module.exports = require("31e0351da4a401b3");
 
-},{"e71d46f558771449":"RqdIf"}],"RqdIf":[function(require,module,exports) {
+},{"31e0351da4a401b3":"RqdIf"}],"RqdIf":[function(require,module,exports) {
 /**
  * @license React
  * scheduler.development.js
@@ -27271,7 +27357,7 @@ module.exports = require("e71d46f558771449");
 
 },{}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.5.0
+ * React Router DOM v6.11.2
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -27293,11 +27379,10 @@ parcelHelpers.export(exports, "RouterProvider", ()=>(0, _reactRouter.RouterProvi
 parcelHelpers.export(exports, "Routes", ()=>(0, _reactRouter.Routes));
 parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>(0, _reactRouter.UNSAFE_DataRouterContext));
 parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>(0, _reactRouter.UNSAFE_DataRouterStateContext));
-parcelHelpers.export(exports, "UNSAFE_DataStaticRouterContext", ()=>(0, _reactRouter.UNSAFE_DataStaticRouterContext));
 parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>(0, _reactRouter.UNSAFE_LocationContext));
 parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>(0, _reactRouter.UNSAFE_NavigationContext));
 parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>(0, _reactRouter.UNSAFE_RouteContext));
-parcelHelpers.export(exports, "UNSAFE_enhanceManualRouteObjects", ()=>(0, _reactRouter.UNSAFE_enhanceManualRouteObjects));
+parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>(0, _reactRouter.UNSAFE_useRouteId));
 parcelHelpers.export(exports, "createMemoryRouter", ()=>(0, _reactRouter.createMemoryRouter));
 parcelHelpers.export(exports, "createPath", ()=>(0, _reactRouter.createPath));
 parcelHelpers.export(exports, "createRoutesFromChildren", ()=>(0, _reactRouter.createRoutesFromChildren));
@@ -27312,6 +27397,7 @@ parcelHelpers.export(exports, "parsePath", ()=>(0, _reactRouter.parsePath));
 parcelHelpers.export(exports, "redirect", ()=>(0, _reactRouter.redirect));
 parcelHelpers.export(exports, "renderMatches", ()=>(0, _reactRouter.renderMatches));
 parcelHelpers.export(exports, "resolvePath", ()=>(0, _reactRouter.resolvePath));
+parcelHelpers.export(exports, "unstable_useBlocker", ()=>(0, _reactRouter.unstable_useBlocker));
 parcelHelpers.export(exports, "useActionData", ()=>(0, _reactRouter.useActionData));
 parcelHelpers.export(exports, "useAsyncError", ()=>(0, _reactRouter.useAsyncError));
 parcelHelpers.export(exports, "useAsyncValue", ()=>(0, _reactRouter.useAsyncValue));
@@ -27332,16 +27418,20 @@ parcelHelpers.export(exports, "useRevalidator", ()=>(0, _reactRouter.useRevalida
 parcelHelpers.export(exports, "useRouteError", ()=>(0, _reactRouter.useRouteError));
 parcelHelpers.export(exports, "useRouteLoaderData", ()=>(0, _reactRouter.useRouteLoaderData));
 parcelHelpers.export(exports, "useRoutes", ()=>(0, _reactRouter.useRoutes));
+//#endregion
 parcelHelpers.export(exports, "BrowserRouter", ()=>BrowserRouter);
 parcelHelpers.export(exports, "Form", ()=>Form);
 parcelHelpers.export(exports, "HashRouter", ()=>HashRouter);
 parcelHelpers.export(exports, "Link", ()=>Link);
 parcelHelpers.export(exports, "NavLink", ()=>NavLink);
 parcelHelpers.export(exports, "ScrollRestoration", ()=>ScrollRestoration);
+parcelHelpers.export(exports, "UNSAFE_useScrollRestoration", ()=>useScrollRestoration);
 parcelHelpers.export(exports, "createBrowserRouter", ()=>createBrowserRouter);
 parcelHelpers.export(exports, "createHashRouter", ()=>createHashRouter);
 parcelHelpers.export(exports, "createSearchParams", ()=>createSearchParams);
 parcelHelpers.export(exports, "unstable_HistoryRouter", ()=>HistoryRouter);
+parcelHelpers.export(exports, "unstable_usePrompt", ()=>usePrompt);
+parcelHelpers.export(exports, "useBeforeUnload", ()=>useBeforeUnload);
 parcelHelpers.export(exports, "useFetcher", ()=>useFetcher);
 parcelHelpers.export(exports, "useFetchers", ()=>useFetchers);
 parcelHelpers.export(exports, "useFormAction", ()=>useFormAction);
@@ -27432,20 +27522,29 @@ function shouldProcessLinkClick(event, target) {
 }
 function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
     let searchParams = createSearchParams(locationSearch);
-    for (let key of defaultSearchParams.keys())if (!searchParams.has(key)) defaultSearchParams.getAll(key).forEach((value)=>{
-        searchParams.append(key, value);
-    });
+    if (defaultSearchParams) {
+        for (let key of defaultSearchParams.keys())if (!searchParams.has(key)) defaultSearchParams.getAll(key).forEach((value)=>{
+            searchParams.append(key, value);
+        });
+    }
     return searchParams;
 }
-function getFormSubmissionInfo(target, defaultAction, options) {
+function getFormSubmissionInfo(target, options, basename) {
     let method;
-    let action;
+    let action = null;
     let encType;
     let formData;
     if (isFormElement(target)) {
         let submissionTrigger = options.submissionTrigger;
+        if (options.action) action = options.action;
+        else {
+            // When grabbing the action from the element, it will have had the basename
+            // prefixed to ensure non-JS scenarios work, so strip it since we'll
+            // re-prefix in the router
+            let attr = target.getAttribute("action");
+            action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        }
         method = options.method || target.getAttribute("method") || defaultMethod;
-        action = options.action || target.getAttribute("action") || defaultAction;
         encType = options.encType || target.getAttribute("enctype") || defaultEncType;
         formData = new FormData(target);
         if (submissionTrigger && submissionTrigger.name) formData.append(submissionTrigger.name, submissionTrigger.value);
@@ -27453,8 +27552,15 @@ function getFormSubmissionInfo(target, defaultAction, options) {
         let form = target.form;
         if (form == null) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
          // <button>/<input type="submit"> may override attributes of <form>
+        if (options.action) action = options.action;
+        else {
+            // When grabbing the action from the element, it will have had the basename
+            // prefixed to ensure non-JS scenarios work, so strip it since we'll
+            // re-prefix in the router
+            let attr = target.getAttribute("formaction") || form.getAttribute("action");
+            action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        }
         method = options.method || target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
-        action = options.action || target.getAttribute("formaction") || form.getAttribute("action") || defaultAction;
         encType = options.encType || target.getAttribute("formenctype") || form.getAttribute("enctype") || defaultEncType;
         formData = new FormData(form); // Include name + value from a <button>, appending in case the button name
         // matches an existing input name
@@ -27462,20 +27568,18 @@ function getFormSubmissionInfo(target, defaultAction, options) {
     } else if (isHtmlElement(target)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
     else {
         method = options.method || defaultMethod;
-        action = options.action || defaultAction;
+        action = options.action || null;
         encType = options.encType || defaultEncType;
         if (target instanceof FormData) formData = target;
         else {
             formData = new FormData();
             if (target instanceof URLSearchParams) for (let [name, value] of target)formData.append(name, value);
-            else if (target != null) for (let name1 of Object.keys(target))formData.append(name1, target[name1]);
+            else if (target != null) for (let name of Object.keys(target))formData.append(name, target[name]);
         }
     }
-    let { protocol , host  } = window.location;
-    let url = new URL(action, protocol + "//" + host);
     return {
-        url,
-        method,
+        action,
+        method: method.toLowerCase(),
         encType,
         formData
     };
@@ -27505,28 +27609,35 @@ const _excluded = [
     "onSubmit",
     "fetcherKey",
     "routeId",
-    "relative"
+    "relative",
+    "preventScrollReset"
 ];
-//#region Routers
-////////////////////////////////////////////////////////////////////////////////
 function createBrowserRouter(routes, opts) {
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
         history: (0, _router.createBrowserHistory)({
             window: opts == null ? void 0 : opts.window
         }),
         hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
-        routes: (0, _reactRouter.UNSAFE_enhanceManualRouteObjects)(routes)
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties)
     }).initialize();
 }
 function createHashRouter(routes, opts) {
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
         history: (0, _router.createHashHistory)({
             window: opts == null ? void 0 : opts.window
         }),
         hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
-        routes: (0, _reactRouter.UNSAFE_enhanceManualRouteObjects)(routes)
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties)
     }).initialize();
 }
 function parseHydrationData() {
@@ -27541,10 +27652,17 @@ function deserializeErrors(errors) {
     if (!errors) return null;
     let entries = Object.entries(errors);
     let serialized = {};
-    for (let [key, val] of entries)// Hey you!  If you change this, please change the corresponding logic in
-    // serializeErrors in react-router-dom/server.tsx :)
-    if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.ErrorResponse)(val.status, val.statusText, val.data, val.internal === true);
-    else serialized[key] = val;
+    for (let [key, val] of entries){
+        // Hey you!  If you change this, please change the corresponding logic in
+        // serializeErrors in react-router-dom/server.tsx :)
+        if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.ErrorResponse)(val.status, val.statusText, val.data, val.internal === true);
+        else if (val && val.__type === "Error") {
+            let error = new Error(val.message); // Wipe away the client-side stack trace.  Nothing to fill it in with
+            // because we don't serialize SSR stack traces for security reasons
+            error.stack = "";
+            serialized[key] = error;
+        } else serialized[key] = val;
+    }
     return serialized;
 }
 /**
@@ -27621,10 +27739,29 @@ function deserializeErrors(errors) {
     });
 }
 HistoryRouter.displayName = "unstable_HistoryRouter";
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 /**
  * The public API for rendering a history-aware <a>.
  */ const Link = /*#__PURE__*/ _react.forwardRef(function LinkWithRef(_ref4, ref) {
     let { onClick , relative , reloadDocument , replace , state , target , to , preventScrollReset  } = _ref4, rest = _objectWithoutPropertiesLoose(_ref4, _excluded);
+    let { basename  } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext)); // Rendered into <a href> for absolute URLs
+    let absoluteHref;
+    let isExternal = false;
+    if (typeof to === "string" && ABSOLUTE_URL_REGEX.test(to)) {
+        // Render the absolute href server- and client-side
+        absoluteHref = to; // Only check for external origins client-side
+        if (isBrowser) try {
+            let currentUrl = new URL(window.location.href);
+            let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
+            let path = (0, _router.stripBasename)(targetUrl.pathname, basename);
+            if (targetUrl.origin === currentUrl.origin && path != null) // Strip the protocol/origin/basename for same-origin absolute URLs
+            to = path + targetUrl.search + targetUrl.hash;
+            else isExternal = true;
+        } catch (e) {
+            (0, _router.UNSAFE_warning)(false, '<Link to="' + to + '"> contains an invalid URL which will probably break ' + "when clicked - please update to a valid URL path.");
+        }
+    } // Rendered into <a href> for relative URLs
     let href = (0, _reactRouter.useHref)(to, {
         relative
     });
@@ -27641,8 +27778,8 @@ HistoryRouter.displayName = "unstable_HistoryRouter";
     }
     return(/*#__PURE__*/ // eslint-disable-next-line jsx-a11y/anchor-has-content
     _react.createElement("a", _extends({}, rest, {
-        href: href,
-        onClick: reloadDocument ? onClick : handleClick,
+        href: absoluteHref || href,
+        onClick: isExternal || reloadDocument ? onClick : handleClick,
         ref: ref,
         target: target
     })));
@@ -27712,7 +27849,7 @@ NavLink.displayName = "NavLink";
 });
 Form.displayName = "Form";
 const FormImpl = /*#__PURE__*/ _react.forwardRef((_ref6, forwardedRef)=>{
-    let { reloadDocument , replace , method =defaultMethod , action , onSubmit , fetcherKey , routeId , relative  } = _ref6, props = _objectWithoutPropertiesLoose(_ref6, _excluded3);
+    let { reloadDocument , replace , method =defaultMethod , action , onSubmit , fetcherKey , routeId , relative , preventScrollReset  } = _ref6, props = _objectWithoutPropertiesLoose(_ref6, _excluded3);
     let submit = useSubmitImpl(fetcherKey, routeId);
     let formMethod = method.toLowerCase() === "get" ? "get" : "post";
     let formAction = useFormAction(action, {
@@ -27723,10 +27860,12 @@ const FormImpl = /*#__PURE__*/ _react.forwardRef((_ref6, forwardedRef)=>{
         if (event.defaultPrevented) return;
         event.preventDefault();
         let submitter = event.nativeEvent.submitter;
+        let submitMethod = (submitter == null ? void 0 : submitter.getAttribute("formmethod")) || method;
         submit(submitter || event.currentTarget, {
-            method,
+            method: submitMethod,
             replace,
-            relative
+            relative,
+            preventScrollReset
         });
     };
     return /*#__PURE__*/ _react.createElement("form", _extends({
@@ -27768,12 +27907,12 @@ function getDataRouterConsoleError(hookName) {
 }
 function useDataRouterContext(hookName) {
     let ctx = _react.useContext((0, _reactRouter.UNSAFE_DataRouterContext));
-    !ctx && (0, _router.invariant)(false, getDataRouterConsoleError(hookName));
+    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
     return ctx;
 }
 function useDataRouterState(hookName) {
     let state = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
-    !state && (0, _router.invariant)(false, getDataRouterConsoleError(hookName));
+    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
     return state;
 }
 /**
@@ -27815,15 +27954,19 @@ function useDataRouterState(hookName) {
  * A convenient wrapper for reading and writing search parameters via the
  * URLSearchParams interface.
  */ function useSearchParams(defaultInit) {
-    warning(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params\n\nIf you're unsure how to load polyfills, we recommend you check out https://polyfill.io/v3/ which provides some recommendations about how to load polyfills only for users that need them, instead of for every user.");
+    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params\n\nIf you're unsure how to load polyfills, we recommend you check out https://polyfill.io/v3/ which provides some recommendations about how to load polyfills only for users that need them, instead of for every user.");
     let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
+    let hasSetSearchParamsRef = _react.useRef(false);
     let location = (0, _reactRouter.useLocation)();
-    let searchParams = _react.useMemo(()=>getSearchParamsForLocation(location.search, defaultSearchParamsRef.current), [
+    let searchParams = _react.useMemo(()=>// Once we call that we want those to take precedence, otherwise you can't
+        // remove a param with setSearchParams({}) if it has an initial value
+        getSearchParamsForLocation(location.search, hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current), [
         location.search
     ]);
     let navigate = (0, _reactRouter.useNavigate)();
     let setSearchParams = _react.useCallback((nextInit, navigateOptions)=>{
         const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
+        hasSetSearchParamsRef.current = true;
         navigate("?" + newSearchParams, navigateOptions);
     }, [
         navigate,
@@ -27840,40 +27983,44 @@ function useDataRouterState(hookName) {
  */ function useSubmit() {
     return useSubmitImpl();
 }
-function useSubmitImpl(fetcherKey, routeId) {
+function useSubmitImpl(fetcherKey, fetcherRouteId) {
     let { router  } = useDataRouterContext(DataRouterHook.UseSubmitImpl);
-    let defaultAction = useFormAction();
+    let { basename  } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let currentRouteId = (0, _reactRouter.UNSAFE_useRouteId)();
     return _react.useCallback(function(target, options) {
         if (options === void 0) options = {};
         if (typeof document === "undefined") throw new Error("You are calling submit during the server render. Try calling submit within a `useEffect` or callback instead.");
-        let { method , encType , formData , url  } = getFormSubmissionInfo(target, defaultAction, options);
-        let href = url.pathname + url.search;
+        let { action , method , encType , formData  } = getFormSubmissionInfo(target, options, basename); // Base options shared between fetch() and navigate()
         let opts = {
-            replace: options.replace,
+            preventScrollReset: options.preventScrollReset,
             formData,
             formMethod: method,
             formEncType: encType
         };
         if (fetcherKey) {
-            !(routeId != null) && (0, _router.invariant)(false, "No routeId available for useFetcher()");
-            router.fetch(fetcherKey, routeId, href, opts);
-        } else router.navigate(href, opts);
+            !(fetcherRouteId != null) && (0, _router.UNSAFE_invariant)(false, "No routeId available for useFetcher()");
+            router.fetch(fetcherKey, fetcherRouteId, action, opts);
+        } else router.navigate(action, _extends({}, opts, {
+            replace: options.replace,
+            fromRouteId: currentRouteId
+        }));
     }, [
-        defaultAction,
         router,
+        basename,
         fetcherKey,
-        routeId
+        fetcherRouteId,
+        currentRouteId
     ]);
-}
+} // v7: Eventually we should deprecate this entirely in favor of using the
+// router method directly?
 function useFormAction(action, _temp2) {
     let { relative  } = _temp2 === void 0 ? {} : _temp2;
     let { basename  } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
     let routeContext = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
-    !routeContext && (0, _router.invariant)(false, "useFormAction must be used inside a RouteContext");
-    let [match] = routeContext.matches.slice(-1);
-    let resolvedAction = action != null ? action : "."; // Shallow clone path so we can modify it below, otherwise we modify the
+    !routeContext && (0, _router.UNSAFE_invariant)(false, "useFormAction must be used inside a RouteContext");
+    let [match] = routeContext.matches.slice(-1); // Shallow clone path so we can modify it below, otherwise we modify the
     // object referenced by useMemo inside useResolvedPath
-    let path = _extends({}, (0, _reactRouter.useResolvedPath)(resolvedAction, {
+    let path = _extends({}, (0, _reactRouter.useResolvedPath)(action ? action : ".", {
         relative
     })); // Previously we set the default action to ".". The problem with this is that
     // `useResolvedPath(".")` excludes search params and the hash of the resolved
@@ -27925,17 +28072,17 @@ let fetcherId = 0;
     var _route$matches;
     let { router  } = useDataRouterContext(DataRouterHook.UseFetcher);
     let route = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
-    !route && (0, _router.invariant)(false, "useFetcher must be used inside a RouteContext");
+    !route && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a RouteContext");
     let routeId = (_route$matches = route.matches[route.matches.length - 1]) == null ? void 0 : _route$matches.route.id;
-    !(routeId != null) && (0, _router.invariant)(false, 'useFetcher can only be used on routes that contain a unique "id"');
+    !(routeId != null) && (0, _router.UNSAFE_invariant)(false, 'useFetcher can only be used on routes that contain a unique "id"');
     let [fetcherKey] = _react.useState(()=>String(++fetcherId));
     let [Form] = _react.useState(()=>{
-        !routeId && (0, _router.invariant)(false, "No routeId available for fetcher.Form()");
+        !routeId && (0, _router.UNSAFE_invariant)(false, "No routeId available for fetcher.Form()");
         return createFetcherForm(fetcherKey, routeId);
     });
     let [load] = _react.useState(()=>(href)=>{
-            !router && (0, _router.invariant)(false, "No router available for fetcher.load()");
-            !routeId && (0, _router.invariant)(false, "No routeId available for fetcher.load()");
+            !router && (0, _router.UNSAFE_invariant)(false, "No router available for fetcher.load()");
+            !routeId && (0, _router.UNSAFE_invariant)(false, "No routeId available for fetcher.load()");
             router.fetch(fetcherKey, routeId, href);
         });
     let submit = useSubmitImpl(fetcherKey, routeId);
@@ -27956,7 +28103,7 @@ let fetcherId = 0;
         // fetcher is no longer around.
         return ()=>{
             if (!router) {
-                console.warn("No fetcher available to clean up from useFetcher()");
+                console.warn("No router available to clean up from useFetcher()");
                 return;
             }
             router.deleteFetcher(fetcherKey);
@@ -27992,8 +28139,8 @@ let savedScrollPositions = {};
         return ()=>{
             window.history.scrollRestoration = "auto";
         };
-    }, []); // Save positions on unload
-    useBeforeUnload(_react.useCallback(()=>{
+    }, []); // Save positions on pagehide
+    usePageHide(_react.useCallback(()=>{
         if (navigation.state === "idle") {
             let key = (getKey ? getKey(location, matches) : null) || location.key;
             savedScrollPositions[key] = window.scrollY;
@@ -28007,76 +28154,125 @@ let savedScrollPositions = {};
         location,
         matches
     ])); // Read in any saved scroll locations
-    _react.useLayoutEffect(()=>{
-        try {
-            let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
-            if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
-        } catch (e) {}
-    }, [
-        storageKey
-    ]); // Enable scroll restoration in the router
-    _react.useLayoutEffect(()=>{
-        let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, ()=>window.scrollY, getKey);
-        return ()=>disableScrollRestoration && disableScrollRestoration();
-    }, [
-        router,
-        getKey
-    ]); // Restore scrolling when state.restoreScrollPosition changes
-    _react.useLayoutEffect(()=>{
-        // Explicit false means don't do anything (used for submissions)
-        if (restoreScrollPosition === false) return;
-         // been here before, scroll to it
-        if (typeof restoreScrollPosition === "number") {
-            window.scrollTo(0, restoreScrollPosition);
-            return;
-        } // try to scroll to the hash
-        if (location.hash) {
-            let el = document.getElementById(location.hash.slice(1));
-            if (el) {
-                el.scrollIntoView();
+    if (typeof document !== "undefined") {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            try {
+                let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
+                if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
+            } catch (e) {}
+        }, [
+            storageKey
+        ]); // Enable scroll restoration in the router
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, ()=>window.scrollY, getKey);
+            return ()=>disableScrollRestoration && disableScrollRestoration();
+        }, [
+            router,
+            getKey
+        ]); // Restore scrolling when state.restoreScrollPosition changes
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            // Explicit false means don't do anything (used for submissions)
+            if (restoreScrollPosition === false) return;
+             // been here before, scroll to it
+            if (typeof restoreScrollPosition === "number") {
+                window.scrollTo(0, restoreScrollPosition);
                 return;
-            }
-        } // Opt out of scroll reset if this link requested it
-        if (preventScrollReset === true) return;
-         // otherwise go to the top on new locations
-        window.scrollTo(0, 0);
-    }, [
-        location,
-        restoreScrollPosition,
-        preventScrollReset
-    ]);
+            } // try to scroll to the hash
+            if (location.hash) {
+                let el = document.getElementById(location.hash.slice(1));
+                if (el) {
+                    el.scrollIntoView();
+                    return;
+                }
+            } // Don't reset if this navigation opted out
+            if (preventScrollReset === true) return;
+             // otherwise go to the top on new locations
+            window.scrollTo(0, 0);
+        }, [
+            location,
+            restoreScrollPosition,
+            preventScrollReset
+        ]);
+    }
 }
-function useBeforeUnload(callback) {
+/**
+ * Setup a callback to be fired on the window's `beforeunload` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function useBeforeUnload(callback, options) {
+    let { capture  } = options || {};
     _react.useEffect(()=>{
-        window.addEventListener("beforeunload", callback);
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("beforeunload", callback, opts);
         return ()=>{
-            window.removeEventListener("beforeunload", callback);
+            window.removeEventListener("beforeunload", callback, opts);
         };
     }, [
-        callback
+        callback,
+        capture
     ]);
-} //#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region Utils
-////////////////////////////////////////////////////////////////////////////////
-function warning(cond, message) {
-    if (!cond) {
-        // eslint-disable-next-line no-console
-        if (typeof console !== "undefined") console.warn(message);
-        try {
-            // Welcome to debugging React Router!
-            //
-            // This error is thrown as a convenience so you can more easily
-            // find the source for a warning that appears in the console by
-            // enabling "pause on exceptions" in your JavaScript debugger.
-            throw new Error(message); // eslint-disable-next-line no-empty
-        } catch (e) {}
-    }
-} //#endregion
+}
+/**
+ * Setup a callback to be fired on the window's `pagehide` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.  This event is better supported than beforeunload across browsers.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function usePageHide(callback, options) {
+    let { capture  } = options || {};
+    _react.useEffect(()=>{
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("pagehide", callback, opts);
+        return ()=>{
+            window.removeEventListener("pagehide", callback, opts);
+        };
+    }, [
+        callback,
+        capture
+    ]);
+}
+/**
+ * Wrapper around useBlocker to show a window.confirm prompt to users instead
+ * of building a custom UI with useBlocker.
+ *
+ * Warning: This has *a lot of rough edges* and behaves very differently (and
+ * very incorrectly in some cases) across browsers if user click addition
+ * back/forward navigations while the confirm is open.  Use at your own risk.
+ */ function usePrompt(_ref8) {
+    let { when , message  } = _ref8;
+    let blocker = (0, _reactRouter.unstable_useBlocker)(when);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked" && !when) blocker.reset();
+    }, [
+        blocker,
+        when
+    ]);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked") {
+            let proceed = window.confirm(message);
+            if (proceed) setTimeout(blocker.proceed, 0);
+            else blocker.reset();
+        }
+    }, [
+        blocker,
+        message
+    ]);
+}
 
 },{"react":"21dqq","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.5.0
+ * React Router v6.11.2
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -28108,15 +28304,17 @@ parcelHelpers.export(exports, "RouterProvider", ()=>RouterProvider);
 parcelHelpers.export(exports, "Routes", ()=>Routes);
 parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>DataRouterContext);
 parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>DataRouterStateContext);
-parcelHelpers.export(exports, "UNSAFE_DataStaticRouterContext", ()=>DataStaticRouterContext);
 parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>LocationContext);
 parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>NavigationContext);
 parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>RouteContext);
-parcelHelpers.export(exports, "UNSAFE_enhanceManualRouteObjects", ()=>enhanceManualRouteObjects);
+parcelHelpers.export(exports, "UNSAFE_mapRouteProperties", ()=>mapRouteProperties);
+parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>useRouteId);
+parcelHelpers.export(exports, "UNSAFE_useRoutesImpl", ()=>useRoutesImpl);
 parcelHelpers.export(exports, "createMemoryRouter", ()=>createMemoryRouter);
 parcelHelpers.export(exports, "createRoutesFromChildren", ()=>createRoutesFromChildren);
 parcelHelpers.export(exports, "createRoutesFromElements", ()=>createRoutesFromChildren);
 parcelHelpers.export(exports, "renderMatches", ()=>renderMatches);
+parcelHelpers.export(exports, "unstable_useBlocker", ()=>useBlocker);
 parcelHelpers.export(exports, "useActionData", ()=>useActionData);
 parcelHelpers.export(exports, "useAsyncError", ()=>useAsyncError);
 parcelHelpers.export(exports, "useAsyncValue", ()=>useAsyncValue);
@@ -28137,8 +28335,8 @@ parcelHelpers.export(exports, "useRevalidator", ()=>useRevalidator);
 parcelHelpers.export(exports, "useRouteError", ()=>useRouteError);
 parcelHelpers.export(exports, "useRouteLoaderData", ()=>useRouteLoaderData);
 parcelHelpers.export(exports, "useRoutes", ()=>useRoutes);
-var _router = require("@remix-run/router");
 var _react = require("react");
+var _router = require("@remix-run/router");
 function _extends() {
     _extends = Object.assign ? Object.assign.bind() : function(target) {
         for(var i = 1; i < arguments.length; i++){
@@ -28149,151 +28347,6 @@ function _extends() {
     };
     return _extends.apply(this, arguments);
 }
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */ function isPolyfill(x, y) {
-    return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
-    ;
-}
-const is = typeof Object.is === "function" ? Object.is : isPolyfill; // Intentionally not using named imports because Rollup uses dynamic
-// dispatch for CommonJS interop named imports.
-const { useState , useEffect , useLayoutEffect , useDebugValue  } = _react;
-let didWarnOld18Alpha = false;
-let didWarnUncachedGetSnapshot = false; // Disclaimer: This shim breaks many of the rules of React, and only works
-// because of a very particular set of implementation details and assumptions
-// -- change any one of them and it will break. The most important assumption
-// is that updates are always synchronous, because concurrent rendering is
-// only available in versions of React that also have a built-in
-// useSyncExternalStore API. And we only use this shim when the built-in API
-// does not exist.
-//
-// Do not assume that the clever hacks used by this hook also work in general.
-// The point of this shim is to replace the need for hacks by other libraries.
-function useSyncExternalStore$2(subscribe, getSnapshot, // React do not expose a way to check if we're hydrating. So users of the shim
-// will need to track that themselves and return the correct value
-// from `getSnapshot`.
-getServerSnapshot) {
-    if (!didWarnOld18Alpha) {
-        if ("startTransition" in _react) {
-            didWarnOld18Alpha = true;
-            console.error("You are using an outdated, pre-release alpha of React 18 that does not support useSyncExternalStore. The use-sync-external-store shim will not work correctly. Upgrade to a newer pre-release.");
-        }
-    }
-    // breaks the rules of React, and only works here because of specific
-    // implementation details, most importantly that updates are
-    // always synchronous.
-    const value = getSnapshot();
-    if (!didWarnUncachedGetSnapshot) {
-        const cachedValue = getSnapshot();
-        if (!is(value, cachedValue)) {
-            console.error("The result of getSnapshot should be cached to avoid an infinite loop");
-            didWarnUncachedGetSnapshot = true;
-        }
-    }
-    // re-render whenever the subscribed state changes by updating an some
-    // arbitrary useState hook. Then, during render, we call getSnapshot to read
-    // the current value.
-    //
-    // Because we don't actually use the state returned by the useState hook, we
-    // can save a bit of memory by storing other stuff in that slot.
-    //
-    // To implement the early bailout, we need to track some things on a mutable
-    // object. Usually, we would put that in a useRef hook, but we can stash it in
-    // our useState hook instead.
-    //
-    // To force a re-render, we call forceUpdate({inst}). That works because the
-    // new object always fails an equality check.
-    const [{ inst  }, forceUpdate] = useState({
-        inst: {
-            value,
-            getSnapshot
-        }
-    }); // Track the latest getSnapshot function with a ref. This needs to be updated
-    // in the layout phase so we can access it during the tearing check that
-    // happens on subscribe.
-    useLayoutEffect(()=>{
-        inst.value = value;
-        inst.getSnapshot = getSnapshot; // Whenever getSnapshot or subscribe changes, we need to check in the
-        // commit phase if there was an interleaved mutation. In concurrent mode
-        // this can happen all the time, but even in synchronous mode, an earlier
-        // effect may have mutated the store.
-        if (checkIfSnapshotChanged(inst)) // Force a re-render.
-        forceUpdate({
-            inst
-        });
-         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [
-        subscribe,
-        value,
-        getSnapshot
-    ]);
-    useEffect(()=>{
-        // Check for changes right before subscribing. Subsequent changes will be
-        // detected in the subscription handler.
-        if (checkIfSnapshotChanged(inst)) // Force a re-render.
-        forceUpdate({
-            inst
-        });
-        const handleStoreChange = ()=>{
-            // TODO: Because there is no cross-renderer API for batching updates, it's
-            // up to the consumer of this library to wrap their subscription event
-            // with unstable_batchedUpdates. Should we try to detect when this isn't
-            // the case and print a warning in development?
-            // The store changed. Check if the snapshot changed since the last time we
-            // read from the store.
-            if (checkIfSnapshotChanged(inst)) // Force a re-render.
-            forceUpdate({
-                inst
-            });
-        }; // Subscribe to the store and return a clean-up function.
-        return subscribe(handleStoreChange); // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [
-        subscribe
-    ]);
-    useDebugValue(value);
-    return value;
-}
-function checkIfSnapshotChanged(inst) {
-    const latestGetSnapshot = inst.getSnapshot;
-    const prevValue = inst.value;
-    try {
-        const nextValue = latestGetSnapshot();
-        return !is(prevValue, nextValue);
-    } catch (error) {
-        return true;
-    }
-}
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @flow
- */ function useSyncExternalStore$1(subscribe, getSnapshot, getServerSnapshot) {
-    // Note: The shim does not use getServerSnapshot, because pre-18 versions of
-    // React do not expose a way to check if we're hydrating. So users of the shim
-    // will need to track that themselves and return the correct value
-    // from `getSnapshot`.
-    return getSnapshot();
-}
-/**
- * Inlined into the react-router repo since use-sync-external-store does not
- * provide a UMD-compatible package, so we need this to be able to distribute
- * UMD react-router bundles
- */ const canUseDOM = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
-const isServerEnvironment = !canUseDOM;
-const shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore$2;
-const useSyncExternalStore = "useSyncExternalStore" in _react ? ((module)=>module.useSyncExternalStore)(_react) : shim;
-// Contexts for data routers
-const DataStaticRouterContext = /*#__PURE__*/ _react.createContext(null);
-DataStaticRouterContext.displayName = "DataStaticRouterContext";
 const DataRouterContext = /*#__PURE__*/ _react.createContext(null);
 DataRouterContext.displayName = "DataRouter";
 const DataRouterStateContext = /*#__PURE__*/ _react.createContext(null);
@@ -28306,7 +28359,8 @@ const LocationContext = /*#__PURE__*/ _react.createContext(null);
 LocationContext.displayName = "Location";
 const RouteContext = /*#__PURE__*/ _react.createContext({
     outlet: null,
-    matches: []
+    matches: [],
+    isDataRoute: false
 });
 RouteContext.displayName = "Route";
 const RouteErrorContext = /*#__PURE__*/ _react.createContext(null);
@@ -28318,7 +28372,7 @@ RouteErrorContext.displayName = "RouteError";
  * @see https://reactrouter.com/hooks/use-href
  */ function useHref(to, _temp) {
     let { relative  } = _temp === void 0 ? {} : _temp;
-    !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useHref() may be used only in the context of a <Router> component.");
     let { basename , navigator  } = _react.useContext(NavigationContext);
     let { hash , pathname , search  } = useResolvedPath(to, {
@@ -28355,7 +28409,7 @@ RouteErrorContext.displayName = "RouteError";
  *
  * @see https://reactrouter.com/hooks/use-location
  */ function useLocation() {
-    !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useLocation() may be used only in the context of a <Router> component.");
     return _react.useContext(LocationContext).location;
 }
@@ -28374,7 +28428,7 @@ RouteErrorContext.displayName = "RouteError";
  *
  * @see https://reactrouter.com/hooks/use-match
  */ function useMatch(pattern) {
-    !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useMatch() may be used only in the context of a <Router> component.");
     let { pathname  } = useLocation();
     return _react.useMemo(()=>(0, _router.matchPath)(pattern, pathname), [
@@ -28384,35 +28438,52 @@ RouteErrorContext.displayName = "RouteError";
 }
 /**
  * The interface for the navigate() function returned from useNavigate().
- */ /**
+ */ const navigateEffectWarning = "You should call navigate() in a React.useEffect(), not when your component is first rendered."; // Mute warnings for calls to useNavigate in SSR environments
+function useIsomorphicLayoutEffect(cb) {
+    let isStatic = _react.useContext(NavigationContext).static;
+    if (!isStatic) // We should be able to get rid of this once react 18.3 is released
+    // See: https://github.com/facebook/react/pull/26395
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    _react.useLayoutEffect(cb);
+}
+/**
  * Returns an imperative method for changing the location. Used by <Link>s, but
  * may also be used by other elements to change the location.
  *
  * @see https://reactrouter.com/hooks/use-navigate
  */ function useNavigate() {
-    !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
+    let { isDataRoute  } = _react.useContext(RouteContext); // Conditional usage is OK here because the usage of a data router is static
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    return isDataRoute ? useNavigateStable() : useNavigateUnstable();
+}
+function useNavigateUnstable() {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useNavigate() may be used only in the context of a <Router> component.");
+    let dataRouterContext = _react.useContext(DataRouterContext);
     let { basename , navigator  } = _react.useContext(NavigationContext);
     let { matches  } = _react.useContext(RouteContext);
     let { pathname: locationPathname  } = useLocation();
     let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getPathContributingMatches)(matches).map((match)=>match.pathnameBase));
     let activeRef = _react.useRef(false);
-    _react.useEffect(()=>{
+    useIsomorphicLayoutEffect(()=>{
         activeRef.current = true;
     });
     let navigate = _react.useCallback(function(to, options) {
         if (options === void 0) options = {};
-        (0, _router.warning)(activeRef.current, "You should call navigate() in a React.useEffect(), not when your component is first rendered.");
+        (0, _router.UNSAFE_warning)(activeRef.current, navigateEffectWarning); // Short circuit here since if this happens on first render the navigate
+        // is useless because we haven't wired up our history listener yet
         if (!activeRef.current) return;
         if (typeof to === "number") {
             navigator.go(to);
             return;
         }
         let path = (0, _router.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, options.relative === "path"); // If we're operating within a basename, prepend it to the pathname prior
-        // to handing off to history.  If this is a root navigation, then we
-        // navigate to the raw basename which allows the basename to have full
-        // control over the presence of a trailing slash on root links
-        if (basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
+        // to handing off to history (but only if we're not in a data router,
+        // otherwise it'll prepend the basename inside of the router).
+        // If this is a root navigation, then we navigate to the raw basename
+        // which allows the basename to have full control over the presence of a
+        // trailing slash on root links
+        if (dataRouterContext == null && basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
             basename,
             path.pathname
         ]);
@@ -28421,7 +28492,8 @@ RouteErrorContext.displayName = "RouteError";
         basename,
         navigator,
         routePathnamesJson,
-        locationPathname
+        locationPathname,
+        dataRouterContext
     ]);
     return navigate;
 }
@@ -28479,10 +28551,12 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
  *
  * @see https://reactrouter.com/hooks/use-routes
  */ function useRoutes(routes, locationArg) {
-    !useInRouterContext() && (0, _router.invariant)(false, // router loaded. We can help them understand how to avoid that.
+    return useRoutesImpl(routes, locationArg);
+} // Internal implementation with accept optional param for RouterProvider usage
+function useRoutesImpl(routes, locationArg, dataRouterState) {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useRoutes() may be used only in the context of a <Router> component.");
     let { navigator  } = _react.useContext(NavigationContext);
-    let dataRouterStateContext = _react.useContext(DataRouterStateContext);
     let { matches: parentMatches  } = _react.useContext(RouteContext);
     let routeMatch = parentMatches[parentMatches.length - 1];
     let parentParams = routeMatch ? routeMatch.params : {};
@@ -28518,7 +28592,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
     if (locationArg) {
         var _parsedLocationArg$pa;
         let parsedLocationArg = typeof locationArg === "string" ? (0, _router.parsePath)(locationArg) : locationArg;
-        !(parentPathnameBase === "/" || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) && (0, _router.invariant)(false, "When overriding the location using `<Routes location>` or `useRoutes(routes, location)`, the location pathname must begin with the portion of the URL pathname that was " + ('matched by all parent routes. The current pathname base is "' + parentPathnameBase + '" ') + ('but pathname "' + parsedLocationArg.pathname + '" was given in the `location` prop.'));
+        !(parentPathnameBase === "/" || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) && (0, _router.UNSAFE_invariant)(false, "When overriding the location using `<Routes location>` or `useRoutes(routes, location)`, the location pathname must begin with the portion of the URL pathname that was " + ('matched by all parent routes. The current pathname base is "' + parentPathnameBase + '" ') + ('but pathname "' + parsedLocationArg.pathname + '" was given in the `location` prop.'));
         location = parsedLocationArg;
     } else location = locationFromContext;
     let pathname = location.pathname || "/";
@@ -28526,8 +28600,8 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
     let matches = (0, _router.matchRoutes)(routes, {
         pathname: remainingPathname
     });
-    (0, _router.warning)(parentRoute || matches != null, 'No routes matched location "' + location.pathname + location.search + location.hash + '" ');
-    (0, _router.warning)(matches == null || matches[matches.length - 1].route.element !== undefined, 'Matched leaf route at location "' + location.pathname + location.search + location.hash + '" does not have an element. ' + 'This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.');
+    (0, _router.UNSAFE_warning)(parentRoute || matches != null, 'No routes matched location "' + location.pathname + location.search + location.hash + '" ');
+    (0, _router.UNSAFE_warning)(matches == null || matches[matches.length - 1].route.element !== undefined || matches[matches.length - 1].route.Component !== undefined, 'Matched leaf route at location "' + location.pathname + location.search + location.hash + '" ' + "does not have an element or Component. This means it will render an <Outlet /> with a " + 'null value by default resulting in an "empty" page.');
     let renderedMatches = _renderMatches(matches && matches.map((match)=>Object.assign({}, match, {
             params: Object.assign({}, parentParams, match.params),
             pathname: (0, _router.joinPaths)([
@@ -28538,7 +28612,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
                 parentPathnameBase,
                 navigator.encodeLocation ? navigator.encodeLocation(match.pathnameBase).pathname : match.pathnameBase
             ])
-        })), parentMatches, dataRouterStateContext || undefined); // When a user passes in a `locationArg`, the associated routes need to
+        })), parentMatches, dataRouterState); // When a user passes in a `locationArg`, the associated routes need to
     // be wrapped in a new `LocationContext.Provider` in order for `useLocation`
     // to use the scoped location instead of the global location.
     if (locationArg && renderedMatches) return /*#__PURE__*/ _react.createElement(LocationContext.Provider, {
@@ -28555,7 +28629,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
     }, renderedMatches);
     return renderedMatches;
 }
-function DefaultErrorElement() {
+function DefaultErrorComponent() {
     let error = useRouteError();
     let message = (0, _router.isRouteErrorResponse)(error) ? error.status + " " + error.statusText : error instanceof Error ? error.message : JSON.stringify(error);
     let stack = error instanceof Error ? error.stack : null;
@@ -28568,23 +28642,28 @@ function DefaultErrorElement() {
         padding: "2px 4px",
         backgroundColor: lightgrey
     };
-    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement("h2", null, "Unhandled Thrown Error!"), /*#__PURE__*/ _react.createElement("h3", {
+    let devInfo = null;
+    console.error("Error handled by React Router default ErrorBoundary:", error);
+    devInfo = /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement("p", null, "\uD83D\uDCBF Hey developer \uD83D\uDC4B"), /*#__PURE__*/ _react.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /*#__PURE__*/ _react.createElement("code", {
+        style: codeStyles
+    }, "ErrorBoundary"), " or", " ", /*#__PURE__*/ _react.createElement("code", {
+        style: codeStyles
+    }, "errorElement"), " prop on your route."));
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement("h2", null, "Unexpected Application Error!"), /*#__PURE__*/ _react.createElement("h3", {
         style: {
             fontStyle: "italic"
         }
     }, message), stack ? /*#__PURE__*/ _react.createElement("pre", {
         style: preStyles
-    }, stack) : null, /*#__PURE__*/ _react.createElement("p", null, "\uD83D\uDCBF Hey developer \uD83D\uDC4B"), /*#__PURE__*/ _react.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own\xa0", /*#__PURE__*/ _react.createElement("code", {
-        style: codeStyles
-    }, "errorElement"), " props on\xa0", /*#__PURE__*/ _react.createElement("code", {
-        style: codeStyles
-    }, "<Route>")));
+    }, stack) : null, devInfo);
 }
+const defaultErrorElement = /*#__PURE__*/ _react.createElement(DefaultErrorComponent, null);
 class RenderErrorBoundary extends _react.Component {
     constructor(props){
         super(props);
         this.state = {
             location: props.location,
+            revalidation: props.revalidation,
             error: props.error
         };
     }
@@ -28602,9 +28681,10 @@ class RenderErrorBoundary extends _react.Component {
         // Whether we're in an error state or not, we update the location in state
         // so that when we are in an error state, it gets reset when a new location
         // comes in and the user recovers from the error.
-        if (state.location !== props.location) return {
+        if (state.location !== props.location || state.revalidation !== "idle" && props.revalidation === "idle") return {
             error: props.error,
-            location: props.location
+            location: props.location,
+            revalidation: props.revalidation
         };
          // If we're not changing locations, preserve the location but still surface
         // any new errors that may come through. We retain the existing error, we do
@@ -28612,69 +28692,101 @@ class RenderErrorBoundary extends _react.Component {
         // the location changing.
         return {
             error: props.error || state.error,
-            location: state.location
+            location: state.location,
+            revalidation: props.revalidation || state.revalidation
         };
     }
     componentDidCatch(error, errorInfo) {
         console.error("React Router caught the following error during render", error, errorInfo);
     }
     render() {
-        return this.state.error ? /*#__PURE__*/ _react.createElement(RouteErrorContext.Provider, {
+        return this.state.error ? /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
+            value: this.props.routeContext
+        }, /*#__PURE__*/ _react.createElement(RouteErrorContext.Provider, {
             value: this.state.error,
             children: this.props.component
-        }) : this.props.children;
+        })) : this.props.children;
     }
 }
 function RenderedRoute(_ref) {
     let { routeContext , match , children  } = _ref;
-    let dataStaticRouterContext = _react.useContext(DataStaticRouterContext); // Track how deep we got in our render pass to emulate SSR componentDidCatch
+    let dataRouterContext = _react.useContext(DataRouterContext); // Track how deep we got in our render pass to emulate SSR componentDidCatch
     // in a DataStaticRouter
-    if (dataStaticRouterContext && match.route.errorElement) dataStaticRouterContext._deepestRenderedBoundaryId = match.route.id;
+    if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
     return /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
         value: routeContext
     }, children);
 }
 function _renderMatches(matches, parentMatches, dataRouterState) {
+    var _dataRouterState2;
     if (parentMatches === void 0) parentMatches = [];
+    if (dataRouterState === void 0) dataRouterState = null;
     if (matches == null) {
-        if (dataRouterState != null && dataRouterState.errors) // Don't bail if we have data router errors so we can render them in the
+        var _dataRouterState;
+        if ((_dataRouterState = dataRouterState) != null && _dataRouterState.errors) // Don't bail if we have data router errors so we can render them in the
         // boundary.  Use the pre-matched (or shimmed) matches
         matches = dataRouterState.matches;
         else return null;
     }
     let renderedMatches = matches; // If we have data errors, trim matches to the highest error boundary
-    let errors = dataRouterState == null ? void 0 : dataRouterState.errors;
+    let errors = (_dataRouterState2 = dataRouterState) == null ? void 0 : _dataRouterState2.errors;
     if (errors != null) {
         let errorIndex = renderedMatches.findIndex((m)=>m.route.id && (errors == null ? void 0 : errors[m.route.id]));
-        !(errorIndex >= 0) && (0, _router.invariant)(false, "Could not find a matching route for the current errors: " + errors);
+        !(errorIndex >= 0) && (0, _router.UNSAFE_invariant)(false, "Could not find a matching route for errors on route IDs: " + Object.keys(errors).join(","));
         renderedMatches = renderedMatches.slice(0, Math.min(renderedMatches.length, errorIndex + 1));
     }
     return renderedMatches.reduceRight((outlet, match, index)=>{
         let error = match.route.id ? errors == null ? void 0 : errors[match.route.id] : null; // Only data routers handle errors
-        let errorElement = dataRouterState ? match.route.errorElement || /*#__PURE__*/ _react.createElement(DefaultErrorElement, null) : null;
-        let getChildren = ()=>/*#__PURE__*/ _react.createElement(RenderedRoute, {
+        let errorElement = null;
+        if (dataRouterState) errorElement = match.route.errorElement || defaultErrorElement;
+        let matches = parentMatches.concat(renderedMatches.slice(0, index + 1));
+        let getChildren = ()=>{
+            let children;
+            if (error) children = errorElement;
+            else if (match.route.Component) // Note: This is a de-optimized path since React won't re-use the
+            // ReactElement since it's identity changes with each new
+            // React.createElement call.  We keep this so folks can use
+            // `<Route Component={...}>` in `<Routes>` but generally `Component`
+            // usage is only advised in `RouterProvider` when we can convert it to
+            // `element` ahead of time.
+            children = /*#__PURE__*/ _react.createElement(match.route.Component, null);
+            else if (match.route.element) children = match.route.element;
+            else children = outlet;
+            return /*#__PURE__*/ _react.createElement(RenderedRoute, {
                 match: match,
                 routeContext: {
                     outlet,
-                    matches: parentMatches.concat(renderedMatches.slice(0, index + 1))
-                }
-            }, error ? errorElement : match.route.element !== undefined ? match.route.element : outlet); // Only wrap in an error boundary within data router usages when we have an
-        // errorElement on this route.  Otherwise let it bubble up to an ancestor
-        // errorElement
-        return dataRouterState && (match.route.errorElement || index === 0) ? /*#__PURE__*/ _react.createElement(RenderErrorBoundary, {
+                    matches,
+                    isDataRoute: dataRouterState != null
+                },
+                children: children
+            });
+        }; // Only wrap in an error boundary within data router usages when we have an
+        // ErrorBoundary/errorElement on this route.  Otherwise let it bubble up to
+        // an ancestor ErrorBoundary/errorElement
+        return dataRouterState && (match.route.ErrorBoundary || match.route.errorElement || index === 0) ? /*#__PURE__*/ _react.createElement(RenderErrorBoundary, {
             location: dataRouterState.location,
+            revalidation: dataRouterState.revalidation,
             component: errorElement,
             error: error,
-            children: getChildren()
+            children: getChildren(),
+            routeContext: {
+                outlet: null,
+                matches,
+                isDataRoute: true
+            }
         }) : getChildren();
     }, null);
 }
 var DataRouterHook;
 (function(DataRouterHook) {
+    DataRouterHook["UseBlocker"] = "useBlocker";
     DataRouterHook["UseRevalidator"] = "useRevalidator";
+    DataRouterHook["UseNavigateStable"] = "useNavigate";
 })(DataRouterHook || (DataRouterHook = {}));
 var DataRouterStateHook;
 (function(DataRouterStateHook) {
+    DataRouterStateHook["UseBlocker"] = "useBlocker";
     DataRouterStateHook["UseLoaderData"] = "useLoaderData";
     DataRouterStateHook["UseActionData"] = "useActionData";
     DataRouterStateHook["UseRouteError"] = "useRouteError";
@@ -28682,19 +28794,37 @@ var DataRouterStateHook;
     DataRouterStateHook["UseRouteLoaderData"] = "useRouteLoaderData";
     DataRouterStateHook["UseMatches"] = "useMatches";
     DataRouterStateHook["UseRevalidator"] = "useRevalidator";
+    DataRouterStateHook["UseNavigateStable"] = "useNavigate";
+    DataRouterStateHook["UseRouteId"] = "useRouteId";
 })(DataRouterStateHook || (DataRouterStateHook = {}));
 function getDataRouterConsoleError(hookName) {
     return hookName + " must be used within a data router.  See https://reactrouter.com/routers/picking-a-router.";
 }
 function useDataRouterContext(hookName) {
     let ctx = _react.useContext(DataRouterContext);
-    !ctx && (0, _router.invariant)(false, getDataRouterConsoleError(hookName));
+    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
     return ctx;
 }
 function useDataRouterState(hookName) {
     let state = _react.useContext(DataRouterStateContext);
-    !state && (0, _router.invariant)(false, getDataRouterConsoleError(hookName));
+    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
     return state;
+}
+function useRouteContext(hookName) {
+    let route = _react.useContext(RouteContext);
+    !route && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return route;
+} // Internal version with hookName-aware debugging
+function useCurrentRouteId(hookName) {
+    let route = useRouteContext(hookName);
+    let thisRoute = route.matches[route.matches.length - 1];
+    !thisRoute.route.id && (0, _router.UNSAFE_invariant)(false, hookName + ' can only be used on routes that contain a unique "id"');
+    return thisRoute.route.id;
+}
+/**
+ * Returns the ID for the nearest contextual route
+ */ function useRouteId() {
+    return useCurrentRouteId(DataRouterStateHook.UseRouteId);
 }
 /**
  * Returns the current navigation, defaulting to an "idle" navigation when
@@ -28739,11 +28869,12 @@ function useDataRouterState(hookName) {
  * Returns the loader data for the nearest ancestor Route loader
  */ function useLoaderData() {
     let state = useDataRouterState(DataRouterStateHook.UseLoaderData);
-    let route = _react.useContext(RouteContext);
-    !route && (0, _router.invariant)(false, "useLoaderData must be used inside a RouteContext");
-    let thisRoute = route.matches[route.matches.length - 1];
-    !thisRoute.route.id && (0, _router.invariant)(false, 'useLoaderData can only be used on routes that contain a unique "id"');
-    return state.loaderData[thisRoute.route.id];
+    let routeId = useCurrentRouteId(DataRouterStateHook.UseLoaderData);
+    if (state.errors && state.errors[routeId] != null) {
+        console.error("You cannot `useLoaderData` in an errorElement (routeId: " + routeId + ")");
+        return undefined;
+    }
+    return state.loaderData[routeId];
 }
 /**
  * Returns the loaderData for the given routeId
@@ -28756,24 +28887,22 @@ function useDataRouterState(hookName) {
  */ function useActionData() {
     let state = useDataRouterState(DataRouterStateHook.UseActionData);
     let route = _react.useContext(RouteContext);
-    !route && (0, _router.invariant)(false, "useActionData must be used inside a RouteContext");
+    !route && (0, _router.UNSAFE_invariant)(false, "useActionData must be used inside a RouteContext");
     return Object.values((state == null ? void 0 : state.actionData) || {})[0];
 }
 /**
  * Returns the nearest ancestor Route error, which could be a loader/action
  * error or a render error.  This is intended to be called from your
- * errorElement to display a proper error message.
+ * ErrorBoundary/errorElement to display a proper error message.
  */ function useRouteError() {
     var _state$errors;
     let error = _react.useContext(RouteErrorContext);
     let state = useDataRouterState(DataRouterStateHook.UseRouteError);
-    let route = _react.useContext(RouteContext);
-    let thisRoute = route.matches[route.matches.length - 1]; // If this was a render error, we put it in a RouteError context inside
+    let routeId = useCurrentRouteId(DataRouterStateHook.UseRouteError); // If this was a render error, we put it in a RouteError context inside
     // of RenderErrorBoundary
     if (error) return error;
-    !route && (0, _router.invariant)(false, "useRouteError must be used inside a RouteContext");
-    !thisRoute.route.id && (0, _router.invariant)(false, 'useRouteError can only be used on routes that contain a unique "id"'); // Otherwise look for errors from our data router state
-    return (_state$errors = state.errors) == null ? void 0 : _state$errors[thisRoute.route.id];
+     // Otherwise look for errors from our data router state
+    return (_state$errors = state.errors) == null ? void 0 : _state$errors[routeId];
 }
 /**
  * Returns the happy-path data from the nearest ancestor <Await /> value
@@ -28787,21 +28916,72 @@ function useDataRouterState(hookName) {
     let value = _react.useContext(AwaitContext);
     return value == null ? void 0 : value._error;
 }
+let blockerId = 0;
+/**
+ * Allow the application to block navigations within the SPA and present the
+ * user a confirmation dialog to confirm the navigation.  Mostly used to avoid
+ * using half-filled form data.  This does not handle hard-reloads or
+ * cross-origin navigations.
+ */ function useBlocker(shouldBlock) {
+    let { router  } = useDataRouterContext(DataRouterHook.UseBlocker);
+    let state = useDataRouterState(DataRouterStateHook.UseBlocker);
+    let [blockerKey] = _react.useState(()=>String(++blockerId));
+    let blockerFunction = _react.useCallback((args)=>{
+        return typeof shouldBlock === "function" ? !!shouldBlock(args) : !!shouldBlock;
+    }, [
+        shouldBlock
+    ]);
+    let blocker = router.getBlocker(blockerKey, blockerFunction); // Cleanup on unmount
+    _react.useEffect(()=>()=>router.deleteBlocker(blockerKey), [
+        router,
+        blockerKey
+    ]); // Prefer the blocker from state since DataRouterContext is memoized so this
+    // ensures we update on blocker state updates
+    return state.blockers.get(blockerKey) || blocker;
+}
+/**
+ * Stable version of useNavigate that is used when we are in the context of
+ * a RouterProvider.
+ */ function useNavigateStable() {
+    let { router  } = useDataRouterContext(DataRouterHook.UseNavigateStable);
+    let id = useCurrentRouteId(DataRouterStateHook.UseNavigateStable);
+    let activeRef = _react.useRef(false);
+    useIsomorphicLayoutEffect(()=>{
+        activeRef.current = true;
+    });
+    let navigate = _react.useCallback(function(to, options) {
+        if (options === void 0) options = {};
+        (0, _router.UNSAFE_warning)(activeRef.current, navigateEffectWarning); // Short circuit here since if this happens on first render the navigate
+        // is useless because we haven't wired up our router subscriber yet
+        if (!activeRef.current) return;
+        if (typeof to === "number") router.navigate(to);
+        else router.navigate(to, _extends({
+            fromRouteId: id
+        }, options));
+    }, [
+        router,
+        id
+    ]);
+    return navigate;
+}
 const alreadyWarned = {};
 function warningOnce(key, cond, message) {
     if (!cond && !alreadyWarned[key]) {
         alreadyWarned[key] = true;
-        (0, _router.warning)(false, message);
+        (0, _router.UNSAFE_warning)(false, message);
     }
 }
 /**
  * Given a Remix Router instance, render the appropriate UI
  */ function RouterProvider(_ref) {
     let { fallbackElement , router  } = _ref;
-    // Sync router state to our component state to force re-renders
-    let state = useSyncExternalStore(router.subscribe, ()=>router.state, // but we pass our serialized hydration data into the router so state here
-    // is already synced with what the server saw
-    ()=>router.state);
+    // Need to use a layout effect here so we are subscribed early enough to
+    // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
+    let [state, setState] = _react.useState(router.state);
+    _react.useLayoutEffect(()=>router.subscribe(setState), [
+        router,
+        setState
+    ]);
     let navigator = _react.useMemo(()=>{
         return {
             createHref: router.createHref,
@@ -28821,14 +29001,23 @@ function warningOnce(key, cond, message) {
         router
     ]);
     let basename = router.basename || "/";
-    return /*#__PURE__*/ _react.createElement(DataRouterContext.Provider, {
-        value: {
+    let dataRouterContext = _react.useMemo(()=>({
             router,
             navigator,
             static: false,
-            // Do we need this?
             basename
-        }
+        }), [
+        router,
+        navigator,
+        basename
+    ]); // The fragment and {null} here are important!  We need them to keep React 18's
+    // useId happy when we are server-rendering since we may have a <script> here
+    // containing the hydrated server-side staticContext (from StaticRouterProvider).
+    // useId relies on the component tree structure to generate deterministic id's
+    // so we need to ensure it remains the same on the client even though
+    // we don't need the <script> tag
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement(DataRouterContext.Provider, {
+        value: dataRouterContext
     }, /*#__PURE__*/ _react.createElement(DataRouterStateContext.Provider, {
         value: state
     }, /*#__PURE__*/ _react.createElement(Router, {
@@ -28836,14 +29025,21 @@ function warningOnce(key, cond, message) {
         location: router.state.location,
         navigationType: router.state.historyAction,
         navigator: navigator
-    }, router.state.initialized ? /*#__PURE__*/ _react.createElement(Routes, null) : fallbackElement)));
+    }, router.state.initialized ? /*#__PURE__*/ _react.createElement(DataRoutes, {
+        routes: router.routes,
+        state: state
+    }) : fallbackElement))), null);
+}
+function DataRoutes(_ref2) {
+    let { routes , state  } = _ref2;
+    return useRoutesImpl(routes, undefined, state);
 }
 /**
  * A <Router> that stores all entries in memory.
  *
  * @see https://reactrouter.com/router-components/memory-router
- */ function MemoryRouter(_ref2) {
-    let { basename , children , initialEntries , initialIndex  } = _ref2;
+ */ function MemoryRouter(_ref3) {
+    let { basename , children , initialEntries , initialIndex  } = _ref3;
     let historyRef = _react.useRef();
     if (historyRef.current == null) historyRef.current = (0, _router.createMemoryHistory)({
         initialEntries,
@@ -28874,24 +29070,28 @@ function warningOnce(key, cond, message) {
  * `useNavigate` hook instead.
  *
  * @see https://reactrouter.com/components/navigate
- */ function Navigate(_ref3) {
-    let { to , replace , state , relative  } = _ref3;
-    !useInRouterContext() && (0, _router.invariant)(false, // the router loaded. We can help them understand how to avoid that.
+ */ function Navigate(_ref4) {
+    let { to , replace , state , relative  } = _ref4;
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // the router loaded. We can help them understand how to avoid that.
     "<Navigate> may be used only in the context of a <Router> component.");
-    (0, _router.warning)(!_react.useContext(NavigationContext).static, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
-    let dataRouterState = _react.useContext(DataRouterStateContext);
-    let navigate = useNavigate();
-    _react.useEffect(()=>{
-        // Avoid kicking off multiple navigations if we're in the middle of a
-        // data-router navigation, since components get re-rendered when we enter
-        // a submitting/loading state
-        if (dataRouterState && dataRouterState.navigation.state !== "idle") return;
-        navigate(to, {
+    (0, _router.UNSAFE_warning)(!_react.useContext(NavigationContext).static, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
+    let { matches  } = _react.useContext(RouteContext);
+    let { pathname: locationPathname  } = useLocation();
+    let navigate = useNavigate(); // Resolve the path outside of the effect so that when effects run twice in
+    // StrictMode they navigate to the same place
+    let path = (0, _router.resolveTo)(to, (0, _router.UNSAFE_getPathContributingMatches)(matches).map((match)=>match.pathnameBase), locationPathname, relative === "path");
+    let jsonPath = JSON.stringify(path);
+    _react.useEffect(()=>navigate(JSON.parse(jsonPath), {
             replace,
             state,
             relative
-        });
-    });
+        }), [
+        navigate,
+        jsonPath,
+        relative,
+        replace,
+        state
+    ]);
     return null;
 }
 /**
@@ -28906,7 +29106,7 @@ function warningOnce(key, cond, message) {
  *
  * @see https://reactrouter.com/components/route
  */ function Route(_props) {
-    (0, _router.invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
+    (0, _router.UNSAFE_invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
 }
 /**
  * Provides location context for the rest of the app.
@@ -28916,9 +29116,9 @@ function warningOnce(key, cond, message) {
  * in web browsers or a <StaticRouter> for server rendering.
  *
  * @see https://reactrouter.com/router-components/router
- */ function Router(_ref4) {
-    let { basename: basenameProp = "/" , children =null , location: locationProp , navigationType =(0, _router.Action).Pop , navigator , static: staticProp = false  } = _ref4;
-    !!useInRouterContext() && (0, _router.invariant)(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app."); // Preserve trailing slashes on basename, so we can let the user control
+ */ function Router(_ref5) {
+    let { basename: basenameProp = "/" , children =null , location: locationProp , navigationType =(0, _router.Action).Pop , navigator , static: staticProp = false  } = _ref5;
+    !!useInRouterContext() && (0, _router.UNSAFE_invariant)(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app."); // Preserve trailing slashes on basename, so we can let the user control
     // the enforcement of trailing slashes throughout the app
     let basename = basenameProp.replace(/^\/*/, "/");
     let navigationContext = _react.useMemo(()=>({
@@ -28932,15 +29132,18 @@ function warningOnce(key, cond, message) {
     ]);
     if (typeof locationProp === "string") locationProp = (0, _router.parsePath)(locationProp);
     let { pathname ="/" , search ="" , hash ="" , state =null , key ="default"  } = locationProp;
-    let location = _react.useMemo(()=>{
+    let locationContext = _react.useMemo(()=>{
         let trailingPathname = (0, _router.stripBasename)(pathname, basename);
         if (trailingPathname == null) return null;
         return {
-            pathname: trailingPathname,
-            search,
-            hash,
-            state,
-            key
+            location: {
+                pathname: trailingPathname,
+                search,
+                hash,
+                state,
+                key
+            },
+            navigationType
         };
     }, [
         basename,
@@ -28948,18 +29151,16 @@ function warningOnce(key, cond, message) {
         search,
         hash,
         state,
-        key
+        key,
+        navigationType
     ]);
-    (0, _router.warning)(location != null, '<Router basename="' + basename + '"> is not able to match the URL ' + ('"' + pathname + search + hash + '" because it does not start with the ') + "basename, so the <Router> won't render anything.");
-    if (location == null) return null;
+    (0, _router.UNSAFE_warning)(locationContext != null, '<Router basename="' + basename + '"> is not able to match the URL ' + ('"' + pathname + search + hash + '" because it does not start with the ') + "basename, so the <Router> won't render anything.");
+    if (locationContext == null) return null;
     return /*#__PURE__*/ _react.createElement(NavigationContext.Provider, {
         value: navigationContext
     }, /*#__PURE__*/ _react.createElement(LocationContext.Provider, {
         children: children,
-        value: {
-            location,
-            navigationType
-        }
+        value: locationContext
     }));
 }
 /**
@@ -28967,19 +29168,15 @@ function warningOnce(key, cond, message) {
  * that best matches the current location.
  *
  * @see https://reactrouter.com/components/routes
- */ function Routes(_ref5) {
-    let { children , location  } = _ref5;
-    let dataRouterContext = _react.useContext(DataRouterContext); // When in a DataRouterContext _without_ children, we use the router routes
-    // directly.  If we have children, then we're in a descendant tree and we
-    // need to use child routes.
-    let routes = dataRouterContext && !children ? dataRouterContext.router.routes : createRoutesFromChildren(children);
-    return useRoutes(routes, location);
+ */ function Routes(_ref6) {
+    let { children , location  } = _ref6;
+    return useRoutes(createRoutesFromChildren(children), location);
 }
 /**
  * Component to use for rendering lazily loaded data from returning defer()
  * in a loader function
- */ function Await(_ref6) {
-    let { children , errorElement , resolve  } = _ref6;
+ */ function Await(_ref7) {
+    let { children , errorElement , resolve  } = _ref7;
     return /*#__PURE__*/ _react.createElement(AwaitErrorBoundary, {
         resolve: resolve,
         errorElement: errorElement
@@ -29069,11 +29266,11 @@ class AwaitErrorBoundary extends _react.Component {
 /**
  * @private
  * Indirection to leverage useAsyncValue for a render-prop API on <Await>
- */ function ResolveAwait(_ref7) {
-    let { children  } = _ref7;
+ */ function ResolveAwait(_ref8) {
+    let { children  } = _ref8;
     let data = useAsyncValue();
-    if (typeof children === "function") return children(data);
-    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, children);
+    let toRender = typeof children === "function" ? children(data) : children;
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, toRender);
 } ///////////////////////////////////////////////////////////////////////////////
 // UTILS
 ///////////////////////////////////////////////////////////////////////////////
@@ -29090,29 +29287,32 @@ class AwaitErrorBoundary extends _react.Component {
         if (!/*#__PURE__*/ _react.isValidElement(element)) // Ignore non-elements. This allows people to more easily inline
         // conditionals in their route config.
         return;
-        if (element.type === _react.Fragment) {
-            // Transparently support React.Fragment and its children.
-            routes.push.apply(routes, createRoutesFromChildren(element.props.children, parentPath));
-            return;
-        }
-        !(element.type === Route) && (0, _router.invariant)(false, "[" + (typeof element.type === "string" ? element.type : element.type.name) + "] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>");
-        !(!element.props.index || !element.props.children) && (0, _router.invariant)(false, "An index route cannot have child routes.");
         let treePath = [
             ...parentPath,
             index
         ];
+        if (element.type === _react.Fragment) {
+            // Transparently support React.Fragment and its children.
+            routes.push.apply(routes, createRoutesFromChildren(element.props.children, treePath));
+            return;
+        }
+        !(element.type === Route) && (0, _router.UNSAFE_invariant)(false, "[" + (typeof element.type === "string" ? element.type : element.type.name) + "] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>");
+        !(!element.props.index || !element.props.children) && (0, _router.UNSAFE_invariant)(false, "An index route cannot have child routes.");
         let route = {
             id: element.props.id || treePath.join("-"),
             caseSensitive: element.props.caseSensitive,
             element: element.props.element,
+            Component: element.props.Component,
             index: element.props.index,
             path: element.props.path,
             loader: element.props.loader,
             action: element.props.action,
             errorElement: element.props.errorElement,
-            hasErrorBoundary: element.props.errorElement != null,
+            ErrorBoundary: element.props.ErrorBoundary,
+            hasErrorBoundary: element.props.ErrorBoundary != null || element.props.errorElement != null,
             shouldRevalidate: element.props.shouldRevalidate,
-            handle: element.props.handle
+            handle: element.props.handle,
+            lazy: element.props.lazy
         };
         if (element.props.children) route.children = createRoutesFromChildren(element.props.children, treePath);
         routes.push(route);
@@ -29124,33 +29324,47 @@ class AwaitErrorBoundary extends _react.Component {
  */ function renderMatches(matches) {
     return _renderMatches(matches);
 }
-/**
- * @private
- * Walk the route tree and add hasErrorBoundary if it's not provided, so that
- * users providing manual route arrays can just specify errorElement
- */ function enhanceManualRouteObjects(routes) {
-    return routes.map((route)=>{
-        let routeClone = _extends({}, route);
-        if (routeClone.hasErrorBoundary == null) routeClone.hasErrorBoundary = routeClone.errorElement != null;
-        if (routeClone.children) routeClone.children = enhanceManualRouteObjects(routeClone.children);
-        return routeClone;
-    });
+function mapRouteProperties(route) {
+    let updates = {
+        // Note: this check also occurs in createRoutesFromChildren so update
+        // there if you change this -- please and thank you!
+        hasErrorBoundary: route.ErrorBoundary != null || route.errorElement != null
+    };
+    if (route.Component) {
+        if (route.element) (0, _router.UNSAFE_warning)(false, "You should not include both `Component` and `element` on your route - `Component` will be used.");
+        Object.assign(updates, {
+            element: /*#__PURE__*/ _react.createElement(route.Component),
+            Component: undefined
+        });
+    }
+    if (route.ErrorBoundary) {
+        if (route.errorElement) (0, _router.UNSAFE_warning)(false, "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used.");
+        Object.assign(updates, {
+            errorElement: /*#__PURE__*/ _react.createElement(route.ErrorBoundary),
+            ErrorBoundary: undefined
+        });
+    }
+    return updates;
 }
 function createMemoryRouter(routes, opts) {
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
         history: (0, _router.createMemoryHistory)({
             initialEntries: opts == null ? void 0 : opts.initialEntries,
             initialIndex: opts == null ? void 0 : opts.initialIndex
         }),
         hydrationData: opts == null ? void 0 : opts.hydrationData,
-        routes: enhanceManualRouteObjects(routes)
+        routes,
+        mapRouteProperties
     }).initialize();
 } ///////////////////////////////////////////////////////////////////////////////
 
-},{"@remix-run/router":"5ncDG","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
+},{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.1.0
+ * @remix-run/router v1.6.2
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -29163,20 +29377,26 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>AbortedDeferredError);
 parcelHelpers.export(exports, "Action", ()=>Action);
 parcelHelpers.export(exports, "ErrorResponse", ()=>ErrorResponse);
+parcelHelpers.export(exports, "IDLE_BLOCKER", ()=>IDLE_BLOCKER);
 parcelHelpers.export(exports, "IDLE_FETCHER", ()=>IDLE_FETCHER);
 parcelHelpers.export(exports, "IDLE_NAVIGATION", ()=>IDLE_NAVIGATION);
+parcelHelpers.export(exports, "UNSAFE_DEFERRED_SYMBOL", ()=>UNSAFE_DEFERRED_SYMBOL);
+parcelHelpers.export(exports, "UNSAFE_DeferredData", ()=>DeferredData);
 parcelHelpers.export(exports, "UNSAFE_convertRoutesToDataRoutes", ()=>convertRoutesToDataRoutes);
 parcelHelpers.export(exports, "UNSAFE_getPathContributingMatches", ()=>getPathContributingMatches);
+parcelHelpers.export(exports, "UNSAFE_invariant", ()=>invariant);
+parcelHelpers.export(exports, "UNSAFE_warning", ()=>warning);
 parcelHelpers.export(exports, "createBrowserHistory", ()=>createBrowserHistory);
 parcelHelpers.export(exports, "createHashHistory", ()=>createHashHistory);
 parcelHelpers.export(exports, "createMemoryHistory", ()=>createMemoryHistory);
 parcelHelpers.export(exports, "createPath", ()=>createPath);
 parcelHelpers.export(exports, "createRouter", ()=>createRouter);
+parcelHelpers.export(exports, "createStaticHandler", ()=>createStaticHandler);
 parcelHelpers.export(exports, "defer", ()=>defer);
 parcelHelpers.export(exports, "generatePath", ()=>generatePath);
 parcelHelpers.export(exports, "getStaticContextFromError", ()=>getStaticContextFromError);
 parcelHelpers.export(exports, "getToPathname", ()=>getToPathname);
-parcelHelpers.export(exports, "invariant", ()=>invariant);
+parcelHelpers.export(exports, "isDeferredData", ()=>isDeferredData);
 parcelHelpers.export(exports, "isRouteErrorResponse", ()=>isRouteErrorResponse);
 parcelHelpers.export(exports, "joinPaths", ()=>joinPaths);
 parcelHelpers.export(exports, "json", ()=>json);
@@ -29188,8 +29408,6 @@ parcelHelpers.export(exports, "redirect", ()=>redirect);
 parcelHelpers.export(exports, "resolvePath", ()=>resolvePath);
 parcelHelpers.export(exports, "resolveTo", ()=>resolveTo);
 parcelHelpers.export(exports, "stripBasename", ()=>stripBasename);
-parcelHelpers.export(exports, "unstable_createStaticHandler", ()=>unstable_createStaticHandler);
-parcelHelpers.export(exports, "warning", ()=>warning);
 function _extends() {
     _extends = Object.assign ? Object.assign.bind() : function(target) {
         for(var i = 1; i < arguments.length; i++){
@@ -29247,8 +29465,11 @@ const PopStateEventType = "popstate";
     function createMemoryLocation(to, state, key) {
         if (state === void 0) state = null;
         let location = createLocation(entries ? getCurrentLocation().pathname : "/", to, state, key);
-        warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in memory history: " + JSON.stringify(to));
+        warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in memory history: " + JSON.stringify(to));
         return location;
+    }
+    function createHref(to) {
+        return typeof to === "string" ? to : createPath(to);
     }
     let history = {
         get index () {
@@ -29260,8 +29481,9 @@ const PopStateEventType = "popstate";
         get location () {
             return getCurrentLocation();
         },
-        createHref (to) {
-            return typeof to === "string" ? to : createPath(to);
+        createHref,
+        createURL (to) {
+            return new URL(createHref(to), "http://localhost");
         },
         encodeLocation (to) {
             let path = typeof to === "string" ? parsePath(to) : to;
@@ -29278,7 +29500,8 @@ const PopStateEventType = "popstate";
             entries.splice(index, entries.length, nextLocation);
             if (v5Compat && listener) listener({
                 action,
-                location: nextLocation
+                location: nextLocation,
+                delta: 1
             });
         },
         replace (to, state) {
@@ -29287,15 +29510,19 @@ const PopStateEventType = "popstate";
             entries[index] = nextLocation;
             if (v5Compat && listener) listener({
                 action,
-                location: nextLocation
+                location: nextLocation,
+                delta: 0
             });
         },
         go (delta) {
             action = Action.Pop;
-            index = clampIndex(index + delta);
+            let nextIndex = clampIndex(index + delta);
+            let nextLocation = entries[nextIndex];
+            index = nextIndex;
             if (listener) listener({
                 action,
-                location: getCurrentLocation()
+                location: nextLocation,
+                delta
             });
         },
         listen (fn) {
@@ -29356,14 +29583,14 @@ const PopStateEventType = "popstate";
         return href + "#" + (typeof to === "string" ? to : createPath(to));
     }
     function validateHashLocation(location, to) {
-        warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
+        warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
     }
     return getUrlBasedHistory(createHashLocation, createHashHref, validateHashLocation, options);
 }
 function invariant(value, message) {
     if (value === false || value === null || typeof value === "undefined") throw new Error(message);
 }
-function warning$1(cond, message) {
+function warning(cond, message) {
     if (!cond) {
         // eslint-disable-next-line no-console
         if (typeof console !== "undefined") console.warn(message);
@@ -29382,10 +29609,11 @@ function createKey() {
 }
 /**
  * For browser-based histories, we combine the state and key into an object
- */ function getHistoryState(location) {
+ */ function getHistoryState(location, index) {
     return {
         usr: location.state,
-        key: location.key
+        key: location.key,
+        idx: index
     };
 }
 /**
@@ -29433,33 +29661,44 @@ function createKey() {
     }
     return parsedPath;
 }
-function createClientSideURL(location) {
-    // window.location.origin is "null" (the literal string value) in Firefox
-    // under certain conditions, notably when serving from a local HTML file
-    // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
-    let base = typeof window !== "undefined" && typeof window.location !== "undefined" && window.location.origin !== "null" ? window.location.origin : window.location.href;
-    let href = typeof location === "string" ? location : createPath(location);
-    invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
-    return new URL(href, base);
-}
 function getUrlBasedHistory(getLocation, createHref, validateLocation, options) {
     if (options === void 0) options = {};
     let { window: window1 = document.defaultView , v5Compat =false  } = options;
     let globalHistory = window1.history;
     let action = Action.Pop;
     let listener = null;
+    let index = getIndex(); // Index should only be null when we initialize. If not, it's because the
+    // user called history.pushState or history.replaceState directly, in which
+    // case we should log a warning as it will result in bugs.
+    if (index == null) {
+        index = 0;
+        globalHistory.replaceState(_extends({}, globalHistory.state, {
+            idx: index
+        }), "");
+    }
+    function getIndex() {
+        let state = globalHistory.state || {
+            idx: null
+        };
+        return state.idx;
+    }
     function handlePop() {
         action = Action.Pop;
+        let nextIndex = getIndex();
+        let delta = nextIndex == null ? null : nextIndex - index;
+        index = nextIndex;
         if (listener) listener({
             action,
-            location: history.location
+            location: history.location,
+            delta
         });
     }
     function push(to, state) {
         action = Action.Push;
         let location = createLocation(history.location, to, state);
         if (validateLocation) validateLocation(location, to);
-        let historyState = getHistoryState(location);
+        index = getIndex() + 1;
+        let historyState = getHistoryState(location, index);
         let url = history.createHref(location); // try...catch because iOS limits us to 100 pushState calls :/
         try {
             globalHistory.pushState(historyState, "", url);
@@ -29470,20 +29709,32 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
         }
         if (v5Compat && listener) listener({
             action,
-            location: history.location
+            location: history.location,
+            delta: 1
         });
     }
     function replace(to, state) {
         action = Action.Replace;
         let location = createLocation(history.location, to, state);
         if (validateLocation) validateLocation(location, to);
-        let historyState = getHistoryState(location);
+        index = getIndex();
+        let historyState = getHistoryState(location, index);
         let url = history.createHref(location);
         globalHistory.replaceState(historyState, "", url);
         if (v5Compat && listener) listener({
             action,
-            location: history.location
+            location: history.location,
+            delta: 0
         });
+    }
+    function createURL(to) {
+        // window.location.origin is "null" (the literal string value) in Firefox
+        // under certain conditions, notably when serving from a local HTML file
+        // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
+        let base = window1.location.origin !== "null" ? window1.location.origin : window1.location.href;
+        let href = typeof to === "string" ? to : createPath(to);
+        invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
+        return new URL(href, base);
     }
     let history = {
         get action () {
@@ -29504,9 +29755,10 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
         createHref (to) {
             return createHref(window1, to);
         },
+        createURL,
         encodeLocation (to) {
             // Encode a Location the same way window.location would
-            let url = createClientSideURL(typeof to === "string" ? to : createPath(to));
+            let url = createURL(to);
             return {
                 pathname: url.pathname,
                 search: url.search,
@@ -29528,13 +29780,21 @@ var ResultType;
     ResultType["redirect"] = "redirect";
     ResultType["error"] = "error";
 })(ResultType || (ResultType = {}));
+const immutableRouteKeys = new Set([
+    "lazy",
+    "caseSensitive",
+    "path",
+    "id",
+    "index",
+    "children"
+]);
 function isIndexRoute(route) {
     return route.index === true;
 } // Walk the route tree generating unique IDs where necessary so we are working
 // solely with AgnosticDataRouteObject's within the Router
-function convertRoutesToDataRoutes(routes, parentPath, allIds) {
+function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manifest) {
     if (parentPath === void 0) parentPath = [];
-    if (allIds === void 0) allIds = new Set();
+    if (manifest === void 0) manifest = {};
     return routes.map((route, index)=>{
         let treePath = [
             ...parentPath,
@@ -29542,18 +29802,20 @@ function convertRoutesToDataRoutes(routes, parentPath, allIds) {
         ];
         let id = typeof route.id === "string" ? route.id : treePath.join("-");
         invariant(route.index !== true || !route.children, "Cannot specify children on an index route");
-        invariant(!allIds.has(id), 'Found a route id collision on id "' + id + '".  Route ' + "id's must be globally unique within Data Router usages");
-        allIds.add(id);
+        invariant(!manifest[id], 'Found a route id collision on id "' + id + '".  Route ' + "id's must be globally unique within Data Router usages");
         if (isIndexRoute(route)) {
-            let indexRoute = _extends({}, route, {
+            let indexRoute = _extends({}, route, mapRouteProperties(route), {
                 id
             });
+            manifest[id] = indexRoute;
             return indexRoute;
         } else {
-            let pathOrLayoutRoute = _extends({}, route, {
+            let pathOrLayoutRoute = _extends({}, route, mapRouteProperties(route), {
                 id,
-                children: route.children ? convertRoutesToDataRoutes(route.children, treePath, allIds) : undefined
+                children: undefined
             });
+            manifest[id] = pathOrLayoutRoute;
+            if (route.children) pathOrLayoutRoute.children = convertRoutesToDataRoutes(route.children, mapRouteProperties, treePath, manifest);
             return pathOrLayoutRoute;
         }
     });
@@ -29737,21 +29999,27 @@ function matchRouteBranch(branch, pathname) {
     if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
         warning(false, 'Route path "' + path + '" will be treated as if it were ' + ('"' + path.replace(/\*$/, "/*") + '" because the `*` character must ') + "always follow a `/` in the pattern. To get rid of this warning, " + ('please change the route path to "' + path.replace(/\*$/, "/*") + '".'));
         path = path.replace(/\*$/, "/*");
-    }
-    return path.replace(/^:(\w+)/g, (_, key)=>{
-        invariant(params[key] != null, 'Missing ":' + key + '" param');
-        return params[key];
-    }).replace(/\/:(\w+)/g, (_, key)=>{
-        invariant(params[key] != null, 'Missing ":' + key + '" param');
-        return "/" + params[key];
-    }).replace(/(\/?)\*/, (_, prefix, __, str)=>{
-        const star = "*";
-        if (params[star] == null) // If no splat was provided, trim the trailing slash _unless_ it's
-        // the entire path
-        return str === "/*" ? "/" : "";
-         // Apply the splat
-        return "" + prefix + params[star];
-    });
+    } // ensure `/` is added at the beginning if the path is absolute
+    const prefix = path.startsWith("/") ? "/" : "";
+    const segments = path.split(/\/+/).map((segment, index, array)=>{
+        const isLastSegment = index === array.length - 1; // only apply the splat if it's the last segment
+        if (isLastSegment && segment === "*") {
+            const star = "*";
+            const starParam = params[star]; // Apply the splat
+            return starParam;
+        }
+        const keyMatch = segment.match(/^:(\w+)(\??)$/);
+        if (keyMatch) {
+            const [, key, optional] = keyMatch;
+            let param = params[key];
+            if (optional === "?") return param == null ? "" : param;
+            if (param == null) invariant(false, 'Missing ":' + key + '" param');
+            return param;
+        } // Remove any optional markers from optional static segments
+        return segment.replace(/\?$/g, "");
+    }) // Remove empty segments
+    .filter((segment)=>!!segment);
+    return prefix + segments.join("/");
 }
 /**
  * Performs pattern matching on a URL pathname and returns information about
@@ -29847,22 +30115,6 @@ function safelyDecodeURIComponent(value, paramName) {
     if (nextChar && nextChar !== "/") // pathname does not start with basename/
     return null;
     return pathname.slice(startIndex) || "/";
-}
-/**
- * @private
- */ function warning(cond, message) {
-    if (!cond) {
-        // eslint-disable-next-line no-console
-        if (typeof console !== "undefined") console.warn(message);
-        try {
-            // Welcome to debugging React Router!
-            //
-            // This error is thrown as a convenience so you can more easily
-            // find the source for a warning that appears in the console by
-            // enabling "pause on exceptions" in your JavaScript debugger.
-            throw new Error(message); // eslint-disable-next-line no-empty
-        } catch (e) {}
-    }
 }
 /**
  * Returns a resolved path object relative to the given pathname.
@@ -29997,9 +30249,10 @@ function getInvalidPathError(char, field, dest, path) {
 class AbortedDeferredError extends Error {
 }
 class DeferredData {
-    constructor(data){
-        this.pendingKeys = new Set();
-        this.subscriber = undefined;
+    constructor(data, responseInit){
+        this.pendingKeysSet = new Set();
+        this.subscribers = new Set();
+        this.deferredKeys = [];
         invariant(data && typeof data === "object" && !Array.isArray(data), "defer() only accepts plain objects"); // Set up an AbortController + Promise we can race against to exit early
         // cancellation
         let reject;
@@ -30014,10 +30267,14 @@ class DeferredData {
                 [key]: this.trackPromise(key, value)
             });
         }, {});
+        if (this.done) // All incoming values were resolved
+        this.unlistenAbortSignal();
+        this.init = responseInit;
     }
     trackPromise(key, value) {
         if (!(value instanceof Promise)) return value;
-        this.pendingKeys.add(key); // We store a little wrapper promise that will be extended with
+        this.deferredKeys.push(key);
+        this.pendingKeysSet.add(key); // We store a little wrapper promise that will be extended with
         // _data/_error props upon resolve/reject
         let promise = Promise.race([
             value,
@@ -30038,31 +30295,33 @@ class DeferredData {
             });
             return Promise.reject(error);
         }
-        this.pendingKeys.delete(key);
+        this.pendingKeysSet.delete(key);
         if (this.done) // Nothing left to abort!
         this.unlistenAbortSignal();
-        const subscriber = this.subscriber;
         if (error) {
             Object.defineProperty(promise, "_error", {
                 get: ()=>error
             });
-            subscriber && subscriber(false);
+            this.emit(false, key);
             return Promise.reject(error);
         }
         Object.defineProperty(promise, "_data", {
             get: ()=>data
         });
-        subscriber && subscriber(false);
+        this.emit(false, key);
         return data;
     }
+    emit(aborted, settledKey) {
+        this.subscribers.forEach((subscriber)=>subscriber(aborted, settledKey));
+    }
     subscribe(fn) {
-        this.subscriber = fn;
+        this.subscribers.add(fn);
+        return ()=>this.subscribers.delete(fn);
     }
     cancel() {
         this.controller.abort();
-        this.pendingKeys.forEach((v, k)=>this.pendingKeys.delete(k));
-        let subscriber = this.subscriber;
-        subscriber && subscriber(true);
+        this.pendingKeysSet.forEach((v, k)=>this.pendingKeysSet.delete(k));
+        this.emit(true);
     }
     async resolveData(signal) {
         let aborted = false;
@@ -30079,7 +30338,7 @@ class DeferredData {
         return aborted;
     }
     get done() {
-        return this.pendingKeys.size === 0;
+        return this.pendingKeysSet.size === 0;
     }
     get unwrappedData() {
         invariant(this.data !== null && this.done, "Can only unwrap data on initialized and settled deferreds");
@@ -30090,6 +30349,9 @@ class DeferredData {
             });
         }, {});
     }
+    get pendingKeys() {
+        return Array.from(this.pendingKeysSet);
+    }
 }
 function isTrackedPromise(value) {
     return value instanceof Promise && value._tracked === true;
@@ -30099,9 +30361,13 @@ function unwrapTrackedPromise(value) {
     if (value._error) throw value._error;
     return value._data;
 }
-function defer(data) {
-    return new DeferredData(data);
-}
+const defer = function defer(data, init) {
+    if (init === void 0) init = {};
+    let responseInit = typeof init === "number" ? {
+        status: init
+    } : init;
+    return new DeferredData(data, responseInit);
+};
 /**
  * A redirect response. Sets the status code and the `Location` header.
  * Defaults to "302 Found".
@@ -30135,9 +30401,9 @@ function defer(data) {
 }
 /**
  * Check if the given error is an ErrorResponse generated from a 4xx/5xx
- * Response throw from an action/loader
- */ function isRouteErrorResponse(e) {
-    return e instanceof ErrorResponse;
+ * Response thrown from an action/loader
+ */ function isRouteErrorResponse(error) {
+    return error != null && typeof error.status === "number" && typeof error.statusText === "string" && typeof error.internal === "boolean" && "data" in error;
 }
 const validMutationMethodsArr = [
     "post",
@@ -30178,8 +30444,18 @@ const IDLE_FETCHER = {
     formEncType: undefined,
     formData: undefined
 };
+const IDLE_BLOCKER = {
+    state: "unblocked",
+    proceed: undefined,
+    reset: undefined,
+    location: undefined
+};
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
-const isServer = !isBrowser; //#endregion
+const isServer = !isBrowser;
+const defaultMapRouteProperties = (route)=>({
+        hasErrorBoundary: Boolean(route.hasErrorBoundary)
+    }); //#endregion
 ////////////////////////////////////////////////////////////////////////////////
 //#region createRouter
 ////////////////////////////////////////////////////////////////////////////////
@@ -30187,7 +30463,24 @@ const isServer = !isBrowser; //#endregion
  * Create a router and listen to history POP navigations
  */ function createRouter(init) {
     invariant(init.routes.length > 0, "You must provide a non-empty routes array to createRouter");
-    let dataRoutes = convertRoutesToDataRoutes(init.routes); // Cleanup function for history
+    let mapRouteProperties;
+    if (init.mapRouteProperties) mapRouteProperties = init.mapRouteProperties;
+    else if (init.detectErrorBoundary) {
+        // If they are still using the deprecated version, wrap it with the new API
+        let detectErrorBoundary = init.detectErrorBoundary;
+        mapRouteProperties = (route)=>({
+                hasErrorBoundary: detectErrorBoundary(route)
+            });
+    } else mapRouteProperties = defaultMapRouteProperties;
+     // Routes keyed by ID
+    let manifest = {}; // Routes in tree format for matching
+    let dataRoutes = convertRoutesToDataRoutes(init.routes, mapRouteProperties, undefined, manifest);
+    let inFlightDataRoutes;
+    let basename = init.basename || "/"; // Config driven behavior flags
+    let future = _extends({
+        v7_normalizeFormMethod: false,
+        v7_prependBasename: false
+    }, init.future); // Cleanup function for history
     let unlistenHistory = null; // Externally-provided functions to call on all state changes
     let subscribers = new Set(); // Externally-provided object to hold scroll restoration locations during routing
     let savedScrollPositions = null; // Externally-provided function to get scroll restoration keys
@@ -30196,8 +30489,10 @@ const isServer = !isBrowser; //#endregion
     // we don't get the saved positions from <ScrollRestoration /> until _after_
     // the initial render, we need to manually trigger a separate updateState to
     // send along the restoreScrollPosition
-    let initialScrollRestored = false;
-    let initialMatches = matchRoutes(dataRoutes, init.history.location, init.basename);
+    // Set to true if we have `hydrationData` since we assume we were SSR'd and that
+    // SSR did the initial scroll restoration.
+    let initialScrollRestored = init.hydrationData != null;
+    let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
     let initialErrors = null;
     if (initialMatches == null) {
         // If we do not match a user-provided-route, fall back to the root
@@ -30211,7 +30506,8 @@ const isServer = !isBrowser; //#endregion
             [route.id]: error
         };
     }
-    let initialized = !initialMatches.some((m)=>m.route.loader) || init.hydrationData != null;
+    let initialized = // functions around still then we'll need to run them in initialize()
+    !initialMatches.some((m)=>m.route.lazy) && (!initialMatches.some((m)=>m.route.loader) || init.hydrationData != null);
     let router;
     let state = {
         historyAction: init.history.action,
@@ -30219,13 +30515,15 @@ const isServer = !isBrowser; //#endregion
         matches: initialMatches,
         initialized,
         navigation: IDLE_NAVIGATION,
-        restoreScrollPosition: null,
+        // Don't restore on initial updateState() if we were SSR'd
+        restoreScrollPosition: init.hydrationData != null ? false : null,
         preventScrollReset: false,
         revalidation: "idle",
         loaderData: init.hydrationData && init.hydrationData.loaderData || {},
         actionData: init.hydrationData && init.hydrationData.actionData || null,
         errors: init.hydrationData && init.hydrationData.errors || initialErrors,
-        fetchers: new Map()
+        fetchers: new Map(),
+        blockers: new Map()
     }; // -- Stateful internal variables to manage navigations --
     // Current navigation in progress (to be committed in completeNavigation)
     let pendingAction = Action.Pop; // Should the current navigation prevent the scroll reset if scroll cannot
@@ -30235,7 +30533,7 @@ const isServer = !isBrowser; //#endregion
     // revalidation is entirely uninterrupted
     let isUninterruptedRevalidation = false; // Use this internal flag to force revalidation of all loaders:
     //  - submissions (completed or interrupted)
-    //  - useRevalidate()
+    //  - useRevalidator()
     //  - X-Remix-Revalidate (from redirect)
     let isRevalidationRequired = false; // Use this internal array to capture routes that require revalidation due
     // to a cancelled deferred on action submission
@@ -30247,22 +30545,67 @@ const isServer = !isBrowser; //#endregion
     // the globally incrementing load when a fetcher load lands after a completed
     // navigation
     let pendingNavigationLoadId = -1; // Fetchers that triggered data reloads as a result of their actions
-    let fetchReloadIds = new Map(); // Fetchers that triggered redirect navigations from their actions
+    let fetchReloadIds = new Map(); // Fetchers that triggered redirect navigations
     let fetchRedirectIds = new Set(); // Most recent href/match for fetcher.load calls for fetchers
     let fetchLoadMatches = new Map(); // Store DeferredData instances for active route matches.  When a
     // route loader returns defer() we stick one in here.  Then, when a nested
     // promise resolves we update loaderData.  If a new navigation starts we
     // cancel active deferreds for eliminated routes.
-    let activeDeferreds = new Map(); // Initialize the router, all side effects should be kicked off from here.
+    let activeDeferreds = new Map(); // Store blocker functions in a separate Map outside of router state since
+    // we don't need to update UI state if they change
+    let blockerFunctions = new Map(); // Flag to ignore the next history update, so we can revert the URL change on
+    // a POP navigation that was blocked by the user without touching router state
+    let ignoreNextHistoryUpdate = false; // Initialize the router, all side effects should be kicked off from here.
     // Implemented as a Fluent API for ease of:
     //   let router = createRouter(init).initialize();
     function initialize() {
         // If history informs us of a POP navigation, start the navigation but do not update
         // state.  We'll update our own state once the navigation completes
         unlistenHistory = init.history.listen((_ref)=>{
-            let { action: historyAction , location  } = _ref;
+            let { action: historyAction , location , delta  } = _ref;
+            // Ignore this event if it was just us resetting the URL from a
+            // blocked POP navigation
+            if (ignoreNextHistoryUpdate) {
+                ignoreNextHistoryUpdate = false;
+                return;
+            }
+            warning(blockerFunctions.size === 0 || delta != null, "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL.");
+            let blockerKey = shouldBlockNavigation({
+                currentLocation: state.location,
+                nextLocation: location,
+                historyAction
+            });
+            if (blockerKey && delta != null) {
+                // Restore the URL to match the current UI, but don't update router state
+                ignoreNextHistoryUpdate = true;
+                init.history.go(delta * -1); // Put the blocker into a blocked state
+                updateBlocker(blockerKey, {
+                    state: "blocked",
+                    location,
+                    proceed () {
+                        updateBlocker(blockerKey, {
+                            state: "proceeding",
+                            proceed: undefined,
+                            reset: undefined,
+                            location
+                        }); // Re-do the same POP navigation we just blocked
+                        init.history.go(delta);
+                    },
+                    reset () {
+                        deleteBlocker(blockerKey);
+                        updateState({
+                            blockers: new Map(router.state.blockers)
+                        });
+                    }
+                });
+                return;
+            }
             return startNavigation(historyAction, location);
         }); // Kick off initial data load if needed.  Use Pop to avoid modifying history
+        // Note we don't do any handling of lazy here.  For SPA's it'll get handled
+        // in the normal navigation flow.  For SSR it's expected that lazy modules are
+        // resolved prior to router creation since we can't go into a fallbackElement
+        // UI for SSR'd apps
         if (!state.initialized) startNavigation(Action.Pop, state.location);
         return router;
     } // Clean up a router and it's side effects
@@ -30271,6 +30614,7 @@ const isServer = !isBrowser; //#endregion
         subscribers.clear();
         pendingNavigationController && pendingNavigationController.abort();
         state.fetchers.forEach((_, key)=>deleteFetcher(key));
+        state.blockers.forEach((_, key)=>deleteBlocker(key));
     } // Subscribe to state updates for the router
     function subscribe(fn) {
         subscribers.add(fn);
@@ -30285,30 +30629,44 @@ const isServer = !isBrowser; //#endregion
     // - Navigation will always be set to IDLE_NAVIGATION
     // - Can pass any other state in newState
     function completeNavigation(location, newState) {
-        var _state$navigation$for;
+        var _location$state, _location$state2;
         // Deduce if we're in a loading/actionReload state:
         // - We have committed actionData in the store
-        // - The current navigation was a submission
+        // - The current navigation was a mutation submission
         // - We're past the submitting state and into the loading state
-        // - The location we've finished loading is different from the submission
-        //   location, indicating we redirected from the action (avoids false
-        //   positives for loading/submissionRedirect when actionData returned
-        //   on a prior submission)
-        let isActionReload = state.actionData != null && state.navigation.formMethod != null && state.navigation.state === "loading" && ((_state$navigation$for = state.navigation.formAction) == null ? void 0 : _state$navigation$for.split("?")[0]) === location.pathname; // Always preserve any existing loaderData from re-used routes
-        let newLoaderData = newState.loaderData ? {
-            loaderData: mergeLoaderData(state.loaderData, newState.loaderData, newState.matches || [])
-        } : {};
-        updateState(_extends({}, isActionReload ? {} : {
-            actionData: null
-        }, newState, newLoaderData, {
+        // - The location being loaded is not the result of a redirect
+        let isActionReload = state.actionData != null && state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && state.navigation.state === "loading" && ((_location$state = location.state) == null ? void 0 : _location$state._isRedirect) !== true;
+        let actionData;
+        if (newState.actionData) {
+            if (Object.keys(newState.actionData).length > 0) actionData = newState.actionData;
+            else // Empty actionData -> clear prior actionData due to an action error
+            actionData = null;
+        } else if (isActionReload) // Keep the current data if we're wrapping up the action reload
+        actionData = state.actionData;
+        else // Clear actionData on any other completed navigations
+        actionData = null;
+         // Always preserve any existing loaderData from re-used routes
+        let loaderData = newState.loaderData ? mergeLoaderData(state.loaderData, newState.loaderData, newState.matches || [], newState.errors) : state.loaderData; // On a successful navigation we can assume we got through all blockers
+        // so we can start fresh
+        for (let [key] of blockerFunctions)deleteBlocker(key);
+         // Always respect the user flag.  Otherwise don't reset on mutation
+        // submission navigations unless they redirect
+        let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && ((_location$state2 = location.state) == null ? void 0 : _location$state2._isRedirect) !== true;
+        if (inFlightDataRoutes) {
+            dataRoutes = inFlightDataRoutes;
+            inFlightDataRoutes = undefined;
+        }
+        updateState(_extends({}, newState, {
+            actionData,
+            loaderData,
             historyAction: pendingAction,
             location,
             initialized: true,
             navigation: IDLE_NAVIGATION,
             revalidation: "idle",
-            // Don't restore on submission navigations
-            restoreScrollPosition: state.navigation.formData ? false : getSavedScrollPosition(location, newState.matches || state.matches),
-            preventScrollReset: pendingPreventScrollReset
+            restoreScrollPosition: getSavedScrollPosition(location, newState.matches || state.matches),
+            preventScrollReset,
+            blockers: new Map(state.blockers)
         }));
         if (isUninterruptedRevalidation) ;
         else if (pendingAction === Action.Pop) ;
@@ -30328,16 +30686,54 @@ const isServer = !isBrowser; //#endregion
             init.history.go(to);
             return;
         }
-        let { path , submission , error  } = normalizeNavigateOptions(to, opts);
-        let location = createLocation(state.location, path, opts && opts.state); // When using navigate as a PUSH/REPLACE we aren't reading an already-encoded
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, to, opts == null ? void 0 : opts.fromRouteId, opts == null ? void 0 : opts.relative);
+        let { path , submission , error  } = normalizeNavigateOptions(future.v7_normalizeFormMethod, false, normalizedPath, opts);
+        let currentLocation = state.location;
+        let nextLocation = createLocation(state.location, path, opts && opts.state); // When using navigate as a PUSH/REPLACE we aren't reading an already-encoded
         // URL from window.location, so we need to encode it here so the behavior
         // remains the same as POP and non-data-router usages.  new URL() does all
         // the same encoding we'd get from a history.pushState/window.location read
         // without having to touch history
-        location = _extends({}, location, init.history.encodeLocation(location));
-        let historyAction = (opts && opts.replace) === true || submission != null && isMutationMethod(submission.formMethod) ? Action.Replace : Action.Push;
+        nextLocation = _extends({}, nextLocation, init.history.encodeLocation(nextLocation));
+        let userReplace = opts && opts.replace != null ? opts.replace : undefined;
+        let historyAction = Action.Push;
+        if (userReplace === true) historyAction = Action.Replace;
+        else if (userReplace === false) ;
+        else if (submission != null && isMutationMethod(submission.formMethod) && submission.formAction === state.location.pathname + state.location.search) // By default on submissions to the current location we REPLACE so that
+        // users don't have to double-click the back button to get to the prior
+        // location.  If the user redirects to a different location from the
+        // action/loader this will be ignored and the redirect will be a PUSH
+        historyAction = Action.Replace;
         let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : undefined;
-        return await startNavigation(historyAction, location, {
+        let blockerKey = shouldBlockNavigation({
+            currentLocation,
+            nextLocation,
+            historyAction
+        });
+        if (blockerKey) {
+            // Put the blocker into a blocked state
+            updateBlocker(blockerKey, {
+                state: "blocked",
+                location: nextLocation,
+                proceed () {
+                    updateBlocker(blockerKey, {
+                        state: "proceeding",
+                        proceed: undefined,
+                        reset: undefined,
+                        location: nextLocation
+                    }); // Send the same navigation through
+                    navigate(to, opts);
+                },
+                reset () {
+                    deleteBlocker(blockerKey);
+                    updateState({
+                        blockers: new Map(state.blockers)
+                    });
+                }
+            });
+            return;
+        }
+        return await startNavigation(historyAction, nextLocation, {
             submission,
             // Send through the formData serialization error if we have one so we can
             // render at the right error boundary after we match routes
@@ -30383,13 +30779,14 @@ const isServer = !isBrowser; //#endregion
         // and track whether we should reset scroll on completion
         saveScrollPosition(state.location, state.matches);
         pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
         let loadingNavigation = opts && opts.overrideNavigation;
-        let matches = matchRoutes(dataRoutes, location, init.basename); // Short circuit with a 404 on the root error boundary if we match nothing
+        let matches = matchRoutes(routesToUse, location, basename); // Short circuit with a 404 on the root error boundary if we match nothing
         if (!matches) {
             let error = getInternalRouterError(404, {
                 pathname: location.pathname
             });
-            let { matches: notFoundMatches , route  } = getShortCircuitMatches(dataRoutes); // Cancel all pending deferred on 404s since we don't keep any routes
+            let { matches: notFoundMatches , route  } = getShortCircuitMatches(routesToUse); // Cancel all pending deferred on 404s since we don't keep any routes
             cancelActiveDeferreds();
             completeNavigation(location, {
                 matches: notFoundMatches,
@@ -30399,15 +30796,19 @@ const isServer = !isBrowser; //#endregion
                 }
             });
             return;
-        } // Short circuit if it's only a hash change
-        if (isHashChangeOnly(state.location, location)) {
+        } // Short circuit if it's only a hash change and not a mutation submission.
+        // Ignore on initial page loads because since the initial load will always
+        // be "same hash".
+        // For example, on /page#hash and submit a <Form method="post"> which will
+        // default to a navigation to /page
+        if (state.initialized && isHashChangeOnly(state.location, location) && !(opts && opts.submission && isMutationMethod(opts.submission.formMethod))) {
             completeNavigation(location, {
                 matches
             });
             return;
         } // Create a controller/Request for this navigation
         pendingNavigationController = new AbortController();
-        let request = createClientSideRequest(location, pendingNavigationController.signal, opts && opts.submission);
+        let request = createClientSideRequest(init.history, location, pendingNavigationController.signal, opts && opts.submission);
         let pendingActionData;
         let pendingError;
         if (opts && opts.pendingError) // If we have a pendingError, it means the user attempted a GET submission
@@ -30434,17 +30835,20 @@ const isServer = !isBrowser; //#endregion
                 signal: request.signal
             });
         } // Call loaders
-        let { shortCircuited , loaderData , errors  } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.replace, pendingActionData, pendingError);
+        let { shortCircuited , loaderData , errors  } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, pendingActionData, pendingError);
         if (shortCircuited) return;
          // Clean up now that the action/loaders have completed.  Don't clean up if
         // we short circuited because pendingNavigationController will have already
         // been assigned to a new controller for the next navigation
         pendingNavigationController = null;
-        completeNavigation(location, {
-            matches,
+        completeNavigation(location, _extends({
+            matches
+        }, pendingActionData ? {
+            actionData: pendingActionData
+        } : {}, {
             loaderData,
             errors
-        });
+        }));
     } // Call the action matched by the leaf route for this navigation and handle
     // redirects/errors
     async function handleAction(request, location, submission, matches, opts) {
@@ -30458,7 +30862,7 @@ const isServer = !isBrowser; //#endregion
         }); // Call our action and get the result
         let result;
         let actionMatch = getTargetMatch(matches, location);
-        if (!actionMatch.route.action) result = {
+        if (!actionMatch.route.action && !actionMatch.route.lazy) result = {
             type: ResultType.error,
             error: getInternalRouterError(405, {
                 method: request.method,
@@ -30467,13 +30871,22 @@ const isServer = !isBrowser; //#endregion
             })
         };
         else {
-            result = await callLoaderOrAction("action", request, actionMatch, matches, router.basename);
+            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename);
             if (request.signal.aborted) return {
                 shortCircuited: true
             };
         }
         if (isRedirectResult(result)) {
-            await startRedirectNavigation(state, result, opts && opts.replace === true);
+            let replace;
+            if (opts && opts.replace != null) replace = opts.replace;
+            else // If the user didn't explicity indicate replace behavior, replace if
+            // we redirected to the exact same location we're currently at to avoid
+            // double back-buttons
+            replace = result.location === state.location.pathname + state.location.search;
+            await startRedirectNavigation(state, result, {
+                submission,
+                replace
+            });
             return {
                 shortCircuited: true
             };
@@ -30487,12 +30900,16 @@ const isServer = !isBrowser; //#endregion
             // the pre-submission form location to try again
             if ((opts && opts.replace) !== true) pendingAction = Action.Push;
             return {
+                // Send back an empty object we can use to clear out any prior actionData
+                pendingActionData: {},
                 pendingActionError: {
                     [boundaryMatch.route.id]: result.error
                 }
             };
         }
-        if (isDeferredResult(result)) throw new Error("defer() is not supported in actions");
+        if (isDeferredResult(result)) throw getInternalRouterError(400, {
+            type: "defer-action"
+        });
         return {
             pendingActionData: {
                 [actionMatch.route.id]: result.data
@@ -30500,7 +30917,7 @@ const isServer = !isBrowser; //#endregion
         };
     } // Call all applicable loaders for the given matches, handling redirects,
     // errors, etc.
-    async function handleLoaders(request, location, matches, overrideNavigation, submission, replace, pendingActionData, pendingError) {
+    async function handleLoaders(request, location, matches, overrideNavigation, submission, fetcherSubmission, replace, pendingActionData, pendingError) {
         // Figure out the right navigation we want to use for data loading
         let loadingNavigation = overrideNavigation;
         if (!loadingNavigation) {
@@ -30513,19 +30930,31 @@ const isServer = !isBrowser; //#endregion
                 formData: undefined
             }, submission);
             loadingNavigation = navigation;
-        }
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, pendingActionData, pendingError, fetchLoadMatches); // Cancel pending deferreds for no-longer-matched routes or routes we're
+        } // If this was a redirect from an action we don't have a "submission" but
+        // we have it on the loading navigation so use that if available
+        let activeSubmission = submission || fetcherSubmission ? submission || fetcherSubmission : loadingNavigation.formMethod && loadingNavigation.formAction && loadingNavigation.formData && loadingNavigation.formEncType ? {
+            formMethod: loadingNavigation.formMethod,
+            formAction: loadingNavigation.formAction,
+            formData: loadingNavigation.formData,
+            formEncType: loadingNavigation.formEncType
+        } : undefined;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, pendingActionData, pendingError); // Cancel pending deferreds for no-longer-matched routes or routes we're
         // about to reload.  Note that if this is an action reload we would have
         // already cancelled all pending deferreds so this would be a no-op
         cancelActiveDeferreds((routeId)=>!(matches && matches.some((m)=>m.route.id === routeId)) || matchesToLoad && matchesToLoad.some((m)=>m.route.id === routeId)); // Short circuit if we have no loaders to run
         if (matchesToLoad.length === 0 && revalidatingFetchers.length === 0) {
-            completeNavigation(location, {
+            let updatedFetchers = markFetchRedirectsDone();
+            completeNavigation(location, _extends({
                 matches,
-                loaderData: mergeLoaderData(state.loaderData, {}, matches),
+                loaderData: {},
                 // Commit pending error if we're short circuiting
-                errors: pendingError || null,
-                actionData: pendingActionData || null
-            });
+                errors: pendingError || null
+            }, pendingActionData ? {
+                actionData: pendingActionData
+            } : {}, updatedFetchers ? {
+                fetchers: new Map(state.fetchers)
+            } : {}));
             return {
                 shortCircuited: true
             };
@@ -30534,31 +30963,39 @@ const isServer = !isBrowser; //#endregion
         // preserving any new action data or existing action data (in the case of
         // a revalidation interrupting an actionReload)
         if (!isUninterruptedRevalidation) {
-            revalidatingFetchers.forEach((_ref2)=>{
-                let [key] = _ref2;
-                let fetcher = state.fetchers.get(key);
+            revalidatingFetchers.forEach((rf)=>{
+                let fetcher = state.fetchers.get(rf.key);
                 let revalidatingFetcher = {
                     state: "loading",
                     data: fetcher && fetcher.data,
                     formMethod: undefined,
                     formAction: undefined,
                     formEncType: undefined,
-                    formData: undefined
+                    formData: undefined,
+                    " _hasFetcherDoneAnything ": true
                 };
-                state.fetchers.set(key, revalidatingFetcher);
+                state.fetchers.set(rf.key, revalidatingFetcher);
             });
+            let actionData = pendingActionData || state.actionData;
             updateState(_extends({
-                navigation: loadingNavigation,
-                actionData: pendingActionData || state.actionData || null
-            }, revalidatingFetchers.length > 0 ? {
+                navigation: loadingNavigation
+            }, actionData ? Object.keys(actionData).length === 0 ? {
+                actionData: null
+            } : {
+                actionData
+            } : {}, revalidatingFetchers.length > 0 ? {
                 fetchers: new Map(state.fetchers)
             } : {}));
         }
         pendingNavigationLoadId = ++incrementingLoadId;
-        revalidatingFetchers.forEach((_ref3)=>{
-            let [key] = _ref3;
-            return fetchControllers.set(key, pendingNavigationController);
-        });
+        revalidatingFetchers.forEach((rf)=>{
+            if (rf.controller) // Fetchers use an independent AbortController so that aborting a fetcher
+            // (via deleteFetcher) does not abort the triggering navigation that
+            // triggered the revalidation
+            fetchControllers.set(rf.key, rf.controller);
+        }); // Proxy navigation abort through to revalidation fetchers
+        let abortPendingFetchRevalidations = ()=>revalidatingFetchers.forEach((f)=>abortFetcher(f.key));
+        if (pendingNavigationController) pendingNavigationController.signal.addEventListener("abort", abortPendingFetchRevalidations);
         let { results , loaderResults , fetcherResults  } = await callLoadersAndMaybeResolveData(state.matches, matches, matchesToLoad, revalidatingFetchers, request);
         if (request.signal.aborted) return {
             shortCircuited: true
@@ -30566,13 +31003,13 @@ const isServer = !isBrowser; //#endregion
          // Clean up _after_ loaders have completed.  Don't clean up if we short
         // circuited because fetchControllers would have been aborted and
         // reassigned to new controllers for the next navigation
-        revalidatingFetchers.forEach((_ref4)=>{
-            let [key] = _ref4;
-            return fetchControllers.delete(key);
-        }); // If any loaders returned a redirect Response, start a new REPLACE navigation
+        if (pendingNavigationController) pendingNavigationController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
+        revalidatingFetchers.forEach((rf)=>fetchControllers.delete(rf.key)); // If any loaders returned a redirect Response, start a new REPLACE navigation
         let redirect = findRedirect(results);
         if (redirect) {
-            await startRedirectNavigation(state, redirect, replace);
+            await startRedirectNavigation(state, redirect, {
+                replace
+            });
             return {
                 shortCircuited: true
             };
@@ -30586,12 +31023,13 @@ const isServer = !isBrowser; //#endregion
                 if (aborted || deferredData.done) activeDeferreds.delete(routeId);
             });
         });
-        markFetchRedirectsDone();
+        let updatedFetchers = markFetchRedirectsDone();
         let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
+        let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
         return _extends({
             loaderData,
             errors
-        }, didAbortFetchLoads || revalidatingFetchers.length > 0 ? {
+        }, shouldUpdateFetchers ? {
             fetchers: new Map(state.fetchers)
         } : {});
     }
@@ -30601,32 +31039,34 @@ const isServer = !isBrowser; //#endregion
     function fetch(key, routeId, href, opts) {
         if (isServer) throw new Error("router.fetch() was called during the server render, but it shouldn't be. You are likely calling a useFetcher() method in the body of your component. Try moving it to a useEffect or a callback.");
         if (fetchControllers.has(key)) abortFetcher(key);
-        let matches = matchRoutes(dataRoutes, href, init.basename);
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, routeId, opts == null ? void 0 : opts.relative);
+        let matches = matchRoutes(routesToUse, normalizedPath, basename);
         if (!matches) {
             setFetcherError(key, routeId, getInternalRouterError(404, {
-                pathname: href
+                pathname: normalizedPath
             }));
             return;
         }
-        let { path , submission  } = normalizeNavigateOptions(href, opts, true);
+        let { path , submission  } = normalizeNavigateOptions(future.v7_normalizeFormMethod, true, normalizedPath, opts);
         let match = getTargetMatch(matches, path);
+        pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
         if (submission && isMutationMethod(submission.formMethod)) {
             handleFetcherAction(key, routeId, path, match, matches, submission);
             return;
         } // Store off the match so we can call it's shouldRevalidate on subsequent
         // revalidations
-        fetchLoadMatches.set(key, [
-            path,
-            match,
-            matches
-        ]);
+        fetchLoadMatches.set(key, {
+            routeId,
+            path
+        });
         handleFetcherLoader(key, routeId, path, match, matches, submission);
     } // Call the action for the matched fetcher.submit(), and then handle redirects,
     // errors, and revalidation
     async function handleFetcherAction(key, routeId, path, match, requestMatches, submission) {
         interruptActiveLoads();
         fetchLoadMatches.delete(key);
-        if (!match.route.action) {
+        if (!match.route.action && !match.route.lazy) {
             let error = getInternalRouterError(405, {
                 method: submission.formMethod,
                 pathname: path,
@@ -30639,16 +31079,17 @@ const isServer = !isBrowser; //#endregion
         let fetcher = _extends({
             state: "submitting"
         }, submission, {
-            data: existingFetcher && existingFetcher.data
+            data: existingFetcher && existingFetcher.data,
+            " _hasFetcherDoneAnything ": true
         });
         state.fetchers.set(key, fetcher);
         updateState({
             fetchers: new Map(state.fetchers)
         }); // Call the action for the fetcher
         let abortController = new AbortController();
-        let fetchRequest = createClientSideRequest(path, abortController.signal, submission);
+        let fetchRequest = createClientSideRequest(init.history, path, abortController.signal, submission);
         fetchControllers.set(key, abortController);
-        let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, router.basename);
+        let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, manifest, mapRouteProperties, basename);
         if (fetchRequest.signal.aborted) {
             // We can delete this so long as we weren't aborted by ou our own fetcher
             // re-submit which would have put _new_ controller is in fetchControllers
@@ -30661,42 +31102,49 @@ const isServer = !isBrowser; //#endregion
             let loadingFetcher = _extends({
                 state: "loading"
             }, submission, {
-                data: undefined
+                data: undefined,
+                " _hasFetcherDoneAnything ": true
             });
             state.fetchers.set(key, loadingFetcher);
             updateState({
                 fetchers: new Map(state.fetchers)
             });
-            return startRedirectNavigation(state, actionResult);
+            return startRedirectNavigation(state, actionResult, {
+                submission,
+                isFetchActionRedirect: true
+            });
         } // Process any non-redirect errors thrown
         if (isErrorResult(actionResult)) {
             setFetcherError(key, routeId, actionResult.error);
             return;
         }
-        if (isDeferredResult(actionResult)) invariant(false, "defer() is not supported in actions");
+        if (isDeferredResult(actionResult)) throw getInternalRouterError(400, {
+            type: "defer-action"
+        });
          // Start the data load for current matches, or the next location if we're
         // in the middle of a navigation
         let nextLocation = state.navigation.location || state.location;
-        let revalidationRequest = createClientSideRequest(nextLocation, abortController.signal);
-        let matches = state.navigation.state !== "idle" ? matchRoutes(dataRoutes, state.navigation.location, init.basename) : state.matches;
+        let revalidationRequest = createClientSideRequest(init.history, nextLocation, abortController.signal);
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let matches = state.navigation.state !== "idle" ? matchRoutes(routesToUse, state.navigation.location, basename) : state.matches;
         invariant(matches, "Didn't find any matches after fetcher action");
         let loadId = ++incrementingLoadId;
         fetchReloadIds.set(key, loadId);
         let loadFetcher = _extends({
             state: "loading",
             data: actionResult.data
-        }, submission);
+        }, submission, {
+            " _hasFetcherDoneAnything ": true
+        });
         state.fetchers.set(key, loadFetcher);
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(state, matches, submission, nextLocation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, {
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, {
             [match.route.id]: actionResult.data
-        }, undefined, fetchLoadMatches); // Put all revalidating fetchers into the loading state, except for the
+        }, undefined // No need to send through errors since we short circuit above
+        ); // Put all revalidating fetchers into the loading state, except for the
         // current fetcher which we want to keep in it's current loading state which
         // contains it's action submission info + action data
-        revalidatingFetchers.filter((_ref5)=>{
-            let [staleKey] = _ref5;
-            return staleKey !== key;
-        }).forEach((_ref6)=>{
-            let [staleKey] = _ref6;
+        revalidatingFetchers.filter((rf)=>rf.key !== key).forEach((rf)=>{
+            let staleKey = rf.key;
             let existingFetcher = state.fetchers.get(staleKey);
             let revalidatingFetcher = {
                 state: "loading",
@@ -30704,22 +31152,23 @@ const isServer = !isBrowser; //#endregion
                 formMethod: undefined,
                 formAction: undefined,
                 formEncType: undefined,
-                formData: undefined
+                formData: undefined,
+                " _hasFetcherDoneAnything ": true
             };
             state.fetchers.set(staleKey, revalidatingFetcher);
-            fetchControllers.set(staleKey, abortController);
+            if (rf.controller) fetchControllers.set(staleKey, rf.controller);
         });
         updateState({
             fetchers: new Map(state.fetchers)
         });
+        let abortPendingFetchRevalidations = ()=>revalidatingFetchers.forEach((rf)=>abortFetcher(rf.key));
+        abortController.signal.addEventListener("abort", abortPendingFetchRevalidations);
         let { results , loaderResults , fetcherResults  } = await callLoadersAndMaybeResolveData(state.matches, matches, matchesToLoad, revalidatingFetchers, revalidationRequest);
         if (abortController.signal.aborted) return;
+        abortController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
         fetchReloadIds.delete(key);
         fetchControllers.delete(key);
-        revalidatingFetchers.forEach((_ref7)=>{
-            let [staleKey] = _ref7;
-            return fetchControllers.delete(staleKey);
-        });
+        revalidatingFetchers.forEach((r)=>fetchControllers.delete(r.key));
         let redirect = findRedirect(results);
         if (redirect) return startRedirectNavigation(state, redirect);
          // Process and commit output from loaders
@@ -30730,7 +31179,8 @@ const isServer = !isBrowser; //#endregion
             formMethod: undefined,
             formAction: undefined,
             formEncType: undefined,
-            formData: undefined
+            formData: undefined,
+            " _hasFetcherDoneAnything ": true
         };
         state.fetchers.set(key, doneFetcher);
         let didAbortFetchLoads = abortStaleFetchLoads(loadId); // If we are currently in a navigation loading state and this fetcher is
@@ -30751,7 +31201,7 @@ const isServer = !isBrowser; //#endregion
             // manually merge here since we aren't going through completeNavigation
             updateState(_extends({
                 errors,
-                loaderData: mergeLoaderData(state.loaderData, loaderData, matches)
+                loaderData: mergeLoaderData(state.loaderData, loaderData, matches, errors)
             }, didAbortFetchLoads ? {
                 fetchers: new Map(state.fetchers)
             } : {}));
@@ -30767,26 +31217,28 @@ const isServer = !isBrowser; //#endregion
             formEncType: undefined,
             formData: undefined
         }, submission, {
-            data: existingFetcher && existingFetcher.data
+            data: existingFetcher && existingFetcher.data,
+            " _hasFetcherDoneAnything ": true
         });
         state.fetchers.set(key, loadingFetcher);
         updateState({
             fetchers: new Map(state.fetchers)
         }); // Call the loader for this fetcher route match
         let abortController = new AbortController();
-        let fetchRequest = createClientSideRequest(path, abortController.signal);
+        let fetchRequest = createClientSideRequest(init.history, path, abortController.signal);
         fetchControllers.set(key, abortController);
-        let result = await callLoaderOrAction("loader", fetchRequest, match, matches, router.basename); // Deferred isn't supported or fetcher loads, await everything and treat it
+        let result = await callLoaderOrAction("loader", fetchRequest, match, matches, manifest, mapRouteProperties, basename); // Deferred isn't supported for fetcher loads, await everything and treat it
         // as a normal load.  resolveDeferredData will return undefined if this
         // fetcher gets aborted, so we just leave result untouched and short circuit
         // below if that happens
         if (isDeferredResult(result)) result = await resolveDeferredData(result, fetchRequest.signal, true) || result;
-         // We can delete this so long as we weren't aborted by ou our own fetcher
+         // We can delete this so long as we weren't aborted by our our own fetcher
         // re-load which would have put _new_ controller is in fetchControllers
         if (fetchControllers.get(key) === abortController) fetchControllers.delete(key);
         if (fetchRequest.signal.aborted) return;
          // If the loader threw a redirect Response, start a new REPLACE navigation
         if (isRedirectResult(result)) {
+            fetchRedirectIds.add(key);
             await startRedirectNavigation(state, result);
             return;
         } // Process any non-redirect errors thrown
@@ -30810,7 +31262,8 @@ const isServer = !isBrowser; //#endregion
             formMethod: undefined,
             formAction: undefined,
             formEncType: undefined,
-            formData: undefined
+            formData: undefined,
+            " _hasFetcherDoneAnything ": true
         };
         state.fetchers.set(key, doneFetcher);
         updateState({
@@ -30835,14 +31288,20 @@ const isServer = !isBrowser; //#endregion
    * navigation (including processed redirects).  This means that we never
    * actually touch history until we've processed redirects, so we just use
    * the history action from the original navigation (PUSH or REPLACE).
-   */ async function startRedirectNavigation(state, redirect, replace) {
+   */ async function startRedirectNavigation(state, redirect, _temp) {
         var _window;
+        let { submission , replace , isFetchActionRedirect  } = _temp === void 0 ? {} : _temp;
         if (redirect.revalidate) isRevalidationRequired = true;
-        let redirectLocation = createLocation(state.location, redirect.location);
-        invariant(redirectLocation, "Expected a location on the redirect navigation"); // Check if this an external redirect that goes to a new origin
-        if (typeof ((_window = window) == null ? void 0 : _window.location) !== "undefined") {
-            let newOrigin = createClientSideURL(redirect.location).origin;
-            if (window.location.origin !== newOrigin) {
+        let redirectLocation = createLocation(state.location, redirect.location, _extends({
+            _isRedirect: true
+        }, isFetchActionRedirect ? {
+            _isFetchActionRedirect: true
+        } : {}));
+        invariant(redirectLocation, "Expected a location on the redirect navigation"); // Check if this an absolute external redirect that goes to a new origin
+        if (ABSOLUTE_URL_REGEX.test(redirect.location) && isBrowser && typeof ((_window = window) == null ? void 0 : _window.location) !== "undefined") {
+            let url = init.history.createURL(redirect.location);
+            let isDifferentBasename = stripBasename(url.pathname, basename) == null;
+            if (window.location.origin !== url.origin || isDifferentBasename) {
                 if (replace) window.location.replace(redirect.location);
                 else window.location.assign(redirect.location);
                 return;
@@ -30850,17 +31309,39 @@ const isServer = !isBrowser; //#endregion
         } // There's no need to abort on redirects, since we don't detect the
         // redirect until the action/loaders have settled
         pendingNavigationController = null;
-        let redirectHistoryAction = replace === true ? Action.Replace : Action.Push;
-        let { formMethod , formAction , formEncType , formData  } = state.navigation; // If this was a 307/308 submission we want to preserve the HTTP method and
+        let redirectHistoryAction = replace === true ? Action.Replace : Action.Push; // Use the incoming submission if provided, fallback on the active one in
+        // state.navigation
+        let { formMethod , formAction , formEncType , formData  } = state.navigation;
+        if (!submission && formMethod && formAction && formData && formEncType) submission = {
+            formMethod,
+            formAction,
+            formEncType,
+            formData
+        };
+         // If this was a 307/308 submission we want to preserve the HTTP method and
         // re-submit the GET/POST/PUT/PATCH/DELETE as a submission navigation to the
         // redirected location
-        if (redirectPreserveMethodStatusCodes.has(redirect.status) && formMethod && isMutationMethod(formMethod) && formEncType && formData) await startNavigation(redirectHistoryAction, redirectLocation, {
-            submission: {
-                formMethod,
-                formAction: redirect.location,
-                formEncType,
-                formData
-            }
+        if (redirectPreserveMethodStatusCodes.has(redirect.status) && submission && isMutationMethod(submission.formMethod)) await startNavigation(redirectHistoryAction, redirectLocation, {
+            submission: _extends({}, submission, {
+                formAction: redirect.location
+            }),
+            // Preserve this flag across redirects
+            preventScrollReset: pendingPreventScrollReset
+        });
+        else if (isFetchActionRedirect) // For a fetch action redirect, we kick off a new loading navigation
+        // without the fetcher submission, but we send it along for shouldRevalidate
+        await startNavigation(redirectHistoryAction, redirectLocation, {
+            overrideNavigation: {
+                state: "loading",
+                location: redirectLocation,
+                formMethod: undefined,
+                formAction: undefined,
+                formEncType: undefined,
+                formData: undefined
+            },
+            fetcherSubmission: submission,
+            // Preserve this flag across redirects
+            preventScrollReset: pendingPreventScrollReset
         });
         else // Otherwise, we kick off a new loading navigation, preserving the
         // submission info for the duration of this navigation
@@ -30868,11 +31349,13 @@ const isServer = !isBrowser; //#endregion
             overrideNavigation: {
                 state: "loading",
                 location: redirectLocation,
-                formMethod: formMethod || undefined,
-                formAction: formAction || undefined,
-                formEncType: formEncType || undefined,
-                formData: formData || undefined
-            }
+                formMethod: submission ? submission.formMethod : undefined,
+                formAction: submission ? submission.formAction : undefined,
+                formEncType: submission ? submission.formEncType : undefined,
+                formData: submission ? submission.formData : undefined
+            },
+            // Preserve this flag across redirects
+            preventScrollReset: pendingPreventScrollReset
         });
     }
     async function callLoadersAndMaybeResolveData(currentMatches, matches, matchesToLoad, fetchersToLoad, request) {
@@ -30880,20 +31363,25 @@ const isServer = !isBrowser; //#endregion
         // then slice off the results into separate arrays so we can handle them
         // accordingly
         let results = await Promise.all([
-            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, router.basename)),
-            ...fetchersToLoad.map((_ref8)=>{
-                let [, href, match, fetchMatches] = _ref8;
-                return callLoaderOrAction("loader", createClientSideRequest(href, request.signal), match, fetchMatches, router.basename);
+            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename)),
+            ...fetchersToLoad.map((f)=>{
+                if (f.matches && f.match && f.controller) return callLoaderOrAction("loader", createClientSideRequest(init.history, f.path, f.controller.signal), f.match, f.matches, manifest, mapRouteProperties, basename);
+                else {
+                    let error = {
+                        type: ResultType.error,
+                        error: getInternalRouterError(404, {
+                            pathname: f.path
+                        })
+                    };
+                    return error;
+                }
             })
         ]);
         let loaderResults = results.slice(0, matchesToLoad.length);
         let fetcherResults = results.slice(matchesToLoad.length);
         await Promise.all([
-            resolveDeferredResults(currentMatches, matchesToLoad, loaderResults, request.signal, false, state.loaderData),
-            resolveDeferredResults(currentMatches, fetchersToLoad.map((_ref9)=>{
-                let [, , match] = _ref9;
-                return match;
-            }), fetcherResults, request.signal, true)
+            resolveDeferredResults(currentMatches, matchesToLoad, loaderResults, loaderResults.map(()=>request.signal), false, state.loaderData),
+            resolveDeferredResults(currentMatches, fetchersToLoad.map((f)=>f.match), fetcherResults, fetchersToLoad.map((f)=>f.controller ? f.controller.signal : null), true)
         ]);
         return {
             results,
@@ -30945,22 +31433,26 @@ const isServer = !isBrowser; //#endregion
                 formMethod: undefined,
                 formAction: undefined,
                 formEncType: undefined,
-                formData: undefined
+                formData: undefined,
+                " _hasFetcherDoneAnything ": true
             };
             state.fetchers.set(key, doneFetcher);
         }
     }
     function markFetchRedirectsDone() {
         let doneKeys = [];
+        let updatedFetchers = false;
         for (let key of fetchRedirectIds){
             let fetcher = state.fetchers.get(key);
             invariant(fetcher, "Expected fetcher: " + key);
             if (fetcher.state === "loading") {
                 fetchRedirectIds.delete(key);
                 doneKeys.push(key);
+                updatedFetchers = true;
             }
         }
         markFetchersDone(doneKeys);
+        return updatedFetchers;
     }
     function abortStaleFetchLoads(landedId) {
         let yeetedKeys = [];
@@ -30975,6 +31467,44 @@ const isServer = !isBrowser; //#endregion
         }
         markFetchersDone(yeetedKeys);
         return yeetedKeys.length > 0;
+    }
+    function getBlocker(key, fn) {
+        let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+        if (blockerFunctions.get(key) !== fn) blockerFunctions.set(key, fn);
+        return blocker;
+    }
+    function deleteBlocker(key) {
+        state.blockers.delete(key);
+        blockerFunctions.delete(key);
+    } // Utility function to update blockers, ensuring valid state transitions
+    function updateBlocker(key, newBlocker) {
+        let blocker = state.blockers.get(key) || IDLE_BLOCKER; // Poor mans state machine :)
+        // https://mermaid.live/edit#pako:eNqVkc9OwzAMxl8l8nnjAYrEtDIOHEBIgwvKJTReGy3_lDpIqO27k6awMG0XcrLlnz87nwdonESogKXXBuE79rq75XZO3-yHds0RJVuv70YrPlUrCEe2HfrORS3rubqZfuhtpg5C9wk5tZ4VKcRUq88q9Z8RS0-48cE1iHJkL0ugbHuFLus9L6spZy8nX9MP2CNdomVaposqu3fGayT8T8-jJQwhepo_UtpgBQaDEUom04dZhAN1aJBDlUKJBxE1ceB2Smj0Mln-IBW5AFU2dwUiktt_2Qaq2dBfaKdEup85UV7Yd-dKjlnkabl2Pvr0DTkTreM
+        invariant(blocker.state === "unblocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "proceeding" || blocker.state === "blocked" && newBlocker.state === "unblocked" || blocker.state === "proceeding" && newBlocker.state === "unblocked", "Invalid blocker state transition: " + blocker.state + " -> " + newBlocker.state);
+        state.blockers.set(key, newBlocker);
+        updateState({
+            blockers: new Map(state.blockers)
+        });
+    }
+    function shouldBlockNavigation(_ref2) {
+        let { currentLocation , nextLocation , historyAction  } = _ref2;
+        if (blockerFunctions.size === 0) return;
+         // We ony support a single active blocker at the moment since we don't have
+        // any compelling use cases for multi-blocker yet
+        if (blockerFunctions.size > 1) warning(false, "A router only supports one blocker at a time");
+        let entries = Array.from(blockerFunctions.entries());
+        let [blockerKey, blockerFunction] = entries[entries.length - 1];
+        let blocker = state.blockers.get(blockerKey);
+        if (blocker && blocker.state === "proceeding") // If the blocker is currently proceeding, we don't need to re-check
+        // it and can let this navigation continue
+        return;
+         // At this point, we know we're unblocked/blocked so we need to check the
+        // user-provided blocker function
+        if (blockerFunction({
+            currentLocation,
+            nextLocation,
+            historyAction
+        })) return blockerKey;
     }
     function cancelActiveDeferreds(predicate) {
         let cancelledRouteIds = [];
@@ -31026,9 +31556,13 @@ const isServer = !isBrowser; //#endregion
         }
         return null;
     }
+    function _internalSetRoutes(newRoutes) {
+        manifest = {};
+        inFlightDataRoutes = convertRoutesToDataRoutes(newRoutes, mapRouteProperties, undefined, manifest);
+    }
     router = {
         get basename () {
-            return init.basename;
+            return basename;
         },
         get state () {
             return state;
@@ -31049,18 +31583,34 @@ const isServer = !isBrowser; //#endregion
         getFetcher,
         deleteFetcher,
         dispose,
+        getBlocker,
+        deleteBlocker,
         _internalFetchControllers: fetchControllers,
-        _internalActiveDeferreds: activeDeferreds
+        _internalActiveDeferreds: activeDeferreds,
+        // TODO: Remove setRoutes, it's temporary to avoid dealing with
+        // updating the tree while validating the update algorithm.
+        _internalSetRoutes
     };
     return router;
 } //#endregion
 ////////////////////////////////////////////////////////////////////////////////
 //#region createStaticHandler
 ////////////////////////////////////////////////////////////////////////////////
-function unstable_createStaticHandler(routes, opts) {
-    invariant(routes.length > 0, "You must provide a non-empty routes array to unstable_createStaticHandler");
-    let dataRoutes = convertRoutesToDataRoutes(routes);
+const UNSAFE_DEFERRED_SYMBOL = Symbol("deferred");
+function createStaticHandler(routes, opts) {
+    invariant(routes.length > 0, "You must provide a non-empty routes array to createStaticHandler");
+    let manifest = {};
     let basename = (opts ? opts.basename : null) || "/";
+    let mapRouteProperties;
+    if (opts != null && opts.mapRouteProperties) mapRouteProperties = opts.mapRouteProperties;
+    else if (opts != null && opts.detectErrorBoundary) {
+        // If they are still using the deprecated version, wrap it with the new API
+        let detectErrorBoundary = opts.detectErrorBoundary;
+        mapRouteProperties = (route)=>({
+                hasErrorBoundary: detectErrorBoundary(route)
+            });
+    } else mapRouteProperties = defaultMapRouteProperties;
+    let dataRoutes = convertRoutesToDataRoutes(routes, mapRouteProperties, undefined, manifest);
     /**
    * The query() method is intended for document requests, in which we want to
    * call an optional action and potentially multiple loaders for all nested
@@ -31079,13 +31629,13 @@ function unstable_createStaticHandler(routes, opts) {
    * redirect response is returned or thrown from any action/loader.  We
    * propagate that out and return the raw Response so the HTTP server can
    * return it directly.
-   */ async function query(request, _temp) {
-        let { requestContext  } = _temp === void 0 ? {} : _temp;
+   */ async function query(request, _temp2) {
+        let { requestContext  } = _temp2 === void 0 ? {} : _temp2;
         let url = new URL(request.url);
-        let method = request.method.toLowerCase();
+        let method = request.method;
         let location = createLocation("", createPath(url), null, "default");
         let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
-        if (!isValidMethod(method) && method !== "head") {
+        if (!isValidMethod(method) && method !== "HEAD") {
             let error = getInternalRouterError(405, {
                 method
             });
@@ -31101,13 +31651,14 @@ function unstable_createStaticHandler(routes, opts) {
                 },
                 statusCode: error.status,
                 loaderHeaders: {},
-                actionHeaders: {}
+                actionHeaders: {},
+                activeDeferreds: null
             };
         } else if (!matches) {
-            let error1 = getInternalRouterError(404, {
+            let error = getInternalRouterError(404, {
                 pathname: location.pathname
             });
-            let { matches: notFoundMatches , route: route1  } = getShortCircuitMatches(dataRoutes);
+            let { matches: notFoundMatches , route  } = getShortCircuitMatches(dataRoutes);
             return {
                 basename,
                 location,
@@ -31115,11 +31666,12 @@ function unstable_createStaticHandler(routes, opts) {
                 loaderData: {},
                 actionData: null,
                 errors: {
-                    [route1.id]: error1
+                    [route.id]: error
                 },
-                statusCode: error1.status,
+                statusCode: error.status,
                 loaderHeaders: {},
-                actionHeaders: {}
+                actionHeaders: {},
+                activeDeferreds: null
             };
         }
         let result = await queryImpl(request, location, matches, requestContext);
@@ -31151,13 +31703,13 @@ function unstable_createStaticHandler(routes, opts) {
    * serialize the error as they see fit while including the proper response
    * code.  Examples here are 404 and 405 errors that occur prior to reaching
    * any user-defined loaders.
-   */ async function queryRoute(request, _temp2) {
-        let { routeId , requestContext  } = _temp2 === void 0 ? {} : _temp2;
+   */ async function queryRoute(request, _temp3) {
+        let { routeId , requestContext  } = _temp3 === void 0 ? {} : _temp3;
         let url = new URL(request.url);
-        let method = request.method.toLowerCase();
+        let method = request.method;
         let location = createLocation("", createPath(url), null, "default");
         let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
-        if (!isValidMethod(method) && method !== "head") throw getInternalRouterError(405, {
+        if (!isValidMethod(method) && method !== "HEAD" && method !== "OPTIONS") throw getInternalRouterError(405, {
             method
         });
         else if (!matches) throw getInternalRouterError(404, {
@@ -31181,11 +31733,14 @@ function unstable_createStaticHandler(routes, opts) {
         // preserve the "error" state outside of queryImpl.
         throw error;
          // Pick off the right state value to return
-        let routeData = [
-            result.actionData,
-            result.loaderData
-        ].find((v)=>v);
-        return Object.values(routeData || {})[0];
+        if (result.actionData) return Object.values(result.actionData)[0];
+        if (result.loaderData) {
+            var _result$activeDeferre;
+            let data = Object.values(result.loaderData)[0];
+            if ((_result$activeDeferre = result.activeDeferreds) != null && _result$activeDeferre[match.route.id]) data[UNSAFE_DEFERRED_SYMBOL] = result.activeDeferreds[match.route.id];
+            return data;
+        }
+        return undefined;
     }
     async function queryImpl(request, location, matches, requestContext, routeMatch) {
         invariant(request.signal, "query()/queryRoute() requests must contain an AbortController signal");
@@ -31194,8 +31749,8 @@ function unstable_createStaticHandler(routes, opts) {
                 let result = await submit(request, matches, routeMatch || getTargetMatch(matches, location), requestContext, routeMatch != null);
                 return result;
             }
-            let result1 = await loadRouteData(request, matches, requestContext, routeMatch);
-            return isResponse(result1) ? result1 : _extends({}, result1, {
+            let result = await loadRouteData(request, matches, requestContext, routeMatch);
+            return isResponse(result) ? result : _extends({}, result, {
                 actionData: null,
                 actionHeaders: {}
             });
@@ -31214,7 +31769,7 @@ function unstable_createStaticHandler(routes, opts) {
     }
     async function submit(request, matches, actionMatch, requestContext, isRouteRequest) {
         let result;
-        if (!actionMatch.route.action) {
+        if (!actionMatch.route.action && !actionMatch.route.lazy) {
             let error = getInternalRouterError(405, {
                 method: request.method,
                 pathname: new URL(request.url).pathname,
@@ -31226,7 +31781,7 @@ function unstable_createStaticHandler(routes, opts) {
                 error
             };
         } else {
-            result = await callLoaderOrAction("action", request, actionMatch, matches, basename, true, isRouteRequest, requestContext);
+            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename, true, isRouteRequest, requestContext);
             if (request.signal.aborted) {
                 let method = isRouteRequest ? "queryRoute" : "query";
                 throw new Error(method + "() call aborted");
@@ -31242,7 +31797,16 @@ function unstable_createStaticHandler(routes, opts) {
                 Location: result.location
             }
         });
-        if (isDeferredResult(result)) throw new Error("defer() is not supported in actions");
+        if (isDeferredResult(result)) {
+            let error = getInternalRouterError(400, {
+                type: "defer-action"
+            });
+            if (isRouteRequest) throw error;
+            result = {
+                type: ResultType.error,
+                error
+            };
+        }
         if (isRouteRequest) {
             // Note: This should only be non-Response values if we get here, since
             // isRouteRequest should throw any Response received in callLoaderOrAction
@@ -31260,7 +31824,8 @@ function unstable_createStaticHandler(routes, opts) {
                 // return the raw Response or value
                 statusCode: 200,
                 loaderHeaders: {},
-                actionHeaders: {}
+                actionHeaders: {},
+                activeDeferreds: null
             };
         }
         if (isErrorResult(result)) {
@@ -31283,8 +31848,8 @@ function unstable_createStaticHandler(routes, opts) {
             redirect: request.redirect,
             signal: request.signal
         });
-        let context1 = await loadRouteData(loaderRequest, matches, requestContext);
-        return _extends({}, context1, result.statusCode ? {
+        let context = await loadRouteData(loaderRequest, matches, requestContext);
+        return _extends({}, context, result.statusCode ? {
             statusCode: result.statusCode
         } : {}, {
             actionData: {
@@ -31297,7 +31862,7 @@ function unstable_createStaticHandler(routes, opts) {
     }
     async function loadRouteData(request, matches, requestContext, routeMatch, pendingActionError) {
         let isRouteRequest = routeMatch != null; // Short circuit if we have no loaders to run (queryRoute())
-        if (isRouteRequest && !(routeMatch != null && routeMatch.route.loader)) throw getInternalRouterError(400, {
+        if (isRouteRequest && !(routeMatch != null && routeMatch.route.loader) && !(routeMatch != null && routeMatch.route.lazy)) throw getInternalRouterError(400, {
             method: request.method,
             pathname: new URL(request.url).pathname,
             routeId: routeMatch == null ? void 0 : routeMatch.route.id
@@ -31305,28 +31870,34 @@ function unstable_createStaticHandler(routes, opts) {
         let requestMatches = routeMatch ? [
             routeMatch
         ] : getLoaderMatchesUntilBoundary(matches, Object.keys(pendingActionError || {})[0]);
-        let matchesToLoad = requestMatches.filter((m)=>m.route.loader); // Short circuit if we have no loaders to run (query())
+        let matchesToLoad = requestMatches.filter((m)=>m.route.loader || m.route.lazy); // Short circuit if we have no loaders to run (query())
         if (matchesToLoad.length === 0) return {
             matches,
-            loaderData: {},
+            // Add a null for all matched routes for proper revalidation on the client
+            loaderData: matches.reduce((acc, m)=>Object.assign(acc, {
+                    [m.route.id]: null
+                }), {}),
             errors: pendingActionError || null,
             statusCode: 200,
-            loaderHeaders: {}
+            loaderHeaders: {},
+            activeDeferreds: null
         };
         let results = await Promise.all([
-            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, basename, true, isRouteRequest, requestContext))
+            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename, true, isRouteRequest, requestContext))
         ]);
         if (request.signal.aborted) {
             let method = isRouteRequest ? "queryRoute" : "query";
             throw new Error(method + "() call aborted");
-        } // Can't do anything with these without the Remix side of things, so just
-        // cancel them for now
-        results.forEach((result)=>{
-            if (isDeferredResult(result)) result.deferredData.cancel();
-        }); // Process and commit output from loaders
-        let context = processRouteLoaderData(matches, matchesToLoad, results, pendingActionError);
+        } // Process and commit output from loaders
+        let activeDeferreds = new Map();
+        let context = processRouteLoaderData(matches, matchesToLoad, results, pendingActionError, activeDeferreds); // Add a null for any non-loader matches for proper revalidation on the client
+        let executedLoaders = new Set(matchesToLoad.map((match)=>match.route.id));
+        matches.forEach((match)=>{
+            if (!executedLoaders.has(match.route.id)) context.loaderData[match.route.id] = null;
+        });
         return _extends({}, context, {
-            matches
+            matches,
+            activeDeferreds: activeDeferreds.size > 0 ? Object.fromEntries(activeDeferreds.entries()) : null
         });
     }
     return {
@@ -31352,11 +31923,48 @@ function unstable_createStaticHandler(routes, opts) {
 }
 function isSubmissionNavigation(opts) {
     return opts != null && "formData" in opts;
+}
+function normalizeTo(location, matches, basename, prependBasename, to, fromRouteId, relative) {
+    let contextualMatches;
+    let activeRouteMatch;
+    if (fromRouteId != null && relative !== "path") {
+        // Grab matches up to the calling route so our route-relative logic is
+        // relative to the correct source route.  When using relative:path,
+        // fromRouteId is ignored since that is always relative to the current
+        // location path
+        contextualMatches = [];
+        for (let match of matches){
+            contextualMatches.push(match);
+            if (match.route.id === fromRouteId) {
+                activeRouteMatch = match;
+                break;
+            }
+        }
+    } else {
+        contextualMatches = matches;
+        activeRouteMatch = matches[matches.length - 1];
+    } // Resolve the relative path
+    let path = resolveTo(to ? to : ".", getPathContributingMatches(contextualMatches).map((m)=>m.pathnameBase), stripBasename(location.pathname, basename) || location.pathname, relative === "path"); // When `to` is not specified we inherit search/hash from the current
+    // location, unlike when to="." and we just inherit the path.
+    // See https://github.com/remix-run/remix/issues/927
+    if (to == null) {
+        path.search = location.search;
+        path.hash = location.hash;
+    } // Add an ?index param for matched index routes if we don't already have one
+    if ((to == null || to === "" || to === ".") && activeRouteMatch && activeRouteMatch.route.index && !hasNakedIndexQuery(path.search)) path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+     // If we're operating within a basename, prepend it to the pathname.  If
+    // this is a root navigation, then just use the raw basename which allows
+    // the basename to have full control over the presence of a trailing slash
+    // on root actions
+    if (prependBasename && basename !== "/") path.pathname = path.pathname === "/" ? basename : joinPaths([
+        basename,
+        path.pathname
+    ]);
+    return createPath(path);
 } // Normalize navigation options by converting formMethod=GET formData objects to
 // URLSearchParams so they behave identically to links with query params
-function normalizeNavigateOptions(to, opts, isFetcher) {
-    if (isFetcher === void 0) isFetcher = false;
-    let path = typeof to === "string" ? to : createPath(to); // Return location verbatim on non-submission navigations
+function normalizeNavigateOptions(normalizeFormMethod, isFetcher, path, opts) {
+    // Return location verbatim on non-submission navigations
     if (!opts || !isSubmissionNavigation(opts)) return {
         path
     };
@@ -31369,8 +31977,9 @@ function normalizeNavigateOptions(to, opts, isFetcher) {
      // Create a Submission on non-GET navigations
     let submission;
     if (opts.formData) {
+        let formMethod = opts.formMethod || "get";
         submission = {
-            formMethod: opts.formMethod || "get",
+            formMethod: normalizeFormMethod ? formMethod.toUpperCase() : formMethod.toLowerCase(),
             formAction: stripHashFromPath(path),
             formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
             formData: opts.formData
@@ -31381,18 +31990,11 @@ function normalizeNavigateOptions(to, opts, isFetcher) {
         };
     } // Flatten submission onto URLSearchParams for GET submissions
     let parsedPath = parsePath(path);
-    try {
-        let searchParams = convertFormDataToSearchParams(opts.formData); // Since fetcher GET submissions only run a single loader (as opposed to
-        // navigation GET submissions which run all loaders), we need to preserve
-        // any incoming ?index params
-        if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) searchParams.append("index", "");
-        parsedPath.search = "?" + searchParams;
-    } catch (e) {
-        return {
-            path,
-            error: getInternalRouterError(400)
-        };
-    }
+    let searchParams = convertFormDataToSearchParams(opts.formData); // On GET navigation submissions we can drop the ?index param from the
+    // resulting location since all loaders will run.  But fetcher GET submissions
+    // only run a single loader so we need to preserve any incoming ?index params
+    if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) searchParams.append("index", "");
+    parsedPath.search = "?" + searchParams;
     return {
         path: createPath(parsedPath),
         submission
@@ -31407,31 +32009,86 @@ function getLoaderMatchesUntilBoundary(matches, boundaryId) {
     }
     return boundaryMatches;
 }
-function getMatchesToLoad(state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, pendingActionData, pendingError, fetchLoadMatches) {
-    let actionResult = pendingError ? Object.values(pendingError)[0] : pendingActionData ? Object.values(pendingActionData)[0] : null; // Pick navigation matches that are net-new or qualify for revalidation
+function getMatchesToLoad(history, state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, pendingActionData, pendingError) {
+    let actionResult = pendingError ? Object.values(pendingError)[0] : pendingActionData ? Object.values(pendingActionData)[0] : undefined;
+    let currentUrl = history.createURL(state.location);
+    let nextUrl = history.createURL(location); // Pick navigation matches that are net-new or qualify for revalidation
     let boundaryId = pendingError ? Object.keys(pendingError)[0] : undefined;
     let boundaryMatches = getLoaderMatchesUntilBoundary(matches, boundaryId);
-    let navigationMatches = boundaryMatches.filter((match, index)=>match.route.loader != null && (isNewLoader(state.loaderData, state.matches[index], match) || // If this route had a pending deferred cancelled it must be revalidated
-        cancelledDeferredRoutes.some((id)=>id === match.route.id) || shouldRevalidateLoader(state.location, state.matches[index], submission, location, match, isRevalidationRequired, actionResult))); // Pick fetcher.loads that need to be revalidated
+    let navigationMatches = boundaryMatches.filter((match, index)=>{
+        if (match.route.lazy) // We haven't loaded this route yet so we don't know if it's got a loader!
+        return true;
+        if (match.route.loader == null) return false;
+         // Always call the loader on new route instances and pending defer cancellations
+        if (isNewLoader(state.loaderData, state.matches[index], match) || cancelledDeferredRoutes.some((id)=>id === match.route.id)) return true;
+         // This is the default implementation for when we revalidate.  If the route
+        // provides it's own implementation, then we give them full control but
+        // provide this value so they can leverage it if needed after they check
+        // their own specific use cases
+        let currentRouteMatch = state.matches[index];
+        let nextRouteMatch = match;
+        return shouldRevalidateLoader(match, _extends({
+            currentUrl,
+            currentParams: currentRouteMatch.params,
+            nextUrl,
+            nextParams: nextRouteMatch.params
+        }, submission, {
+            actionResult,
+            defaultShouldRevalidate: isRevalidationRequired || // Clicked the same link, resubmitted a GET form
+            currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search || // Search params affect all loaders
+            currentUrl.search !== nextUrl.search || isNewRouteInstance(currentRouteMatch, nextRouteMatch)
+        }));
+    }); // Pick fetcher.loads that need to be revalidated
     let revalidatingFetchers = [];
-    fetchLoadMatches && fetchLoadMatches.forEach((_ref10, key)=>{
-        let [href, match, fetchMatches] = _ref10;
-        // This fetcher was cancelled from a prior action submission - force reload
-        if (cancelledFetcherLoads.includes(key)) revalidatingFetchers.push([
-            key,
-            href,
-            match,
-            fetchMatches
-        ]);
-        else if (isRevalidationRequired) {
-            let shouldRevalidate = shouldRevalidateLoader(href, match, submission, href, match, isRevalidationRequired, actionResult);
-            if (shouldRevalidate) revalidatingFetchers.push([
+    fetchLoadMatches.forEach((f, key)=>{
+        // Don't revalidate if fetcher won't be present in the subsequent render
+        if (!matches.some((m)=>m.route.id === f.routeId)) return;
+        let fetcherMatches = matchRoutes(routesToUse, f.path, basename); // If the fetcher path no longer matches, push it in with null matches so
+        // we can trigger a 404 in callLoadersAndMaybeResolveData
+        if (!fetcherMatches) {
+            revalidatingFetchers.push({
                 key,
-                href,
-                match,
-                fetchMatches
-            ]);
+                routeId: f.routeId,
+                path: f.path,
+                matches: null,
+                match: null,
+                controller: null
+            });
+            return;
         }
+        let fetcherMatch = getTargetMatch(fetcherMatches, f.path);
+        if (cancelledFetcherLoads.includes(key)) {
+            revalidatingFetchers.push({
+                key,
+                routeId: f.routeId,
+                path: f.path,
+                matches: fetcherMatches,
+                match: fetcherMatch,
+                controller: new AbortController()
+            });
+            return;
+        } // Revalidating fetchers are decoupled from the route matches since they
+        // hit a static href, so they _always_ check shouldRevalidate and the
+        // default is strictly if a revalidation is explicitly required (action
+        // submissions, useRevalidator, X-Remix-Revalidate).
+        let shouldRevalidate = shouldRevalidateLoader(fetcherMatch, _extends({
+            currentUrl,
+            currentParams: state.matches[state.matches.length - 1].params,
+            nextUrl,
+            nextParams: matches[matches.length - 1].params
+        }, submission, {
+            actionResult,
+            // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
+            defaultShouldRevalidate: isRevalidationRequired
+        }));
+        if (shouldRevalidate) revalidatingFetchers.push({
+            key,
+            routeId: f.routeId,
+            path: f.path,
+            matches: fetcherMatches,
+            match: fetcherMatch,
+            controller: new AbortController()
+        });
     });
     return [
         navigationMatches,
@@ -31449,50 +32106,64 @@ function isNewRouteInstance(currentMatch, match) {
     let currentPath = currentMatch.route.path;
     return currentMatch.pathname !== match.pathname || // splat param changed, which is not present in match.path
     // e.g. /files/images/avatar.jpg -> files/finances.xls
-    currentPath && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"];
+    currentPath != null && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"];
 }
-function shouldRevalidateLoader(currentLocation, currentMatch, submission, location, match, isRevalidationRequired, actionResult) {
-    let currentUrl = createClientSideURL(currentLocation);
-    let currentParams = currentMatch.params;
-    let nextUrl = createClientSideURL(location);
-    let nextParams = match.params; // This is the default implementation as to when we revalidate.  If the route
-    // provides it's own implementation, then we give them full control but
-    // provide this value so they can leverage it if needed after they check
-    // their own specific use cases
-    // Note that fetchers always provide the same current/next locations so the
-    // URL-based checks here don't apply to fetcher shouldRevalidate calls
-    let defaultShouldRevalidate = isNewRouteInstance(currentMatch, match) || // Clicked the same link, resubmitted a GET form
-    currentUrl.toString() === nextUrl.toString() || // Search params affect all loaders
-    currentUrl.search !== nextUrl.search || // Forced revalidation due to submission, useRevalidate, or X-Remix-Revalidate
-    isRevalidationRequired;
-    if (match.route.shouldRevalidate) {
-        let routeChoice = match.route.shouldRevalidate(_extends({
-            currentUrl,
-            currentParams,
-            nextUrl,
-            nextParams
-        }, submission, {
-            actionResult,
-            defaultShouldRevalidate
-        }));
+function shouldRevalidateLoader(loaderMatch, arg) {
+    if (loaderMatch.route.shouldRevalidate) {
+        let routeChoice = loaderMatch.route.shouldRevalidate(arg);
         if (typeof routeChoice === "boolean") return routeChoice;
     }
-    return defaultShouldRevalidate;
+    return arg.defaultShouldRevalidate;
 }
-async function callLoaderOrAction(type, request, match, matches, basename, isStaticRequest, isRouteRequest, requestContext) {
-    if (basename === void 0) basename = "/";
+/**
+ * Execute route.lazy() methods to lazily load route modules (loader, action,
+ * shouldRevalidate) and update the routeManifest in place which shares objects
+ * with dataRoutes so those get updated as well.
+ */ async function loadLazyRouteModule(route, mapRouteProperties, manifest) {
+    if (!route.lazy) return;
+    let lazyRoute = await route.lazy(); // If the lazy route function was executed and removed by another parallel
+    // call then we can return - first lazy() to finish wins because the return
+    // value of lazy is expected to be static
+    if (!route.lazy) return;
+    let routeToUpdate = manifest[route.id];
+    invariant(routeToUpdate, "No route found in manifest"); // Update the route in place.  This should be safe because there's no way
+    // we could yet be sitting on this route as we can't get there without
+    // resolving lazy() first.
+    //
+    // This is different than the HMR "update" use-case where we may actively be
+    // on the route being updated.  The main concern boils down to "does this
+    // mutation affect any ongoing navigations or any current state.matches
+    // values?".  If not, it should be safe to update in place.
+    let routeUpdates = {};
+    for(let lazyRouteProperty in lazyRoute){
+        let staticRouteValue = routeToUpdate[lazyRouteProperty];
+        let isPropertyStaticallyDefined = staticRouteValue !== undefined && // This property isn't static since it should always be updated based
+        // on the route updates
+        lazyRouteProperty !== "hasErrorBoundary";
+        warning(!isPropertyStaticallyDefined, 'Route "' + routeToUpdate.id + '" has a static property "' + lazyRouteProperty + '" ' + "defined but its lazy function is also returning a value for this property. " + ('The lazy route property "' + lazyRouteProperty + '" will be ignored.'));
+        if (!isPropertyStaticallyDefined && !immutableRouteKeys.has(lazyRouteProperty)) routeUpdates[lazyRouteProperty] = lazyRoute[lazyRouteProperty];
+    } // Mutate the route with the provided updates.  Do this first so we pass
+    // the updated version to mapRouteProperties
+    Object.assign(routeToUpdate, routeUpdates); // Mutate the `hasErrorBoundary` property on the route based on the route
+    // updates and remove the `lazy` function so we don't resolve the lazy
+    // route again.
+    Object.assign(routeToUpdate, _extends({}, mapRouteProperties(routeToUpdate), {
+        lazy: undefined
+    }));
+}
+async function callLoaderOrAction(type, request, match, matches, manifest, mapRouteProperties, basename, isStaticRequest, isRouteRequest, requestContext) {
     if (isStaticRequest === void 0) isStaticRequest = false;
     if (isRouteRequest === void 0) isRouteRequest = false;
     let resultType;
-    let result; // Setup a promise we can race against so that abort signals short circuit
-    let reject;
-    let abortPromise = new Promise((_, r)=>reject = r);
-    let onReject = ()=>reject();
-    request.signal.addEventListener("abort", onReject);
-    try {
-        let handler = match.route[type];
-        invariant(handler, "Could not find the " + type + ' to run on the "' + match.route.id + '" route');
-        result = await Promise.race([
+    let result;
+    let onReject;
+    let runHandler = (handler)=>{
+        // Setup a promise we can race against so that abort signals short circuit
+        let reject;
+        let abortPromise = new Promise((_, r)=>reject = r);
+        onReject = ()=>reject();
+        request.signal.addEventListener("abort", onReject);
+        return Promise.race([
             handler({
                 request,
                 params: match.params,
@@ -31500,32 +32171,68 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
             }),
             abortPromise
         ]);
+    };
+    try {
+        let handler = match.route[type];
+        if (match.route.lazy) {
+            if (handler) {
+                // Run statically defined handler in parallel with lazy()
+                let values = await Promise.all([
+                    runHandler(handler),
+                    loadLazyRouteModule(match.route, mapRouteProperties, manifest)
+                ]);
+                result = values[0];
+            } else {
+                // Load lazy route module, then run any returned handler
+                await loadLazyRouteModule(match.route, mapRouteProperties, manifest);
+                handler = match.route[type];
+                if (handler) // Handler still run even if we got interrupted to maintain consistency
+                // with un-abortable behavior of handler execution on non-lazy or
+                // previously-lazy-loaded routes
+                result = await runHandler(handler);
+                else if (type === "action") {
+                    let url = new URL(request.url);
+                    let pathname = url.pathname + url.search;
+                    throw getInternalRouterError(405, {
+                        method: request.method,
+                        pathname,
+                        routeId: match.route.id
+                    });
+                } else // lazy() route has no loader to run.  Short circuit here so we don't
+                // hit the invariant below that errors on returning undefined.
+                return {
+                    type: ResultType.data,
+                    data: undefined
+                };
+            }
+        } else if (!handler) {
+            let url = new URL(request.url);
+            let pathname = url.pathname + url.search;
+            throw getInternalRouterError(404, {
+                pathname
+            });
+        } else result = await runHandler(handler);
         invariant(result !== undefined, "You defined " + (type === "action" ? "an action" : "a loader") + " for route " + ('"' + match.route.id + "\" but didn't return anything from your `" + type + "` ") + "function. Please return a value or `null`.");
     } catch (e) {
         resultType = ResultType.error;
         result = e;
     } finally{
-        request.signal.removeEventListener("abort", onReject);
+        if (onReject) request.signal.removeEventListener("abort", onReject);
     }
     if (isResponse(result)) {
         let status = result.status; // Process redirects
         if (redirectStatusCodes.has(status)) {
             let location = result.headers.get("Location");
-            invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header");
-            let isAbsolute = /^[a-z+]+:\/\//i.test(location) || location.startsWith("//"); // Support relative routing in internal redirects
-            if (!isAbsolute) {
-                let activeMatches = matches.slice(0, matches.indexOf(match) + 1);
-                let routePathnames = getPathContributingMatches(activeMatches).map((match)=>match.pathnameBase);
-                let resolvedLocation = resolveTo(location, routePathnames, new URL(request.url).pathname);
-                invariant(createPath(resolvedLocation), "Unable to resolve redirect location: " + location); // Prepend the basename to the redirect location if we have one
-                if (basename) {
-                    let path = resolvedLocation.pathname;
-                    resolvedLocation.pathname = path === "/" ? basename : joinPaths([
-                        basename,
-                        path
-                    ]);
-                }
-                location = createPath(resolvedLocation);
+            invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header"); // Support relative routing in internal redirects
+            if (!ABSOLUTE_URL_REGEX.test(location)) location = normalizeTo(new URL(request.url), matches.slice(0, matches.indexOf(match) + 1), basename, true, location);
+            else if (!isStaticRequest) {
+                // Strip off the protocol+origin for same-origin + same-basename absolute
+                // redirects. If this is a static request, we can let it go back to the
+                // browser as-is
+                let currentUrl = new URL(request.url);
+                let url = location.startsWith("//") ? new URL(currentUrl.protocol + location) : new URL(location);
+                let isSameBasename = stripBasename(url.pathname, basename) != null;
+                if (url.origin === currentUrl.origin && isSameBasename) location = url.pathname + url.search + url.hash;
             } // Don't process redirects in the router during static requests requests.
             // Instead, throw the Response and let the server handle it with an HTTP
             // redirect.  We also update the Location header in place in this flow so
@@ -31549,8 +32256,9 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
             response: result
         };
         let data;
-        let contentType = result.headers.get("Content-Type");
-        if (contentType && contentType.startsWith("application/json")) data = await result.json();
+        let contentType = result.headers.get("Content-Type"); // Check between word boundaries instead of startsWith() due to the last
+        // paragraph of https://httpwg.org/specs/rfc9110.html#field.content-type
+        if (contentType && /\bapplication\/json\b/.test(contentType)) data = await result.json();
         else data = await result.text();
         if (resultType === ResultType.error) return {
             type: resultType,
@@ -31568,10 +32276,15 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
         type: resultType,
         error: result
     };
-    if (result instanceof DeferredData) return {
-        type: ResultType.deferred,
-        deferredData: result
-    };
+    if (isDeferredData(result)) {
+        var _result$init, _result$init2;
+        return {
+            type: ResultType.deferred,
+            deferredData: result,
+            statusCode: (_result$init = result.init) == null ? void 0 : _result$init.status,
+            headers: ((_result$init2 = result.init) == null ? void 0 : _result$init2.headers) && new Headers(result.init.headers)
+        };
+    }
     return {
         type: ResultType.data,
         data: result
@@ -31579,13 +32292,15 @@ async function callLoaderOrAction(type, request, match, matches, basename, isSta
 } // Utility method for creating the Request instances for loaders/actions during
 // client-side navigations and fetches.  During SSR we will always have a
 // Request instance from the static handler (query/queryRoute)
-function createClientSideRequest(location, signal, submission) {
-    let url = createClientSideURL(stripHashFromPath(location)).toString();
+function createClientSideRequest(history, location, signal, submission) {
+    let url = history.createURL(stripHashFromPath(location)).toString();
     let init = {
         signal
     };
     if (submission && isMutationMethod(submission.formMethod)) {
-        let { formMethod , formEncType , formData  } = submission;
+        let { formMethod , formEncType , formData  } = submission; // Didn't think we needed this but it turns out unlike other methods, patch
+        // won't be properly normalized to uppercase and results in a 405 error.
+        // See: https://fetch.spec.whatwg.org/#concept-method
         init.method = formMethod.toUpperCase();
         init.body = formEncType === "application/x-www-form-urlencoded" ? convertFormDataToSearchParams(formData) : formData;
     } // Content-Type is inferred (https://fetch.spec.whatwg.org/#dom-request)
@@ -31593,10 +32308,8 @@ function createClientSideRequest(location, signal, submission) {
 }
 function convertFormDataToSearchParams(formData) {
     let searchParams = new URLSearchParams();
-    for (let [key, value] of formData.entries()){
-        invariant(typeof value === "string", 'File inputs are not supported with encType "application/x-www-form-urlencoded", please use "multipart/form-data" instead.');
-        searchParams.append(key, value);
-    }
+    for (let [key, value] of formData.entries())// https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#converting-an-entry-list-to-a-list-of-name-value-pairs
+    searchParams.append(key, value instanceof File ? value.name : value);
     return searchParams;
 }
 function processRouteLoaderData(matches, matchesToLoad, results, pendingError, activeDeferreds) {
@@ -31622,25 +32335,31 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
             }
             errors = errors || {}; // Prefer higher error values if lower errors bubble to the same boundary
             if (errors[boundaryMatch.route.id] == null) errors[boundaryMatch.route.id] = error;
-             // Once we find our first (highest) error, we set the status code and
+             // Clear our any prior loaderData for the throwing route
+            loaderData[id] = undefined; // Once we find our first (highest) error, we set the status code and
             // prevent deeper status codes from overriding
             if (!foundError) {
                 foundError = true;
                 statusCode = isRouteErrorResponse(result.error) ? result.error.status : 500;
             }
             if (result.headers) loaderHeaders[id] = result.headers;
-        } else if (isDeferredResult(result)) {
-            activeDeferreds && activeDeferreds.set(id, result.deferredData);
-            loaderData[id] = result.deferredData.data; // TODO: Add statusCode/headers once we wire up streaming in Remix
         } else {
-            loaderData[id] = result.data; // Error status codes always override success status codes, but if all
+            if (isDeferredResult(result)) {
+                activeDeferreds.set(id, result.deferredData);
+                loaderData[id] = result.deferredData.data;
+            } else loaderData[id] = result.data;
+             // Error status codes always override success status codes, but if all
             // loaders are successful we take the deepest status code.
             if (result.statusCode != null && result.statusCode !== 200 && !foundError) statusCode = result.statusCode;
             if (result.headers) loaderHeaders[id] = result.headers;
         }
     }); // If we didn't consume the pending action error (i.e., all loaders
-    // resolved), then consume it here
-    if (pendingError) errors = pendingError;
+    // resolved), then consume it here.  Also clear out any loaderData for the
+    // throwing route
+    if (pendingError) {
+        errors = pendingError;
+        loaderData[Object.keys(pendingError)[0]] = undefined;
+    }
     return {
         loaderData,
         errors,
@@ -31651,21 +32370,22 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
 function processLoaderData(state, matches, matchesToLoad, results, pendingError, revalidatingFetchers, fetcherResults, activeDeferreds) {
     let { loaderData , errors  } = processRouteLoaderData(matches, matchesToLoad, results, pendingError, activeDeferreds); // Process results from our revalidating fetchers
     for(let index = 0; index < revalidatingFetchers.length; index++){
-        let [key, , match] = revalidatingFetchers[index];
+        let { key , match , controller  } = revalidatingFetchers[index];
         invariant(fetcherResults !== undefined && fetcherResults[index] !== undefined, "Did not find corresponding fetcher result");
         let result = fetcherResults[index]; // Process fetcher non-redirect errors
-        if (isErrorResult(result)) {
-            let boundaryMatch = findNearestBoundary(state.matches, match.route.id);
+        if (controller && controller.signal.aborted) continue;
+        else if (isErrorResult(result)) {
+            let boundaryMatch = findNearestBoundary(state.matches, match == null ? void 0 : match.route.id);
             if (!(errors && errors[boundaryMatch.route.id])) errors = _extends({}, errors, {
                 [boundaryMatch.route.id]: result.error
             });
             state.fetchers.delete(key);
         } else if (isRedirectResult(result)) // Should never get here, redirects should get processed above, but we
         // keep this to type narrow to a success result in the else
-        throw new Error("Unhandled fetcher revalidation redirect");
+        invariant(false, "Unhandled fetcher revalidation redirect");
         else if (isDeferredResult(result)) // Should never get here, deferred data should be awaited for fetchers
         // in resolveDeferredResults
-        throw new Error("Unhandled fetcher deferred data");
+        invariant(false, "Unhandled fetcher deferred data");
         else {
             let doneFetcher = {
                 state: "idle",
@@ -31673,7 +32393,8 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
                 formMethod: undefined,
                 formAction: undefined,
                 formEncType: undefined,
-                formData: undefined
+                formData: undefined,
+                " _hasFetcherDoneAnything ": true
             };
             state.fetchers.set(key, doneFetcher);
         }
@@ -31683,12 +32404,17 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
         errors
     };
 }
-function mergeLoaderData(loaderData, newLoaderData, matches) {
+function mergeLoaderData(loaderData, newLoaderData, matches, errors) {
     let mergedLoaderData = _extends({}, newLoaderData);
-    matches.forEach((match)=>{
+    for (let match of matches){
         let id = match.route.id;
-        if (newLoaderData[id] === undefined && loaderData[id] !== undefined) mergedLoaderData[id] = loaderData[id];
-    });
+        if (newLoaderData.hasOwnProperty(id)) {
+            if (newLoaderData[id] !== undefined) mergedLoaderData[id] = newLoaderData[id];
+        } else if (loaderData[id] !== undefined && match.route.loader) // Preserve existing keys not included in newLoaderData and where a loader
+        // wasn't removed by HMR
+        mergedLoaderData[id] = loaderData[id];
+        if (errors && errors.hasOwnProperty(id)) break;
+    }
     return mergedLoaderData;
 } // Find the nearest error boundary, looking upwards from the leaf route (or the
 // route specified by routeId) for the closest ancestor error boundary,
@@ -31716,14 +32442,14 @@ function getShortCircuitMatches(routes) {
         route
     };
 }
-function getInternalRouterError(status, _temp3) {
-    let { pathname , routeId , method  } = _temp3 === void 0 ? {} : _temp3;
+function getInternalRouterError(status, _temp4) {
+    let { pathname , routeId , method , type  } = _temp4 === void 0 ? {} : _temp4;
     let statusText = "Unknown Server Error";
     let errorMessage = "Unknown @remix-run/router error";
     if (status === 400) {
         statusText = "Bad Request";
         if (method && pathname && routeId) errorMessage = "You made a " + method + ' request to "' + pathname + '" but ' + ('did not provide a `loader` for route "' + routeId + '", ') + "so there is no way to handle the request.";
-        else errorMessage = "Cannot submit binary form data using GET";
+        else if (type === "defer-action") errorMessage = "defer() is not supported in actions";
     } else if (status === 403) {
         statusText = "Forbidden";
         errorMessage = 'Route "' + routeId + '" does not match URL "' + pathname + '"';
@@ -31750,7 +32476,16 @@ function stripHashFromPath(path) {
     }));
 }
 function isHashChangeOnly(a, b) {
-    return a.pathname === b.pathname && a.search === b.search && a.hash !== b.hash;
+    if (a.pathname !== b.pathname || a.search !== b.search) return false;
+    if (a.hash === "") // /page -> /page#hash
+    return b.hash !== "";
+    else if (a.hash === b.hash) // /page#hash -> /page#hash
+    return true;
+    else if (b.hash !== "") // /page#hash -> /page#other
+    return true;
+     // If the hash is removed the browser will re-perform a request to the server
+    // /page#hash -> /page
+    return false;
 }
 function isDeferredResult(result) {
     return result.type === ResultType.deferred;
@@ -31760,6 +32495,10 @@ function isErrorResult(result) {
 }
 function isRedirectResult(result) {
     return (result && result.type) === ResultType.redirect;
+}
+function isDeferredData(value) {
+    let deferred = value;
+    return deferred && typeof deferred === "object" && typeof deferred.data === "object" && typeof deferred.subscribe === "function" && typeof deferred.cancel === "function" && typeof deferred.resolveData === "function";
 }
 function isResponse(value) {
     return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
@@ -31774,23 +32513,30 @@ function isQueryRouteResponse(obj) {
     return obj && isResponse(obj.response) && (obj.type === ResultType.data || ResultType.error);
 }
 function isValidMethod(method) {
-    return validRequestMethods.has(method);
+    return validRequestMethods.has(method.toLowerCase());
 }
 function isMutationMethod(method) {
-    return validMutationMethods.has(method);
+    return validMutationMethods.has(method.toLowerCase());
 }
-async function resolveDeferredResults(currentMatches, matchesToLoad, results, signal, isFetcher, currentLoaderData) {
+async function resolveDeferredResults(currentMatches, matchesToLoad, results, signals, isFetcher, currentLoaderData) {
     for(let index = 0; index < results.length; index++){
         let result = results[index];
-        let match = matchesToLoad[index];
+        let match = matchesToLoad[index]; // If we don't have a match, then we can have a deferred result to do
+        // anything with.  This is for revalidating fetchers where the route was
+        // removed during HMR
+        if (!match) continue;
         let currentMatch = currentMatches.find((m)=>m.route.id === match.route.id);
         let isRevalidatingLoader = currentMatch != null && !isNewRouteInstance(currentMatch, match) && (currentLoaderData && currentLoaderData[match.route.id]) !== undefined;
-        if (isDeferredResult(result) && (isFetcher || isRevalidatingLoader)) // Note: we do not have to touch activeDeferreds here since we race them
-        // against the signal in resolveDeferredData and they'll get aborted
-        // there if needed
-        await resolveDeferredData(result, signal, isFetcher).then((result)=>{
-            if (result) results[index] = result || results[index];
-        });
+        if (isDeferredResult(result) && (isFetcher || isRevalidatingLoader)) {
+            // Note: we do not have to touch activeDeferreds here since we race them
+            // against the signal in resolveDeferredData and they'll get aborted
+            // there if needed
+            let signal = signals[index];
+            invariant(signal, "Expected an AbortSignal for revalidating fetcher deferred result");
+            await resolveDeferredData(result, signal, isFetcher).then((result)=>{
+                if (result) results[index] = result || results[index];
+            });
+        }
     }
 }
 async function resolveDeferredData(result, signal, unwrap) {
@@ -31894,12 +32640,15 @@ var _checkAnswers = require("./CheckAnswers");
 var _checkAnswersDefault = parcelHelpers.interopDefault(_checkAnswers);
 var _nameEntry = require("./NameEntry");
 var _nameEntryDefault = parcelHelpers.interopDefault(_nameEntry);
+var _contactEmail = require("../Shared/ContactEmail");
+var _contactEmailDefault = parcelHelpers.interopDefault(_contactEmail);
 var _registrationNoEntry = require("./RegistrationNoEntry");
 var _registrationNoEntryDefault = parcelHelpers.interopDefault(_registrationNoEntry);
-var _contactPreferenceEntry = require("./ContactPreferenceEntry");
+var _contactPreferenceEntry = require("../Shared/ContactPreferenceEntry");
 var _contactPreferenceEntryDefault = parcelHelpers.interopDefault(_contactPreferenceEntry);
 var _header = require("../common/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _reactHelmetAsync = require("react-helmet-async");
 var _validation = require("../common/validation");
 var _sendFormData = require("../api/sendFormData");
 var _sendFormDataDefault = parcelHelpers.interopDefault(_sendFormData);
@@ -31922,11 +32671,40 @@ const ContactForm = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.HelmetProvider), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.Helmet), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                            children: "Contact us"
+                        }, void 0, false, {
+                            fileName: "src/Contact/ContactForm.js",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                            rel: "canonical",
+                            href: "http://ringandride.org.uk/contact"
+                        }, void 0, false, {
+                            fileName: "src/Contact/ContactForm.js",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Contact/ContactForm.js",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Contact/ContactForm.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
                 heading: "Contact us"
             }, void 0, false, {
                 fileName: "src/Contact/ContactForm.js",
-                lineNumber: 34,
+                lineNumber: 42,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formContentWrapperDefault.default), {
@@ -31935,7 +32713,7 @@ const ContactForm = ()=>{
                         currentPageName: "Contact us"
                     }, void 0, false, {
                         fileName: "src/Contact/ContactForm.js",
-                        lineNumber: 36,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formWizardDefault.default), {
@@ -31949,29 +32727,35 @@ const ContactForm = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _enquiryTypeQueryDefault.default), {}, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 40,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _enquiryDetailDefault.default), {}, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 41,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _nameEntryDefault.default), {}, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 42,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNoEntryDefault.default), {}, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 43,
+                                lineNumber: 51,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactEmailDefault.default), {}, void 0, false, {
+                                fileName: "src/Contact/ContactForm.js",
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPreferenceEntryDefault.default), {
+                                description: "We'll use this to get in touch about your enquiry",
                                 validate: (0, _validation.validateContactPreferences)
                             }, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 44,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswersDefault.default), {
@@ -31981,19 +32765,19 @@ const ContactForm = ()=>{
                                 formSubmitError: formSubmitError
                             }, void 0, false, {
                                 fileName: "src/Contact/ContactForm.js",
-                                lineNumber: 45,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Contact/ContactForm.js",
-                        lineNumber: 37,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Contact/ContactForm.js",
-                lineNumber: 35,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined)
         ]
@@ -32014,7 +32798,7 @@ $RefreshReg$(_c, "ContactForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","./EnquiryTypeQuery":"bHM18","./EnquiryDetail":"A36wA","./CheckAnswers":"aJ7UM","./NameEntry":"7UK6N","./RegistrationNoEntry":"kPouR","./ContactPreferenceEntry":"5xT8x","../common/Header":"7cpW6","../common/validation":"hOBBd","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21BDb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","./EnquiryTypeQuery":"bHM18","./EnquiryDetail":"A36wA","./CheckAnswers":"aJ7UM","./NameEntry":"7UK6N","../Shared/ContactEmail":"gdm6U","./RegistrationNoEntry":"kPouR","../Shared/ContactPreferenceEntry":"cviJC","../common/Header":"7cpW6","react-helmet-async":"hTtyd","../common/validation":"hOBBd","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21BDb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2865 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32060,17 +32844,17 @@ $RefreshReg$(_c, "FormContentWrapper");
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */ var ReactIs = require("eca4864347dae27b");
+ */ var ReactIs = require("83ddf4697e7e469f");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
 var throwOnDirectAccess = true;
-module.exports = require("ed9bb2ceb73d4495")(ReactIs.isElement, throwOnDirectAccess);
+module.exports = require("b19ef786b67fcb69")(ReactIs.isElement, throwOnDirectAccess);
 
-},{"eca4864347dae27b":"7EuwB","ed9bb2ceb73d4495":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+},{"83ddf4697e7e469f":"7EuwB","b19ef786b67fcb69":"bBUgD"}],"7EuwB":[function(require,module,exports) {
 "use strict";
-module.exports = require("4e200bae35d05347");
+module.exports = require("9065c8d92ce27330");
 
-},{"4e200bae35d05347":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+},{"9065c8d92ce27330":"5DsXl"}],"5DsXl":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -32234,11 +33018,11 @@ module.exports = require("4e200bae35d05347");
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */ "use strict";
-var ReactIs = require("a2d52af81fd43b09");
-var assign = require("bf78231753118c4f");
-var ReactPropTypesSecret = require("aef9542c05769a9c");
-var has = require("e3987a15dd9909e");
-var checkPropTypes = require("d4dcc0a3fd62ccd9");
+var ReactIs = require("3917449de016bea");
+var assign = require("f9d0fd90ff219c58");
+var ReactPropTypesSecret = require("a0793b162fcc856");
+var has = require("ee2419927202649d");
+var checkPropTypes = require("c7988b1bd5d46041");
 var printWarning = function() {};
 printWarning = function(text) {
     var message = "Warning: " + text;
@@ -32665,7 +33449,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return ReactPropTypes;
 };
 
-},{"a2d52af81fd43b09":"7EuwB","bf78231753118c4f":"7OXxh","aef9542c05769a9c":"jZTZJ","e3987a15dd9909e":"fqKuf","d4dcc0a3fd62ccd9":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+},{"3917449de016bea":"7EuwB","f9d0fd90ff219c58":"7OXxh","a0793b162fcc856":"jZTZJ","ee2419927202649d":"fqKuf","c7988b1bd5d46041":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -32741,9 +33525,9 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
  * LICENSE file in the root directory of this source tree.
  */ "use strict";
 var printWarning = function() {};
-var ReactPropTypesSecret = require("793c1de35063f354");
+var ReactPropTypesSecret = require("fec3fa793d7752ab");
 var loggedTypeFailures = {};
-var has = require("cdf75ea48458a800");
+var has = require("34d65d4104086ad3");
 printWarning = function(text) {
     var message = "Warning: " + text;
     if (typeof console !== "undefined") console.error(message);
@@ -32801,11 +33585,10 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"793c1de35063f354":"jZTZJ","cdf75ea48458a800":"fqKuf"}],"km3Ru":[function(require,module,exports) {
+},{"fec3fa793d7752ab":"jZTZJ","34d65d4104086ad3":"fqKuf"}],"km3Ru":[function(require,module,exports) {
 "use strict";
-var Refresh = require("1df5e0177bf64138");
+var Refresh = require("c6e3205d667a4af3");
 function debounce(func, delay) {
-    var args;
     {
         let timeout = undefined;
         let lastTime = 0;
@@ -32935,7 +33718,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"1df5e0177bf64138":"786KC"}],"4KMVD":[function(require,module,exports) {
+},{"c6e3205d667a4af3":"786KC"}],"4KMVD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3f2b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32956,7 +33739,7 @@ const BreadCrumb = ({ currentPageName  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxD
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "wmrards-breadcrumb__list-item",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "/",
+                        href: "https://ringandride.org/",
                         className: "wmrards-breadcrumb__link",
                         children: "Home"
                     }, void 0, false, {
@@ -33882,10 +34665,28 @@ var rePropName = RegExp("[^.[\\]]+|\\[(?:([^\"'][^[]*)|([\"'])((?:(?!\\2)[^\\\\]
     return result;
 };
 var keysCache = {};
+var keysRegex = /[.[\]]+/;
 var toPath = function toPath(key) {
     if (key === null || key === undefined || !key.length) return [];
     if (typeof key !== "string") throw new Error("toPath() expects a string");
-    if (keysCache[key] == null) keysCache[key] = stringToPath(key);
+    if (keysCache[key] == null) {
+        /**
+     * The following patch fixes issue 456, introduced since v4.20.3:
+     *
+     * Before v4.20.3, i.e. in v4.20.2, a `key` like 'choices[]' would map to ['choices']
+     * (e.g. an array of choices used where 'choices[]' is name attribute of an input of type checkbox).
+     *
+     * Since v4.20.3, a `key` like 'choices[]' would map to ['choices', ''] which is wrong and breaks
+     * this kind of inputs e.g. in React.
+     *
+     * v4.20.3 introduced an unwanted breaking change, this patch fixes it, see the issue at the link below.
+     *
+     * @see https://github.com/final-form/final-form/issues/456
+     */ if (key.endsWith("[]")) // v4.20.2 (a `key` like 'choices[]' should map to ['choices'], which is fine).
+        keysCache[key] = key.split(keysRegex).filter(Boolean);
+        else // v4.20.3 (a `key` like 'choices[]' maps to ['choices', ''], which breaks applications relying on inputs like `<input type="checkbox" name="choices[]" />`).
+        keysCache[key] = stringToPath(key);
+    }
     return keysCache[key];
 };
 //      
@@ -34141,7 +34942,7 @@ var memoize = function memoize(fn) {
 var isPromise = function(obj) {
     return !!obj && (typeof obj === "object" || typeof obj === "function") && typeof obj.then === "function";
 };
-var version = "4.20.7";
+var version = "4.20.9";
 var configOptions = [
     "debug",
     "initialValues",
@@ -34682,22 +35483,12 @@ function createForm(config) {
                 subscriber: memoize(subscriber),
                 subscription: subscription,
                 notified: false
-            };
-            if (!state.fields[name]) // create initial field state
-            state.fields[name] = {
+            }; // create initial field state if not exists
+            var field = state.fields[name] || {
                 active: false,
                 afterSubmit: fieldConfig && fieldConfig.afterSubmit,
                 beforeSubmit: fieldConfig && fieldConfig.beforeSubmit,
-                blur: function blur() {
-                    return api.blur(name);
-                },
-                change: function change(value1) {
-                    return api.change(name, value1);
-                },
                 data: fieldConfig && fieldConfig.data || {},
-                focus: function focus() {
-                    return api.focus(name);
-                },
                 isEqual: fieldConfig && fieldConfig.isEqual || tripleEquals,
                 lastFieldState: undefined,
                 modified: false,
@@ -34709,11 +35500,22 @@ function createForm(config) {
                 validators: {},
                 validating: false,
                 visited: false
+            }; // Mutators can create a field in order to keep the field states
+            // We must update this field when registerField is called afterwards
+            field.blur = field.blur || function() {
+                return api.blur(name);
             };
+            field.change = field.change || function(value1) {
+                return api.change(name, value1);
+            };
+            field.focus = field.focus || function() {
+                return api.focus(name);
+            };
+            state.fields[name] = field;
             var haveValidator = false;
             var silent = fieldConfig && fieldConfig.silent;
             var notify = function notify() {
-                if (silent) notifyFieldListeners(name);
+                if (silent && state.fields[name]) notifyFieldListeners(name);
                 else {
                     notifyFormListeners();
                     notifyFieldListeners();
@@ -35326,6 +36128,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FORM_SUBMIT_ERROR", ()=>FORM_SUBMIT_ERROR);
 parcelHelpers.export(exports, "required", ()=>required);
+parcelHelpers.export(exports, "coventry", ()=>coventry);
 parcelHelpers.export(exports, "numbersOnly", ()=>numbersOnly);
 parcelHelpers.export(exports, "registrationNumber", ()=>registrationNumber);
 parcelHelpers.export(exports, "registrationNumberLength", ()=>registrationNumberLength);
@@ -35348,6 +36151,7 @@ const nameRegex = /^[a-z ,.'-]+$/i;
 const postCodeRegex = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
 const FORM_SUBMIT_ERROR = "An error occurred when submitting the form data";
 const required = (value)=>value ? undefined : "Question is Required";
+const coventry = (value)=>value !== "Coventry" ? undefined : "Coventry is no longer available";
 const numbersOnly = (value)=>{
     if (value) return /^\d+$/.test(value) ? undefined : "Invalid. Please enter numbers only";
 };
@@ -35708,6 +36512,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
     (0, _react.useEffect)(()=>{
         setFormSubmitting(submitting);
     }, [
+        setFormSubmitting,
         submitting
     ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35773,7 +36578,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Registration number",
-                        value: formValues["registrationNo"] ? formValues["registrationNo"] : "",
+                        value: formValues["registrationNo"] ? formValues["registrationNo"] : "Not provided",
                         changeValueCallback: ()=>setGoToPage(3),
                         disableButton: submitting
                     }, void 0, false, {
@@ -35782,14 +36587,24 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
-                        label: "How would you like to be contacted?",
-                        value: `${formValues["emailContact"] ? `Email: ${formValues["emailAddress"]} ` : ""}
-        ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`,
+                        label: "Email",
+                        value: `${formValues["emailAddress"]}`,
                         changeValueCallback: ()=>setGoToPage(4),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Contact/CheckAnswers.js",
                         lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
+                        label: "How would you like to be contacted?",
+                        value: `Email: ${formValues["emailAddress"]}
+        ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`,
+                        changeValueCallback: ()=>setGoToPage(5),
+                        disableButton: submitting
+                    }, void 0, false, {
+                        fileName: "src/Contact/CheckAnswers.js",
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -35802,14 +36617,14 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                 children: "Now send your enquiry"
             }, void 0, false, {
                 fileName: "src/Contact/CheckAnswers.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "By submitting this enquiry you are confirming that, to the best of your knowledge, the details you are providing are correct."
             }, void 0, false, {
                 fileName: "src/Contact/CheckAnswers.js",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxContainerDefault.default), {
@@ -35819,7 +36634,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                         text: agreeLegalError
                     }, void 0, false, {
                         fileName: "src/Contact/CheckAnswers.js",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
@@ -35838,7 +36653,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Contact/CheckAnswers.js",
-                        lineNumber: 46,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
@@ -35857,13 +36672,13 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/Contact/CheckAnswers.js",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Contact/CheckAnswers.js",
-                lineNumber: 44,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36352,7 +37167,7 @@ var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _fieldError = require("./FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
-const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+const TextInput = ({ fieldName , label , validation , error , containerClass , defaultValue , type  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: `wmrards-fe-group ${error && "wmrards-fe-group--error"} ${containerClass && containerClass}`,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -36361,32 +37176,32 @@ const TextInput = ({ fieldName , label , validation , error , containerClass , d
                 children: label
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
                 text: error
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFinalForm.Field), {
                 name: fieldName,
                 validate: validation,
                 component: "input",
-                type: "text",
+                type: type,
                 className: "wmrards-fe-input",
                 defaultValue: defaultValue
             }, void 0, false, {
                 fileName: "src/common/TextInput.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/common/TextInput.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 7
     }, undefined);
 _c = TextInput;
@@ -36399,7 +37214,11 @@ TextInput.propTypes = {
     validation: (0, _propTypesDefault.default).func,
     error: (0, _propTypesDefault.default).string,
     containerClass: (0, _propTypesDefault.default).string,
-    defaultValue: (0, _propTypesDefault.default).string
+    defaultValue: (0, _propTypesDefault.default).any,
+    type: (0, _propTypesDefault.default).string
+};
+TextInput.defaultProps = {
+    type: "text"
 };
 exports.default = TextInput;
 var _c;
@@ -36410,7 +37229,88 @@ $RefreshReg$(_c, "TextInput");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","./FieldError":"4W7oE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kPouR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","./FieldError":"4W7oE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gdm6U":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f742 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f742.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactFinalForm = require("react-final-form");
+var _formSection = require("../common/FormSection");
+var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
+var _progressIndicator = require("../common/ProgressIndicator");
+var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
+var _question = require("../common/Question");
+var _questionDefault = parcelHelpers.interopDefault(_question);
+var _textInput = require("../common/TextInput");
+var _textInputDefault = parcelHelpers.interopDefault(_textInput);
+var _validation = require("../common/validation");
+var _s = $RefreshSig$();
+const ContactEmail = ()=>{
+    _s();
+    const stateApi = (0, _reactFinalForm.useFormState)();
+    const errorEmailAddress = stateApi.submitFailed ? stateApi.errors?.emailAddress : null;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressIndicatorDefault.default), {
+                sectionPosition: "Section 2 of 2",
+                sectionName: "About you"
+            }, void 0, false, {
+                fileName: "src/Shared/ContactEmail.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
+                text: "What is your email address?"
+            }, void 0, false, {
+                fileName: "src/Shared/ContactEmail.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textInputDefault.default), {
+                fieldName: "emailAddress",
+                label: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        "Email address",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "For example, name@example.com"
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true),
+                error: errorEmailAddress,
+                validation: (0, _validation.required)
+            }, void 0, false, {
+                fileName: "src/Shared/ContactEmail.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Shared/ContactEmail.js",
+        lineNumber: 10,
+        columnNumber: 10
+    }, undefined);
+};
+_s(ContactEmail, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
+    return [
+        (0, _reactFinalForm.useFormState)
+    ];
+});
+_c = ContactEmail;
+exports.default = ContactEmail;
+var _c;
+$RefreshReg$(_c, "ContactEmail");
+
+  $parcel$ReactRefreshHelpers$f742.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../common/FormSection":"d4pYd","../common/ProgressIndicator":"iiGPR","../common/Question":"7HVc9","../common/TextInput":"7jGrs","../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kPouR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$708c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36459,11 +37359,11 @@ const RegistrationNoEntry = ()=>{
                         " ",
                         "Registration number",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "For example, 1234567890"
+                            children: "For example, 123456"
                         }, void 0, false, void 0, void 0)
                     ]
                 }, void 0, true),
-                validation: (0, _validation.composeValidators)((0, _validation.required), (0, _validation.registrationNumber), (0, _validation.registrationNumberLength)),
+                validation: (0, _validation.composeValidators)((0, _validation.registrationNumber), (0, _validation.registrationNumberLength)),
                 error: error
             }, void 0, false, {
                 fileName: "src/Contact/RegistrationNoEntry.js",
@@ -36492,17 +37392,19 @@ $RefreshReg$(_c, "RegistrationNoEntry");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../common/FormSection":"d4pYd","../common/TextInput":"7jGrs","../common/ProgressIndicator":"iiGPR","../common/Question":"7HVc9","../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5xT8x":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6c10 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../common/FormSection":"d4pYd","../common/TextInput":"7jGrs","../common/ProgressIndicator":"iiGPR","../common/Question":"7HVc9","../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cviJC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$52e2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6c10.prelude(module);
+$parcel$ReactRefreshHelpers$52e2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactFinalForm = require("react-final-form");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _formSection = require("../common/FormSection");
 var _formSectionDefault = parcelHelpers.interopDefault(_formSection);
 var _progressIndicator = require("../common/ProgressIndicator");
@@ -36518,7 +37420,7 @@ var _textInputDefault = parcelHelpers.interopDefault(_textInput);
 var _fieldError = require("../common/FieldError");
 var _fieldErrorDefault = parcelHelpers.interopDefault(_fieldError);
 var _s = $RefreshSig$();
-const ContactPreferenceEntry = ()=>{
+const ContactPreferenceEntry = ({ description  })=>{
     _s();
     const stateApi = (0, _reactFinalForm.useFormState)();
     const formValues = stateApi.values;
@@ -36531,34 +37433,34 @@ const ContactPreferenceEntry = ()=>{
                 sectionPosition: "Section 2 of 2",
                 sectionName: "About you"
             }, void 0, false, {
-                fileName: "src/Contact/ContactPreferenceEntry.js",
-                lineNumber: 16,
+                fileName: "src/Shared/ContactPreferenceEntry.js",
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: "How would you like to be contacted?"
             }, void 0, false, {
-                fileName: "src/Contact/ContactPreferenceEntry.js",
-                lineNumber: 17,
+                fileName: "src/Shared/ContactPreferenceEntry.js",
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxContainerDefault.default), {
                 error: errorContactPrefReqd,
-                description: "We'll use this to get in touch about your enquiry.",
+                description: description,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
                         text: errorContactPrefReqd
                     }, void 0, false, {
-                        fileName: "src/Contact/ContactPreferenceEntry.js",
-                        lineNumber: 19,
+                        fileName: "src/Shared/ContactPreferenceEntry.js",
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
                         fieldName: "emailContact",
                         label: "Email"
                     }, void 0, false, {
-                        fileName: "src/Contact/ContactPreferenceEntry.js",
-                        lineNumber: 20,
+                        fileName: "src/Shared/ContactPreferenceEntry.js",
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     formValues.emailContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36575,21 +37477,21 @@ const ContactPreferenceEntry = ()=>{
                             }, void 0, true),
                             error: errorEmailAddress
                         }, void 0, false, {
-                            fileName: "src/Contact/ContactPreferenceEntry.js",
-                            lineNumber: 22,
+                            fileName: "src/Shared/ContactPreferenceEntry.js",
+                            lineNumber: 25,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/Contact/ContactPreferenceEntry.js",
-                        lineNumber: 21,
+                        fileName: "src/Shared/ContactPreferenceEntry.js",
+                        lineNumber: 24,
                         columnNumber: 36
                     }, undefined) : null,
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
                         fieldName: "phoneContact",
                         label: "Phone"
                     }, void 0, false, {
-                        fileName: "src/Contact/ContactPreferenceEntry.js",
-                        lineNumber: 27,
+                        fileName: "src/Shared/ContactPreferenceEntry.js",
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     formValues.phoneContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36606,25 +37508,25 @@ const ContactPreferenceEntry = ()=>{
                             }, void 0, true),
                             error: errorPhoneNo
                         }, void 0, false, {
-                            fileName: "src/Contact/ContactPreferenceEntry.js",
-                            lineNumber: 29,
+                            fileName: "src/Shared/ContactPreferenceEntry.js",
+                            lineNumber: 32,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/Contact/ContactPreferenceEntry.js",
-                        lineNumber: 28,
+                        fileName: "src/Shared/ContactPreferenceEntry.js",
+                        lineNumber: 31,
                         columnNumber: 36
                     }, undefined) : null
                 ]
             }, void 0, true, {
-                fileName: "src/Contact/ContactPreferenceEntry.js",
-                lineNumber: 18,
+                fileName: "src/Shared/ContactPreferenceEntry.js",
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/Contact/ContactPreferenceEntry.js",
-        lineNumber: 15,
+        fileName: "src/Shared/ContactPreferenceEntry.js",
+        lineNumber: 18,
         columnNumber: 10
     }, undefined);
 };
@@ -36634,16 +37536,19 @@ _s(ContactPreferenceEntry, "ctm9ui0AD13+E/drNHXH99A0tz8=", false, function() {
     ];
 });
 _c = ContactPreferenceEntry;
+ContactPreferenceEntry.propTypes = {
+    description: (0, _propTypesDefault.default).string
+};
 exports.default = ContactPreferenceEntry;
 var _c;
 $RefreshReg$(_c, "ContactPreferenceEntry");
 
-  $parcel$ReactRefreshHelpers$6c10.postlude(module);
+  $parcel$ReactRefreshHelpers$52e2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","../common/FormSection":"d4pYd","../common/ProgressIndicator":"iiGPR","../common/Question":"7HVc9","../common/CheckboxContainer":"2miun","../common/Checkbox":"7IcBJ","../common/TextInput":"7jGrs","../common/FieldError":"4W7oE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7cpW6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-final-form":"cgn4o","prop-types":"7wKI2","../common/FormSection":"d4pYd","../common/ProgressIndicator":"iiGPR","../common/Question":"7HVc9","../common/CheckboxContainer":"2miun","../common/Checkbox":"7IcBJ","../common/TextInput":"7jGrs","../common/FieldError":"4W7oE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7cpW6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ad63 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36746,8 +37651,8 @@ const Header = ({ heading  })=>{
                                     className: "wmrards-header__vertical-align wmrards-col-auto",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                         className: "wmrards-header__logo-link",
-                                        href: "/",
-                                        title: "Transport for West Midlands Design System",
+                                        href: "https://ringandride.org/",
+                                        title: "Ring and Ride",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                             className: "wmrards-header__logo",
                                             alt: "Transport for West Midlands logo",
@@ -36808,33 +37713,804 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdtMD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hTtyd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Helmet", ()=>W);
+parcelHelpers.export(exports, "HelmetData", ()=>N);
+parcelHelpers.export(exports, "HelmetProvider", ()=>q);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _reactFastCompare = require("react-fast-compare");
+var _reactFastCompareDefault = parcelHelpers.interopDefault(_reactFastCompare);
+var _invariant = require("invariant");
+var _invariantDefault = parcelHelpers.interopDefault(_invariant);
+var _shallowequal = require("shallowequal");
+var _shallowequalDefault = parcelHelpers.interopDefault(_shallowequal);
+function a() {
+    return a = Object.assign || function(t) {
+        for(var e = 1; e < arguments.length; e++){
+            var r = arguments[e];
+            for(var n in r)Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n]);
+        }
+        return t;
+    }, a.apply(this, arguments);
+}
+function s(t, e) {
+    t.prototype = Object.create(e.prototype), t.prototype.constructor = t, c(t, e);
+}
+function c(t, e) {
+    return c = Object.setPrototypeOf || function(t, e) {
+        return t.__proto__ = e, t;
+    }, c(t, e);
+}
+function u(t, e) {
+    if (null == t) return {};
+    var r, n, i = {}, o = Object.keys(t);
+    for(n = 0; n < o.length; n++)e.indexOf(r = o[n]) >= 0 || (i[r] = t[r]);
+    return i;
+}
+var l = {
+    BASE: "base",
+    BODY: "body",
+    HEAD: "head",
+    HTML: "html",
+    LINK: "link",
+    META: "meta",
+    NOSCRIPT: "noscript",
+    SCRIPT: "script",
+    STYLE: "style",
+    TITLE: "title",
+    FRAGMENT: "Symbol(react.fragment)"
+}, p = {
+    rel: [
+        "amphtml",
+        "canonical",
+        "alternate"
+    ]
+}, f = {
+    type: [
+        "application/ld+json"
+    ]
+}, d = {
+    charset: "",
+    name: [
+        "robots",
+        "description"
+    ],
+    property: [
+        "og:type",
+        "og:title",
+        "og:url",
+        "og:image",
+        "og:image:alt",
+        "og:description",
+        "twitter:url",
+        "twitter:title",
+        "twitter:description",
+        "twitter:image",
+        "twitter:image:alt",
+        "twitter:card",
+        "twitter:site"
+    ]
+}, h = Object.keys(l).map(function(t) {
+    return l[t];
+}), m = {
+    accesskey: "accessKey",
+    charset: "charSet",
+    class: "className",
+    contenteditable: "contentEditable",
+    contextmenu: "contextMenu",
+    "http-equiv": "httpEquiv",
+    itemprop: "itemProp",
+    tabindex: "tabIndex"
+}, y = Object.keys(m).reduce(function(t, e) {
+    return t[m[e]] = e, t;
+}, {}), T = function(t, e) {
+    for(var r = t.length - 1; r >= 0; r -= 1){
+        var n = t[r];
+        if (Object.prototype.hasOwnProperty.call(n, e)) return n[e];
+    }
+    return null;
+}, g = function(t) {
+    var e = T(t, l.TITLE), r = T(t, "titleTemplate");
+    if (Array.isArray(e) && (e = e.join("")), r && e) return r.replace(/%s/g, function() {
+        return e;
+    });
+    var n = T(t, "defaultTitle");
+    return e || n || void 0;
+}, b = function(t) {
+    return T(t, "onChangeClientState") || function() {};
+}, v = function(t, e) {
+    return e.filter(function(e) {
+        return void 0 !== e[t];
+    }).map(function(e) {
+        return e[t];
+    }).reduce(function(t, e) {
+        return a({}, t, e);
+    }, {});
+}, A = function(t, e) {
+    return e.filter(function(t) {
+        return void 0 !== t[l.BASE];
+    }).map(function(t) {
+        return t[l.BASE];
+    }).reverse().reduce(function(e, r) {
+        if (!e.length) for(var n = Object.keys(r), i = 0; i < n.length; i += 1){
+            var o = n[i].toLowerCase();
+            if (-1 !== t.indexOf(o) && r[o]) return e.concat(r);
+        }
+        return e;
+    }, []);
+}, C = function(t, e, r) {
+    var n = {};
+    return r.filter(function(e) {
+        return !!Array.isArray(e[t]) || (void 0 !== e[t] && console && "function" == typeof console.warn && console.warn("Helmet: " + t + ' should be of type "Array". Instead found type "' + typeof e[t] + '"'), !1);
+    }).map(function(e) {
+        return e[t];
+    }).reverse().reduce(function(t, r) {
+        var i = {};
+        r.filter(function(t) {
+            for(var r, o = Object.keys(t), a = 0; a < o.length; a += 1){
+                var s = o[a], c = s.toLowerCase();
+                -1 === e.indexOf(c) || "rel" === r && "canonical" === t[r].toLowerCase() || "rel" === c && "stylesheet" === t[c].toLowerCase() || (r = c), -1 === e.indexOf(s) || "innerHTML" !== s && "cssText" !== s && "itemprop" !== s || (r = s);
+            }
+            if (!r || !t[r]) return !1;
+            var u = t[r].toLowerCase();
+            return n[r] || (n[r] = {}), i[r] || (i[r] = {}), !n[r][u] && (i[r][u] = !0, !0);
+        }).reverse().forEach(function(e) {
+            return t.push(e);
+        });
+        for(var o = Object.keys(i), s = 0; s < o.length; s += 1){
+            var c = o[s], u = a({}, n[c], i[c]);
+            n[c] = u;
+        }
+        return t;
+    }, []).reverse();
+}, O = function(t, e) {
+    if (Array.isArray(t) && t.length) {
+        for(var r = 0; r < t.length; r += 1)if (t[r][e]) return !0;
+    }
+    return !1;
+}, S = function(t) {
+    return Array.isArray(t) ? t.join("") : t;
+}, E = function(t, e) {
+    return Array.isArray(t) ? t.reduce(function(t, r) {
+        return function(t, e) {
+            for(var r = Object.keys(t), n = 0; n < r.length; n += 1)if (e[r[n]] && e[r[n]].includes(t[r[n]])) return !0;
+            return !1;
+        }(r, e) ? t.priority.push(r) : t.default.push(r), t;
+    }, {
+        priority: [],
+        default: []
+    }) : {
+        default: t
+    };
+}, I = function(t, e) {
+    var r;
+    return a({}, t, ((r = {})[e] = void 0, r));
+}, P = [
+    l.NOSCRIPT,
+    l.SCRIPT,
+    l.STYLE
+], w = function(t, e) {
+    return void 0 === e && (e = !0), !1 === e ? String(t) : String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+}, x = function(t) {
+    return Object.keys(t).reduce(function(e, r) {
+        var n = void 0 !== t[r] ? r + '="' + t[r] + '"' : "" + r;
+        return e ? e + " " + n : n;
+    }, "");
+}, L = function(t, e) {
+    return void 0 === e && (e = {}), Object.keys(t).reduce(function(e, r) {
+        return e[m[r] || r] = t[r], e;
+    }, e);
+}, j = function(e, r) {
+    return r.map(function(r, n) {
+        var i, o = ((i = {
+            key: n
+        })["data-rh"] = !0, i);
+        return Object.keys(r).forEach(function(t) {
+            var e = m[t] || t;
+            "innerHTML" === e || "cssText" === e ? o.dangerouslySetInnerHTML = {
+                __html: r.innerHTML || r.cssText
+            } : o[e] = r[t];
+        }), (0, _reactDefault.default).createElement(e, o);
+    });
+}, M = function(e, r, n) {
+    switch(e){
+        case l.TITLE:
+            return {
+                toComponent: function() {
+                    var e, n, i, o;
+                    return n = r.titleAttributes, (i = {
+                        key: e = r.title
+                    })["data-rh"] = !0, o = L(n, i), [
+                        (0, _reactDefault.default).createElement(l.TITLE, o, e)
+                    ];
+                },
+                toString: function() {
+                    return function(t, e, r, n) {
+                        var i = x(r), o = S(e);
+                        return i ? "<" + t + ' data-rh="true" ' + i + ">" + w(o, n) + "</" + t + ">" : "<" + t + ' data-rh="true">' + w(o, n) + "</" + t + ">";
+                    }(e, r.title, r.titleAttributes, n);
+                }
+            };
+        case "bodyAttributes":
+        case "htmlAttributes":
+            return {
+                toComponent: function() {
+                    return L(r);
+                },
+                toString: function() {
+                    return x(r);
+                }
+            };
+        default:
+            return {
+                toComponent: function() {
+                    return j(e, r);
+                },
+                toString: function() {
+                    return function(t, e, r) {
+                        return e.reduce(function(e, n) {
+                            var i = Object.keys(n).filter(function(t) {
+                                return !("innerHTML" === t || "cssText" === t);
+                            }).reduce(function(t, e) {
+                                var i = void 0 === n[e] ? e : e + '="' + w(n[e], r) + '"';
+                                return t ? t + " " + i : i;
+                            }, ""), o = n.innerHTML || n.cssText || "", a = -1 === P.indexOf(t);
+                            return e + "<" + t + ' data-rh="true" ' + i + (a ? "/>" : ">" + o + "</" + t + ">");
+                        }, "");
+                    }(e, r, n);
+                }
+            };
+    }
+}, k = function(t) {
+    var e = t.baseTag, r = t.bodyAttributes, n = t.encode, i = t.htmlAttributes, o = t.noscriptTags, a = t.styleTags, s = t.title, c = void 0 === s ? "" : s, u = t.titleAttributes, h = t.linkTags, m = t.metaTags, y = t.scriptTags, T = {
+        toComponent: function() {},
+        toString: function() {
+            return "";
+        }
+    };
+    if (t.prioritizeSeoTags) {
+        var g = function(t) {
+            var e = t.linkTags, r = t.scriptTags, n = t.encode, i = E(t.metaTags, d), o = E(e, p), a = E(r, f);
+            return {
+                priorityMethods: {
+                    toComponent: function() {
+                        return [].concat(j(l.META, i.priority), j(l.LINK, o.priority), j(l.SCRIPT, a.priority));
+                    },
+                    toString: function() {
+                        return M(l.META, i.priority, n) + " " + M(l.LINK, o.priority, n) + " " + M(l.SCRIPT, a.priority, n);
+                    }
+                },
+                metaTags: i.default,
+                linkTags: o.default,
+                scriptTags: a.default
+            };
+        }(t);
+        T = g.priorityMethods, h = g.linkTags, m = g.metaTags, y = g.scriptTags;
+    }
+    return {
+        priority: T,
+        base: M(l.BASE, e, n),
+        bodyAttributes: M("bodyAttributes", r, n),
+        htmlAttributes: M("htmlAttributes", i, n),
+        link: M(l.LINK, h, n),
+        meta: M(l.META, m, n),
+        noscript: M(l.NOSCRIPT, o, n),
+        script: M(l.SCRIPT, y, n),
+        style: M(l.STYLE, a, n),
+        title: M(l.TITLE, {
+            title: c,
+            titleAttributes: u
+        }, n)
+    };
+}, H = [], N = function(t, e) {
+    var r = this;
+    void 0 === e && (e = "undefined" != typeof document), this.instances = [], this.value = {
+        setHelmet: function(t) {
+            r.context.helmet = t;
+        },
+        helmetInstances: {
+            get: function() {
+                return r.canUseDOM ? H : r.instances;
+            },
+            add: function(t) {
+                (r.canUseDOM ? H : r.instances).push(t);
+            },
+            remove: function(t) {
+                var e = (r.canUseDOM ? H : r.instances).indexOf(t);
+                (r.canUseDOM ? H : r.instances).splice(e, 1);
+            }
+        }
+    }, this.context = t, this.canUseDOM = e, e || (t.helmet = k({
+        baseTag: [],
+        bodyAttributes: {},
+        encodeSpecialCharacters: !0,
+        htmlAttributes: {},
+        linkTags: [],
+        metaTags: [],
+        noscriptTags: [],
+        scriptTags: [],
+        styleTags: [],
+        title: "",
+        titleAttributes: {}
+    }));
+}, R = (0, _reactDefault.default).createContext({}), D = (0, _propTypesDefault.default).shape({
+    setHelmet: (0, _propTypesDefault.default).func,
+    helmetInstances: (0, _propTypesDefault.default).shape({
+        get: (0, _propTypesDefault.default).func,
+        add: (0, _propTypesDefault.default).func,
+        remove: (0, _propTypesDefault.default).func
+    })
+}), U = "undefined" != typeof document, q = /*#__PURE__*/ function(e) {
+    function r(t) {
+        var n;
+        return (n = e.call(this, t) || this).helmetData = new N(n.props.context, r.canUseDOM), n;
+    }
+    return s(r, e), r.prototype.render = function() {
+        return (0, _reactDefault.default).createElement(R.Provider, {
+            value: this.helmetData.value
+        }, this.props.children);
+    }, r;
+}((0, _react.Component));
+q.canUseDOM = U, q.propTypes = {
+    context: (0, _propTypesDefault.default).shape({
+        helmet: (0, _propTypesDefault.default).shape()
+    }),
+    children: (0, _propTypesDefault.default).node.isRequired
+}, q.defaultProps = {
+    context: {}
+}, q.displayName = "HelmetProvider";
+var Y = function(t, e) {
+    var r, n = document.head || document.querySelector(l.HEAD), i = n.querySelectorAll(t + "[data-rh]"), o = [].slice.call(i), a = [];
+    return e && e.length && e.forEach(function(e) {
+        var n = document.createElement(t);
+        for(var i in e)Object.prototype.hasOwnProperty.call(e, i) && ("innerHTML" === i ? n.innerHTML = e.innerHTML : "cssText" === i ? n.styleSheet ? n.styleSheet.cssText = e.cssText : n.appendChild(document.createTextNode(e.cssText)) : n.setAttribute(i, void 0 === e[i] ? "" : e[i]));
+        n.setAttribute("data-rh", "true"), o.some(function(t, e) {
+            return r = e, n.isEqualNode(t);
+        }) ? o.splice(r, 1) : a.push(n);
+    }), o.forEach(function(t) {
+        return t.parentNode.removeChild(t);
+    }), a.forEach(function(t) {
+        return n.appendChild(t);
+    }), {
+        oldTags: o,
+        newTags: a
+    };
+}, B = function(t, e) {
+    var r = document.getElementsByTagName(t)[0];
+    if (r) {
+        for(var n = r.getAttribute("data-rh"), i = n ? n.split(",") : [], o = [].concat(i), a = Object.keys(e), s = 0; s < a.length; s += 1){
+            var c = a[s], u = e[c] || "";
+            r.getAttribute(c) !== u && r.setAttribute(c, u), -1 === i.indexOf(c) && i.push(c);
+            var l = o.indexOf(c);
+            -1 !== l && o.splice(l, 1);
+        }
+        for(var p = o.length - 1; p >= 0; p -= 1)r.removeAttribute(o[p]);
+        i.length === o.length ? r.removeAttribute("data-rh") : r.getAttribute("data-rh") !== a.join(",") && r.setAttribute("data-rh", a.join(","));
+    }
+}, K = function(t, e) {
+    var r = t.baseTag, n = t.htmlAttributes, i = t.linkTags, o = t.metaTags, a = t.noscriptTags, s = t.onChangeClientState, c = t.scriptTags, u = t.styleTags, p = t.title, f = t.titleAttributes;
+    B(l.BODY, t.bodyAttributes), B(l.HTML, n), function(t, e) {
+        void 0 !== t && document.title !== t && (document.title = S(t)), B(l.TITLE, e);
+    }(p, f);
+    var d = {
+        baseTag: Y(l.BASE, r),
+        linkTags: Y(l.LINK, i),
+        metaTags: Y(l.META, o),
+        noscriptTags: Y(l.NOSCRIPT, a),
+        scriptTags: Y(l.SCRIPT, c),
+        styleTags: Y(l.STYLE, u)
+    }, h = {}, m = {};
+    Object.keys(d).forEach(function(t) {
+        var e = d[t], r = e.newTags, n = e.oldTags;
+        r.length && (h[t] = r), n.length && (m[t] = d[t].oldTags);
+    }), e && e(), s(t, h, m);
+}, _ = null, z = /*#__PURE__*/ function(t) {
+    function e() {
+        for(var e, r = arguments.length, n = new Array(r), i = 0; i < r; i++)n[i] = arguments[i];
+        return (e = t.call.apply(t, [
+            this
+        ].concat(n)) || this).rendered = !1, e;
+    }
+    s(e, t);
+    var r = e.prototype;
+    return r.shouldComponentUpdate = function(t) {
+        return !(0, _shallowequalDefault.default)(t, this.props);
+    }, r.componentDidUpdate = function() {
+        this.emitChange();
+    }, r.componentWillUnmount = function() {
+        this.props.context.helmetInstances.remove(this), this.emitChange();
+    }, r.emitChange = function() {
+        var t, e, r = this.props.context, n = r.setHelmet, i = null, o = (t = r.helmetInstances.get().map(function(t) {
+            var e = a({}, t.props);
+            return delete e.context, e;
+        }), {
+            baseTag: A([
+                "href"
+            ], t),
+            bodyAttributes: v("bodyAttributes", t),
+            defer: T(t, "defer"),
+            encode: T(t, "encodeSpecialCharacters"),
+            htmlAttributes: v("htmlAttributes", t),
+            linkTags: C(l.LINK, [
+                "rel",
+                "href"
+            ], t),
+            metaTags: C(l.META, [
+                "name",
+                "charset",
+                "http-equiv",
+                "property",
+                "itemprop"
+            ], t),
+            noscriptTags: C(l.NOSCRIPT, [
+                "innerHTML"
+            ], t),
+            onChangeClientState: b(t),
+            scriptTags: C(l.SCRIPT, [
+                "src",
+                "innerHTML"
+            ], t),
+            styleTags: C(l.STYLE, [
+                "cssText"
+            ], t),
+            title: g(t),
+            titleAttributes: v("titleAttributes", t),
+            prioritizeSeoTags: O(t, "prioritizeSeoTags")
+        });
+        q.canUseDOM ? (e = o, _ && cancelAnimationFrame(_), e.defer ? _ = requestAnimationFrame(function() {
+            K(e, function() {
+                _ = null;
+            });
+        }) : (K(e), _ = null)) : k && (i = k(o)), n(i);
+    }, r.init = function() {
+        this.rendered || (this.rendered = !0, this.props.context.helmetInstances.add(this), this.emitChange());
+    }, r.render = function() {
+        return this.init(), null;
+    }, e;
+}((0, _react.Component));
+z.propTypes = {
+    context: D.isRequired
+}, z.displayName = "HelmetDispatcher";
+var F = [
+    "children"
+], G = [
+    "children"
+], W = /*#__PURE__*/ function(e) {
+    function r() {
+        return e.apply(this, arguments) || this;
+    }
+    s(r, e);
+    var o = r.prototype;
+    return o.shouldComponentUpdate = function(t) {
+        return !(0, _reactFastCompareDefault.default)(I(this.props, "helmetData"), I(t, "helmetData"));
+    }, o.mapNestedChildrenToProps = function(t, e) {
+        if (!e) return null;
+        switch(t.type){
+            case l.SCRIPT:
+            case l.NOSCRIPT:
+                return {
+                    innerHTML: e
+                };
+            case l.STYLE:
+                return {
+                    cssText: e
+                };
+            default:
+                throw new Error("<" + t.type + " /> elements are self-closing and can not contain children. Refer to our API for more information.");
+        }
+    }, o.flattenArrayTypeChildren = function(t) {
+        var e, r = t.child, n = t.arrayTypeChildren;
+        return a({}, n, ((e = {})[r.type] = [].concat(n[r.type] || [], [
+            a({}, t.newChildProps, this.mapNestedChildrenToProps(r, t.nestedChildren))
+        ]), e));
+    }, o.mapObjectTypeChildren = function(t) {
+        var e, r, n = t.child, i = t.newProps, o = t.newChildProps, s = t.nestedChildren;
+        switch(n.type){
+            case l.TITLE:
+                return a({}, i, ((e = {})[n.type] = s, e.titleAttributes = a({}, o), e));
+            case l.BODY:
+                return a({}, i, {
+                    bodyAttributes: a({}, o)
+                });
+            case l.HTML:
+                return a({}, i, {
+                    htmlAttributes: a({}, o)
+                });
+            default:
+                return a({}, i, ((r = {})[n.type] = a({}, o), r));
+        }
+    }, o.mapArrayTypeChildrenToProps = function(t, e) {
+        var r = a({}, e);
+        return Object.keys(t).forEach(function(e) {
+            var n;
+            r = a({}, r, ((n = {})[e] = t[e], n));
+        }), r;
+    }, o.warnOnInvalidChildren = function(t, e) {
+        return (0, _invariantDefault.default)(h.some(function(e) {
+            return t.type === e;
+        }), "function" == typeof t.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + h.join(", ") + " are allowed. Helmet does not support rendering <" + t.type + "> elements. Refer to our API for more information."), (0, _invariantDefault.default)(!e || "string" == typeof e || Array.isArray(e) && !e.some(function(t) {
+            return "string" != typeof t;
+        }), "Helmet expects a string as a child of <" + t.type + ">. Did you forget to wrap your children in braces? ( <" + t.type + ">{``}</" + t.type + "> ) Refer to our API for more information."), !0;
+    }, o.mapChildrenToProps = function(e, r) {
+        var n = this, i = {};
+        return (0, _reactDefault.default).Children.forEach(e, function(t) {
+            if (t && t.props) {
+                var e = t.props, o = e.children, a = u(e, F), s = Object.keys(a).reduce(function(t, e) {
+                    return t[y[e] || e] = a[e], t;
+                }, {}), c = t.type;
+                switch("symbol" == typeof c ? c = c.toString() : n.warnOnInvalidChildren(t, o), c){
+                    case l.FRAGMENT:
+                        r = n.mapChildrenToProps(o, r);
+                        break;
+                    case l.LINK:
+                    case l.META:
+                    case l.NOSCRIPT:
+                    case l.SCRIPT:
+                    case l.STYLE:
+                        i = n.flattenArrayTypeChildren({
+                            child: t,
+                            arrayTypeChildren: i,
+                            newChildProps: s,
+                            nestedChildren: o
+                        });
+                        break;
+                    default:
+                        r = n.mapObjectTypeChildren({
+                            child: t,
+                            newProps: r,
+                            newChildProps: s,
+                            nestedChildren: o
+                        });
+                }
+            }
+        }), this.mapArrayTypeChildrenToProps(i, r);
+    }, o.render = function() {
+        var e = this.props, r = e.children, n = u(e, G), i = a({}, n), o = n.helmetData;
+        return r && (i = this.mapChildrenToProps(r, i)), !o || o instanceof N || (o = new N(o.context, o.instances)), o ? /*#__PURE__*/ (0, _reactDefault.default).createElement(z, a({}, i, {
+            context: o.value,
+            helmetData: void 0
+        })) : /*#__PURE__*/ (0, _reactDefault.default).createElement(R.Consumer, null, function(e) {
+            return (0, _reactDefault.default).createElement(z, a({}, i, {
+                context: e
+            }));
+        });
+    }, r;
+}((0, _react.Component));
+W.propTypes = {
+    base: (0, _propTypesDefault.default).object,
+    bodyAttributes: (0, _propTypesDefault.default).object,
+    children: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).node),
+        (0, _propTypesDefault.default).node
+    ]),
+    defaultTitle: (0, _propTypesDefault.default).string,
+    defer: (0, _propTypesDefault.default).bool,
+    encodeSpecialCharacters: (0, _propTypesDefault.default).bool,
+    htmlAttributes: (0, _propTypesDefault.default).object,
+    link: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).object),
+    meta: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).object),
+    noscript: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).object),
+    onChangeClientState: (0, _propTypesDefault.default).func,
+    script: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).object),
+    style: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).object),
+    title: (0, _propTypesDefault.default).string,
+    titleAttributes: (0, _propTypesDefault.default).object,
+    titleTemplate: (0, _propTypesDefault.default).string,
+    prioritizeSeoTags: (0, _propTypesDefault.default).bool,
+    helmetData: (0, _propTypesDefault.default).object
+}, W.defaultProps = {
+    defer: !0,
+    encodeSpecialCharacters: !0,
+    prioritizeSeoTags: !1
+}, W.displayName = "Helmet";
+
+},{"react":"21dqq","prop-types":"7wKI2","react-fast-compare":"isHbY","invariant":"d1QgR","shallowequal":"fjwkp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isHbY":[function(require,module,exports) {
+/* global Map:readonly, Set:readonly, ArrayBuffer:readonly */ var hasElementType = typeof Element !== "undefined";
+var hasMap = typeof Map === "function";
+var hasSet = typeof Set === "function";
+var hasArrayBuffer = typeof ArrayBuffer === "function" && !!ArrayBuffer.isView;
+// Note: We **don't** need `envHasBigInt64Array` in fde es6/index.js
+function equal(a, b) {
+    // START: fast-deep-equal es6/index.js 3.1.1
+    if (a === b) return true;
+    if (a && b && typeof a == "object" && typeof b == "object") {
+        if (a.constructor !== b.constructor) return false;
+        var length, i, keys;
+        if (Array.isArray(a)) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; i-- !== 0;)if (!equal(a[i], b[i])) return false;
+            return true;
+        }
+        // START: Modifications:
+        // 1. Extra `has<Type> &&` helpers in initial condition allow es6 code
+        //    to co-exist with es5.
+        // 2. Replace `for of` with es5 compliant iteration using `for`.
+        //    Basically, take:
+        //
+        //    ```js
+        //    for (i of a.entries())
+        //      if (!b.has(i[0])) return false;
+        //    ```
+        //
+        //    ... and convert to:
+        //
+        //    ```js
+        //    it = a.entries();
+        //    while (!(i = it.next()).done)
+        //      if (!b.has(i.value[0])) return false;
+        //    ```
+        //
+        //    **Note**: `i` access switches to `i.value`.
+        var it;
+        if (hasMap && a instanceof Map && b instanceof Map) {
+            if (a.size !== b.size) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!b.has(i.value[0])) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!equal(i.value[1], b.get(i.value[0]))) return false;
+            return true;
+        }
+        if (hasSet && a instanceof Set && b instanceof Set) {
+            if (a.size !== b.size) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!b.has(i.value[0])) return false;
+            return true;
+        }
+        // END: Modifications
+        if (hasArrayBuffer && ArrayBuffer.isView(a) && ArrayBuffer.isView(b)) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; i-- !== 0;)if (a[i] !== b[i]) return false;
+            return true;
+        }
+        if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+        if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+        if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+        keys = Object.keys(a);
+        length = keys.length;
+        if (length !== Object.keys(b).length) return false;
+        for(i = length; i-- !== 0;)if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+        // END: fast-deep-equal
+        // START: react-fast-compare
+        // custom handling for DOM elements
+        if (hasElementType && a instanceof Element) return false;
+        // custom handling for React/Preact
+        for(i = length; i-- !== 0;){
+            if ((keys[i] === "_owner" || keys[i] === "__v" || keys[i] === "__o") && a.$$typeof) continue;
+            // all other properties should be traversed as usual
+            if (!equal(a[keys[i]], b[keys[i]])) return false;
+        }
+        // END: react-fast-compare
+        // START: fast-deep-equal
+        return true;
+    }
+    return a !== a && b !== b;
+}
+// end fast-deep-equal
+module.exports = function isEqual(a, b) {
+    try {
+        return equal(a, b);
+    } catch (error) {
+        if ((error.message || "").match(/stack|recursion/i)) {
+            // warn on circular references, don't crash
+            // browsers give this different errors name and messages:
+            // chrome/safari: "RangeError", "Maximum call stack size exceeded"
+            // firefox: "InternalError", too much recursion"
+            // edge: "Error", "Out of stack space"
+            console.warn("react-fast-compare cannot handle circular refs");
+            return false;
+        }
+        // some other error. we should definitely know about these
+        throw error;
+    }
+};
+
+},{}],"d1QgR":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */ var invariant = function(condition, format, a, b, c, d, e, f) {
+    if (format === undefined) throw new Error("invariant requires an error message argument");
+    if (!condition) {
+        var error;
+        if (format === undefined) error = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
+        else {
+            var args = [
+                a,
+                b,
+                c,
+                d,
+                e,
+                f
+            ];
+            var argIndex = 0;
+            error = new Error(format.replace(/%s/g, function() {
+                return args[argIndex++];
+            }));
+            error.name = "Invariant Violation";
+        }
+        error.framesToPop = 1; // we don't care about invariant's own frame
+        throw error;
+    }
+};
+module.exports = invariant;
+
+},{}],"fjwkp":[function(require,module,exports) {
+//
+module.exports = function shallowEqual(objA, objB, compare, compareContext) {
+    var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
+    if (ret !== void 0) return !!ret;
+    if (objA === objB) return true;
+    if (typeof objA !== "object" || !objA || typeof objB !== "object" || !objB) return false;
+    var keysA = Object.keys(objA);
+    var keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) return false;
+    var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+    // Test for A's keys different from B.
+    for(var idx = 0; idx < keysA.length; idx++){
+        var key = keysA[idx];
+        if (!bHasOwnProperty(key)) return false;
+        var valueA = objA[key];
+        var valueB = objB[key];
+        ret = compare ? compare.call(compareContext, valueA, valueB, key) : void 0;
+        if (ret === false || ret === void 0 && valueA !== valueB) return false;
+    }
+    return true;
+};
+
+},{}],"fdtMD":[function(require,module,exports) {
 /* eslint-disable no-undef */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const formEndPoint = `https://internal-api.wmca.org.uk/emails/api/email`;
-// const formEndPoint = `${process.env.FORM_END_POINT_BASE}/emails/api/email`;
+const formEndPoint = "https://internal-api.wmca.org.uk/emails/api/email";
 const sendFormData = async (formData, formSubject)=>{
-    // flatten the formdata to send to the api
     const flattenJSON = (obj = {}, res = {}, extraKey = "")=>{
-        for(key in obj)if (typeof obj[key] !== "object") res[extraKey + key] = obj[key];
+        for(let key in obj)if (typeof obj[key] !== "object") res[extraKey + key] = obj[key];
         else flattenJSON(obj[key], res, `${extraKey}${key}.`);
         return res;
     };
-    const rawResponse = await fetch(formEndPoint, {
-        method: "POST",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            to: 7,
-            body: JSON.stringify(flattenJSON(formData)),
-            from: formData.emailAddress,
-            subject: formSubject
-        })
+    // escape formdata
+    const data = flattenJSON(formData);
+    const myJSONString = JSON.stringify(data);
+    const myEscapedJSONString = myJSONString.replace(/\\n/g, "\\n").replace(/\\'/g, "\\'").replace(/\\"/g, '\\"').replace(/\\&/g, "\\&").replace(/\\r/g, "\\r").replace(/\\t/g, "\\t").replace(/\\b/g, "\\b").replace(/\\f/g, "\\f");
+    const raw = JSON.stringify({
+        to: 13,
+        body: myEscapedJSONString,
+        from: formData.emailAddress,
+        subject: formSubject,
+        displayName: formData.firstName + " " + formData.lastName
     });
-    const response = await rawResponse.json();
-    return response;
+    try {
+        const rawResponse = await fetch(formEndPoint, {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json"
+            },
+            body: raw
+        });
+        const response = await rawResponse.json();
+        return response;
+    } catch (error) {
+        console.log("error", error);
+    }
 };
 exports.default = sendFormData;
 
@@ -37131,6 +38807,7 @@ var _breadCrumb = require("../common/BreadCrumb");
 var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
 var _formWizard = require("../common/FormWizard");
 var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
+var _reactHelmetAsync = require("react-helmet-async");
 var _registrationArea = require("./section1/RegistrationArea");
 var _registrationAreaDefault = parcelHelpers.interopDefault(_registrationArea);
 var _registrationIndividual = require("./section1/RegistrationIndividual");
@@ -37225,11 +38902,40 @@ const RegistrationForm = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.HelmetProvider), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.Helmet), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                            children: "Register for the Ring and Ride servic"
+                        }, void 0, false, {
+                            fileName: "src/Registration/RegistrationForm.js",
+                            lineNumber: 79,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                            rel: "canonical",
+                            href: "http://ringandride.org.uk/register"
+                        }, void 0, false, {
+                            fileName: "src/Registration/RegistrationForm.js",
+                            lineNumber: 80,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Registration/RegistrationForm.js",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Registration/RegistrationForm.js",
+                lineNumber: 77,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
                 heading: "Register for the Ring and Ride service"
             }, void 0, false, {
                 fileName: "src/Registration/RegistrationForm.js",
-                lineNumber: 76,
+                lineNumber: 83,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formContentWrapperDefault.default), {
@@ -37238,7 +38944,7 @@ const RegistrationForm = ()=>{
                         currentPageName: "Register"
                     }, void 0, false, {
                         fileName: "src/Registration/RegistrationForm.js",
-                        lineNumber: 78,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formWizardDefault.default), {
@@ -37255,36 +38961,36 @@ const RegistrationForm = ()=>{
                         children: [
                             cDate >= aDate ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAreaDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 83,
+                                lineNumber: 90,
                                 columnNumber: 29
                             }, undefined) : null,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationIndividualDefault.default), {
                                 setRegisterForYourself: setRegisterForYourself
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 85,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 86,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dateOfBirthDefault.default), {
                                 validate: (0, _validation1.validateDateOfBirth)
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 87,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _telephoneNoDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 88,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emailAddressDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 89,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAddressDefault.default), {
@@ -37294,14 +39000,14 @@ const RegistrationForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("registered")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 90,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPreferencesDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("contactPreference", "selectContactPref")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 91,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ethnicGroupDefault.default), {
@@ -37309,46 +39015,46 @@ const RegistrationForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 92,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, undefined),
                             ethnicGroup !== "preferNotToSay" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specificEthnicGroupDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 93,
+                                lineNumber: 100,
                                 columnNumber: 47
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactDefault.default), {
                                 setEmergencyContact: setEmergencyContact
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 94,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined),
                             registerForYourself === "no" && emergencyContact === "no" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactAnotherDefault.default), {
                                 setEmergencyContactAnother: setEmergencyContactAnother
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 95,
+                                lineNumber: 102,
                                 columnNumber: 72
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 96,
+                                lineNumber: 103,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyRelationshipDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 97,
+                                lineNumber: 104,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactTelephoneDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 98,
+                                lineNumber: 105,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactEmailDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 99,
+                                lineNumber: 106,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             showEmergencyContact ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emergencyContactAddressDefault.default), {
@@ -37357,33 +39063,33 @@ const RegistrationForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("emergency")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 100,
+                                lineNumber: 107,
                                 columnNumber: 35
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _standardBusProblemsDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("standardBusProb", "selectStandardBusProb")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 101,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _standardBusReasonsDefault.default), {
                                 validate: (0, _validation.validateSelectOneOption)("standardBusReason", "selectStandardBusReason")
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 102,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _conditionQueryDefault.default), {
                                 setHasCondition: setHasCondition
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 103,
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, undefined),
                             hasCondition === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _conditionDetailsDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 104,
+                                lineNumber: 111,
                                 columnNumber: 37
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mobilityAidsQueryDefault.default), {
@@ -37391,17 +39097,17 @@ const RegistrationForm = ()=>{
                                 setMobilityAids: setMobilityAids
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 105,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, undefined),
                             mobilityAids?.manualWheelchair || mobilityAids?.poweredWheelchair ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _wheelChairTransferDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 106,
+                                lineNumber: 113,
                                 columnNumber: 80
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalRequirementsDefault.default), {}, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 107,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswersDefault.default), {
@@ -37411,19 +39117,19 @@ const RegistrationForm = ()=>{
                                 formSubmitError: formSubmitError
                             }, void 0, false, {
                                 fileName: "src/Registration/RegistrationForm.js",
-                                lineNumber: 108,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Registration/RegistrationForm.js",
-                        lineNumber: 79,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Registration/RegistrationForm.js",
-                lineNumber: 77,
+                lineNumber: 84,
                 columnNumber: 7
             }, undefined)
         ]
@@ -37445,7 +39151,7 @@ $RefreshReg$(_c, "RegistrationForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","./section1/RegistrationArea":"aqgYM","./section1/RegistrationIndividual":"lv3c5","./section1/RegistrationName":"aeeCb","./section1/DateOfBirth":"1C1TJ","./section1/TelephoneNo":"guyd3","./section1/EmailAddress":"gVWz1","./section1/RegistrationAddress":"1iNp9","./section1/ContactPreferences":"6p5GY","./section1/EthnicGroup":"2CKZ7","./section1/SpecificEthnicGroup":"3wZMV","./section2/EmergencyContact":"l1Ygc","./section2/EmergencyContactAnother":"3oatz","./section2/EmergencyContactName":"ct5N3","./section2/EmergencyRelationship":"i9TIN","./section2/EmergencyContactTelephone":"81NM9","./section2/EmergencyContactEmail":"ZtXfa","./section2/EmergencyContactAddress":"gusaC","./section3/StandardBusProblems":"9RkC1","./section3/StandardBusReasons":"djjwl","./section3/ConditionQuery":"dr4wX","./section3/ConditionDetails":"1cSrv","./section3/MobilityAidsQuery":"diSUw","./section3/WheelChairTransfer":"2P2fr","./section3/AdditionalRequirements":"57NS5","./CheckAnswers":"4AjKS","../common/validation":"hOBBd","./validation":"jxGox","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aqgYM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","react-helmet-async":"hTtyd","./section1/RegistrationArea":"aqgYM","./section1/RegistrationIndividual":"lv3c5","./section1/RegistrationName":"aeeCb","./section1/DateOfBirth":"1C1TJ","./section1/TelephoneNo":"guyd3","./section1/EmailAddress":"gVWz1","./section1/RegistrationAddress":"1iNp9","./section1/ContactPreferences":"6p5GY","./section1/EthnicGroup":"2CKZ7","./section1/SpecificEthnicGroup":"3wZMV","./section2/EmergencyContact":"l1Ygc","./section2/EmergencyContactAnother":"3oatz","./section2/EmergencyContactName":"ct5N3","./section2/EmergencyRelationship":"i9TIN","./section2/EmergencyContactTelephone":"81NM9","./section2/EmergencyContactEmail":"ZtXfa","./section2/EmergencyContactAddress":"gusaC","./section3/StandardBusProblems":"9RkC1","./section3/StandardBusReasons":"djjwl","./section3/ConditionQuery":"dr4wX","./section3/ConditionDetails":"1cSrv","./section3/MobilityAidsQuery":"diSUw","./section3/WheelChairTransfer":"2P2fr","./section3/AdditionalRequirements":"57NS5","./CheckAnswers":"4AjKS","../common/validation":"hOBBd","./validation":"jxGox","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aqgYM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2bff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37472,23 +39178,14 @@ const RegistrationArea = ()=>{
     _s();
     const stateApi = (0, _reactFinalForm.useFormState)();
     const formValues = stateApi.values;
-    const error = stateApi.submitFailed ? stateApi.errors?.registerForYourself : null;
-    // disable continue button if coventry is selected
-    if (formValues.Origin === "Coventry") {
-        const button = document.querySelector('button[type="submit"]');
-        button.disabled = true;
-        button.classList.add("wmrards-btn--disabled");
-    } else {
-        const button1 = document.querySelector('button[type="submit"]');
-        button1.disabled = false;
-    }
+    const error = stateApi.submitFailed ? stateApi.errors?.Origin : null;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: "Where do you live?"
             }, void 0, false, {
                 fileName: "src/Registration/section1/RegistrationArea.js",
-                lineNumber: 23,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
@@ -37498,7 +39195,7 @@ const RegistrationArea = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 25,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -37508,17 +39205,17 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 1, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 26,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
                         label: "Coventry",
-                        validation: (0, _validation.required),
+                        validation: (0, _validation.coventry),
                         value: "Coventry",
                         fieldName: "Origin"
                     }, 2, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 27,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     formValues.Origin === "Coventry" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -37532,12 +39229,12 @@ const RegistrationArea = ()=>{
                                         href: "#wmrards-general-warning-triangle"
                                     }, void 0, false, {
                                         fileName: "src/Registration/section1/RegistrationArea.js",
-                                        lineNumber: 31,
+                                        lineNumber: 21,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Registration/section1/RegistrationArea.js",
-                                    lineNumber: 30,
+                                    lineNumber: 20,
                                     columnNumber: 15
                                 }, undefined),
                                 "If you are starting your trip in Coventry you need to book using West Midlands On-Demand.",
@@ -37550,13 +39247,13 @@ const RegistrationArea = ()=>{
                                     children: "Find out more on the Transport For West Midlands Website"
                                 }, void 0, false, {
                                     fileName: "src/Registration/section1/RegistrationArea.js",
-                                    lineNumber: 35,
+                                    lineNumber: 25,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Registration/section1/RegistrationArea.js",
-                            lineNumber: 29,
+                            lineNumber: 19,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false) : null,
@@ -37567,7 +39264,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 3, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 40,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -37577,7 +39274,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 4, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 41,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -37587,7 +39284,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 5, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 42,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -37597,7 +39294,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 6, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 43,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -37607,19 +39304,19 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 7, false, {
                         fileName: "src/Registration/section1/RegistrationArea.js",
-                        lineNumber: 44,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Registration/section1/RegistrationArea.js",
-                lineNumber: 24,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Registration/section1/RegistrationArea.js",
-        lineNumber: 22,
+        lineNumber: 12,
         columnNumber: 10
     }, undefined);
 };
@@ -38943,10 +40640,10 @@ $RefreshReg$(_c, "AddressDetails");
 },{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-final-form":"cgn4o","../TextInput":"7jGrs","../validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6xVDe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const addressEndPointBase = "https://apis.networkwestmidlands.com/Addresses/AddressByPostcode/";
+const addressEndPointBase = "https://api.wmnetwork.co.uk/address/v1/AddressByPostcode";
 const fetchAddresses = async (postCode)=>{
     const postCodeTrimmed = postCode.trim();
-    const postCodeEndPoint = `${addressEndPointBase}${postCodeTrimmed}`;
+    const postCodeEndPoint = `${addressEndPointBase}/${postCodeTrimmed}`;
     const response = await fetch(postCodeEndPoint);
     const parsedResponse = await response.json();
     return parsedResponse;
@@ -40675,7 +42372,8 @@ const MobilityAidsOptions = (registerForYourself)=>{
         sticksOrCrutches: "I use a stick(s)/crutch(es)",
         walkingFrame: "I use a walking frame",
         guideDog: "I have a guide/helping dog",
-        passengerLift: "I need a passenger lift"
+        passengerLift: "I need a passenger lift",
+        noMobiltyNeeds: "I don't use mobility aids"
     };
     return {
         manualWheelchair: "They use a manual wheelchair",
@@ -40684,7 +42382,8 @@ const MobilityAidsOptions = (registerForYourself)=>{
         sticksOrCrutches: "They use a stick(s)/crutch(es)",
         walkingFrame: "They use a walking frame",
         guideDog: "They have a guide/helping dog",
-        passengerLift: "They need a passenger lift"
+        passengerLift: "They need a passenger lift",
+        noMobiltyNeeds: "They don't use mobility aids"
     };
 };
 _c = MobilityAidsOptions;
@@ -40709,21 +42408,21 @@ const MobilityAidsQuery = ({ setMobilityAids  })=>{
                 sectionName: (0, _getRequirementsSectionNameDefault.default)(stateApi)
             }, void 0, false, {
                 fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                lineNumber: 51,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: question
             }, void 0, false, {
                 fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Select all that apply"
             }, void 0, false, {
                 fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                lineNumber: 53,
+                lineNumber: 55,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxContainerDefault.default), {
@@ -40733,7 +42432,7 @@ const MobilityAidsQuery = ({ setMobilityAids  })=>{
                         text: mobilityAidsError
                     }, void 0, false, {
                         fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined),
                     Object.keys(mobilityAidsOptions).map((option)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
@@ -40741,7 +42440,7 @@ const MobilityAidsQuery = ({ setMobilityAids  })=>{
                             fieldName: `mobilityAids.${option}`
                         }, mobilityAidsOptions[option], false, {
                             fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                            lineNumber: 56,
+                            lineNumber: 58,
                             columnNumber: 57
                         }, undefined)),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkboxDefault.default), {
@@ -40749,7 +42448,7 @@ const MobilityAidsQuery = ({ setMobilityAids  })=>{
                         fieldName: "mobilityAids.other"
                     }, void 0, false, {
                         fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, undefined),
                     formValues.mobilityAids?.other ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textAreaDefault.default), {
@@ -40759,19 +42458,19 @@ const MobilityAidsQuery = ({ setMobilityAids  })=>{
                         error: otherRequirementRequired
                     }, void 0, false, {
                         fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                        lineNumber: 58,
+                        lineNumber: 60,
                         columnNumber: 43
                     }, undefined) : null
                 ]
             }, void 0, true, {
                 fileName: "src/Registration/section3/MobilityAidsQuery.js",
-                lineNumber: 54,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Registration/section3/MobilityAidsQuery.js",
-        lineNumber: 50,
+        lineNumber: 52,
         columnNumber: 10
     }, undefined);
 };
@@ -41084,6 +42783,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
     (0, _react.useEffect)(()=>{
         setFormSubmitting(submitting);
     }, [
+        setFormSubmitting,
         submitting
     ]);
     const agreeLegalError = stateApi.submitFailed ? stateApi.errors?.legal : null;
@@ -41128,7 +42828,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Name",
                         value: `${formValues["firstName"]} ${formValues["lastName"]}`,
-                        changeValueCallback: ()=>setGoToPage(1),
+                        changeValueCallback: ()=>setGoToPage(2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41138,7 +42838,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Date of birth",
                         value: (0, _formatDateDefault.default)(formValues["bdayDay"], formValues["bdayMonth"], formValues["bdayYear"]),
-                        changeValueCallback: ()=>setGoToPage(2),
+                        changeValueCallback: ()=>setGoToPage(3),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41148,7 +42848,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Telephone number",
                         value: formValues["phoneNo"],
-                        changeValueCallback: ()=>setGoToPage(3),
+                        changeValueCallback: ()=>setGoToPage(4),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41158,7 +42858,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Email address",
                         value: formValues["emailAddress"],
-                        changeValueCallback: ()=>setGoToPage(4),
+                        changeValueCallback: ()=>setGoToPage(5),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41170,7 +42870,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                         value: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addressFormattedDefault.default), {
                             addressObj: formValues["registered"]
                         }, void 0, false, void 0, void 0),
-                        changeValueCallback: ()=>setGoToPage(5),
+                        changeValueCallback: ()=>setGoToPage(6),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41180,7 +42880,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Preferred method of contact",
                         value: (0, _formatOptionsDefault.default)(formValues["contactPreference"], (0, _contactPreferenceOptionsDefault.default)),
-                        changeValueCallback: ()=>setGoToPage(6),
+                        changeValueCallback: ()=>setGoToPage(7),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41190,7 +42890,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Ethnicity",
                         value: `${ethnicityDisplay}${specificEthnicityDisplay}`,
-                        changeValueCallback: ()=>setGoToPage(7),
+                        changeValueCallback: ()=>setGoToPage(8),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41217,7 +42917,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Name",
                                 value: `${formValues["emergencyFirstName"]} ${formValues["emergencyLastName"]}`,
-                                changeValueCallback: ()=>setGoToPage(offSet1 + 2),
+                                changeValueCallback: ()=>setGoToPage(offSet1 + 3),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Registration/CheckAnswers.js",
@@ -41227,7 +42927,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: registerForYourself ? "Relationship to you" : "Relationship to applicant",
                                 value: formValues["emergencyRelationship"],
-                                changeValueCallback: ()=>setGoToPage(offSet1 + 3),
+                                changeValueCallback: ()=>setGoToPage(offSet1 + 4),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Registration/CheckAnswers.js",
@@ -41237,7 +42937,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Telephone number",
                                 value: formValues["emergencyPhoneNo"],
-                                changeValueCallback: ()=>setGoToPage(offSet1 + 4),
+                                changeValueCallback: ()=>setGoToPage(offSet1 + 5),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Registration/CheckAnswers.js",
@@ -41247,7 +42947,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Email address",
                                 value: formValues["emergencyEmailAddress"],
-                                changeValueCallback: ()=>setGoToPage(offSet1 + 5),
+                                changeValueCallback: ()=>setGoToPage(offSet1 + 6),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Registration/CheckAnswers.js",
@@ -41259,7 +42959,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                                 value: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addressFormattedDefault.default), {
                                     addressObj: formValues["emergency"]
                                 }, void 0, false, void 0, void 0),
-                                changeValueCallback: ()=>setGoToPage(offSet1 + 6),
+                                changeValueCallback: ()=>setGoToPage(offSet1 + 7),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Registration/CheckAnswers.js",
@@ -41286,7 +42986,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Problems accessing standard services",
                         value: (0, _formatOptionsDefault.default)(formValues["standardBusProb"], (0, _standardBusProblems.BusProblemOptions)(registerForYourself)),
-                        changeValueCallback: ()=>setGoToPage(offSet2 + 1),
+                        changeValueCallback: ()=>setGoToPage(offSet2 + 2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41296,7 +42996,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Reasons",
                         value: `${(0, _formatOptionsDefault.default)(formValues["standardBusReason"], (0, _standardBusReasons.ReasonOptions)(registerForYourself))}${formValues["standardBusReason"]?.other === true ? `, ${formValues["standardBusReason"].otherReason}` : ""}`,
-                        changeValueCallback: ()=>setGoToPage(offSet2 + 2),
+                        changeValueCallback: ()=>setGoToPage(offSet2 + 3),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41306,7 +43006,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     formValues["hasCondition"] == "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: registerForYourself ? "What conditions do you have?" : "What conditions do they have?",
                         value: formValues["conditionDetail"],
-                        changeValueCallback: ()=>setGoToPage(offSet2 + 4),
+                        changeValueCallback: ()=>setGoToPage(offSet2 + 5),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41316,7 +43016,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Use of a mobility aid",
                         value: `${(0, _formatOptionsDefault.default)(formValues["mobilityAids"], (0, _mobilityAidsQuery.MobilityAidsOptions)(registerForYourself))}${formValues["mobilityAids"]?.other === true ? `, ${formValues["mobilityAids"].otherRequirement}` : ""}`,
-                        changeValueCallback: ()=>setGoToPage(offSet3 + 1),
+                        changeValueCallback: ()=>setGoToPage(offSet3 + 2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41326,7 +43026,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     formValues["mobilityAids"]?.manualWheelchair || formValues["mobilityAids"]?.poweredWheelchair ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: formValues["mobilityAids"]?.manualWheelchair ? "Manual wheelchair" : "Powered wheelchair",
                         value: `${registerForYourself ? "I " : "They "}${formValues["wheelChairTransfer"] === "yes" ? "can transfer" : "cannot transfer"}`,
-                        changeValueCallback: ()=>setGoToPage(offSet3 + 2),
+                        changeValueCallback: ()=>setGoToPage(offSet3 + 3),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41336,7 +43036,7 @@ const CheckAnswers = ({ setGoToPage , setFormSubmitting , formSubmitError  })=>{
                     formValues["additionalRequirements"] == "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Additional requirements",
                         value: formValues["additionalRequirementsDetails"],
-                        changeValueCallback: ()=>setGoToPage(offSet3 + 3),
+                        changeValueCallback: ()=>setGoToPage(offSet3 + 4),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Registration/CheckAnswers.js",
@@ -41707,6 +43407,7 @@ var _breadCrumbDefault = parcelHelpers.interopDefault(_breadCrumb);
 var _formWizard = require("../common/FormWizard");
 var _formWizardDefault = parcelHelpers.interopDefault(_formWizard);
 var _validation = require("../common/validation");
+var _reactHelmetAsync = require("react-helmet-async");
 var _registrationArea = require("./section1/RegistrationArea");
 var _registrationAreaDefault = parcelHelpers.interopDefault(_registrationArea);
 var _bookingParty = require("./section1/BookingParty");
@@ -41715,6 +43416,8 @@ var _bookingName = require("./section1/BookingName");
 var _bookingNameDefault = parcelHelpers.interopDefault(_bookingName);
 var _registrationNoEntry = require("./section1/RegistrationNoEntry");
 var _registrationNoEntryDefault = parcelHelpers.interopDefault(_registrationNoEntry);
+var _contactEmail = require("../Shared/ContactEmail");
+var _contactEmailDefault = parcelHelpers.interopDefault(_contactEmail);
 var _contactPreferenceEntry = require("./section1/ContactPreferenceEntry");
 var _contactPreferenceEntryDefault = parcelHelpers.interopDefault(_contactPreferenceEntry);
 var _includeInGroupBooking = require("./section1/IncludeInGroupBooking");
@@ -41809,11 +43512,40 @@ const BookingForm = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.HelmetProvider), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHelmetAsync.Helmet), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                            children: "Book a Ring and Ride journey"
+                        }, void 0, false, {
+                            fileName: "src/Booking/BookingForm.js",
+                            lineNumber: 87,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                            rel: "canonical",
+                            href: "http://ringandride.org.uk/contact"
+                        }, void 0, false, {
+                            fileName: "src/Booking/BookingForm.js",
+                            lineNumber: 88,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Booking/BookingForm.js",
+                    lineNumber: 86,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Booking/BookingForm.js",
+                lineNumber: 85,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
                 heading: "Book a Ring and Ride journey"
             }, void 0, false, {
                 fileName: "src/Booking/BookingForm.js",
-                lineNumber: 83,
+                lineNumber: 91,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formContentWrapperDefault.default), {
@@ -41822,7 +43554,7 @@ const BookingForm = ()=>{
                         currentPageName: "Booking"
                     }, void 0, false, {
                         fileName: "src/Booking/BookingForm.js",
-                        lineNumber: 85,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formWizardDefault.default), {
@@ -41840,68 +43572,73 @@ const BookingForm = ()=>{
                         children: [
                             cDate >= aDate ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationAreaDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 91,
+                                lineNumber: 99,
                                 columnNumber: 29
                             }, undefined) : null,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingPartyDefault.default), {
                                 setBookingParty: setBookingParty
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 92,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingNameDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 93,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNoEntryDefault.default), {
                                 orderNo: 2
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 94,
+                                lineNumber: 102,
                                 columnNumber: 45
                             }, undefined) : undefined,
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactEmailDefault.default), {}, void 0, false, {
+                                fileName: "src/Booking/BookingForm.js",
+                                lineNumber: 103,
+                                columnNumber: 11
+                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPreferenceEntryDefault.default), {
                                 validate: (0, _validation.validateContactPreferences)
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 95,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _includeInGroupBookingDefault.default), {
                                 setIncludeInGroupBooking: setIncludeInGroupBooking
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 96,
+                                lineNumber: 105,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             bookingParty === "behalfGroup" && includeInGroupBooking === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registrationNoEntryDefault.default), {
                                 orderNo: 4
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 97,
+                                lineNumber: 106,
                                 columnNumber: 80
                             }, undefined) : undefined,
                             bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPassengersDefault.default), {
                                 hideSubmit: true
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 98,
+                                lineNumber: 107,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingDateDefault.default), {
                                 validate: (0, _validation1.validateBookingDate)
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 99,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookingTimeDefault.default), {
                                 validate: (0, _validation.validateTimeInput)("outwardPickup")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 100,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outwardCollectionAddressDefault.default), {
@@ -41909,7 +43646,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 101,
+                                lineNumber: 110,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             outwardCollectionAddress === "other" || bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherOutwardCollectionAddressDefault.default), {
@@ -41918,7 +43655,7 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("otherOutward")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 102,
+                                lineNumber: 111,
                                 columnNumber: 85
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outwardDestinationAddressDefault.default), {
@@ -41927,33 +43664,33 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("outwardDestination")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 103,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, undefined),
                             bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerQueryDefault.default), {
                                 setAdditionalPassenger: setAdditionalPassenger
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 104,
+                                lineNumber: 113,
                                 columnNumber: 45
                             }, undefined) : undefined,
                             additionalPassenger === "yes" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerNumbersDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 105,
+                                lineNumber: 114,
                                 columnNumber: 78
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnJourneyQueryDefault.default), {
                                 setReturnJourney: setReturnJourney
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 106,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, undefined),
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnBookingTimeDefault.default), {
                                 validate: (0, _validation.composeFormValidators)((0, _validation.validateTimeInput)("returnPickup"), (0, _validation2.validateReturnPickupTime))
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 107,
+                                lineNumber: 116,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnCollectionAddressDefault.default), {
@@ -41961,7 +43698,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 108,
+                                lineNumber: 117,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" && returnCollectionAddress === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherReturnCollectionAddressDefault.default), {
@@ -41971,7 +43708,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 109,
+                                lineNumber: 118,
                                 columnNumber: 77
                             }, undefined) : undefined,
                             returnJourney === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnDestinationAddressDefault.default), {
@@ -41979,7 +43716,7 @@ const BookingForm = ()=>{
                                 setGoToPage: setGoToPage
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 110,
+                                lineNumber: 119,
                                 columnNumber: 38
                             }, undefined) : undefined,
                             returnJourney === "yes" && returnDestinationAddress === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherReturnDestinationAddressDefault.default), {
@@ -41988,33 +43725,33 @@ const BookingForm = ()=>{
                                 validate: (0, _validation.addressIdPresent)("otherReturnDestination")
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 111,
+                                lineNumber: 120,
                                 columnNumber: 78
                             }, undefined) : undefined,
                             returnJourney === "yes" && additionalPassenger === "no" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _additionalPassengerReturnQueryDefault.default), {
                                 setAdditionalPassengerReturn: setAdditionalPassengerReturn
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 112,
+                                lineNumber: 121,
                                 columnNumber: 104
                             }, undefined) : undefined,
                             returnJourney === "yes" && additionalPassenger === "yes" && bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmSameAdditionalPassengerDefault.default), {
                                 setConfirmSameAdditionalPassenger: setConfirmSameAdditionalPassenger
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 113,
+                                lineNumber: 122,
                                 columnNumber: 105
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty === "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _confirmSameGroupDefault.default), {
                                 setGroupSameAsOutward: setGroupSameAsOutward
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 114,
+                                lineNumber: 123,
                                 columnNumber: 72
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty !== "behalfGroup" && (additionalPassengerReturn === "yes" || additionalPassenger === "yes" && confirmSameAdditionalPassenger === "no") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _returnAdditionalPassengerNumbersDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 115,
+                                lineNumber: 124,
                                 columnNumber: 189
                             }, undefined) : undefined,
                             returnJourney === "yes" && bookingParty === "behalfGroup" && groupSameAsOutward === "no" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPassengersDefault.default), {
@@ -42022,12 +43759,12 @@ const BookingForm = ()=>{
                                 hideSubmit: true
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 116,
+                                lineNumber: 125,
                                 columnNumber: 103
                             }, undefined) : undefined,
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _otherInformationDefault.default), {}, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 117,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswersDefault.default), {
@@ -42040,19 +43777,19 @@ const BookingForm = ()=>{
                                 formSubmitError: formSubmitError
                             }, void 0, false, {
                                 fileName: "src/Booking/BookingForm.js",
-                                lineNumber: 118,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Booking/BookingForm.js",
-                        lineNumber: 86,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Booking/BookingForm.js",
-                lineNumber: 84,
+                lineNumber: 92,
                 columnNumber: 7
             }, undefined)
         ]
@@ -42074,7 +43811,7 @@ $RefreshReg$(_c, "BookingForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","../common/validation":"hOBBd","./section1/RegistrationArea":"hICeD","./section1/BookingParty":"bzThk","./section1/BookingName":"ecyDG","./section1/RegistrationNoEntry":"558kA","./section1/ContactPreferenceEntry":"8UL7J","./section1/IncludeInGroupBooking":"eN1oC","./aboutPassengers/AboutPassengers":"iaqBE","./journeyDetails/BookingDate":"d4jDM","./journeyDetails/BookingTime":"1h2hA","./journeyDetails/OutwardCollectionAddress":"dj6QS","./journeyDetails/OtherOutwardCollectionAddress":"6BDUO","./journeyDetails/OutwardDestinationAddress":"JjZ1T","./journeyDetails/AdditionalPassengerQuery":"385Y2","./journeyDetails/AdditionalPassengerNumbers":"7b3p2","./returnJourneyDetails/ReturnJourneyQuery":"ca3Ld","./returnJourneyDetails/ReturnBookingTime":"18XNr","./returnJourneyDetails/ReturnCollectionAddress":"BCVXv","./returnJourneyDetails/OtherReturnCollectionAddress":"2bKjO","./returnJourneyDetails/ReturnDestinationAddress":"4VJfX","./returnJourneyDetails/OtherReturnDestinationAddress":"9WB1Y","./returnJourneyDetails/AdditionalPassengerReturnQuery":"bomrs","./returnJourneyDetails/ConfirmSameAdditionalPassenger":"gFQv2","./returnJourneyDetails/ConfirmSameGroup":"6dF4J","./returnJourneyDetails/ReturnAdditionalPassengerNumbers":"hlNGR","./otherInformation/OtherInformation":"buwjG","./CheckAnswers":"jIION","./validation":"1bozf","./returnJourneyDetails/validation":"329Yj","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hICeD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../common/FormContentWrapper":"21BDb","../common/Header":"7cpW6","../common/BreadCrumb":"4KMVD","../common/FormWizard":"iUhmL","../common/validation":"hOBBd","react-helmet-async":"hTtyd","./section1/RegistrationArea":"hICeD","./section1/BookingParty":"bzThk","./section1/BookingName":"ecyDG","./section1/RegistrationNoEntry":"558kA","../Shared/ContactEmail":"gdm6U","./section1/ContactPreferenceEntry":"8UL7J","./section1/IncludeInGroupBooking":"eN1oC","./aboutPassengers/AboutPassengers":"iaqBE","./journeyDetails/BookingDate":"d4jDM","./journeyDetails/BookingTime":"1h2hA","./journeyDetails/OutwardCollectionAddress":"dj6QS","./journeyDetails/OtherOutwardCollectionAddress":"6BDUO","./journeyDetails/OutwardDestinationAddress":"JjZ1T","./journeyDetails/AdditionalPassengerQuery":"385Y2","./journeyDetails/AdditionalPassengerNumbers":"7b3p2","./returnJourneyDetails/ReturnJourneyQuery":"ca3Ld","./returnJourneyDetails/ReturnBookingTime":"18XNr","./returnJourneyDetails/ReturnCollectionAddress":"BCVXv","./returnJourneyDetails/OtherReturnCollectionAddress":"2bKjO","./returnJourneyDetails/ReturnDestinationAddress":"4VJfX","./returnJourneyDetails/OtherReturnDestinationAddress":"9WB1Y","./returnJourneyDetails/AdditionalPassengerReturnQuery":"bomrs","./returnJourneyDetails/ConfirmSameAdditionalPassenger":"gFQv2","./returnJourneyDetails/ConfirmSameGroup":"6dF4J","./returnJourneyDetails/ReturnAdditionalPassengerNumbers":"hlNGR","./otherInformation/OtherInformation":"buwjG","./CheckAnswers":"jIION","./validation":"1bozf","./returnJourneyDetails/validation":"329Yj","../api/sendFormData":"fdtMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hICeD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ef0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42101,23 +43838,14 @@ const RegistrationArea = ()=>{
     _s();
     const stateApi = (0, _reactFinalForm.useFormState)();
     const formValues = stateApi.values;
-    const error = stateApi.submitFailed ? stateApi.errors?.registerForYourself : null;
-    // disable continue button if coventry is selected
-    if (formValues.Origin === "Coventry") {
-        const button = document.querySelector('button[type="submit"]');
-        button.disabled = true;
-        button.classList.add("wmrards-btn--disabled");
-    } else {
-        const button1 = document.querySelector('button[type="submit"]');
-        button1.disabled = false;
-    }
+    const error = stateApi.submitFailed ? stateApi.errors?.Origin : null;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: "Where do you live?"
             }, void 0, false, {
                 fileName: "src/Booking/section1/RegistrationArea.js",
-                lineNumber: 23,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
@@ -42127,7 +43855,7 @@ const RegistrationArea = ()=>{
                         text: error
                     }, void 0, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 25,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -42137,17 +43865,17 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 1, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 26,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
                         label: "Coventry",
-                        validation: (0, _validation.required),
+                        validation: (0, _validation.coventry),
                         value: "Coventry",
                         fieldName: "Origin"
                     }, 2, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 27,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     formValues.Origin === "Coventry" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -42161,12 +43889,12 @@ const RegistrationArea = ()=>{
                                         href: "#wmrards-general-warning-triangle"
                                     }, void 0, false, {
                                         fileName: "src/Booking/section1/RegistrationArea.js",
-                                        lineNumber: 31,
+                                        lineNumber: 21,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Booking/section1/RegistrationArea.js",
-                                    lineNumber: 30,
+                                    lineNumber: 20,
                                     columnNumber: 15
                                 }, undefined),
                                 "If you are starting your trip in Coventry you need to book using West Midlands On-Demand.",
@@ -42179,13 +43907,13 @@ const RegistrationArea = ()=>{
                                     children: "Find out more on the Transport For West Midlands Website"
                                 }, void 0, false, {
                                     fileName: "src/Booking/section1/RegistrationArea.js",
-                                    lineNumber: 35,
+                                    lineNumber: 25,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Booking/section1/RegistrationArea.js",
-                            lineNumber: 29,
+                            lineNumber: 19,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false) : null,
@@ -42196,7 +43924,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 3, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 40,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -42206,7 +43934,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 4, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 41,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -42216,7 +43944,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 5, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 42,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -42226,7 +43954,7 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 6, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 43,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -42236,19 +43964,19 @@ const RegistrationArea = ()=>{
                         fieldName: "Origin"
                     }, 7, false, {
                         fileName: "src/Booking/section1/RegistrationArea.js",
-                        lineNumber: 44,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Booking/section1/RegistrationArea.js",
-                lineNumber: 24,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Booking/section1/RegistrationArea.js",
-        lineNumber: 22,
+        lineNumber: 12,
         columnNumber: 10
     }, undefined);
 };
@@ -43487,7 +45215,7 @@ const PassengerDetails = ({ pendingPassengerIndex , goToPassengerList , addPasse
                         " ",
                         "Registration number",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "For example, 1234567890"
+                            children: "For example, 123456"
                         }, void 0, false, void 0, void 0)
                     ]
                 }, void 0, true),
@@ -43560,8 +45288,7 @@ var _question = require("../../common/Question");
 var _questionDefault = parcelHelpers.interopDefault(_question);
 var _progressIndicator = require("../../common/ProgressIndicator");
 var _progressIndicatorDefault = parcelHelpers.interopDefault(_progressIndicator);
-var _dateInput = require("../../common/DateInput");
-var _dateInputDefault = parcelHelpers.interopDefault(_dateInput);
+// import DateInput from "../../common/DateInput";
 var _getSectionPosition = require("../getSectionPosition");
 var _getSectionPositionDefault = parcelHelpers.interopDefault(_getSectionPosition);
 var _getAboutJourneySectionName = require("./getAboutJourneySectionName");
@@ -43579,7 +45306,7 @@ const BookingDate = ()=>{
     const stateApi = (0, _reactFinalForm.useFormState)();
     const formValues = stateApi.values;
     const formApi = (0, _reactFinalForm.useForm)();
-    const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
+    // const error = stateApi.submitFailed ? stateApi.errors?.bookingDate : null;
     const error1 = stateApi.submitFailed ? stateApi.errors?.bookingDateDayAuto : null;
     (0, _react.useEffect)(()=>{
         if (formValues.bookingDateDayAuto == "other") {
@@ -43602,8 +45329,8 @@ const BookingDate = ()=>{
     const current5 = new Date();
     const current6 = new Date();
     const current7 = new Date();
-    // 👇️ get current date
-    const currentTime = today.getHours() + ":" + today.getMinutes();
+    // 👇️ get current date and include the 0 in minutes
+    const currentTime = `${today.getHours()}`.padStart(2, "0") + ":" + `${today.getMinutes()}`.padStart(2, "0");
     // set cut off time
     const cutoffTime = "14:30";
     today.setDate(today.getDate());
@@ -43626,30 +45353,26 @@ const BookingDate = ()=>{
     const dateInSixDays = current6.toDateString();
     const dateInSevenDays = current7.toDateString();
     // disable sunday button if today is saturday
-    if (dateToday.includes("Sat")) {
-        const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
-        for (const f of radios)if (f.value.includes("Sun")) f.disabled = true;
-    } else if (dateToday.includes("Sun")) {
+    if (dateToday.includes("Sun")) {
         // disable monday if today is sunday
-        const radios1 = document.querySelectorAll('input[name="bookingDateDayAuto"]');
-        for (const f1 of radios1)if (f1.value.includes("Mon")) f1.disabled = true;
+        const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+        for (const f of radios)if (f.value.includes("Mon")) f.disabled = true;
     }
     // disable next day if after 14:30
     if (currentTime > cutoffTime) {
-        console.log("yes");
-        const radios2 = document.querySelectorAll('input[name="bookingDateDayAuto"]');
-        for (const f2 of radios2)if (f2.value.includes(dayTomorrow)) {
-            f2.disabled = true; // disable tomorrows radio button
+        const radios = document.querySelectorAll('input[name="bookingDateDayAuto"]');
+        for (const f of radios)if (f.value.includes(dayTomorrow)) {
+            f.disabled = true; // disable tomorrows radio button
             dateTomorrow = `${current.toDateString()} (You can't book this day as it's after 14:30)`; // update tomorrows radio label
         }
     }
     // set other date label + 7 days
     const dateObj = new Date();
     dateObj.setDate(dateObj.getDate() + 8);
-    const month = dateObj.getUTCMonth() + 1;
-    const day = dateObj.getUTCDate();
-    const year = dateObj.getUTCFullYear();
-    const newdate = "For example, " + day + " " + month + " " + year;
+    // const month = dateObj.getUTCMonth() + 1;
+    // const day = dateObj.getUTCDate();
+    // const year = dateObj.getUTCFullYear();
+    // const newdate = "For example, " + day + " " + month + " " + year;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formSectionDefault.default), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressIndicatorDefault.default), {
@@ -43657,14 +45380,14 @@ const BookingDate = ()=>{
                 sectionName: (0, _getAboutJourneySectionNameDefault.default)(stateApi)
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 101,
+                lineNumber: 95,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _questionDefault.default), {
                 text: "What date is the booking for?"
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 102,
+                lineNumber: 96,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioGroupDefault.default), {
@@ -43676,14 +45399,14 @@ const BookingDate = ()=>{
                         children: "Journey requests need to be received by 2.30pm on the day prior to your requested journey unless it's a Sunday or Monday where it needs to be 2 days before. We will then e-mail you to confirm your booking as soon as possible."
                     }, void 0, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 105,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fieldErrorDefault.default), {
                         text: error1
                     }, void 0, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 111,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -43693,7 +45416,7 @@ const BookingDate = ()=>{
                         fieldName: "bookingDateDayAuto"
                     }, 1, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 112,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -43703,7 +45426,7 @@ const BookingDate = ()=>{
                         fieldName: "bookingDateDayAuto"
                     }, 2, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 113,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -43713,7 +45436,7 @@ const BookingDate = ()=>{
                         fieldName: "bookingDateDayAuto"
                     }, 3, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 114,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
@@ -43723,70 +45446,80 @@ const BookingDate = ()=>{
                         fieldName: "bookingDateDayAuto"
                     }, 4, false, {
                         fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 115,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
-                        label: dateInFiveDays,
-                        validation: (0, _validation.required),
-                        value: dateInFiveDays,
-                        fieldName: "bookingDateDayAuto"
-                    }, 5, false, {
-                        fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 116,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
-                        label: dateInSixDays,
-                        validation: (0, _validation.required),
-                        value: dateInSixDays,
-                        fieldName: "bookingDateDayAuto"
-                    }, 6, false, {
-                        fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 117,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
-                        label: dateInSevenDays,
-                        validation: (0, _validation.required),
-                        value: dateInSevenDays,
-                        fieldName: "bookingDateDayAuto"
-                    }, 7, false, {
-                        fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _radioButtonDefault.default), {
-                        label: "other",
-                        validation: (0, _validation.required),
-                        value: "other",
-                        fieldName: "bookingDateDayAuto"
-                    }, 8, false, {
-                        fileName: "src/Booking/journeyDetails/BookingDate.js",
-                        lineNumber: 119,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 104,
+                lineNumber: 98,
                 columnNumber: 7
             }, undefined),
-            formValues.bookingDateDayAuto === "other" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dateInputDefault.default), {
-                dayFieldName: "bookingDateDay",
-                monthFieldName: "bookingDateMonth",
-                yearFieldName: "bookingDateYear",
-                label: newdate,
-                error: error
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                fileName: "src/Booking/journeyDetails/BookingDate.js",
+                lineNumber: 148,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "If you wish to book on any of the days below please call 0330 053 8141."
             }, void 0, false, {
                 fileName: "src/Booking/journeyDetails/BookingDate.js",
-                lineNumber: 121,
-                columnNumber: 52
-            }, undefined) : null
+                lineNumber: 149,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Alternatively download the ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/",
+                        target: "_blank",
+                        rel: "noreferrer",
+                        children: "West Midlands Bus app"
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 150,
+                        columnNumber: 37
+                    }, undefined),
+                    " where you can book trips up to 7 days in advance."
+                ]
+            }, void 0, true, {
+                fileName: "src/Booking/journeyDetails/BookingDate.js",
+                lineNumber: 150,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: dateInFiveDays
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: dateInSixDays
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 153,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: dateInSevenDays
+                    }, void 0, false, {
+                        fileName: "src/Booking/journeyDetails/BookingDate.js",
+                        lineNumber: 154,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Booking/journeyDetails/BookingDate.js",
+                lineNumber: 151,
+                columnNumber: 7
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Booking/journeyDetails/BookingDate.js",
-        lineNumber: 100,
+        lineNumber: 94,
         columnNumber: 10
     }, undefined);
 };
@@ -43806,7 +45539,7 @@ $RefreshReg$(_c, "BookingDate");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/Question":"7HVc9","../../common/ProgressIndicator":"iiGPR","../../common/DateInput":"9CW2w","../getSectionPosition":"hGB5C","./getAboutJourneySectionName":"kb3XY","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kb3XY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","../../common/FormSection":"d4pYd","../../common/Question":"7HVc9","../../common/ProgressIndicator":"iiGPR","../getSectionPosition":"hGB5C","./getAboutJourneySectionName":"kb3XY","../../common/RadioGroup":"ejgLk","../../common/RadioButton":"4y1sj","../../common/FieldError":"4W7oE","../../common/validation":"hOBBd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kb3XY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const getAboutJourneySectionName = (stateApi)=>{
@@ -44499,7 +46232,7 @@ const AdditionalPassengerNumbers = ()=>{
     const formApi = (0, _reactFinalForm.useForm)();
     const formValues = stateApi.values;
     const bookingParty = formValues["bookingParty"];
-    const passengerNumbers = formValues["additionalPassengerNumbers"];
+    const passengerNumbers = formValues["additionalPassengerNumbers"] ? formValues["additionalPassengerNumbers"] : 0;
     let question = "";
     if (bookingParty === "mySelf") question = "How many people are joining you on the journey?";
     else question = `How many people are joining ${formValues["firstName"]} on the journey?`;
@@ -44527,7 +46260,7 @@ const AdditionalPassengerNumbers = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _numberInputDefault.default), {
                 fieldName: "additionalPassengerNumbers",
                 label: `Number of people joining ${pronoun} on the journey`,
-                defaultValue: 1,
+                defaultValue: "0",
                 validation: (0, _validation.composeValidators)((0, _validation.required), (0, _validation.numbersOnly), (0, _validation.numberGreaterThanZero)),
                 decreaseNumberCallback: decreaseNumberCallback,
                 increaseNumberCallback: increaseNumberCallback,
@@ -46078,8 +47811,7 @@ var _checkAnswerRow = require("../common/CheckAnswerRow");
 var _checkAnswerRowDefault = parcelHelpers.interopDefault(_checkAnswerRow);
 var _checkboxContainer = require("../common/CheckboxContainer");
 var _checkboxContainerDefault = parcelHelpers.interopDefault(_checkboxContainer);
-var _formatDate = require("../common/formatDate");
-var _formatDateDefault = parcelHelpers.interopDefault(_formatDate);
+// import formatDate from "../common/formatDate";
 var _formatTime = require("../common/formatTime");
 var _formatTimeDefault = parcelHelpers.interopDefault(_formatTime);
 var _getAboutSectionName = require("./section1/getAboutSectionName");
@@ -46100,6 +47832,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
     (0, _react.useEffect)(()=>{
         setFormSubmitting(submitting);
     }, [
+        setFormSubmitting,
         submitting
     ]);
     const [passengerFormOpen, setPassengerFormOpen] = (0, _react.useState)(false);
@@ -46182,7 +47915,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Name",
                         value: `${formValues["firstName"]} ${formValues["lastName"]}`,
-                        changeValueCallback: ()=>setGoToPage(1),
+                        changeValueCallback: ()=>setGoToPage(2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46192,7 +47925,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                     bookingParty !== "behalfGroup" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Registration number",
                         value: formValues["registrationNo"],
-                        changeValueCallback: ()=>setGoToPage(2),
+                        changeValueCallback: ()=>setGoToPage(3),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46204,7 +47937,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                         value: `${formValues["emailContact"] ? `Email: ${formValues["emailAddress"]} ` : ""}
         ${formValues["phoneContact"] ? `Phone: ${formValues["phoneNo"]}` : ""}`,
                         changeValueCallback: ()=>{
-                            bookingParty === "behalfGroup" ? setGoToPage(2) : setGoToPage(3);
+                            bookingParty === "behalfGroup" ? setGoToPage(3) : setGoToPage(4);
                         },
                         disableButton: submitting
                     }, void 0, false, {
@@ -46238,8 +47971,8 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Date of booking",
-                        value: (0, _formatDateDefault.default)(formValues["bookingDateDay"], formValues["bookingDateMonth"], formValues["bookingDateYear"]),
-                        changeValueCallback: ()=>setGoToPage(3 + offSet1),
+                        value: formValues["bookingDateDayAuto"],
+                        changeValueCallback: ()=>setGoToPage(5 + offSet1),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46249,7 +47982,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Time to be picked up",
                         value: (0, _formatTimeDefault.default)(formValues.outwardPickup.hour, formValues.outwardPickup.minute),
-                        changeValueCallback: ()=>setGoToPage(4 + offSet1),
+                        changeValueCallback: ()=>setGoToPage(6 + offSet1),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46259,7 +47992,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: "Collection address",
                         value: outWardCollectionAddress,
-                        changeValueCallback: ()=>setGoToPage(5 + offSet2),
+                        changeValueCallback: ()=>setGoToPage(7 + offSet2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46271,7 +48004,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                         value: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addressFormattedDefault.default), {
                             addressObj: formValues["outwardDestination"]
                         }, void 0, false, void 0, void 0),
-                        changeValueCallback: ()=>setGoToPage(6 + offSet2),
+                        changeValueCallback: ()=>setGoToPage(8 + offSet2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46281,7 +48014,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                     bookingParty !== "behalfGroup" && formValues["additionalPassenger"] === "yes" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                         label: `People joining ${bookingParty === "mySelf" ? "you" : "them"}`,
                         value: `${formValues["additionalPassengerNumbers"]} other people`,
-                        changeValueCallback: ()=>setGoToPage(8 + offSet2),
+                        changeValueCallback: ()=>setGoToPage(10 + offSet2),
                         disableButton: submitting
                     }, void 0, false, {
                         fileName: "src/Booking/CheckAnswers.js",
@@ -46325,7 +48058,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Time to be picked up",
                                 value: (0, _formatTimeDefault.default)(formValues.returnPickup.hour, formValues.returnPickup.minute),
-                                changeValueCallback: ()=>setGoToPage(8 + offSet3),
+                                changeValueCallback: ()=>setGoToPage(9 + offSet3),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Booking/CheckAnswers.js",
@@ -46335,7 +48068,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Collection address",
                                 value: returnCollectionAddress,
-                                changeValueCallback: ()=>setGoToPage(9 + offSet4),
+                                changeValueCallback: ()=>setGoToPage(10 + offSet4),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Booking/CheckAnswers.js",
@@ -46345,7 +48078,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                                 label: "Destination address",
                                 value: returnDestinationAddress,
-                                changeValueCallback: ()=>setGoToPage(10 + offSet5),
+                                changeValueCallback: ()=>setGoToPage(11 + offSet5),
                                 disableButton: submitting
                             }, void 0, false, {
                                 fileName: "src/Booking/CheckAnswers.js",
@@ -46360,7 +48093,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                                         formApi.mutators.setFormAttribute("confirmSameAdditionalPassenger", "no");
                                         setConfirmSameAdditionalPassenger("no");
                                     }
-                                    setGoToPage(12 + offSet5);
+                                    setGoToPage(14 + offSet5);
                                 },
                                 disableButton: submitting
                             }, void 0, false, {
@@ -46407,7 +48140,7 @@ const CheckAnswers = ({ setGoToPage , hideSubmit , setHideFinalSubmit , setConfi
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _checkAnswerRowDefault.default), {
                             label: "Additional Requirements",
                             value: formValues["otherInformationDetails"],
-                            changeValueCallback: ()=>setGoToPage(formValues["returnJourney"] === "yes" ? 12 + offSet6 : 8 + offSet3),
+                            changeValueCallback: ()=>setGoToPage(formValues["returnJourney"] === "yes" ? 13 + offSet6 : 8 + offSet3),
                             disableButton: submitting
                         }, void 0, false, {
                             fileName: "src/Booking/CheckAnswers.js",
@@ -46520,7 +48253,7 @@ $RefreshReg$(_c, "CheckAnswers");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","../common/formatDate":"lKkXp","../common/formatTime":"lDVVh","./section1/getAboutSectionName":"7tDyL","../common/AddressFormatted":"g1S1Z","../common/ErrorPanel":"kjWan","./aboutPassengers/AboutPassengers":"iaqBE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lDVVh":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-final-form":"cgn4o","prop-types":"7wKI2","../common/Question":"7HVc9","../common/Checkbox":"7IcBJ","../common/FieldError":"4W7oE","../common/Table":"1yGpO","../common/CheckAnswerRow":"ei338","../common/CheckboxContainer":"2miun","../common/formatTime":"lDVVh","./section1/getAboutSectionName":"7tDyL","../common/AddressFormatted":"g1S1Z","../common/ErrorPanel":"kjWan","./aboutPassengers/AboutPassengers":"iaqBE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lDVVh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const padString = (input)=>input.length === 1 ? `0${input}` : input;
@@ -46940,6 +48673,56 @@ $RefreshReg$(_c, "ForgotRegistration");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../common/Header":"7cpW6","../../common/BreadCrumb":"4KMVD","../../common/Question":"7HVc9","../../common/ButtonLink":"bUlD6","../../common/CustomerServiceDetails":"561CP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","7Zeie","2kQhy"], "2kQhy", "parcelRequiref266")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../common/Header":"7cpW6","../../common/BreadCrumb":"4KMVD","../../common/Question":"7HVc9","../../common/ButtonLink":"bUlD6","../../common/CustomerServiceDetails":"561CP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4chFC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cb96 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cb96.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Maintenance = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+        className: "wmrards-container wmrards-m-t-lg homepage",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "wmrards-m-b-lg",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Maintenance in Progress"
+                }, void 0, false, {
+                    fileName: "src/Maintenance.js",
+                    lineNumber: 3,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Our service is currently undergoing scheduled maintenance. Please check back later."
+                }, void 0, false, {
+                    fileName: "src/Maintenance.js",
+                    lineNumber: 4,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Maintenance.js",
+            lineNumber: 2,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/Maintenance.js",
+        lineNumber: 1,
+        columnNumber: 27
+    }, undefined);
+_c = Maintenance;
+exports.default = Maintenance;
+var _c;
+$RefreshReg$(_c, "Maintenance");
+
+  $parcel$ReactRefreshHelpers$cb96.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequiref266")
 
 //# sourceMappingURL=index.7271efb6.js.map
