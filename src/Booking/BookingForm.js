@@ -46,10 +46,10 @@ import {
 } from "../common/validation";
 
 import sendFormData from "../api/sendFormData";
+import BookingRedirect from "./BookingRedirect"; // Import the BookingRedirect component
 
 const BookingForm = () => {
   const location = useLocation();
-
   const navigate = useNavigate();
 
   const [bookingParty, setBookingParty] = useState(
@@ -59,6 +59,14 @@ const BookingForm = () => {
   const [includeInGroupBooking, setIncludeInGroupBooking] = useState(
     location?.state?.formValues["includeInGroupBooking"]
   );
+
+  // Set to true to enable booking redirect
+  const bookingRedirect = true;
+
+  if (bookingRedirect) {
+    return <BookingRedirect />;
+  }
+
   const [goToPage, setGoToPage] = useState(null);
   const [externalPage, setExternalPage] = useState(null);
   const [outwardCollectionAddress, setOutwardCollectionAddress] =
