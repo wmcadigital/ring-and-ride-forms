@@ -31,9 +31,6 @@ const Home = () => (
                   <li>
                     <Link to="/registration">Registration</Link>
                   </li>
-                  <li>
-                    <Link to="/booking">Booking</Link>
-                  </li>
                 </ul>
               </div>
             </div>
