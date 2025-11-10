@@ -2,5 +2,6 @@ node_modules/
 .parcel-cache
 .env
 coverage/
+dist/
 .vscode/
 .env.example
