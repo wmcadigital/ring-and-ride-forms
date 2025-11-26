@@ -10,7 +10,7 @@ exports[`EthnicGroup - snapshots individual is filling out form for someone else
     text="What is Test's ethnic group?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -79,7 +79,7 @@ exports[`EthnicGroup - snapshots individual is filling out form for themselves 1
     text="What is your ethnic group?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -148,7 +148,7 @@ exports[`EthnicGroup - snapshots renders with an error 1`] = `
     text="What is your ethnic group?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error="Required"

@@ -3,7 +3,7 @@
 exports[`Confirmation - Booking renders Confirmation for Booking correctly 1`] = `
 <React.Fragment>
   <Header
-    heading="Book a Ring and Ride journey"
+    heading="Book a West Midlands Bus on Demand journey"
   />
   <FormContentWrapper>
     <BreadCrumb

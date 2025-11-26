@@ -71,7 +71,7 @@ Array [
         <h1
           className="wmnds-header__title wmnds-col-1 wmnds-col-sm-auto"
         >
-          Register for the Ring and Ride service
+          Register for the West Midlands Bus on Demand service
         </h1>
       </div>
     </div>
@@ -126,10 +126,10 @@ Array [
       <h2
         className="wmnds-fe-question"
       >
-        The West Midlands Bus Ring and Ride service does not operate in your area
+        The West Midlands Bus West Midlands Bus on Demand service does not operate in your area
       </h2>
       <p>
-        To be eligible for the Ring and Ride service you must live in the 
+        To be eligible for the West Midlands Bus on Demand service you must live in the 
         <a
           href="#"
         >

@@ -43,7 +43,7 @@ const AdditionalPassengerQuery = ({ setAdditionalPassenger }) => {
       <RadioGroup error={error}>
         <label className="wmnds-fe-label" htmlFor="additionalPassenger">
           For example, a carer or guardian. They do not need to be a registered
-          Ring and Ride scheme user.
+          West Midlands Bus on Demand scheme user.
         </label>
         <FieldError text={error} />
         <RadioButton

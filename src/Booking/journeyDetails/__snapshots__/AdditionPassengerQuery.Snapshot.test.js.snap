@@ -16,7 +16,7 @@ exports[`AdditionalPassengerQuery - snapshots individual is filling out form for
       className="wmnds-fe-label"
       htmlFor="additionalPassenger"
     >
-      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+      For example, a carer or guardian. They do not need to be a registered West Midlands Bus on Demand scheme user.
     </label>
     <FieldError
       text={null}
@@ -55,7 +55,7 @@ exports[`AdditionalPassengerQuery - snapshots individual is filling out form for
       className="wmnds-fe-label"
       htmlFor="additionalPassenger"
     >
-      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+      For example, a carer or guardian. They do not need to be a registered West Midlands Bus on Demand scheme user.
     </label>
     <FieldError
       text={null}
@@ -94,7 +94,7 @@ exports[`AdditionalPassengerQuery - snapshots renders with an error 1`] = `
       className="wmnds-fe-label"
       htmlFor="additionalPassenger"
     >
-      For example, a carer or guardian. They do not need to be a registered Ring and Ride scheme user.
+      For example, a carer or guardian. They do not need to be a registered West Midlands Bus on Demand scheme user.
     </label>
     <FieldError
       text="Required"

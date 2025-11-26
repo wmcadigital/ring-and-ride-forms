@@ -10,7 +10,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     text="Which of the following best describes Test's Asian or Asian British background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -79,7 +79,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     text="Which of the following best describes Test's background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -127,7 +127,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
     text="Which of the following best describes Test's White background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -182,7 +182,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     text="Which of the following best describes your Mixed or Multiple ethnic groups background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -244,7 +244,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
     text="Which of the following best describes your White background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error={null}
@@ -299,7 +299,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - black 1`] = `
     text="Which of the following best describes your Black, African, Carribean or Black British background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error="Required"
@@ -354,7 +354,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - white 1`] = `
     text="Which of the following best describes your White background?"
   />
   <p>
-    This information helps TfWM to monitor if users of the Ring and Ride service are reflective of regional diversity.
+    This information helps TfWM to monitor if users of the West Midlands Bus on Demand service are reflective of regional diversity.
   </p>
   <RadioGroup
     error="Required"

@@ -7,7 +7,7 @@ exports[`RegistrationNoEntry renders with a value 1`] = `
     sectionPosition="Section 2 of 2"
   />
   <Question
-    text="Do you have a Ring and Ride registration number?"
+    text="Do you have a West Midlands Bus on Demand registration number?"
   />
   <TextInput
     error={null}
@@ -33,7 +33,7 @@ exports[`RegistrationNoEntry renders with an error 1`] = `
     sectionPosition="Section 2 of 2"
   />
   <Question
-    text="Do you have a Ring and Ride registration number?"
+    text="Do you have a West Midlands Bus on Demand registration number?"
   />
   <TextInput
     error="Required"
@@ -59,7 +59,7 @@ exports[`RegistrationNoEntry renders with no value 1`] = `
     sectionPosition="Section 2 of 2"
   />
   <Question
-    text="Do you have a Ring and Ride registration number?"
+    text="Do you have a West Midlands Bus on Demand registration number?"
   />
   <TextInput
     error={null}

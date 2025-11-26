@@ -27,8 +27,7 @@ const Home = () => (
               <div className="wmnds-m-b-lg">
                 <h2>Registration</h2>
                 <p>
-                  If you, a friend or a relative could benefit from using Ring &
-                  Ride, please apply below to become a registered user of the
+                  If you, a friend or a relative could benefit from using West Midlands Bus on Demand, please apply below to become a registered user of the
                   service.
                 </p>
                 <a

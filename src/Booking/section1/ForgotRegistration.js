@@ -12,7 +12,7 @@ const ForgotRegistration = () => {
 
   return (
     <>
-      <Header heading="Book a Ring and Ride journey" />
+      <Header heading="Book a West Midlands Bus on Demand journey" />
       <main className="wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid">
         <div className="wmnds-col-1 wmnds-col-md-2-3">
           <BreadCrumb currentPageName="Booking" />

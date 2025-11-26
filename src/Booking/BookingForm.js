@@ -129,11 +129,11 @@ const BookingForm = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Book a Ring and Ride journey</title>
+          <title>Book a West Midlands Bus on Demand journey</title>
           <link rel="canonical" href="http://ringandride.org.uk/contact" />
         </Helmet>
       </HelmetProvider>
-      <Header heading="Book a Ring and Ride journey" />
+      <Header heading="Book a West Midlands Bus on Demand journey" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Booking" />
         <FormWizard
