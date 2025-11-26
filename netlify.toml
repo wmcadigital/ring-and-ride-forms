@@ -5,7 +5,7 @@ package = "@netlify/plugin-sitemap"
 	# Prevent Netlify secrets scan from flagging known local env keys or build output paths
 	# Note: omitting paths/keys only suppresses the scanner — rotate any leaked secrets.
 	SECRETS_SCAN_OMIT_PATHS = "build/static/js/**,public/**"
-	SECRETS_SCAN_OMIT_KEYS = "REACT_APP_API_ENDPOINT,REACT_APP_API_ENDPOINT_POSTCODE,REACT_APP_POWER_AUTOMATE_KEY"
+	SECRETS_SCAN_OMIT_KEYS = "REACT_APP_API_ENDPOINT,REACT_APP_API_ENDPOINT_POSTCODE,REACT_APP_POWER_AUTOMATE"
 
 # Uncomment the below when due to go live to public
 # Some other things will need to be set up within Sentry.
