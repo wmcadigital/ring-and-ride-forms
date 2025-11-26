@@ -360,7 +360,7 @@ const CheckAnswers = ({
               fieldName="agreePrivacyPolicy"
               label={
                 <>
-                  Ring & Ride is a service provided on behalf of Transport for West Midlands (TfWM) by contracted transport operators.  To provide you with this service we will collect and share your information with organizations who will provide the transport to you. We will ensure your information is handled in accordance with data protection legislation. To see how your personal data will be handled, please view our{" "}
+                  West Midlands Bus on Demand is a service provided on behalf of Transport for West Midlands (TfWM) by contracted transport operators.  To provide you with this service we will collect and share your information with organizations who will provide the transport to you. We will ensure your information is handled in accordance with data protection legislation. To see how your personal data will be handled, please view our{" "}
                   <a
                     href="https://www.wmca.org.uk/policies"
                     target="_blank"

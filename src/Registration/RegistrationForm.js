@@ -90,7 +90,7 @@ const RegistrationForm = () => {
       setFormSubmitError(null);
       const response = await sendFormData(
         values,
-        "Ring & Ride Registration Form"
+        "West Midlands Bus on Demand Registration Form"
       );
       if (response.includes("Version")) {
         navigate("/registration/confirmed");
