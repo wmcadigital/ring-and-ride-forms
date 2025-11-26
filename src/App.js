@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Header from "./common/Header";
 import ContactForm from "./Contact/ContactForm";
 import ContactConfirmation from "./Contact/Confirmation";
 import RegistrationForm from "./Registration/RegistrationForm";
@@ -14,6 +15,7 @@ import Maintenance from "./Maintenance";
 
 const Home = () => (
   <>
+    <Header heading="West Midlands Bus on Demand forms" />
     <main
       id="wmnds-main-content"
       className="wmnds-container wmnds-m-t-lg homepage"
@@ -23,15 +25,28 @@ const Home = () => (
           <div className="one-column-row">
             <div className="wmnds-col-1 wmnds-col-md-1-1">
               <div className="wmnds-m-b-lg">
-                <h1>Ring &amp; Ride Forms</h1>
-                <ul>
-                  <li>
-                    <Link to="/contactUs">Contact Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/registration">Registration</Link>
-                  </li>
-                </ul>
+                <h2>Registration</h2>
+                <p>
+                  If you, a friend or a relative could benefit from using Ring &
+                  Ride, please apply below to become a registered user of the
+                  service.
+                </p>
+                <a
+                  href="/registration"
+                  title="This is a call to action link"
+                  target="_self"
+                  className="wmnds-btn"
+                >
+                  Register for West Midlands Bus on Demand
+                </a>
+
+                <h2>Contact</h2>
+                <p>
+                  The best way to get in touch is to submit an online enquiry.
+                </p>
+                <a href="/contactUs" target="_self" className="wmnds-btn">
+                  Contact West Midlands Bus on Demand
+                </a>
               </div>
             </div>
           </div>
