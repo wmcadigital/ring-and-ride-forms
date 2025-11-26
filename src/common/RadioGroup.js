@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const RadioGroup = ({ children, error }) => (
   <div
-    className={`wmrards-fe-radios ${error && "wmrards-fe-group--error"}`}
+    className={`wmnds-fe-radios ${error && "wmnds-fe-group--error"}`}
     role="radiogroup"
   >
     {children}

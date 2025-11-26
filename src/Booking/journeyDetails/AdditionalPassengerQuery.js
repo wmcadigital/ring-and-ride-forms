@@ -41,7 +41,7 @@ const AdditionalPassengerQuery = ({ setAdditionalPassenger }) => {
       />
       <Question text={question} />
       <RadioGroup error={error}>
-        <label className="wmrards-fe-label" htmlFor="additionalPassenger">
+        <label className="wmnds-fe-label" htmlFor="additionalPassenger">
           For example, a carer or guardian. They do not need to be a registered
           Ring and Ride scheme user.
         </label>

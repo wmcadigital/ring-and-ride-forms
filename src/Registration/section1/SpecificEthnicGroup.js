@@ -51,7 +51,7 @@ const SpecificEthnicGroup = () => {
             fieldName="specificEthnicity"
           />
         ))}
-        <p className="wmrards-m-b-sm">Or</p>
+        <p className="wmnds-m-b-sm">Or</p>
         <RadioButton
           key="preferNotToSay"
           label={PreferNotToSayLabel["preferNotToSay"]}

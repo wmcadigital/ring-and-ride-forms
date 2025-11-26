@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ButtonLink from "./ButtonLink";
 
 const ChangeButton = ({ callBack, disableButton }) => (
-  <td className="wmrards-text-align-right" style={{ verticalAlign: "top" }}>
+  <td className="wmnds-text-align-right" style={{ verticalAlign: "top" }}>
     <ButtonLink callback={callBack} disabled={disableButton}>
       Change
     </ButtonLink>

@@ -14,7 +14,7 @@ describe("CheckboxContainer", () => {
     expect(screen.getByText("Test Checkbox")).toBeDefined();
     expect(
       screen.getByText("Test Checkbox").parentElement.className
-    ).not.toContain("wmrards-fe-group--error");
+    ).not.toContain("wmnds-fe-group--error");
   });
 
   it("indicates an error if tangible error passed in", () => {
@@ -26,7 +26,7 @@ describe("CheckboxContainer", () => {
     );
 
     expect(screen.getByText("Test Checkbox").parentElement.className).toContain(
-      "wmrards-fe-group--error"
+      "wmnds-fe-group--error"
     );
   });
 
@@ -39,7 +39,7 @@ describe("CheckboxContainer", () => {
     );
 
     expect(
-      container.getElementsByClassName("wmrards-fe-checkboxes__desc")[0]
+      container.getElementsByClassName("wmnds-fe-checkboxes__desc")[0]
         .innerHTML
     ).toEqual("Check box description");
   });

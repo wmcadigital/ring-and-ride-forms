@@ -7,8 +7,8 @@ const BookingRedirect = () => {
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
-    <main className="wmrards-container wmrards-m-t-lg homepage">
-      <div className="wmrards-m-b-lg">
+    <main className="wmnds-container wmnds-m-t-lg homepage">
+      <div className="wmnds-m-b-lg">
         <h1>Redirection</h1>
         <p>Redirecting...</p>
         <p>

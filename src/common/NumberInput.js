@@ -13,51 +13,51 @@ const NumberInput = ({
   increaseNumberCallback,
 }) => {
   return (
-    <div className={`wmrards-fe-group  ${error && "wmrards-fe-group--error"}`}>
-      <div className="wmrards-fe-number-input">
+    <div className={`wmnds-fe-group  ${error && "wmnds-fe-group--error"}`}>
+      <div className="wmnds-fe-number-input">
         {label ? (
-          <label className="wmrards-fe-label" htmlFor={fieldName}>
+          <label className="wmnds-fe-label" htmlFor={fieldName}>
             {label}
           </label>
         ) : null}
         <FieldError text={error} />
-        <div className="wmrards-fe-number-input__container wmrards-grid wmrards-grid--spacing-3-sm">
-          <div className="wmrards-col-auto">
+        <div className="wmnds-fe-number-input__container wmnds-grid wmnds-grid--spacing-3-sm">
+          <div className="wmnds-col-auto">
             <button
               type="button"
-              className="wmrards-fe-number-input__control"
+              className="wmnds-fe-number-input__control"
               title="Decrease"
               onClick={decreaseNumberCallback}
             >
-              <svg className="wmrards-accordion__icon">
+              <svg className="wmnds-accordion__icon">
                 <use
-                  xlinkHref="#wmrards-general-minimise"
-                  href="#wmrards-general-minimise"
+                  xlinkHref="#wmnds-general-minimise"
+                  href="#wmnds-general-minimise"
                 ></use>
               </svg>
             </button>
           </div>
-          <div className="wmrards-col-auto">
+          <div className="wmnds-col-auto">
             <Field
               name={fieldName}
               validate={validation}
               component="input"
               type="number"
-              className="wmrards-fe-number-input__input"
+              className="wmnds-fe-number-input__input"
               defaultValue={defaultValue}
             />
           </div>
-          <div className="wmrards-col-auto">
+          <div className="wmnds-col-auto">
             <button
               type="button"
-              className="wmrards-fe-number-input__control"
+              className="wmnds-fe-number-input__control"
               title="Increase"
               onClick={increaseNumberCallback}
             >
-              <svg className="wmrards-accordion__icon">
+              <svg className="wmnds-accordion__icon">
                 <use
-                  xlinkHref="#wmrards-general-expand"
-                  href="#wmrards-general-expand"
+                  xlinkHref="#wmnds-general-expand"
+                  href="#wmnds-general-expand"
                 ></use>
               </svg>
             </button>

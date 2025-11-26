@@ -13,17 +13,17 @@ const DateInput = ({
   return (
     <div
       id="date-input"
-      className={`wmrards-fe-group ${error && "wmrards-fe-group--error"}`}
+      className={`wmnds-fe-group ${error && "wmnds-fe-group--error"}`}
     >
-      <div className="wmrards-fe-date-input">
+      <div className="wmnds-fe-date-input">
         {label && (
-          <label className="wmrards-fe-label" htmlFor="date-input">
+          <label className="wmnds-fe-label" htmlFor="date-input">
             {label}
           </label>
         )}
         {error && <FieldError text={error} />}
-        <div className="wmrards-fe-date-input__day">
-          <label className="wmrards-fe-label" htmlFor="LastUsedDateDay">
+        <div className="wmnds-fe-date-input__day">
+          <label className="wmnds-fe-label" htmlFor="LastUsedDateDay">
             Day
           </label>
           <Field name={dayFieldName}>
@@ -32,8 +32,8 @@ const DateInput = ({
                 {...input}
                 autoComplete="bday-day"
                 id="LastUsedDateDay"
-                className={`wmrards-fe-input wmrards-p-r-xs ${
-                  error && "wmrards-fe-input--error"
+                className={`wmnds-fe-input wmnds-p-r-xs ${
+                  error && "wmnds-fe-input--error"
                 }`}
                 inputMode="numeric"
                 type="text"
@@ -43,8 +43,8 @@ const DateInput = ({
             )}
           </Field>
         </div>
-        <div className="wmrards-fe-date-input__month">
-          <label className="wmrards-fe-label" htmlFor="LastUsedDateMonth">
+        <div className="wmnds-fe-date-input__month">
+          <label className="wmnds-fe-label" htmlFor="LastUsedDateMonth">
             Month
           </label>
           <Field name={monthFieldName}>
@@ -53,8 +53,8 @@ const DateInput = ({
                 {...input}
                 autoComplete="bday-month"
                 id="LastUsedDateMonth"
-                className={`wmrards-fe-input wmrards-p-r-xs ${
-                  error && "wmrards-fe-input--error"
+                className={`wmnds-fe-input wmnds-p-r-xs ${
+                  error && "wmnds-fe-input--error"
                 }`}
                 inputMode="numeric"
                 type="text"
@@ -64,8 +64,8 @@ const DateInput = ({
             )}
           </Field>
         </div>
-        <div className="wmrards-fe-date-input__year">
-          <label className="wmrards-fe-label" htmlFor="LastUsedDateYear">
+        <div className="wmnds-fe-date-input__year">
+          <label className="wmnds-fe-label" htmlFor="LastUsedDateYear">
             Year
           </label>
           <Field name={yearFieldName}>
@@ -74,8 +74,8 @@ const DateInput = ({
                 {...input}
                 autoComplete="bday-year"
                 id="LastUsedDateYear"
-                className={`wmrards-fe-input wmrards-p-r-xs ${
-                  error && "wmrards-fe-input--error"
+                className={`wmnds-fe-input wmnds-p-r-xs ${
+                  error && "wmnds-fe-input--error"
                 }`}
                 inputMode="numeric"
                 type="text"

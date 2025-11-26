@@ -12,8 +12,8 @@ const PostCodeSearch = ({ prefix, error, getAddresses, loading }) => {
   const invalid = validatePostCode(input?.value);
 
   return (
-    <div className={`wmrards-fe-group ${error && "wmrards-fe-group--error"}`}>
-      <label className="wmrards-fe-label" htmlFor={fieldName}>
+    <div className={`wmnds-fe-group ${error && "wmnds-fe-group--error"}`}>
+      <label className="wmnds-fe-label" htmlFor={fieldName}>
         Postcode
       </label>
       <FieldError text={error} />
@@ -22,11 +22,11 @@ const PostCodeSearch = ({ prefix, error, getAddresses, loading }) => {
         validate={validatePostCode}
         component="input"
         type="text"
-        className="wmrards-fe-input"
+        className="wmnds-fe-input"
       />
       <button
-        className={`wmrards-m-t-md wmrards-btn wmrards-btn--primary ${
-          (invalid || loading) && "wmrards-btn--disabled"
+        className={`wmnds-m-t-md wmnds-btn wmnds-btn--primary ${
+          (invalid || loading) && "wmnds-btn--disabled"
         }`}
         type="button"
         onClick={() => getAddresses(input?.value)}
@@ -35,11 +35,11 @@ const PostCodeSearch = ({ prefix, error, getAddresses, loading }) => {
         Find Address
         {loading ? (
           <div
-            className="wmrards-loader wmrards-loader--btn wmrards-btn__icon wmrards-btn__icon--right"
+            className="wmnds-loader wmnds-loader--btn wmnds-btn__icon wmnds-btn__icon--right"
             role="alert"
             aria-live="assertive"
           >
-            <p className="wmrards-loader__content"></p>
+            <p className="wmnds-loader__content"></p>
           </div>
         ) : null}
       </button>

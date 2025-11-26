@@ -3,8 +3,8 @@
 exports[`ContactForm renders Contact Form as expected 1`] = `
 Array [
   <a
-    className="wmrards-link wmrards-header__skip-link"
-    href="#wmrards-main-content"
+    className="wmnds-link wmnds-header__skip-link"
+    href="#wmnds-main-content"
     target="_self"
     title="Skip to main content"
   >
@@ -12,13 +12,13 @@ Array [
   </a>,
   <header>
     <div
-      className="wmrards-bg-white wmrards-p-t-md wmrards-p-b-md wmrards-cookies-banner"
+      className="wmnds-bg-white wmnds-p-t-md wmnds-p-b-md wmnds-cookies-banner"
     >
       <div
-        className="wmrards-container"
+        className="wmnds-container"
       >
         <div
-          className="wmrards-col-1 wmrards-col-md-3-4 wmrards-col-lg-2-3"
+          className="wmnds-col-1 wmnds-col-md-3-4 wmnds-col-lg-2-3"
         >
           <h3>
             Your privacy settings
@@ -27,16 +27,16 @@ Array [
             We use cookies to help you with journey planning and relevant disruptions, remember your login and show you content you might be interested in. If you're happy with the use of cookies by West Midlands Combined Authority and our selected partners, click 'Accept all cookies'. Or click 'Manage cookies' to learn more.
           </p>
           <div
-            className="wmrards-grid wmrards-grid--justify-between wmrards-cookies-banner__group-buttons"
+            className="wmnds-grid wmnds-grid--justify-between wmnds-cookies-banner__group-buttons"
           >
             <button
-              className="wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24  wmrards-cookies-banner__accept-all-cookies wmrards-text-align-center"
+              className="wmnds-btn wmnds-col-1 wmnds-col-sm-1 wmnds-col-md-12-24  wmnds-cookies-banner__accept-all-cookies wmnds-text-align-center"
               type="button"
             >
               Accept all cookies
             </button>
             <a
-              className="wmrards-btn wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24 wmrards-text-align-center"
+              className="wmnds-btn wmnds-btn wmnds-col-1 wmnds-col-sm-1 wmnds-col-md-12-24 wmnds-text-align-center"
               href="https://www.tfwm.org.uk/manage-cookies/"
               target="_self"
               title="link title"
@@ -48,28 +48,28 @@ Array [
       </div>
     </div>
     <div
-      className="wmrards-header"
+      className="wmnds-header"
     >
       <div
-        className="wmrards-container wmrards-grid wmrards-grid--align-center wmrards-grid--justify-between"
+        className="wmnds-container wmnds-grid wmnds-grid--align-center wmnds-grid--justify-between"
       >
         <div
-          className="wmrards-header__vertical-align wmrards-col-auto"
+          className="wmnds-header__vertical-align wmnds-col-auto"
         >
           <a
-            className="wmrards-header__logo-link"
+            className="wmnds-header__logo-link"
             href="/"
             title="Transport for West Midlands Design System"
           >
             <img
               alt="Transport for West Midlands logo"
-              className="wmrards-header__logo"
+              className="wmnds-header__logo"
               src="https://cloudcdn.wmca.org.uk/staging/rarassets/1.0.0/img/logo.svg"
             />
           </a>
         </div>
         <h1
-          className="wmrards-header__title wmrards-col-1 wmrards-col-sm-auto"
+          className="wmnds-header__title wmnds-col-1 wmnds-col-sm-auto"
         >
           Contact us
         </h1>
@@ -77,34 +77,34 @@ Array [
     </div>
   </header>,
   <main
-    className="wmrards-container wmrards-container--main wmrards-p-b-lg wmrards-grid"
+    className="wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid"
   >
     <div
-      className="wmrards-col-1 wmrards-col-md-2-3"
+      className="wmnds-col-1 wmnds-col-md-2-3"
     >
       <nav
         aria-label="Main example breadcrumbs"
-        className="wmrards-breadcrumb"
+        className="wmnds-breadcrumb"
       >
         <ol
-          className="wmrards-breadcrumb__list"
+          className="wmnds-breadcrumb__list"
         >
           <li
-            className="wmrards-breadcrumb__list-item"
+            className="wmnds-breadcrumb__list-item"
           >
             <a
-              className="wmrards-breadcrumb__link"
+              className="wmnds-breadcrumb__link"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            className="wmrards-breadcrumb__list-item"
+            className="wmnds-breadcrumb__list-item"
           >
             <a
               aria-current="page"
-              className="wmrards-breadcrumb__link wmrards-breadcrumb__link--current"
+              className="wmnds-breadcrumb__link wmnds-breadcrumb__link--current"
               href="#"
             >
               Contact us
@@ -113,37 +113,37 @@ Array [
         </ol>
       </nav>
       <div
-        className="wmrards-col-1 wmrards-col-md-2-3"
+        className="wmnds-col-1 wmnds-col-md-2-3"
       >
         <div
-          className="wmrards-col-1 wmrards-m-b-md"
+          className="wmnds-col-1 wmnds-m-b-md"
         />
       </div>
       <div
-        className="wmrards-p-lg wmrards-bg-white"
+        className="wmnds-p-lg wmnds-bg-white"
       >
         <form
           onSubmit={[Function]}
         >
           <div
-            className="wmrards-fe-group undefined"
+            className="wmnds-fe-group undefined"
           >
             <h2
-              className="wmrards-fe-question"
+              className="wmnds-fe-question"
             >
               What is your enquiry about?
             </h2>
             <div
-              className="wmrards-fe-radios null"
+              className="wmnds-fe-radios null"
               role="radiogroup"
             >
               <label
-                className="wmrards-fe-radios__container"
+                className="wmnds-fe-radios__container"
               >
                 General enquiry
                 <input
                   checked={false}
-                  className="wmrards-fe-radios__input"
+                  className="wmnds-fe-radios__input"
                   name="enquiryType"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -153,16 +153,16 @@ Array [
                   value="generalEnquiry"
                 />
                 <span
-                  className="wmrards-fe-radios__checkmark"
+                  className="wmnds-fe-radios__checkmark"
                 />
               </label>
               <label
-                className="wmrards-fe-radios__container"
+                className="wmnds-fe-radios__container"
               >
                 Service issues
                 <input
                   checked={false}
-                  className="wmrards-fe-radios__input"
+                  className="wmnds-fe-radios__input"
                   name="enquiryType"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -172,16 +172,16 @@ Array [
                   value="serviceIssues"
                 />
                 <span
-                  className="wmrards-fe-radios__checkmark"
+                  className="wmnds-fe-radios__checkmark"
                 />
               </label>
               <label
-                className="wmrards-fe-radios__container"
+                className="wmnds-fe-radios__container"
               >
                 Lost property
                 <input
                   checked={false}
-                  className="wmrards-fe-radios__input"
+                  className="wmnds-fe-radios__input"
                   name="enquiryType"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -191,16 +191,16 @@ Array [
                   value="lostProperty"
                 />
                 <span
-                  className="wmrards-fe-radios__checkmark"
+                  className="wmnds-fe-radios__checkmark"
                 />
               </label>
               <label
-                className="wmrards-fe-radios__container"
+                className="wmnds-fe-radios__container"
               >
                 Staff
                 <input
                   checked={false}
-                  className="wmrards-fe-radios__input"
+                  className="wmnds-fe-radios__input"
                   name="enquiryType"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -210,16 +210,16 @@ Array [
                   value="staff"
                 />
                 <span
-                  className="wmrards-fe-radios__checkmark"
+                  className="wmnds-fe-radios__checkmark"
                 />
               </label>
               <label
-                className="wmrards-fe-radios__container"
+                className="wmnds-fe-radios__container"
               >
                 Service updates
                 <input
                   checked={false}
-                  className="wmrards-fe-radios__input"
+                  className="wmnds-fe-radios__input"
                   name="enquiryType"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -229,14 +229,14 @@ Array [
                   value="serviceUpdates"
                 />
                 <span
-                  className="wmrards-fe-radios__checkmark"
+                  className="wmnds-fe-radios__checkmark"
                 />
               </label>
             </div>
           </div>
           <div>
             <button
-              className="wmrards-btn"
+              className="wmnds-btn"
               onClick={[Function]}
               type="submit"
             >

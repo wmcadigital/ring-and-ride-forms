@@ -17,7 +17,7 @@ describe("ConfirmationPanel", () => {
     );
 
     const infoElements = container.getElementsByClassName(
-      "wmrards-msg-summary__info"
+      "wmnds-msg-summary__info"
     );
 
     expect(infoElements[0].innerHTML).toEqual("Panel info");

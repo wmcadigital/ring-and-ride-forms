@@ -54,7 +54,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
       value="otherAsian"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -102,7 +102,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
       value="otherOther"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -157,7 +157,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for some
       value="otherWhite"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -219,7 +219,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
       value="otherMixed"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -274,7 +274,7 @@ exports[`SpecificEthnicGroup - snapshots individual is filling out form for them
       value="otherWhite"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -329,7 +329,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - black 1`] = `
       value="otherBlack"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>
@@ -384,7 +384,7 @@ exports[`SpecificEthnicGroup - snapshots renders with an error - white 1`] = `
       value="otherWhite"
     />
     <p
-      className="wmrards-m-b-sm"
+      className="wmnds-m-b-sm"
     >
       Or
     </p>

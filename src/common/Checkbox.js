@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 
 const Checkbox = ({ fieldName, label }) => {
   return (
-    <label className="wmrards-fe-checkboxes__container">
+    <label className="wmnds-fe-checkboxes__container">
       {label}
       <Field
-        className="wmrards-fe-checkboxes__input"
+        className="wmnds-fe-checkboxes__input"
         name={fieldName}
         component="input"
         type="checkbox"
       />
-      <span className="wmrards-fe-checkboxes__checkmark">
-        <svg className="wmrards-fe-checkboxes__icon">
+      <span className="wmnds-fe-checkboxes__checkmark">
+        <svg className="wmnds-fe-checkboxes__icon">
           <use
-            xlinkHref="#wmrards-general-checkmark"
-            href="#wmrards-general-checkmark"
+            xlinkHref="#wmnds-general-checkmark"
+            href="#wmnds-general-checkmark"
           ></use>
         </svg>
       </span>

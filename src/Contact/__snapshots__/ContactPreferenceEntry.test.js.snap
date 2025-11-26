@@ -21,7 +21,7 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry (all values) 1`] 
       label="Email"
     />
     <div
-      className="wmrards-m-l-xl wmrards-p-l-sm"
+      className="wmnds-m-l-xl wmnds-p-l-sm"
     >
       <TextInput
         error={null}
@@ -41,7 +41,7 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry (all values) 1`] 
       label="Phone"
     />
     <div
-      className="wmrards-m-l-xl wmrards-p-l-sm"
+      className="wmnds-m-l-xl wmnds-p-l-sm"
     >
       <TextInput
         error={null}
@@ -108,7 +108,7 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if pre
       label="Email"
     />
     <div
-      className="wmrards-m-l-xl wmrards-p-l-sm"
+      className="wmnds-m-l-xl wmnds-p-l-sm"
     >
       <TextInput
         fieldName="emailAddress"
@@ -127,7 +127,7 @@ exports[`ContactPreferenceEntry renders ContactPreferenceEntry with error if pre
       label="Phone"
     />
     <div
-      className="wmrards-m-l-xl wmrards-p-l-sm"
+      className="wmnds-m-l-xl wmnds-p-l-sm"
     >
       <TextInput
         error="Invalid"

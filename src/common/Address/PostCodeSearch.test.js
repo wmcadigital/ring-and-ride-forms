@@ -12,7 +12,7 @@ describe("PostCodeSearch", () => {
       </FormWrapper>
     );
 
-    const labels = container.getElementsByClassName("wmrards-fe-label");
+    const labels = container.getElementsByClassName("wmnds-fe-label");
     expect(labels[0].innerHTML).toEqual("Postcode");
 
     const findAddressButton = screen.getByRole("button");
@@ -75,7 +75,7 @@ describe("PostCodeSearch", () => {
 
     const findAddressButton = screen.getByRole("button");
     expect(
-      findAddressButton.getElementsByClassName("wmrards-loader")
+      findAddressButton.getElementsByClassName("wmnds-loader")
     ).toBeDefined();
     expect(findAddressButton.getAttributeNames()).toContain("disabled");
   });

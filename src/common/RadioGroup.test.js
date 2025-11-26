@@ -24,6 +24,6 @@ describe("RadioGroup", () => {
 
     expect(
       screen.getByText("Test Radio Button").parentElement.className
-    ).toContain("wmrards-fe-group--error");
+    ).toContain("wmnds-fe-group--error");
   });
 });

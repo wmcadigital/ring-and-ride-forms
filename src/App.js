@@ -15,14 +15,14 @@ import Maintenance from "./Maintenance";
 const Home = () => (
   <>
     <main
-      id="wmrards-main-content"
-      className="wmrards-container wmrards-m-t-lg homepage"
+      id="wmnds-main-content"
+      className="wmnds-container wmnds-m-t-lg homepage"
     >
-      <div className="wmrards-grid wmrards-grid--justify-between wmrards-grid--spacing-2-lg wmrards-grid--spacing-md-2-lg">
-        <div className="wmrards-col-1 wmrards-col-md-2-3">
+      <div className="wmnds-grid wmnds-grid--justify-between wmnds-grid--spacing-2-lg wmnds-grid--spacing-md-2-lg">
+        <div className="wmnds-col-1 wmnds-col-md-2-3">
           <div className="one-column-row">
-            <div className="wmrards-col-1 wmrards-col-md-1-1">
-              <div className="wmrards-m-b-lg">
+            <div className="wmnds-col-1 wmnds-col-md-1-1">
+              <div className="wmnds-m-b-lg">
                 <h1>Ring &amp; Ride Forms</h1>
                 <ul>
                   <li>

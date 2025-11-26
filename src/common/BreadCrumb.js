@@ -1,17 +1,17 @@
 import PropTypes from "prop-types";
 
 const BreadCrumb = ({ currentPageName }) => (
-  <nav aria-label="Main example breadcrumbs" className="wmrards-breadcrumb">
-    <ol className="wmrards-breadcrumb__list">
-      <li className="wmrards-breadcrumb__list-item">
-        <a href="https://ringandride.org/" className="wmrards-breadcrumb__link">
+  <nav aria-label="Main example breadcrumbs" className="wmnds-breadcrumb">
+    <ol className="wmnds-breadcrumb__list">
+      <li className="wmnds-breadcrumb__list-item">
+        <a href="https://ringandride.org/" className="wmnds-breadcrumb__link">
           Home
         </a>
       </li>
-      <li className="wmrards-breadcrumb__list-item">
+      <li className="wmnds-breadcrumb__list-item">
         <a
           href="#"
-          className="wmrards-breadcrumb__link wmrards-breadcrumb__link--current"
+          className="wmnds-breadcrumb__link wmnds-breadcrumb__link--current"
           aria-current="page"
         >
           {currentPageName}

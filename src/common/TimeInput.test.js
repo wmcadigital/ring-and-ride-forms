@@ -11,7 +11,7 @@ describe("TimeInput", () => {
       </FormWrapper>
     );
 
-    const labels = container.getElementsByClassName("wmrards-fe-label");
+    const labels = container.getElementsByClassName("wmnds-fe-label");
     expect(labels[0].innerHTML).toEqual("Time Input Label");
 
     const dropdowns = screen.getAllByRole("combobox");
@@ -27,7 +27,7 @@ describe("TimeInput", () => {
       </FormWrapper>
     );
 
-    const labels = container.getElementsByClassName("wmrards-fe-label");
+    const labels = container.getElementsByClassName("wmnds-fe-label");
     expect(labels.length).toBe(0);
   });
 

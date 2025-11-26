@@ -53,7 +53,7 @@ describe("AddressList", () => {
       </FormWrapper>
     );
 
-    const label = container.getElementsByClassName("wmrards-fe-label")[1];
+    const label = container.getElementsByClassName("wmnds-fe-label")[1];
 
     expect(label.innerHTML).toEqual("Select an address");
 
