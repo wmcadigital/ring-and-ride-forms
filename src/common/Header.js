@@ -23,7 +23,7 @@ const Header = ({ heading }) => {
                 <img
                   className="wmnds-header__logo"
                   alt="Transport for West Midlands logo"
-                  src="https://cloudcdn.wmca.org.uk/staging/rarassets/1.0.0/img/logo.svg"
+                  src="https://unpkg.com/wmn-design-system@2.2.0/build/img/logo.svg"
                 />
               </a>
             </div>
