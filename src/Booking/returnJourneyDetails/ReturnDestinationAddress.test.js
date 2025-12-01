@@ -14,7 +14,7 @@ describe("ReturnDestinationAddress", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     expect(mockCallback).toBeCalledTimes(0);
@@ -48,7 +48,7 @@ describe("ReturnDestinationAddress", () => {
     expect(screen.queryByText("B19 2UJ")).toBeNull();
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
     fireEvent.click(radioButtons[0]);
 
@@ -68,7 +68,7 @@ describe("ReturnDestinationAddress", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     expect(mockCallback).toBeCalledTimes(0);

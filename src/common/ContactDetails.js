@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 const ContactDetails = ({ children }) => (
-  <div className="wmrards-inset-text">
-    <address className="wmrards-contact-details">{children}</address>
+  <div className="wmnds-inset-text">
+    <address className="wmnds-contact-details">{children}</address>
   </div>
 );
 

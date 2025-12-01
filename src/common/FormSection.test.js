@@ -13,7 +13,7 @@ describe("FormSection", () => {
     expect(screen.getByText("Child Element")).toBeDefined();
     expect(
       screen.getByText("Child Element").parentElement.className
-    ).not.toContain("wmrards-fe-group--error");
+    ).not.toContain("wmnds-fe-group--error");
   });
 
   it("indicates an error if tangible error passed in", () => {
@@ -24,7 +24,7 @@ describe("FormSection", () => {
     );
 
     expect(screen.getByText("Child Element").parentElement.className).toContain(
-      "wmrards-fe-group--error"
+      "wmnds-fe-group--error"
     );
   });
 });

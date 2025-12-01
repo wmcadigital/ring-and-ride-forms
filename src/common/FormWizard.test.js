@@ -280,17 +280,17 @@ describe("FormWizard", () => {
       const acceptAndSendButton = screen.getByText("Accept and send");
 
       expect(acceptAndSendButton.getAttribute("disabled")).toBeNull();
-      expect(container.getElementsByClassName("wmrards-loader").length).toBe(0);
+      expect(container.getElementsByClassName("wmnds-loader").length).toBe(0);
 
       fireEvent.click(acceptAndSendButton);
 
       expect(acceptAndSendButton.getAttribute("disabled")).not.toBeNull();
-      expect(container.getElementsByClassName("wmrards-loader").length).toBe(1);
+      expect(container.getElementsByClassName("wmnds-loader").length).toBe(1);
 
       await act(() => new Promise((resolve) => setTimeout(resolve, 1500)));
 
       expect(acceptAndSendButton.getAttribute("disabled")).toBeNull();
-      expect(container.getElementsByClassName("wmrards-loader").length).toBe(0);
+      expect(container.getElementsByClassName("wmnds-loader").length).toBe(0);
     }
   );
 

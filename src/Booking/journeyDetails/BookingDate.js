@@ -132,7 +132,7 @@ const BookingDate = () => {
       <Question text="What date is the booking for?" />
 
       <RadioGroup error={error1}>
-        <label className="wmrards-fe-label" htmlFor="bookingDateDayAuto">
+        <label className="wmnds-fe-label" htmlFor="bookingDateDayAuto">
           Journey requests need to be received by 2.30pm on the day prior to
           your requested journey unless it&apos;s a Sunday or Monday where it
           needs to be 2 days before. We will then e-mail you to confirm your

@@ -37,7 +37,7 @@ describe("NumberInput", () => {
       </FormWrapper>
     );
 
-    const labels = container.getElementsByClassName("wmrards-fe-label");
+    const labels = container.getElementsByClassName("wmnds-fe-label");
 
     expect(labels.length).toBe(1);
     expect(labels[0].innerHTML).toEqual("Test Label");

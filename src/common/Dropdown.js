@@ -14,14 +14,14 @@ const Dropdown = ({
 }) => {
   return (
     <div
-      className={`wmrards-fe-group ${
-        error ? "wmrards-fe-group--error" : null
+      className={`wmnds-fe-group ${
+        error ? "wmnds-fe-group--error" : null
       } ${customClass ? customClass : null}`}
     >
-      <div className="wmrards-fe-dropdown">
+      <div className="wmnds-fe-dropdown">
         <FieldError text={error} />
         {label ? (
-          <label className="wmrards-fe-label" htmlFor="dropdown">
+          <label className="wmnds-fe-label" htmlFor="dropdown">
             {label}
           </label>
         ) : null}
@@ -29,7 +29,7 @@ const Dropdown = ({
           {({ input }) => (
             <select
               {...input}
-              className="wmrards-fe-dropdown__select "
+              className="wmnds-fe-dropdown__select "
               id="dropdown"
             >
               {prompt ? <option value="">{prompt}</option> : null}

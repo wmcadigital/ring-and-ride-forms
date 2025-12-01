@@ -249,9 +249,9 @@ const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
           fieldName="agreeRingAndRide"
           label={
             <span>
-              Agree that you need to use Ring & Ride because you find it either
+              Agree that you need to use West Midlands Bus on Demand because you find it either
               impossible or difficult to use other forms of public transport.
-              You will inform Ring & Ride if there is any change in your
+              You will inform West Midlands Bus on Demand if there is any change in your
               circumstances that affects your eligibility to use the service.
             </span>
           }
@@ -275,7 +275,7 @@ const CheckAnswers = ({ setGoToPage, setFormSubmitting, formSubmitError }) => {
           fieldName="agreePrivacyPolicy"
           label={
             <>
-              Ring & Ride is a service provided on behalf of Transport for West Midlands (TfWM) by contracted transport operators.  To provide you with this service we will collect and share your information with organizations who will provide the transport to you. We will ensure your information is handled in accordance with data protection legislation. To see how your personal data will be handled, please view our{" "}
+              West Midlands Bus on Demand is a service provided on behalf of Transport for West Midlands (TfWM) by contracted transport operators.  To provide you with this service we will collect and share your information with organizations who will provide the transport to you. We will ensure your information is handled in accordance with data protection legislation. To see how your personal data will be handled, please view our{" "}
               <a
                 href="https://www.wmca.org.uk/policies"
                 target="_blank"

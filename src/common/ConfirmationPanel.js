@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
 const ConfirmationPanel = ({ header, info }) => (
-  <div className="wmrards-msg-summary wmrards-msg-summary--success-fill wmrards-p-b-lg">
-    <div className="wmrards-msg-summary__header">
-      <h3 className="wmrards-msg-summary__title wmrards-text-align-center">
+  <div className="wmnds-msg-summary wmnds-msg-summary--success-fill wmnds-p-b-lg">
+    <div className="wmnds-msg-summary__header">
+      <h3 className="wmnds-msg-summary__title wmnds-text-align-center">
         {header}
       </h3>
     </div>
     {info ? (
-      <div className="wmrards-msg-summary__info wmrards-text-align-center">
+      <div className="wmnds-msg-summary__info wmnds-text-align-center">
         {info}
       </div>
     ) : null}

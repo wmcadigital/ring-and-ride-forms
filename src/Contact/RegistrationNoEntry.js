@@ -21,7 +21,7 @@ const RegistrationNoEntry = () => {
         sectionPosition="Section 2 of 2"
         sectionName="About you"
       />
-      <Question text="Do you have a Ring and Ride registration number?" />
+      <Question text="Do you have a West Midlands Bus on Demand registration number?" />
       <TextInput
         fieldName="registrationNo"
         label={

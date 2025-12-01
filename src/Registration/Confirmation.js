@@ -7,7 +7,7 @@ import CustomerServiceDetails from "../common/CustomerServiceDetails";
 
 const Confirmation = () => (
   <>
-    <Header heading="Register for the Ring and Ride service" />
+    <Header heading="Register for the West Midlands Bus on Demand service" />
     <FormContentWrapper>
       <BreadCrumb currentPageName="Register" />
       <ConfirmationPanel header="We've received your form" />

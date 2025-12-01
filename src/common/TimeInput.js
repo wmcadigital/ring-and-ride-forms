@@ -27,10 +27,10 @@ const minutes = ["", "00", "15", "30", "45"];
 const TimeInput = ({ label, prefix, error }) => {
   return (
     <div
-      className={`wmrards-fe-group ${error ? "wmrards-fe-group--error" : null}`}
+      className={`wmnds-fe-group ${error ? "wmnds-fe-group--error" : null}`}
     >
       <FieldError text={error} />
-      {label ? <label className="wmrards-fe-label">{label}</label> : null}
+      {label ? <label className="wmnds-fe-label">{label}</label> : null}
       <div style={{ display: "flex" }}>
         <Dropdown
           fieldName={`${prefix}.hour`}
@@ -39,7 +39,7 @@ const TimeInput = ({ label, prefix, error }) => {
             value: hour,
             label: <>&nbsp;{hour}&nbsp;</>,
           }))}
-          customClass="wmrards-m-r-md"
+          customClass="wmnds-m-r-md"
         />
         <Dropdown
           fieldName={`${prefix}.minute`}

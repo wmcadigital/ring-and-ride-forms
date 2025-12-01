@@ -14,7 +14,7 @@ describe("TextArea", () => {
     const textArea = screen.getByRole("textbox");
     expect(textArea.getAttribute("name")).toEqual("text-area");
     expect(
-      container.getElementsByClassName("wmrards-fe-label")[0]
+      container.getElementsByClassName("wmnds-fe-label")[0]
     ).not.toBeDefined();
   });
 
@@ -28,7 +28,7 @@ describe("TextArea", () => {
     const textArea = screen.getByRole("textbox");
     expect(textArea.getAttribute("name")).toEqual("text-area");
     expect(
-      container.getElementsByClassName("wmrards-fe-label")[0]
+      container.getElementsByClassName("wmnds-fe-label")[0]
     ).toBeDefined();
   });
 

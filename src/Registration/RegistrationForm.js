@@ -90,7 +90,7 @@ const RegistrationForm = () => {
       setFormSubmitError(null);
       const response = await sendFormData(
         values,
-        "Ring & Ride Registration Form"
+        "West Midlands Bus on Demand Registration Form"
       );
       if (response.includes("Version")) {
         navigate("/registration/confirmed");
@@ -106,11 +106,11 @@ const RegistrationForm = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Register for the Ring and Ride servic</title>
+          <title>Register for the West Midlands Bus on Demand servic</title>
           <link rel="canonical" href="http://ringandride.org.uk/register" />
         </Helmet>
       </HelmetProvider>
-      <Header heading="Register for the Ring and Ride service" />
+      <Header heading="Register for the West Midlands Bus on Demand service" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Register" />
         <FormWizard

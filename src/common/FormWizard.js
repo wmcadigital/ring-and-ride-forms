@@ -71,8 +71,8 @@ const FormWizard = ({
 
   return (
     <>
-      <div className="wmrards-col-1 wmrards-col-md-2-3">
-        <div className="wmrards-col-1 wmrards-m-b-md">
+      <div className="wmnds-col-1 wmnds-col-md-2-3">
+        <div className="wmnds-col-1 wmnds-m-b-md">
           {page > 0 && (
             <ButtonLink
               callback={previous}
@@ -81,7 +81,7 @@ const FormWizard = ({
           )}
         </div>
       </div>
-      <div className="wmrards-p-lg wmrards-bg-white">
+      <div className="wmnds-p-lg wmnds-bg-white">
         <Form
           initialValues={values}
           onSubmit={handleSubmit}
@@ -103,7 +103,7 @@ const FormWizard = ({
                 {!isLastPage && !activePage.props.hideSubmit && (
                   <button
                     type="submit"
-                    className="wmrards-btn"
+                    className="wmnds-btn"
                     onClick={(e) => e.target.blur()}
                   >
                     Continue
@@ -111,26 +111,26 @@ const FormWizard = ({
                 )}
                 {isLastPage && !activePage.props.hideSubmit && (
                   <button
-                    className={`wmrards-btn wmrards-btn--start ${
-                      submitting ? "wmrards-btn--disabled" : null
+                    className={`wmnds-btn wmnds-btn--start ${
+                      submitting ? "wmnds-btn--disabled" : null
                     }`}
                     type="submit"
                     disabled={submitting ? "disabled" : undefined}
                   >
                     Accept and send
-                    <svg className="wmrards-btn__icon wmrards-btn__icon--right ">
+                    <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
                       <use
-                        xlinkHref="#wmrards-general-chevron-right"
-                        href="#wmrards-general-chevron-right"
+                        xlinkHref="#wmnds-general-chevron-right"
+                        href="#wmnds-general-chevron-right"
                       ></use>
                     </svg>
                     {submitting ? (
                       <div
-                        className="wmrards-loader wmrards-loader--btn wmrards-btn__icon wmrards-btn__icon--right"
+                        className="wmnds-loader wmnds-loader--btn wmnds-btn__icon wmnds-btn__icon--right"
                         role="alert"
                         aria-live="assertive"
                       >
-                        <p className="wmrards-loader__content"></p>
+                        <p className="wmnds-loader__content"></p>
                       </div>
                     ) : null}
                   </button>

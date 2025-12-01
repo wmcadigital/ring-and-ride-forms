@@ -42,7 +42,7 @@ const EthnicGroup = ({ setEthnicGroup, setGoToPage }) => {
       />
       <Question text={question} />
       <p>
-        This information helps TfWM to monitor if users of the Ring and Ride
+        This information helps TfWM to monitor if users of the West Midlands Bus on Demand
         service are reflective of regional diversity.
       </p>
       <RadioGroup error={error}>
@@ -56,7 +56,7 @@ const EthnicGroup = ({ setEthnicGroup, setGoToPage }) => {
             fieldName="ethnicity"
           />
         ))}
-        <p className="wmrards-m-b-sm">Or</p>
+        <p className="wmnds-m-b-sm">Or</p>
         <RadioButton
           key="preferNotToSay"
           label={PreferNotToSayLabel["preferNotToSay"]}

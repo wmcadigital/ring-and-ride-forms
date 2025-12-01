@@ -13,11 +13,11 @@ const TextInput = ({
   type,
 }) => (
   <div
-    className={`wmrards-fe-group ${error && "wmrards-fe-group--error"} ${
+    className={`wmnds-fe-group ${error && "wmnds-fe-group--error"} ${
       containerClass && containerClass
     }`}
   >
-    <label className="wmrards-fe-label" htmlFor={fieldName}>
+    <label className="wmnds-fe-label" htmlFor={fieldName}>
       {label}
     </label>
     <FieldError text={error} />
@@ -26,7 +26,7 @@ const TextInput = ({
       validate={validation}
       component="input"
       type={type}
-      className="wmrards-fe-input"
+      className="wmnds-fe-input"
       defaultValue={defaultValue}
     />
   </div>

@@ -72,7 +72,7 @@ const ReturnDestinationAddress = ({
         />
         {formValues.returnDestinationAddress ===
           "sameAsOutwardCollectionAddress" && bookingParty === "behalfGroup" ? (
-          <div className="wmrards-m-l-xl wmrards-p-l-sm wmrards-m-b-lg">
+          <div className="wmnds-m-l-xl wmnds-p-l-sm wmnds-m-b-lg">
             <ContactDetails>
               <AddressFormatted addressObj={formValues["otherOutward"]} />
             </ContactDetails>

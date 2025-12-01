@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const formEndPoint =  process.env.REACT_APP_API_ENDPOINT;
+const formEndPoint = process.env.REACT_APP_API_ENDPOINT;
 
 const sendFormData = async (formData, formSubject) => {
   const flattenJSON = (obj = {}, res = {}, extraKey = "") => {
@@ -27,14 +27,23 @@ const sendFormData = async (formData, formSubject) => {
     .replace(/\\f/g, "\\f");
 
   const raw = JSON.stringify({
-    to: 13,
+    to: 23,
     body: myEscapedJSONString,
     from: formData.emailAddress,
     subject: formSubject,
     displayName: formData.firstName + " " + formData.lastName,
   });
 
+  // Set to true to skip the real API and only log the payload for testing
+  const mockMode = false;
+
   try {
+    if (mockMode) {
+      // Log full payload and return a mocked response
+      console.log("Mock submit payload:", JSON.parse(raw));
+      return { ok: true, mocked: true, payload: JSON.parse(raw) };
+    }
+
     const rawResponse = await fetch(formEndPoint, {
       method: "POST",
       headers: {

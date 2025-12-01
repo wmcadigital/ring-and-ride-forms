@@ -12,7 +12,7 @@ const Confirmation = () => (
       <BreadCrumb currentPageName="Contact us" />
       <ConfirmationPanel header="We've received your enquiry" />
       <Question text="What happens next" />
-      <p>Thank you for contacting Ring and Ride.</p>
+      <p>Thank you for contacting West Midlands Bus on Demand.</p>
       <p>
         We will acknowledge your query and keep you updated on progress until it
         is resolved.

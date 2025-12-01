@@ -8,18 +8,18 @@ const RadioButton = ({
   fieldName,
   onClickCallback,
 }) => (
-  <label className="wmrards-fe-radios__container">
+  <label className="wmnds-fe-radios__container">
     {label}
     <Field name={fieldName} validate={validation} value={value} type="radio">
       {({ input }) => (
         <input
           {...input}
-          className="wmrards-fe-radios__input"
+          className="wmnds-fe-radios__input"
           onClick={onClickCallback}
         />
       )}
     </Field>
-    <span className="wmrards-fe-radios__checkmark"></span>
+    <span className="wmnds-fe-radios__checkmark"></span>
   </label>
 );
 

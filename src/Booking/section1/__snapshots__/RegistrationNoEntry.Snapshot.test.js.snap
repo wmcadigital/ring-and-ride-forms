@@ -2,10 +2,10 @@
 
 exports[`RegistrationNoEntry - snap shots individual is filling out form for someone else 1`] = `
 <div
-  className="wmrards-fe-group undefined"
+  className="wmnds-fe-group undefined"
 >
   <div
-    className="wmrards-progress-indicator"
+    className="wmnds-progress-indicator"
   >
     Section 1 of 4
     <h4>
@@ -13,15 +13,15 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for som
     </h4>
   </div>
   <h2
-    className="wmrards-fe-question"
+    className="wmnds-fe-question"
   >
     What is John's registration number?
   </h2>
   <div
-    className="wmrards-fe-group null undefined"
+    className="wmnds-fe-group null undefined"
   >
     <label
-      className="wmrards-fe-label"
+      className="wmnds-fe-label"
       htmlFor="registrationNo"
     >
        
@@ -32,7 +32,7 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for som
     </label>
   </div>
   <button
-    className="wmrards-btn wmrards-btn--link"
+    className="wmnds-btn wmnds-btn--link"
     onClick={[Function]}
     type="button"
   >
@@ -43,10 +43,10 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for som
 
 exports[`RegistrationNoEntry - snap shots individual is filling out form for themselves 1`] = `
 <div
-  className="wmrards-fe-group undefined"
+  className="wmnds-fe-group undefined"
 >
   <div
-    className="wmrards-progress-indicator"
+    className="wmnds-progress-indicator"
   >
     Section 1 of 4
     <h4>
@@ -54,15 +54,15 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for the
     </h4>
   </div>
   <h2
-    className="wmrards-fe-question"
+    className="wmnds-fe-question"
   >
     What is your registration number
   </h2>
   <div
-    className="wmrards-fe-group null undefined"
+    className="wmnds-fe-group null undefined"
   >
     <label
-      className="wmrards-fe-label"
+      className="wmnds-fe-label"
       htmlFor="registrationNo"
     >
        
@@ -73,7 +73,7 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for the
     </label>
   </div>
   <button
-    className="wmrards-btn wmrards-btn--link"
+    className="wmnds-btn wmnds-btn--link"
     onClick={[Function]}
     type="button"
   >
@@ -84,10 +84,10 @@ exports[`RegistrationNoEntry - snap shots individual is filling out form for the
 
 exports[`RegistrationNoEntry - snap shots renders with an error 1`] = `
 <div
-  className="wmrards-fe-group undefined"
+  className="wmnds-fe-group undefined"
 >
   <div
-    className="wmrards-progress-indicator"
+    className="wmnds-progress-indicator"
   >
     Section 1 of 4
     <h4>
@@ -95,15 +95,15 @@ exports[`RegistrationNoEntry - snap shots renders with an error 1`] = `
     </h4>
   </div>
   <h2
-    className="wmrards-fe-question"
+    className="wmnds-fe-question"
   >
     What is your registration number
   </h2>
   <div
-    className="wmrards-fe-group wmrards-fe-group--error undefined"
+    className="wmnds-fe-group wmnds-fe-group--error undefined"
   >
     <label
-      className="wmrards-fe-label"
+      className="wmnds-fe-label"
       htmlFor="registrationNo"
     >
        
@@ -113,13 +113,13 @@ exports[`RegistrationNoEntry - snap shots renders with an error 1`] = `
       </p>
     </label>
     <span
-      className="wmrards-fe-error-message"
+      className="wmnds-fe-error-message"
     >
       Required
     </span>
   </div>
   <button
-    className="wmrards-btn wmrards-btn--link"
+    className="wmnds-btn wmnds-btn--link"
     onClick={[Function]}
     type="button"
   >

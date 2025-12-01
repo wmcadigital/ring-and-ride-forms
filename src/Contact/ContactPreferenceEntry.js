@@ -36,7 +36,7 @@ const ContactPreferenceEntry = () => {
         <FieldError text={errorContactPrefReqd} />
         <Checkbox fieldName="emailContact" label="Email" />
         {formValues.emailContact ? (
-          <div className="wmrards-m-l-xl wmrards-p-l-sm">
+          <div className="wmnds-m-l-xl wmnds-p-l-sm">
             <TextInput
               fieldName="emailAddress"
               label={
@@ -51,7 +51,7 @@ const ContactPreferenceEntry = () => {
         ) : null}
         <Checkbox fieldName="phoneContact" label="Phone" />
         {formValues.phoneContact ? (
-          <div className="wmrards-m-l-xl wmrards-p-l-sm">
+          <div className="wmnds-m-l-xl wmnds-p-l-sm">
             <TextInput
               fieldName="phoneNo"
               label={

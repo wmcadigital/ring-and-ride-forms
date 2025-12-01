@@ -20,7 +20,7 @@ describe("ConfirmSameAdditionalPassenger", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     expect(mockCallback).toBeCalledTimes(0);
@@ -48,7 +48,7 @@ describe("ConfirmSameAdditionalPassenger", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     fireEvent.click(radioButtons[0]);

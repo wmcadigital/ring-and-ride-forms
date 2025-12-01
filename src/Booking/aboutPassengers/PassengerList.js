@@ -42,10 +42,10 @@ const PassengerList = ({
       <Table>
         <tr>
           <th>
-            <div className="wmrards-m-b-xsm">Name</div>
+            <div className="wmnds-m-b-xsm">Name</div>
           </th>
           <th colSpan={3}>
-            <div className="wmrards-m-b-xsm">Registration number</div>
+            <div className="wmnds-m-b-xsm">Registration number</div>
           </th>
         </tr>
         {passengers.map(({ firstName, lastName, registrationNo }, index) => (
@@ -61,7 +61,7 @@ const PassengerList = ({
         ))}
       </Table>
       <button
-        className="wmrards-btn wmrards-btn--secondary wmrards-m-r-md"
+        className="wmnds-btn wmnds-btn--secondary wmnds-m-r-md"
         type="button"
         onClick={() => addCallBack()}
       >
@@ -70,7 +70,7 @@ const PassengerList = ({
       {!summaryPageMode ? (
         <button
           type="submit"
-          className="wmrards-btn"
+          className="wmnds-btn"
           onClick={(e) => e.target.blur()}
         >
           Continue
