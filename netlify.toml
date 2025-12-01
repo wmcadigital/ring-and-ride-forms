@@ -16,3 +16,9 @@ package = "@netlify/plugin-sitemap"
 # [plugins.inputs]
 #   sentryOrg = "wmca-digital"
 #   sentryProject = "wmn-disrapp-name"
+
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 200
+	force = true
