@@ -39,7 +39,7 @@ const AddressDetails = ({ prefix, addresses }) => {
       <TextInput
         fieldName={`${prefix}.addressLine1`}
         label="Building and street"
-        containerClass="wmrards-m-b-md"
+        containerClass="wmnds-m-b-md"
         defaultValue={matchingAddress["line_1"]}
         validation={required}
         error={addressLine1Error}

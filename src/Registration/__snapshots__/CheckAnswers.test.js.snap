@@ -110,7 +110,7 @@ exports[`CheckAnswers renders CheckAnswers - no emergency 1`] = `
       fieldName="agreeRingAndRide"
       label={
         <span>
-          Agree that you need to use Ring & Ride because you find it either impossible or difficult to use other forms of public transport. You will inform Ring & Ride if there is any change in your circumstances that affects your eligibility to use the service.
+          Agree that you need to use West Midlands Bus on Demand because you find it either impossible or difficult to use other forms of public transport. You will inform West Midlands Bus on Demand if there is any change in your circumstances that affects your eligibility to use the service.
         </span>
       }
     />
@@ -306,7 +306,7 @@ exports[`CheckAnswers renders CheckAnswers - register on behalf of someone else 
       fieldName="agreeRingAndRide"
       label={
         <span>
-          Agree that you need to use Ring & Ride because you find it either impossible or difficult to use other forms of public transport. You will inform Ring & Ride if there is any change in your circumstances that affects your eligibility to use the service.
+          Agree that you need to use West Midlands Bus on Demand because you find it either impossible or difficult to use other forms of public transport. You will inform West Midlands Bus on Demand if there is any change in your circumstances that affects your eligibility to use the service.
         </span>
       }
     />
@@ -502,7 +502,7 @@ exports[`CheckAnswers renders CheckAnswers correctly 1`] = `
       fieldName="agreeRingAndRide"
       label={
         <span>
-          Agree that you need to use Ring & Ride because you find it either impossible or difficult to use other forms of public transport. You will inform Ring & Ride if there is any change in your circumstances that affects your eligibility to use the service.
+          Agree that you need to use West Midlands Bus on Demand because you find it either impossible or difficult to use other forms of public transport. You will inform West Midlands Bus on Demand if there is any change in your circumstances that affects your eligibility to use the service.
         </span>
       }
     />
@@ -701,7 +701,7 @@ exports[`CheckAnswers renders CheckAnswers with a form submit error if passed as
       fieldName="agreeRingAndRide"
       label={
         <span>
-          Agree that you need to use Ring & Ride because you find it either impossible or difficult to use other forms of public transport. You will inform Ring & Ride if there is any change in your circumstances that affects your eligibility to use the service.
+          Agree that you need to use West Midlands Bus on Demand because you find it either impossible or difficult to use other forms of public transport. You will inform West Midlands Bus on Demand if there is any change in your circumstances that affects your eligibility to use the service.
         </span>
       }
     />
@@ -897,7 +897,7 @@ exports[`CheckAnswers renders CheckAnswers with an error if present 1`] = `
       fieldName="agreeRingAndRide"
       label={
         <span>
-          Agree that you need to use Ring & Ride because you find it either impossible or difficult to use other forms of public transport. You will inform Ring & Ride if there is any change in your circumstances that affects your eligibility to use the service.
+          Agree that you need to use West Midlands Bus on Demand because you find it either impossible or difficult to use other forms of public transport. You will inform West Midlands Bus on Demand if there is any change in your circumstances that affects your eligibility to use the service.
         </span>
       }
     />

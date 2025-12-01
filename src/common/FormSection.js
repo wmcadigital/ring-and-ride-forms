@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const FormSection = ({ error, children }) => (
-  <div className={`wmrards-fe-group ${error && "wmrards-fe-group--error"}`}>
+  <div className={`wmnds-fe-group ${error && "wmnds-fe-group--error"}`}>
     {children}
   </div>
 );

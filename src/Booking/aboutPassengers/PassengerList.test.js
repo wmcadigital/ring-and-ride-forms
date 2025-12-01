@@ -114,7 +114,7 @@ describe("PassengerList", () => {
 
     expect(text).toBeNull();
     const questionHeading = container.getElementsByClassName(
-      "wmrards-fe-question"
+      "wmnds-fe-question"
     );
     expect(questionHeading.length).toBe(0);
     const buttons = screen.getAllByRole("button");

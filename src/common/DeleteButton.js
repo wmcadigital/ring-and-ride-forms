@@ -5,13 +5,13 @@ const DeleteButton = ({ children, callback }) => {
     <button
       type="button"
       onClick={callback}
-      className="wmrards-btn wmrards-btn--destructive"
+      className="wmnds-btn wmnds-btn--destructive"
     >
       {children}
-      <svg className="wmrards-btn__icon wmrards-btn__icon--right ">
+      <svg className="wmnds-btn__icon wmnds-btn__icon--right ">
         <use
-          xlinkHref="#wmrards-general-trash"
-          href="#wmrards-general-trash"
+          xlinkHref="#wmnds-general-trash"
+          href="#wmnds-general-trash"
         ></use>
       </svg>
     </button>

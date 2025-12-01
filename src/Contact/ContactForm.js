@@ -31,7 +31,7 @@ const ContactForm = () => {
   const onSubmit = async (values) => {
     try {
       setFormSubmitError(null);
-      const response = await sendFormData(values, "Ring & Ride Contact Form");
+      const response = await sendFormData(values, "West Midlands Bus on Demand Contact Form");
       if (response.includes("Version")) {
         navigate("/contactUs/confirmed");
       } else {

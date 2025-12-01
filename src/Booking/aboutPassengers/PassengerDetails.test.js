@@ -161,7 +161,7 @@ describe("PassengerDetails", () => {
     );
 
     const questionHeading = container.getElementsByClassName(
-      "wmrards-fe-question"
+      "wmnds-fe-question"
     );
     expect(questionHeading.length).toBe(0);
     expect(screen.queryByText("Who will be using the service?")).toBeNull();

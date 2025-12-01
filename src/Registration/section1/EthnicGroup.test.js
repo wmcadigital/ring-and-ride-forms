@@ -18,7 +18,7 @@ describe("EthnicGroup", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     expect(mockCallback).toBeCalledTimes(0);
@@ -44,7 +44,7 @@ describe("EthnicGroup", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     expect(mockSetFormAttribute).toBeCalledTimes(0);

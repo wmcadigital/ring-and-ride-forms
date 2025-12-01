@@ -24,7 +24,7 @@ describe("ConfirmSameGroup", () => {
     );
 
     const radioButtons = container.getElementsByClassName(
-      "wmrards-fe-radios__input"
+      "wmnds-fe-radios__input"
     );
 
     fireEvent.click(radioButtons[1]);
@@ -53,7 +53,7 @@ describe("ConfirmSameGroup", () => {
       );
 
       const radioButtons = container.getElementsByClassName(
-        "wmrards-fe-radios__input"
+        "wmnds-fe-radios__input"
       );
 
       fireEvent.click(radioButtons[0]);
@@ -87,7 +87,7 @@ describe("ConfirmSameGroup", () => {
       );
 
       const radioButtons = container.getElementsByClassName(
-        "wmrards-fe-radios__input"
+        "wmnds-fe-radios__input"
       );
 
       fireEvent.click(radioButtons[0]);

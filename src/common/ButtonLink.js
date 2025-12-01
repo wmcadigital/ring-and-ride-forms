@@ -5,7 +5,7 @@ const ButtonLink = ({ children, callback, disabled }) => {
     <button
       type="button"
       onClick={callback}
-      className="wmrards-btn wmrards-btn--link"
+      className="wmnds-btn wmnds-btn--link"
       disabled={disabled ? "disabled" : undefined}
     >
       {children}

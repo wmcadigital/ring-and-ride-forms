@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Header from "./common/Header";
 import ContactForm from "./Contact/ContactForm";
 import ContactConfirmation from "./Contact/Confirmation";
 import RegistrationForm from "./Registration/RegistrationForm";
@@ -14,24 +15,37 @@ import Maintenance from "./Maintenance";
 
 const Home = () => (
   <>
+    <Header heading="West Midlands Bus on Demand forms" />
     <main
-      id="wmrards-main-content"
-      className="wmrards-container wmrards-m-t-lg homepage"
+      id="wmnds-main-content"
+      className="wmnds-container wmnds-m-t-lg homepage"
     >
-      <div className="wmrards-grid wmrards-grid--justify-between wmrards-grid--spacing-2-lg wmrards-grid--spacing-md-2-lg">
-        <div className="wmrards-col-1 wmrards-col-md-2-3">
+      <div className="wmnds-grid wmnds-grid--justify-between wmnds-grid--spacing-2-lg wmnds-grid--spacing-md-2-lg">
+        <div className="wmnds-col-1 wmnds-col-md-2-3">
           <div className="one-column-row">
-            <div className="wmrards-col-1 wmrards-col-md-1-1">
-              <div className="wmrards-m-b-lg">
-                <h1>Ring &amp; Ride Forms</h1>
-                <ul>
-                  <li>
-                    <Link to="/contactUs">Contact Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/registration">Registration</Link>
-                  </li>
-                </ul>
+            <div className="wmnds-col-1 wmnds-col-md-1-1">
+              <div className="wmnds-m-b-lg">
+                <h2>Registration</h2>
+                <p>
+                  If you, a friend or a relative could benefit from using West Midlands Bus on Demand, please apply below to become a registered user of the
+                  service.
+                </p>
+                <a
+                  href="/registration"
+                  title="This is a call to action link"
+                  target="_self"
+                  className="wmnds-btn"
+                >
+                  Register for West Midlands Bus on Demand
+                </a>
+
+                <h2>Contact</h2>
+                <p>
+                  The best way to get in touch is to submit an online enquiry.
+                </p>
+                <a href="/contactUs" target="_self" className="wmnds-btn">
+                  Contact West Midlands Bus on Demand
+                </a>
               </div>
             </div>
           </div>

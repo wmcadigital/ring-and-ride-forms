@@ -11,7 +11,7 @@ describe("AddressDetails", () => {
       </FormWrapper>
     );
 
-    const inputControls = container.getElementsByClassName("wmrards-fe-input");
+    const inputControls = container.getElementsByClassName("wmnds-fe-input");
 
     expect(inputControls[0].getAttribute("name")).toEqual("test.addressLine1");
     expect(inputControls[1].getAttribute("name")).toEqual("test.addressLine2");
@@ -31,7 +31,7 @@ describe("AddressDetails", () => {
       </FormWrapper>
     );
 
-    const inputControls = container.getElementsByClassName("wmrards-fe-input");
+    const inputControls = container.getElementsByClassName("wmnds-fe-input");
     const postCodeInput = inputControls[4];
 
     expect(postCodeInput.getAttribute("value")).toEqual("B19 2BY");
@@ -68,7 +68,7 @@ describe("AddressDetails", () => {
       </FormWrapper>
     );
 
-    const inputControls = container.getElementsByClassName("wmrards-fe-input");
+    const inputControls = container.getElementsByClassName("wmnds-fe-input");
 
     expect(inputControls[0].getAttribute("value")).toEqual("50 Matching Rd");
     expect(inputControls[1].getAttribute("value")).toEqual("");

@@ -4,61 +4,30 @@ const Header = ({ heading }) => {
   return (
     <>
       <a
-        href="#wmrards-main-content"
+        href="#wmnds-main-content"
         title="Skip to main content"
         target="_self"
-        className="wmrards-link wmrards-header__skip-link"
+        className="wmnds-link wmnds-header__skip-link"
       >
         Skip to main content
       </a>
       <header>
-        <div className="wmrards-bg-white wmrards-p-t-md wmrards-p-b-md wmrards-cookies-banner">
-          <div className="wmrards-container">
-            <div className="wmrards-col-1 wmrards-col-md-3-4 wmrards-col-lg-2-3">
-              <h3>Your privacy settings</h3>
-              <p>
-                We use cookies to help you with journey planning and relevant
-                disruptions, remember your login and show you content you might
-                be interested in. If you&apos;re happy with the use of cookies
-                by West Midlands Combined Authority and our selected partners,
-                click &apos;Accept all cookies&apos;. Or click &apos;Manage
-                cookies&apos; to learn more.
-              </p>
-              <div className="wmrards-grid wmrards-grid--justify-between wmrards-cookies-banner__group-buttons">
-                <button
-                  className="wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24  wmrards-cookies-banner__accept-all-cookies wmrards-text-align-center"
-                  type="button"
-                >
-                  Accept all cookies
-                </button>
-                <a
-                  href="https://www.tfwm.org.uk/manage-cookies/"
-                  title="link title"
-                  target="_self"
-                  className="wmrards-btn wmrards-btn wmrards-col-1 wmrards-col-sm-1 wmrards-col-md-12-24 wmrards-text-align-center"
-                >
-                  Manage Cookies
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="wmrards-header">
-          <div className="wmrards-container wmrards-grid wmrards-grid--align-center wmrards-grid--justify-between">
-            <div className="wmrards-header__vertical-align wmrards-col-auto">
+        <div className="wmnds-header">
+          <div className="wmnds-container wmnds-grid wmnds-grid--align-center wmnds-grid--justify-between">
+            <div className="wmnds-header__vertical-align wmnds-col-auto">
               <a
-                className="wmrards-header__logo-link"
-                href="https://ringandride.org/"
-                title="Ring and Ride"
+                className="wmnds-header__logo-link"
+                href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/"
+                title="West Midlands Bus on Demand"
               >
                 <img
-                  className="wmrards-header__logo"
+                  className="wmnds-header__logo"
                   alt="Transport for West Midlands logo"
-                  src="https://cloudcdn.wmca.org.uk/staging/rarassets/1.0.0/img/logo.svg"
+                  src="https://unpkg.com/wmn-design-system@2.2.0/build/img/logo.svg"
                 />
               </a>
             </div>
-            <h1 className="wmrards-header__title wmrards-col-1 wmrards-col-sm-auto">
+            <h1 className="wmnds-header__title wmnds-col-1 wmnds-col-sm-auto">
               {heading}
             </h1>
           </div>

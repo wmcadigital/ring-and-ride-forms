@@ -11,11 +11,11 @@ const OutsideWmca = () => {
 
   return (
     <>
-      <Header heading="Register for the Ring and Ride service" />
-      <main className="wmrards-container wmrards-container--main wmrards-p-b-lg wmrards-grid">
-        <div className="wmrards-col-1 wmrards-col-md-2-3">
+      <Header heading="Register for the West Midlands Bus on Demand service" />
+      <main className="wmnds-container wmnds-container--main wmnds-p-b-lg wmnds-grid">
+        <div className="wmnds-col-1 wmnds-col-md-2-3">
           <BreadCrumb currentPageName="Register" />
-          <div className="wmrards-col-1 wmrards-m-b-md">
+          <div className="wmnds-col-1 wmnds-m-b-md">
             <ButtonLink
               callback={() =>
                 navigate("/registration", {
@@ -27,9 +27,9 @@ const OutsideWmca = () => {
               {`< Back`}
             </ButtonLink>
           </div>
-          <Question text="The West Midlands Bus Ring and Ride service does not operate in your area" />
+          <Question text="The West Midlands Bus West Midlands Bus on Demand service does not operate in your area" />
           <p>
-            {`To be eligible for the Ring and Ride service you must live in the `}
+            {`To be eligible for the West Midlands Bus on Demand service you must live in the `}
             <a href="#">West Midlands Combined Authority area</a>.
           </p>
           <p>

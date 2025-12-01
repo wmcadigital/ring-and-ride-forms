@@ -27,13 +27,13 @@ const AddressList = ({
       : null;
 
   return (
-    <div className="wmrards-fe-group">
-      <label className="wmrards-fe-label" htmlFor="searchPostCode">
+    <div className="wmnds-fe-group">
+      <label className="wmnds-fe-label" htmlFor="searchPostCode">
         Postcode
       </label>
-      <div className="wmrards-m-b-lg">
+      <div className="wmnds-m-b-lg">
         {searchPostCode}
-        <span className="wmrards-m-l-lg">
+        <span className="wmnds-m-l-lg">
           <ButtonLink callback={changePostCodeCallback}>Change</ButtonLink>
         </span>
       </div>

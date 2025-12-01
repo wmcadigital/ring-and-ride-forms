@@ -114,7 +114,7 @@ const BookingForm = () => {
   const onSubmit = async (values) => {
     try {
       setFormSubmitError(null);
-      const response = await sendFormData(values, "Ring & Ride Booking Form");
+      const response = await sendFormData(values, "West Midlands Bus on Demand Booking Form");
       if (response.includes("Version")) {
         navigate("/booking/confirmed");
       } else {
@@ -129,11 +129,11 @@ const BookingForm = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Book a Ring and Ride journey</title>
+          <title>Book a West Midlands Bus on Demand journey</title>
           <link rel="canonical" href="http://ringandride.org.uk/contact" />
         </Helmet>
       </HelmetProvider>
-      <Header heading="Book a Ring and Ride journey" />
+      <Header heading="Book a West Midlands Bus on Demand journey" />
       <FormContentWrapper>
         <BreadCrumb currentPageName="Booking" />
         <FormWizard

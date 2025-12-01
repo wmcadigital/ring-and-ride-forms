@@ -1,4 +1,4 @@
-# Ring and Ride Contact Us Form
+# West Midlands Bus on Demand Contact Us Form
 
 Ensure you have LTS versions of node and npm installed.
 

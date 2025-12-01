@@ -10,7 +10,7 @@ describe("Dropdown", () => {
       </FormWrapper>
     );
 
-    const label = container.getElementsByClassName("wmrards-fe-label")[0];
+    const label = container.getElementsByClassName("wmnds-fe-label")[0];
 
     expect(label.innerHTML).toEqual("Test Label");
   });
@@ -86,7 +86,7 @@ describe("Dropdown", () => {
     );
 
     const error = container.getElementsByClassName(
-      "wmrards-fe-error-message"
+      "wmnds-fe-error-message"
     )[0];
 
     expect(error.innerHTML).toEqual("Required");

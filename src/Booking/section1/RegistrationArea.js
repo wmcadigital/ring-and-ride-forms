@@ -34,11 +34,11 @@ const RegistrationArea = () => {
         />
         {formValues.Origin === "Coventry" ? (
           <>
-            <div className="wmrards-warning-text wmrards-m-b-md">
-              <svg className="wmrards-warning-text__icon">
+            <div className="wmnds-warning-text wmnds-m-b-md">
+              <svg className="wmnds-warning-text__icon">
                 <use
-                  xlinkHref="#wmrards-general-warning-triangle"
-                  href="#wmrards-general-warning-triangle"
+                  xlinkHref="#wmnds-general-warning-triangle"
+                  href="#wmnds-general-warning-triangle"
                 ></use>
               </svg>
               If you are starting your trip in Coventry you need to book using

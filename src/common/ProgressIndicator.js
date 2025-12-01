@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ProgressIndicator = ({ sectionPosition, sectionName }) => (
-  <div className="wmrards-progress-indicator">
+  <div className="wmnds-progress-indicator">
     {sectionPosition}
     <h4>{sectionName}</h4>
   </div>

@@ -1,7 +1,7 @@
 {
-  "name": "ring-and-ride-contact-us",
-  "version": "1.0.0",
-  "description": "Ring and Ride Contact Us Form",
+  "name": "ring-and-ride-forms",
+  "version": "2.0.0",
+  "description": "West Midlands Bus on Demand Contact Us Form",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmcadigital/ring-and-ride-contact-us.git"
+    "url": "git+https://github.com/wmcadigital/ring-and-ride-forms.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wmcadigital/ring-and-ride-contact-us/issues"
+    "url": "https://github.com/wmcadigitalring-and-ride-forms/issues"
   },
-  "homepage": "https://github.com/wmcadigital/ring-and-ride-contact-us#readme",
+  "homepage": "https://github.com/wmcadigital/ring-and-ride-forms#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",

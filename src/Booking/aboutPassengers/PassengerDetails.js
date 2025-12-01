@@ -99,7 +99,7 @@ const PassengerDetails = ({
         error={errorRegistrationNo}
       />
       <button
-        className="wmrards-btn"
+        className="wmnds-btn"
         onClick={(e) => {
           e.preventDefault();
           setContinueButtonClicked(
