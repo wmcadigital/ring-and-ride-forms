@@ -27,7 +27,7 @@ const RegistrationArea = () => {
         <RadioButton
           key={2}
           label="Coventry"
-          validation={coventry}
+          validation={required}
           value="Coventry"
           fieldName="Origin"
         />
