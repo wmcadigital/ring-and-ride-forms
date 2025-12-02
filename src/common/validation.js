@@ -7,9 +7,6 @@ export const FORM_SUBMIT_ERROR =
 
 export const required = (value) => (value ? undefined : "Question is Required");
 
-export const coventry = (value) =>
-  value !== "Coventry" ? undefined : "Coventry is no longer available";
-
 export const numbersOnly = (value) => {
   if (value) {
     return /^\d+$/.test(value)
