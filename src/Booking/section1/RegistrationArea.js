@@ -9,7 +9,6 @@ import { required, coventry } from "../../common/validation";
 
 const RegistrationArea = () => {
   const stateApi = useFormState();
-  const formValues = stateApi.values;
 
   const error = stateApi.submitFailed ? stateApi.errors?.Origin : null;
 
@@ -32,28 +31,6 @@ const RegistrationArea = () => {
           value="Coventry"
           fieldName="Origin"
         />
-        {formValues.Origin === "Coventry" ? (
-          <>
-            <div className="wmnds-warning-text wmnds-m-b-md">
-              <svg className="wmnds-warning-text__icon">
-                <use
-                  xlinkHref="#wmnds-general-warning-triangle"
-                  href="#wmnds-general-warning-triangle"
-                ></use>
-              </svg>
-              If you are starting your trip in Coventry you need to book using
-              West Midlands On-Demand.{" "}
-              <a
-                href="https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/buses-in-the-west-midlands/on-demand-buses-in-the-west-midlands/"
-                title="Find out more about West Midlands On-Demand"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Find out more on the Transport For West Midlands Website
-              </a>
-            </div>
-          </>
-        ) : null}
         <RadioButton
           key={3}
           label="Dudley"
