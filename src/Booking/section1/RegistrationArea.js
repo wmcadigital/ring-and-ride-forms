@@ -5,7 +5,7 @@ import RadioGroup from "../../common/RadioGroup";
 import Question from "../../common/Question";
 import RadioButton from "../../common/RadioButton";
 import FieldError from "../../common/FieldError";
-import { required, coventry } from "../../common/validation";
+import { required } from "../../common/validation";
 
 const RegistrationArea = () => {
   const stateApi = useFormState();
