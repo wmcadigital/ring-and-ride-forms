@@ -1,5 +1,6 @@
-import { useFormState } from "react-final-form";
+import { useEffect } from "react";
 import PropTypes from "prop-types";
+import { useFormState } from "react-final-form";
 
 import FormSection from "../../common/FormSection";
 import RadioGroup from "../../common/RadioGroup";
@@ -12,18 +13,18 @@ import { required } from "../../common/validation";
 const TransportQuestion = () => {
   const stateApi = useFormState();
 
-  const error = stateApi.submitFailed
-    ? stateApi.errors?.difficultToUsePublicTransport
+  const { values, submitFailed, errors, touched } = stateApi;
+
+  const error = (submitFailed || touched?.difficultToUsePublicTransport)
+    ? errors?.difficultToUsePublicTransport
     : null;
 
-  if (stateApi.values?.difficultToUsePublicTransport === "no") {
-    // redirect if user selects "No"
-    window.location.replace("/registration/dontneedtoregister");
-    return null;
-  }
-
-  console.log(stateApi.values?.difficultToUsePublicTransport);
-  console.log("this is a test");
+  useEffect(() => {
+    if (values?.difficultToUsePublicTransport === "no" && typeof window !== "undefined") {
+      // redirect if user selects "No" (useEffect to avoid side-effects during render)
+      window.location.replace("/registration/dontneedtoregister");
+    }
+  }, [values?.difficultToUsePublicTransport]);
 
   return (
     <FormSection>
@@ -32,20 +33,18 @@ const TransportQuestion = () => {
         sectionName={"About you"}
       />
       <Question text={"Do you find it difficult to use public transport?"} />
-      <p>
+      <p id="transport-help">
         For example, if you cannot get on a bus or travel comfortably when you are on board.
       </p>
-      <RadioGroup error={error}>
+      <RadioGroup error={error} aria-describedby="transport-help">
         <FieldError text={error} />
-       <RadioButton
-          key={1}
+        <RadioButton
           label="Yes"
           validation={required}
           value="yes"
           fieldName="difficultToUsePublicTransport"
         />
         <RadioButton
-          key={2}
           label="No"
           validation={required}
           value="no"
