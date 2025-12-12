@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { useFormState } from "react-final-form";
+import PropTypes from "prop-types";
 
 import FormSection from "../../common/FormSection";
 import RadioGroup from "../../common/RadioGroup";
@@ -7,11 +9,18 @@ import RadioButton from "../../common/RadioButton";
 import FieldError from "../../common/FieldError";
 import { required } from "../../common/validation";
 
-const RegistrationArea = () => {
+const RegistrationArea = ({ setRegistrationArea }) => {
   const stateApi = useFormState();
   // const formValues = stateApi.values;
+  const formValues = stateApi.values;
 
   const error = stateApi.submitFailed ? stateApi.errors?.Origin : null;
+
+  useEffect(() => {
+    if (formValues.Origin) {
+      setRegistrationArea(formValues.Origin);
+    }
+  }, [formValues.Origin]);
 
   return (
     <FormSection>
@@ -70,6 +79,14 @@ const RegistrationArea = () => {
       </RadioGroup>
     </FormSection>
   );
+};
+
+RegistrationArea.propTypes = {
+  setRegistrationArea: PropTypes.func,
+};
+
+RegistrationArea.defaultProps = {
+  setRegistrationArea: () => {},
 };
 
 export default RegistrationArea;
