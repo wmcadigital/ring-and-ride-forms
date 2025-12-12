@@ -1,6 +1,7 @@
 import { useState, useEffect, Children } from "react";
 import PropTypes from "prop-types";
 import { Form } from "react-final-form";
+import { useNavigate } from "react-router-dom";
 
 import ButtonLink from "./ButtonLink";
 
@@ -17,6 +18,7 @@ const FormWizard = ({
   const filteredChildren = children.filter((child) => child !== undefined);
   const [page, setPage] = useState(0);
   const [values, setValues] = useState(initialValues);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (goToPage !== null) {
@@ -62,6 +64,18 @@ const FormWizard = ({
     if (isLastPage) {
       return onSubmit(values);
     } else {
+      // If we're on the TransportQuestion page and the user answered "no",
+      // navigate directly to the outside WMCA page instead of advancing the wizard.
+      const active = Children.toArray(filteredChildren)[page];
+      const activeName = active?.type?.name || "";
+      if (
+        activeName === "TransportQuestion" &&
+        values?.difficultToUsePublicTransport === "no"
+      ) {
+        navigate("/registration/dontneedtoregister");
+        return;
+      }
+
       next(values);
     }
   };

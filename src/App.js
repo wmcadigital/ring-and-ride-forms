@@ -12,6 +12,7 @@ import BookingConfirmation from "./Booking/Confirmation";
 import OutsideWmca from "./Registration/section1/OutsideWmca";
 import ForgotRegistration from "./Booking/section1/ForgotRegistration";
 import Maintenance from "./Maintenance";
+import DontNeedToRegister from "./Registration/section1/DontNeedToRegister";
 
 const Home = () => (
   <>
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/contactUs/confirmed" element={<ContactConfirmation />} />
         <Route path="/registration" element={<RegistrationForm />} />
         <Route path="/registration/outsideWmca" element={<OutsideWmca />} />
+        <Route path="/registration/dontneedtoregister" element={<DontNeedToRegister />} />
         <Route
           path="/registration/confirmed"
           element={<RegistrationConfirmation />}

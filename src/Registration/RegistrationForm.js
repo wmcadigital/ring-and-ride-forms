@@ -8,6 +8,8 @@ import FormWizard from "../common/FormWizard";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import RegistrationArea from "./section1/RegistrationArea";
+import TransportQuestion from "./section1/TransportQuestion";
+import DontNeedToRegister from "./section1/DontNeedToRegister";
 import RegistrationIndividual from "./section1/RegistrationIndividual";
 import RegistrationName from "./section1/RegistrationName";
 import DateOfBirth from "./section1/DateOfBirth";
@@ -49,6 +51,8 @@ const RegistrationForm = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const [registrationArea, setRegistrationArea] = useState(null);
+  const [difficultToUseTransport, setDifficultToUseTransport] = useState(null);
   const [registrationAddresses, setRegistrationAddresses] = useState([]);
   const [emergencyAddresses, setEmergencyAddresses] = useState([]);
   const [registerForYourself, setRegisterForYourself] = useState(null);
@@ -106,7 +110,7 @@ const RegistrationForm = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Register for the West Midlands Bus on Demand servic</title>
+          <title>Register for the West Midlands Bus on Demand service</title>
           <link rel="canonical" href="http://ringandride.org.uk/register" />
         </Helmet>
       </HelmetProvider>
@@ -125,7 +129,15 @@ const RegistrationForm = () => {
           setExternalPage={setExternalPage}
           disableBackButton={formSubmitting}
         >
-          {cDate >= aDate ? <RegistrationArea /> : null}
+          {cDate >= aDate ? <RegistrationArea setRegistrationArea={setRegistrationArea} /> : null}
+
+          {registrationArea == "Coventry" ? (
+           <TransportQuestion setDifficultToUseTransport={setDifficultToUseTransport} />
+          ) : undefined}
+
+          {/* {difficultToUseTransport == "no" ? (
+           <DontNeedToRegister />
+          ) : undefined} */}
 
           <RegistrationIndividual
             setRegisterForYourself={setRegisterForYourself}
