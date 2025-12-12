@@ -16,6 +16,15 @@ const TransportQuestion = () => {
     ? stateApi.errors?.difficultToUsePublicTransport
     : null;
 
+  if (stateApi.values?.difficultToUsePublicTransport === "no") {
+    // redirect if user selects "No"
+    window.location.replace("/registration/dontneedtoregister");
+    return null;
+  }
+
+  console.log(stateApi.values?.difficultToUsePublicTransport);
+  console.log("this is a test");
+
   return (
     <FormSection>
       <ProgressIndicator
