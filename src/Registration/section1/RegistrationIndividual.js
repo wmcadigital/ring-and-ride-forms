@@ -5,6 +5,7 @@ import { useFormState } from "react-final-form";
 import FormSection from "../../common/FormSection";
 import RadioGroup from "../../common/RadioGroup";
 import Question from "../../common/Question";
+import ProgressIndicator from "../../common/ProgressIndicator";
 import RadioButton from "../../common/RadioButton";
 import FieldError from "../../common/FieldError";
 import { required } from "../../common/validation";
@@ -25,6 +26,10 @@ const RegistrationIndividual = ({ setRegisterForYourself }) => {
 
   return (
     <FormSection>
+      <ProgressIndicator
+        sectionPosition="Section 1 of 3"
+        sectionName={"About you"}
+      />
       <Question text="Are you registering for yourself?" />
       <RadioGroup error={error}>
         <FieldError text={error} />

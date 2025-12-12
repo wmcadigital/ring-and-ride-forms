@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useFormState } from "react-final-form";
 import PropTypes from "prop-types";
 
@@ -9,27 +8,19 @@ import RadioButton from "../../common/RadioButton";
 import FieldError from "../../common/FieldError";
 import ProgressIndicator from "../../common/ProgressIndicator";
 import { required } from "../../common/validation";
-import getAboutSectionName from "./getAboutSectionName";
 
-const TransportQuestion = ({ setDifficultToUseTransport }) => {
+const TransportQuestion = () => {
   const stateApi = useFormState();
-  const formValues = stateApi.values;
 
   const error = stateApi.submitFailed
     ? stateApi.errors?.difficultToUsePublicTransport
     : null;
 
-      useEffect(() => {
-    if (formValues.difficultToUsePublicTransport) {
-      setDifficultToUseTransport(formValues.difficultToUsePublicTransport);
-    }
-  }, [formValues.difficultToUsePublicTransport]);
-
   return (
     <FormSection>
       <ProgressIndicator
         sectionPosition="Section 1 of 3"
-        sectionName={getAboutSectionName(stateApi)}
+        sectionName={"About you"}
       />
       <Question text={"Do you find it difficult to use public transport?"} />
       <p>

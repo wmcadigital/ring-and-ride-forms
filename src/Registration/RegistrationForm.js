@@ -52,7 +52,6 @@ const RegistrationForm = () => {
   const navigate = useNavigate();
 
   const [registrationArea, setRegistrationArea] = useState(null);
-  const [difficultToUseTransport, setDifficultToUseTransport] = useState(null);
   const [registrationAddresses, setRegistrationAddresses] = useState([]);
   const [emergencyAddresses, setEmergencyAddresses] = useState([]);
   const [registerForYourself, setRegisterForYourself] = useState(null);
@@ -132,12 +131,8 @@ const RegistrationForm = () => {
           {cDate >= aDate ? <RegistrationArea setRegistrationArea={setRegistrationArea} /> : null}
 
           {registrationArea == "Coventry" ? (
-           <TransportQuestion setDifficultToUseTransport={setDifficultToUseTransport} />
+           <TransportQuestion />
           ) : undefined}
-
-          {/* {difficultToUseTransport == "no" ? (
-           <DontNeedToRegister />
-          ) : undefined} */}
 
           <RegistrationIndividual
             setRegisterForYourself={setRegisterForYourself}
